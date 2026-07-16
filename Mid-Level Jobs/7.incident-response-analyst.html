@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Incident Response Analyst" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Incident Response Analyst"</h1>
+            <p>Become a proficient Incident Response Analyst, ready to detect, analyze, and mitigate cybersecurity incidents effectively.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="phase-header">
+                <h2>Phase 1: Foundational Knowledge & Tools</h2>
+                <span>Days 1-30: Build a strong understanding of IR principles and essential tools.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Cybersecurity Fundamentals</span>
+                    <span class="skill-tag">Networking Basics</span>
+                    <span class="skill-tag">Operating System Internals</span>
+                    <span class="skill-tag">Security Information & Event Management (SIEM)</span>
+                    <span class="skill-tag">Basic Scripting (Python/Bash)</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Cybersecurity & Networking Fundamentals</h3>
+                    <ul>
+                        <li>Understand the CIA Triad and common cybersecurity concepts.</li>
+                        <li>Learn TCP/IP model, common protocols (HTTP, DNS, SMTP).</li>
+                        <li>Explore network devices: Routers, Switches, Firewalls.</li>
+                        <li>Introduction to network segmentation and VLANs.</li>
+                        <li>Familiarize yourself with common cyber attack types (malware, phishing, DoS).</li>
+                        <li>Understand the Kill Chain and MITRE ATT&CK framework basics.</li>
+                        <li>Set up a basic home lab environment (VMware/VirtualBox).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">CompTIA Security+ concepts</span>
+                        <span class="tech-badge">Network+ concepts</span>
+                        <span class="tech-badge">VirtualBox/VMware</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Network Map & Vulnerability Scan</h4>
+                        <p>Create a simple network diagram of your home lab and perform a basic vulnerability scan using an open-source tool like Nmap.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Operating System & Log Analysis Basics</h3>
+                    <ul>
+                        <li>Deep dive into Windows OS architecture and security features (AD, GPO).</li>
+                        <li>Explore Linux OS fundamentals (file system, permissions, common commands).</li>
+                        <li>Understand system and application logs (Windows Event Logs, Syslog).</li>
+                        <li>Learn basic command-line tools for log analysis (grep, find, PowerShell commands).</li>
+                        <li>Introduction to security baselines and hardening concepts.</li>
+                        <li>Understand user accounts, groups, and authentication mechanisms.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Windows OS</span>
+                        <span class="tech-badge">Linux OS</span>
+                        <span class="tech-badge">PowerShell</span>
+                        <span class="tech-badge">Bash</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Log Collection & Filtering</h4>
+                        <p>Collect sample Windows Event Logs and Linux Syslogs from your lab, and practice filtering for specific events and keywords.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Introduction to Incident Response & SIEM</h3>
+                    <ul>
+                        <li>Understand the Incident Response Life Cycle (NIST, SANS).</li>
+                        <li>Roles and responsibilities of an Incident Response Analyst.</li>
+                        <li>Introduction to Security Information and Event Management (SIEM) systems.</li>
+                        <li>Learn common SIEM functionalities: log aggregation, correlation, alerting.</li>
+                        <li>Explore Splunk or ELK Stack basics (Elasticsearch, Logstash, Kibana).</li>
+                        <li>Understand the importance of playbooks and runbooks in IR.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NIST IR Framework</span>
+                        <span class="tech-badge">SIEM Concepts</span>
+                        <span class="tech-badge">Splunk (Community Edition) / ELK Stack</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Simulate a Basic Alert & Initial Investigation</h4>
+                        <p>Generate a simple security event in your lab (e.g., failed login attempts) and simulate an investigation using a SIEM-like approach (manual log review if no SIEM). Document your steps.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Basic Malware & Forensics Concepts</h3>
+                    <ul>
+                        <li>Introduction to different types of malware (viruses, worms, ransomware, trojans).</li>
+                        <li>Understand basic malware analysis techniques (static vs. dynamic).</li>
+                        <li>Learn about indicators of compromise (IOCs) and how to identify them.</li>
+                        <li>Introduction to digital forensics principles (chain of custody, integrity).</li>
+                        <li>Familiarize yourself with basic forensic tools (FTK Imager, Autopsy - introduction only).</li>
+                        <li>Understand the importance of evidence preservation.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Malware Concepts</span>
+                        <span class="tech-badge">Digital Forensics Basics</span>
+                        <span class="tech-badge">IOCs</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Analyze a Suspicious File (Sandbox)</h4>
+                        <p>Using a safe online sandbox (e.g., Any.Run, VirusTotal), submit a known suspicious file (not from your system!) and analyze its behavior report to identify potential IOCs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You've established a solid foundation in cybersecurity, networking, operating systems, and the basics of incident response, including initial exposure to SIEM and forensic concepts.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Choose one of the following projects to solidify your foundational knowledge. Document your process and findings.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Home Lab Setup & Hardening</h4>
+                        <p>Set up a complete virtualized lab with a Windows client, a Linux client, and a server. Apply basic security hardening principles to each OS.</p>
+                        <small>Hints: Use baseline security guides, disable unnecessary services, configure firewalls.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Basic SIEM Data Ingestion</h4>
+                        <p>If feasible, set up a free SIEM like Splunk Community Edition or Security Onion in your lab and ingest logs from your client machines. Create a basic dashboard.</p>
+                        <small>Hints: Look for tutorials on Splunk Universal Forwarder or Elastic Agent setup. Focus on Windows Event Logs and Linux Syslogs.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Open-Source Intelligence (OSINT) Investigation</h4>
+                        <p>Choose a publicly known past cybersecurity incident (e.g., a major data breach). Use OSINT techniques to gather information about the attack, the affected systems, and the reported IOCs. Do not use real-time or private information.</p>
+                        <small>Hints: Use news articles, security blogs, public reports. Focus on identifying TTPs (Tactics, Techniques, Procedures).</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Malware IOC Extraction (Safe Environment)</h4>
+                        <p>Download a non-malicious but suspicious file (e.g., a "crackme" or an EICAR test file) and practice extracting basic IOCs like file hashes, strings, and suspicious API calls using tools like pefile or strings.</p>
+                        <small>Hints: Use a dedicated analysis VM that is isolated from your main system. Never execute unknown files directly.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 2: Deep Dive into Detection & Analysis</h2>
+                <span>Days 31-60: Develop skills in threat detection, deeper analysis, and practical incident handling.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Advanced Log Analysis</span>
+                    <span class="skill-tag">Endpoint Detection & Response (EDR)</span>
+                    <span class="skill-tag">Network Forensics</span>
+                    <span class="skill-tag">Malware Analysis (Intermediate)</span>
+                    <span class="skill-tag">Threat Hunting Basics</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Advanced Log Analysis & SIEM Operations</h3>
+                    <ul>
+                        <li>Master advanced SIEM querying (Splunk SPL, Kibana KQL).</li>
+                        <li>Analyze various log sources: Firewall logs, Proxy logs, Web server logs.</li>
+                        <li>Develop custom correlation rules and alerts in a SIEM.</li>
+                        <li>Understand baselining and anomaly detection in log data.</li>
+                        <li>Learn about common attack patterns visible in logs (e.g., brute force, port scans).</li>
+                        <li>Practice building effective dashboards for incident monitoring.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Splunk SPL</span>
+                        <span class="tech-badge">ELK Stack (Kibana)</span>
+                        <span class="tech-badge">Log parsing techniques</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Create SIEM Alerts for Common Attacks</h4>
+                        <p>Using your SIEM (or simulated logs), create and test alerts for at least two common attack scenarios (e.g., multiple failed logins from different IPs, large data transfers from an unusual source).</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Endpoint Detection & Response (EDR) & Host Forensics</h3>
+                    <ul>
+                        <li>Understand EDR solutions and their role in incident response.</li>
+                        <li>Explore common EDR capabilities: process monitoring, file system monitoring, registry changes.</li>
+                        <li>Learn to collect and analyze volatile data (RAM, running processes).</li>
+                        <li>Deep dive into Windows and Linux artifact analysis (Prefetch, Amcache, Bash history, Cron jobs).</li>
+                        <li>Introduction to memory forensics using Volatility Framework.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">EDR Concepts</span>
+                        <span class="tech-badge">Sysinternals Suite</span>
+                        <span class="tech-badge">Volatility Framework (basics)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Host-Based Artifact Collection & Analysis</h4>
+                        <p>Simulate a suspicious process execution on a lab machine. Use Sysinternals tools (e.g., Process Explorer, Autoruns) to investigate, and try to find relevant artifacts on the file system or registry.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Network Forensics & Traffic Analysis</h3>
+                    <ul>
+                        <li>Understand network capture tools (Wireshark, tcpdump).</li>
+                        <li>Analyze network traffic for suspicious activities (malware beaconing, data exfiltration).</li>
+                        <li>Learn common network attack signatures and patterns.</li>
+                        <li>Introduction to Network Intrusion Detection/Prevention Systems (NIDS/NIPS).</li>
+                        <li>Explore common network protocols in detail (HTTP, HTTPS, SMB, DNS).</li>
+                        <li>Practice extracting files and data from PCAP files.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Wireshark</span>
+                        <span class="tech-badge">tcpdump</span>
+                        <span class="tech-badge">Snort/Suricata concepts</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Analyze Malicious PCAP</h4>
+                        <p>Download a publicly available malicious PCAP file (from sites like Wireshark Sample Captures). Analyze it in Wireshark to identify C2 traffic, extracted files, or other malicious indicators.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Intermediate Malware Analysis & Threat Hunting</h3>
+                    <ul>
+                        <li>Learn more about dynamic malware analysis in a safe, isolated environment.</li>
+                        <li>Understand common malware evasion techniques.</li>
+                        <li>Introduction to reverse engineering basics (optional, for curiosity).</li>
+                        <li>Define Threat Hunting and its difference from traditional IR.</li>
+                        <li>Learn common threat hunting methodologies and hypotheses.</li>
+                        <li>Practice basic threat hunting queries in a SIEM/EDR for common TTPs.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cuckoo Sandbox / Flare-VM (concepts)</span>
+                        <span class="tech-badge">YARA rules (basics)</span>
+                        <span class="tech-badge">Sigma rules (basics)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Develop a Threat Hunting Hypothesis & Execute</h4>
+                        <p>Formulate a simple threat hunting hypothesis (e.g., "Are there any unusual PowerShell executions on endpoints?"). Use your lab environment and tools (or public datasets) to test your hypothesis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can now effectively detect and analyze common security incidents using advanced log analysis, EDR principles, and network forensics. You've also touched upon basic threat hunting.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Select one or two of these projects to deepen your practical skills and apply advanced analytical techniques.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Simulated Incident Investigation (Purple Team)</h4>
+                        <p>Using a tool like Atomic Red Team or a simple script, simulate a known attack (e.g., a specific C2 beaconing) in your lab. Then, use your SIEM/EDR and forensic tools to detect and investigate the simulated incident as if it were real.</p>
+                        <small>Hints: Document every step from initial alert to remediation. Focus on correlating events across different log sources.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Automated Malware Analysis Sandbox (Setup)</h4>
+                        <p>Set up a basic automated malware analysis sandbox (e.g., Cuckoo Sandbox). Practice submitting known good and bad samples to understand the reports generated.</p>
+                        <small>Hints: This is a complex setup. Focus on getting a basic environment working and interpreting results rather than deep configuration.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Network Traffic Anomaly Detection</h4>
+                        <p>Capture network traffic in your lab for a few hours. Then, analyze it using Wireshark or another tool to identify any unusual or suspicious traffic patterns compared to normal baseline activity.</p>
+                        <small>Hints: Look for unusual ports, high volume of specific protocols, or unexpected external connections.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Memory Forensics Challenge</h4>
+                        <p>Find a publicly available memory dump (e.g., from a CTF or forensic challenge sites). Use Volatility Framework to extract information like running processes, network connections, and hidden processes.</p>
+                        <small>Hints: Follow online tutorials for Volatility. Start with simple commands like `pslist` and `netscan`.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 3: Advanced IR & Professional Development</h2>
+                <span>Days 61-90: Focus on advanced IR concepts, automation, communication, and career readiness.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">IR Automation & Scripting</span>
+                    <span class="skill-tag">Communication & Reporting</span>
+                    <span class="skill-tag">Threat Intelligence Integration</span>
+                    <span class="skill-tag">Incident Containment & Eradication</span>
+                    <span class="skill-tag">Career Preparation</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Automation & Scripting for IR</h3>
+                    <ul>
+                        <li>Advanced Python scripting for log parsing, API interaction, and data manipulation.</li>
+                        <li>Understand Security Orchestration, Automation, and Response (SOAR) concepts.</li>
+                        <li>Explore basic use cases for SOAR platforms (e.g., automated enrichment, initial containment).</li>
+                        <li>Learn to automate repetitive IR tasks (e.g., IP lookup, file hash checks).</li>
+                        <li>Introduction to basic API usage for threat intelligence platforms.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Python scripting</span>
+                        <span class="tech-badge">SOAR Concepts</span>
+                        <span class="tech-badge">REST APIs</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Automate an IOC Check Script</h4>
+                        <p>Write a Python script that takes a list of IP addresses or file hashes as input and queries a public threat intelligence source (e.g., VirusTotal API - free tier) to check for known maliciousness. Implement error handling.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Containment, Eradication & Recovery</h3>
+                    <ul>
+                        <li>Deep dive into containment strategies: network segmentation, host isolation, process termination.</li>
+                        <li>Understand eradication techniques: malware removal, vulnerability patching, account disablement.</li>
+                        <li>Learn recovery steps: system restoration, service restoration, post-incident hardening.</li>
+                        <li>Explore incident types and tailored response strategies (e.g., ransomware, data breach).</li>
+                        <li>Understand the importance of backups and disaster recovery in IR.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Containment Strategies</span>
+                        <span class="tech-badge">Eradication Techniques</span>
+                        <span class="tech-badge">Recovery Planning</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Develop an Incident Response Playbook Section</h4>
+                        <p>Choose a specific incident type (e.g., ransomware infection). Draft a detailed section of an IR playbook outlining the containment, eradication, and recovery steps for that incident.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Communication, Reporting & Threat Intelligence</h3>
+                    <ul>
+                        <li>Master effective communication during an incident (internal, external, legal).</li>
+                        <li>Learn to write clear, concise, and actionable incident reports.</li>
+                        <li>Understand the role of threat intelligence in proactive and reactive IR.</li>
+                        <li>Explore different threat intelligence feeds and platforms (MISP, OSINT sources).</li>
+                        <li>Learn about post-incident activities: lessons learned, root cause analysis.</li>
+                        <li>Practice presenting incident findings to a non-technical audience.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Incident Reporting</span>
+                        <span class="tech-badge">Threat Intelligence Platforms</span>
+                        <span class="tech-badge">MISP (concepts)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Incident Report Draft</h4>
+                        <p>Based on one of your simulated incidents or a public case study, draft a comprehensive incident report covering the executive summary, timeline, impact, actions taken, and lessons learned.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Career Readiness & Advanced Topics</h3>
+                    <ul>
+                        <li>Review common IR tools and platforms used in enterprises (e.g., CrowdStrike, SentinelOne, IBM QRadar).</li>
+                        <li>Prepare for IR job interviews: common questions, practical scenarios.</li>
+                        <li>Understand compliance and regulatory requirements in IR (GDPR, HIPAA, PCI DSS).</li>
+                        <li>Explore advanced topics: cloud IR, OT/IoT security incident response.</li>
+                        <li>Network with professionals in the cybersecurity community.</li>
+                        <li>Identify areas for continuous learning and specialization.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Industry Best Practices</span>
+                        <span class="tech-badge">Cloud Security (basics)</span>
+                        <span class="tech-badge">Compliance Frameworks</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Mock Incident Response Drill & Self-Assessment</h4>
+                        <p>Conduct a full mock incident response drill in your lab, from detection to reporting. Identify areas of strength and weakness, and create a personal development plan for future learning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>You have gained a comprehensive understanding of incident response, from foundational principles to advanced analysis, containment, and reporting. You are well-prepared for an entry-level to junior Incident Response Analyst role!</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 3</h3>
+                <p>These projects are designed to demonstrate advanced proficiency and can serve as portfolio pieces.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full-Scale Ransomware Incident Simulation</h4>
+                        <p>Simulate a ransomware attack in a contained lab environment (using safe, educational samples or tools like Invoke-Ransomware). Go through the entire IR lifecycle: detection, analysis, containment, eradication, recovery, and post-mortem.</p>
+                        <small>Hints: Isolate infected machines immediately. Prioritize data recovery strategies. Document lessons learned.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Build an Automated Forensics Collection Script</h4>
+                        <p>Develop a Python or PowerShell script that automates the collection of critical forensic artifacts (e.g., memory dump, event logs, network connections, running processes) from a Windows or Linux host for incident response.</p>
+                        <small>Hints: Focus on portability and minimizing impact on the live system. Use standard tools like `logman`, `wmic`, `netstat`.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Threat Intelligence Integration PoC</h4>
+                        <p>Integrate a free threat intelligence feed (e.g., AbuseIPDB, AlienVault OTX) with your SIEM (or a custom script) to automatically enrich alerts with threat intelligence data.</p>
+                        <small>Hints: Use API calls. Demonstrate how the enrichment helps analysts make quicker decisions.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cloud Incident Response Playbook Development</h4>
+                        <p>Research and develop a basic incident response playbook specifically for a common cloud incident scenario (e.g., compromised AWS EC2 instance or Azure Storage Account). Focus on cloud-native tools and procedures.</p>
+                        <small>Hints: Consider cloud logging (CloudTrail, Azure Monitor), IAM implications, and cloud-specific containment actions.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Incident Response Lifecycle</div>
+                    <div class="skill-item">SIEM Operations & Querying</div>
+                    <div class="skill-item">Log Analysis (Windows, Linux, Network)</div>
+                    <div class="skill-item">Network Forensics</div>
+                    <div class="skill-item">Host Forensics</div>
+                    <div class="skill-item">Malware Analysis (Basic to Intermediate)</div>
+                    <div class="skill-item">Threat Hunting</div>
+                    <div class="skill-item">Python Scripting</div>
+                    <div class="skill-item">Communication & Reporting</div>
+                    <div class="skill-item">Root Cause Analysis</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms and materials for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li><a href="https://www.amazon.com/Incident-Response-Definitive-Guide-Responding/dp/149204715X" target="_blank">Incident Response & Computer Forensics, 3rd Edition</a></li>
+                        <li><a href="https://www.amazon.com/Blue-Team-Field-Guide-Operations/dp/152324393X" target="_blank">The Practice of Network Security Monitoring</a></li>
+                        <li><a href="https://www.amazon.com/Applied-Incident-Response-Chris-Sanders/dp/1597499933" target="_blank">Applied Incident Response</a></li>
+                        <li><a href="https://www.amazon.com/CompTIA-Security-SY0-601-Cert-Guide/dp/0136750058" target="_blank">CompTIA Security+ SY0-601 Cert Guide</a></li>
+                        <li><a href="https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730" target="_blank">Learning Python (for scripting)</a></li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li><a href="https://tryhackme.com/" target="_blank">TryHackMe (Paths: SOC Level 1, Incident Response)</a></li>
+                        <li><a href="https://academy.hackthebox.com/" target="_blank">Hack The Box Academy (Modules on IR, Forensics, Malware)</a></li>
+                        <li><a href="https://www.sans.org/cyber-security-courses/" target="_blank">SANS Courses (SEC504, FOR508 - advanced but great for content)</a></li>
+                        <li><a href="https://www.udemy.com/" target="_blank">Udemy (Search for "Incident Response," "SIEM," "Wireshark")</a></li>
+                        <li><a href="https://coursera.org/specializations/google-cybersecurity" target="_blank">Google Cybersecurity Professional Certificate (Coursera)</a></li>
+                        <li><a href="https://youtube.com/c/CyberMentor" target="_blank">Cyber Mentor (YouTube)</a></li>
+                        <li><a href="https://youtube.com/c/JohnHammond010" target="_blank">John Hammond (YouTube)</a></li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li><a href="https://www.comptia.org/certifications/cysa" target="_blank">CompTIA CySA+</a></li>
+                        <li><a href="https://www.comptia.org/certifications/casp" target="_blank">CompTIA CASP+ (more advanced)</a></li>
+                        <li><a href="https://www.giac.org/certifications/certified-incident-handler-gcih/" target="_blank">GIAC Certified Incident Handler (GCIH)</a></li>
+                        <li><a href="https://www.giac.org/certifications/certified-forensic-analyst-gcfa/" target="_blank">GIAC Certified Forensic Analyst (GCFA)</a></li>
+                        <li><a href="https://isc2.org/Certifications/CCSP" target="_blank">ISC2 CCSP (Cloud Security Focus)</a></li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li><a href="https://reddit.com/r/cybersecurity" target="_blank">r/cybersecurity on Reddit</a></li>
+                        <li><a href="https://reddit.com/r/blueteamsec" target="_blank">r/blueteamsec on Reddit</a></li>
+                        <li><a href="https://infosec.exchange/" target="_blank">InfoSec Exchange (Mastodon)</a></li>
+                        <li><a href="https://dfir.training/" target="_blank">DFIR Community Blogs & Resources</a></li>
+                        <li>Local cybersecurity meetups and conferences (e.g., BSides).</li>
+                        <li>LinkedIn groups for cybersecurity professionals.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Operating Systems & Virtualization</h3>
+                    <ul>
+                        <li><a href="https://www.virtualbox.org/" target="_blank">Oracle VirtualBox / VMware Workstation Player</a></li>
+                        <li><a href="https://www.kali.org/" target="_blank">Kali Linux (for security tools)</a></li>
+                        <li><a href="https://ubuntu.com/download/desktop" target="_blank">Ubuntu / Debian (for general Linux familiarity)</a></li>
+                        <li>Windows 10/11 (for target/analysis environment)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Network & Host Analysis</h3>
+                    <ul>
+                        <li><a href="https://www.wireshark.org/" target="_blank">Wireshark</a></li>
+                        <li><a href="https://nmap.org/download.html" target="_blank">Nmap</a></li>
+                        <li><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/" target="_blank">Sysinternals Suite</a></li>
+                        <li><a href="https://www.autopsy.com/" target="_blank">Autopsy (Digital Forensics Platform)</a></li>
+                        <li><a href="https://www.kali.org/docs/forensics/volatility/" target="_blank">Volatility Framework</a></li>
+                        <li><a href="https://www.tcpdump.org/" target="_blank">tcpdump</a></li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>SIEM & Log Management</h3>
+                    <ul>
+                        <li><a href="https://www.splunk.com/en_us/training/free-courses/splunk-fundamentals.html" target="_blank">Splunk (Community/Free tier if available)</a></li>
+                        <li><a href="https://www.elastic.co/elastic-stack/" target="_blank">Elastic Stack (Elasticsearch, Logstash, Kibana)</a></li>
+                        <li><a href="https://securityonionsolutions.com/" target="_blank">Security Onion (Linux distro with integrated security tools)</a></li>
+                        <li><a href="https://graylog.org/" target="_blank">Graylog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Hands-on projects to apply your knowledge and build a portfolio.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>**Setup a Honeypot:** Deploy a simple honeypot (e.g., Honeyd, Cowrie) in your lab and analyze the logs to see attempted attacks.</li>
+                        <li>**Packet Analysis Challenges:** Solve basic packet analysis challenges available online (e.g., from CTFs or SANS challenges).</li>
+                        <li>**Windows Event Log Anomaly Detection:** Write a script or use a SIEM to identify unusual logon patterns or process creations in Windows Event Logs.</li>
+                        <li>**Linux System Baseline:** Create a baseline of normal processes and network connections on a Linux VM. Identify deviations.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>**Simulated Phishing Analysis:** Create a safe, isolated environment to analyze a simulated phishing email (e.g., from a publicly available sample, *never* a real one from your inbox) and extract IOCs.</li>
+                        <li>**Automated Log Collection & Parsing:** Develop a Python script to collect logs from multiple sources, parse them, and store them in a structured format (e.g., CSV, JSON).</li>
+                        <li>**Network Intrusion Detection with Snort/Suricata:** Set up Snort or Suricata in your lab and configure basic rules to detect common attacks. Generate alerts and analyze them.</li>
+                        <li>**Memory Forensics Case Study:** Work through a guided memory forensics case study using a public memory dump and Volatility.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>**Full Incident Response Simulation:** Design and execute a multi-stage attack simulation in your lab (e.g., initial access, persistence, lateral movement, data exfiltration). Respond to it as an IR analyst, documenting every step.</li>
+                        <li>**Custom SIEM Correlation Rules:** Develop complex correlation rules in a SIEM that chain together multiple low-fidelity events to detect sophisticated attacks.</li>
+                        <li>**Malware Reverse Engineering (Basic):** Take a simple malware sample and try to reverse engineer basic functionality using Ghidra or IDA Free. (Highly challenging, but rewarding).</li>
+                        <li>**Cloud Security Incident Playbook:** Create a detailed incident response playbook for a specific cloud security incident (e.g., S3 bucket compromise, Azure AD brute-force).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>What Next: Continuous Growth</h2>
+                <span>Your journey doesn't end after 90 days. Here's how to keep evolving.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize & Deepen</h3>
+                    <ul>
+                        <li>**Advanced Forensics:** Dive deeper into file system, memory, and network forensics.</li>
+                        <li>**Malware Analysis:** Learn more advanced static and dynamic analysis techniques, including reverse engineering.</li>
+                        <li>**Cloud IR:** Specialize in incident response for cloud environments (AWS, Azure, GCP).</li>
+                        <li>**OT/ICS Security:** Focus on operational technology and industrial control systems security incidents.</li>
+                        <li>**Threat Intelligence:** Become an expert in curating and leveraging threat intelligence.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Contribute & Share</h3>
+                    <ul>
+                        <li>**Blog about your learnings:** Document your projects and insights.</li>
+                        <li>**Participate in CTFs:** Engage in Capture The Flag competitions to hone your skills.</li>
+                        <li>**Open Source Contributions:** Contribute to open-source security tools or projects.</li>
+                        <li>**Mentor Others:** Share your knowledge with newcomers to the field.</li>
+                        <li>**Speak at Meetups:** Present on topics you've mastered.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Stay Current</h3>
+                    <ul>
+                        <li>**Follow Industry News:** Subscribe to cybersecurity news feeds, blogs, and podcasts.</li>
+                        <li>**Attend Webinars & Conferences:** Keep up with the latest threats and technologies.</li>
+                        <li>**Read Security Research:** Stay informed about new vulnerabilities and attack techniques.</li>
+                        <li>**Continuous Lab Practice:** Regularly spin up new scenarios and test your skills.</li>
+                        <li>**Join Professional Organizations:** Engage with ISACA, ISC2, OWASP chapters.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ A strong grasp of the IR lifecycle | ✅ Proficiency in log & network analysis | ✅ Hands-on experience with SIEM & forensic tools</p>
+                <p>✅ Ability to analyze malware & conduct basic threat hunts | ✅ Developed practical IR playbooks & reports | ✅ A solid foundation for an IR career</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Windows, Linux, VirtualBox/VMware, Wireshark, Nmap, Sysinternals, Splunk (or ELK), Python, Security Onion, Volatility Framework, Atomic Red Team (concepts).</p>
+                <br>
+                <p><strong>Remember:</strong> Consistency is key. Practice daily, even if it's just 30 minutes. Document everything. Don't be afraid to break things in your lab, that's how you learn. Network with other professionals and ask questions!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

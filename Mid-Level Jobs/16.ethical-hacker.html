@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Ethical Hacker" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Ethical Hacker"</h1>
+            <p>Master the art of ethical hacking and fortify your cybersecurity skills.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="phase-header">
+                <h2>Phase 1: Foundation</h2>
+                <span>Days 1-30: Build your core knowledge in networking, operating systems, and basic security concepts.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Networking Fundamentals</span>
+                    <span class="skill-tag">Linux Basics</span>
+                    <span class="skill-tag">Security Concepts</span>
+                    <span class="skill-tag">Virtualization</span>
+                    <span class="skill-tag">Basic Scripting</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Networking & Linux Fundamentals</h3>
+                    <ul>
+                        <li>Understand TCP/IP model, common protocols (HTTP, DNS, FTP, SSH).</li>
+                        <li>Learn basic Linux commands (navigation, file manipulation, permissions).</li>
+                        <li>Set up a virtual lab environment (VirtualBox/VMware with Kali Linux and a target OS like Metasploitable).</li>
+                        <li>Familiarize yourself with network scanning basics (ping, traceroute).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">TCP/IP</span>
+                        <span class="tech-badge">Linux CLI</span>
+                        <span class="tech-badge">VirtualBox</span>
+                        <span class="tech-badge">Kali Linux</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 1:</h4>
+                        <p>Set up your virtual hacking lab with Kali Linux and Metasploitable 2. Practice basic network connectivity and file operations within Linux.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Deeper Networking & Kali Tools Intro</h3>
+                    <ul>
+                        <li>Explore subnetting, routing, and network services.</li>
+                        <li>Dive deeper into Linux: package management, service control, user management.</li>
+                        <li>Introduction to command-line network tools: `netstat`, `ip a`, `route`.</li>
+                        <li>First look at Kali Linux tools: `nmap` for basic host discovery and port scanning.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Subnetting</span>
+                        <span class="tech-badge">Linux Services</span>
+                        <span class="tech-badge">nmap</span>
+                        <span class="tech-badge">Wireshark (passive observation)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 2:</h4>
+                        <p>Perform a comprehensive Nmap scan on your Metasploitable VM to identify open ports and services. Document your findings.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Scripting Basics & Info Gathering</h3>
+                    <ul>
+                        <li>Learn Python fundamentals (variables, data types, loops, conditionals, functions).</li>
+                        <li>Understand basic information gathering techniques (OSINT).</li>
+                        <li>Explore common web technologies (HTTP/S, HTML, CSS, JavaScript).</li>
+                        <li>Use `whois`, `dig`, and basic `nslookup` commands.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">OSINT</span>
+                        <span class="tech-badge">HTTP/S</span>
+                        <span class="tech-badge">whois</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 3:</h4>
+                        <p>Write a simple Python script to perform a basic web request and parse a small piece of information from the response header.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Introduction to Vulnerability Analysis</h3>
+                    <ul>
+                        <li>Understand common vulnerabilities (OWASP Top 10 introduction).</li>
+                        <li>Learn about vulnerability scanning tools like OpenVAS/Nessus (community version).</li>
+                        <li>Basic understanding of different attack types (reconnaissance, scanning, gaining access).</li>
+                        <li>Introduction to basic exploitation concepts (what is an exploit, payload).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">OWASP Top 10</span>
+                        <span class="tech-badge">OpenVAS</span>
+                        <span class="tech-badge">Vulnerability Scanning</span>
+                        <span class="tech-badge">Exploit Concepts</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 4:</h4>
+                        <p>Run a vulnerability scan on your Metasploitable VM using OpenVAS and analyze the generated report, identifying critical vulnerabilities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You've successfully built a foundational understanding of networking, Linux, basic scripting, and the initial phases of ethical hacking (reconnaissance and vulnerability scanning).</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Apply your newly acquired foundational knowledge through these hands-on projects.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Network Mapper</h4>
+                        <p>Develop a Python script that scans a local network and identifies active hosts using ARP or ICMP requests.</p>
+                        <small>Hints: Use `scapy` library for packet crafting; explore network device discovery.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Linux Hardening Script</h4>
+                        <p>Write a Bash script to automate basic security configurations on a Linux system (e.g., disable unused services, change default SSH port).</p>
+                        <small>Hints: Research common Linux security best practices; use `systemctl` and `ufw`.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Basic Web Scraper for OSINT</h4>
+                        <p>Create a Python script that extracts specific information (e.g., emails, phone numbers) from publicly accessible websites.</p>
+                        <small>Hints: Utilize `requests` and `BeautifulSoup` libraries; be mindful of `robots.txt`.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Vulnerability Report Analysis</h4>
+                        <p>Take the OpenVAS report from Week 4 and write a detailed executive summary and technical breakdown of the top 3 vulnerabilities, including potential impacts.</p>
+                        <small>Hints: Focus on clarity, conciseness, and actionable recommendations.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 2: Deep Dive into Exploitation</h2>
+                <span>Days 31-60: Understand common attack vectors, exploit frameworks, and web application vulnerabilities.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Metasploit Framework</span>
+                    <span class="skill-tag">Web Application Hacking</span>
+                    <span class="skill-tag">Buffer Overflows (Basic)</span>
+                    <span class="skill-tag">Post-Exploitation</span>
+                    <span class="skill-tag">Network Sniffing & Analysis</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Exploitation with Metasploit</h3>
+                    <ul>
+                        <li>Master Metasploit Framework: `msfconsole` basics, modules (exploit, payload, auxiliary).</li>
+                        <li>Practice exploiting known vulnerabilities on Metasploitable 2.</li>
+                        <li>Understand the concept of shells (reverse, bind) and staging.</li>
+                        <li>Introduction to encoding and bypassing basic antivirus (conceptual).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Metasploit</span>
+                        <span class="tech-badge">Exploitation</span>
+                        <span class="tech-badge">Payloads</span>
+                        <span class="tech-badge">Meterpreter</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 5:</h4>
+                        <p>Successfully exploit at least three different vulnerabilities on Metasploitable 2 using Metasploit and gain a Meterpreter session. Document each step.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Web Application Hacking - Part 1</h3>
+                    <ul>
+                        <li>In-depth study of OWASP Top 10 vulnerabilities (Injection, Broken Authentication).</li>
+                        <li>Learn to use Burp Suite (Community Edition) for intercepting and modifying web traffic.</li>
+                        <li>Practice SQL Injection techniques (manual and using SQLmap).</li>
+                        <li>Explore Cross-Site Scripting (XSS) and its different types.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Burp Suite</span>
+                        <span class="tech-badge">SQL Injection</span>
+                        <span class="tech-badge">XSS</span>
+                        <span class="tech-badge">SQLmap</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 6:</h4>
+                        <p>Find and exploit a SQL Injection vulnerability on a deliberately vulnerable web application (e.g., DVWA, bWAPP). Extract data from the database.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Web Application Hacking - Part 2 & Password Attacks</h3>
+                    <ul>
+                        <li>Cross-Site Request Forgery (CSRF), Security Misconfigurations.</li>
+                        <li>File Upload vulnerabilities, Insecure Direct Object References.</li>
+                        <li>Brute-force and dictionary attacks using tools like Hydra and Hashcat.</li>
+                        <li>Understanding password hashing and salting.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">CSRF</span>
+                        <span class="tech-badge">File Upload Vulns</span>
+                        <span class="tech-badge">Hydra</span>
+                        <span class="tech-badge">Hashcat</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 7:</h4>
+                        <p>Perform a dictionary attack against a vulnerable login page using Hydra. Also, identify and attempt a malicious file upload on a test web application.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Post-Exploitation & Privilege Escalation</h3>
+                    <ul>
+                        <li>Techniques for maintaining access (backdoors, persistent shells).</li>
+                        <li>Linux and Windows privilege escalation methods (kernel exploits, misconfigurations).</li>
+                        <li>Lateral movement concepts within a compromised network.</li>
+                        <li>Basic forensics and anti-forensics concepts (e.g., clearing logs).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Privilege Escalation</span>
+                        <span class="tech-badge">Lateral Movement</span>
+                        <span class="tech-badge">Persistence</span>
+                        <span class="tech-badge">Linux PrivEsc Tools</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 8:</h4>
+                        <p>After gaining a low-privilege shell on a target, execute a privilege escalation technique to obtain root/administrator access.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You've gained practical experience in exploiting systems and web applications, understanding how attackers gain and maintain access, and escalating privileges.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Solidify your intermediate hacking skills by tackling these realistic scenarios.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Multi-Stage Attack Simulation</h4>
+                        <p>Design and execute a multi-stage attack on a lab environment, starting with reconnaissance, exploiting a vulnerability, and then performing privilege escalation.</p>
+                        <small>Hints: Use different tools for each stage; document your kill chain.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Web Application Penetration Test Report</h4>
+                        <p>Conduct a simulated penetration test on a vulnerable web application (e.g., OWASP Juice Shop) and write a professional-style report detailing findings, risks, and recommendations.</p>
+                        <small>Hints: Follow a standard pentest report structure (executive summary, technical findings, remediation).</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Custom Metasploit Module (Basic)</h4>
+                        <p>Attempt to create a very simple Metasploit auxiliary module or exploit module for a trivial vulnerability (e.g., a simple FTP banner grabber).</p>
+                        <small>Hints: Study existing Metasploit modules; understand Ruby basics if attempting an exploit.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Network Sniffing & Credential Harvesting</h4>
+                        <p>Set up a scenario to capture network traffic (e.g., on an unencrypted login) using Wireshark or tcpdump and extract credentials.</p>
+                        <small>Hints: Understand network segmentation and clear-text protocols.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 3: Advanced Concepts & Specialization</h2>
+                <span>Days 61-90: Explore advanced topics, specialize, and refine your skills for real-world engagements.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Wireless Hacking</span>
+                    <span class="skill-tag">Mobile/API Hacking (Intro)</span>
+                    <span class="skill-tag">Cloud Security (Intro)</span>
+                    <span class="skill-tag">Reporting & Ethics</span>
+                    <span class="skill-tag">Bug Bounty / CTF Strategies</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Wireless & Network Device Hacking</h3>
+                    <ul>
+                        <li>Understand Wi-Fi security (WEP, WPA/WPA2, WPA3).</li>
+                        <li>Practice Wi-Fi cracking techniques (Aircrack-ng suite, Evil Twin attacks).</li>
+                        <li>Introduction to network device security (routers, switches - basic configuration flaws).</li>
+                        <li>Learn about sniffing and spoofing attacks (ARP Spoofing, DNS Spoofing).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Wireless Hacking</span>
+                        <span class="tech-badge">Aircrack-ng</span>
+                        <span class="tech-badge">ARP Spoofing</span>
+                        <span class="tech-badge">Network Devices</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 9:</h4>
+                        <p>Attempt to crack a WPA2-PSK network in your lab using Aircrack-ng. Conduct an ARP spoofing attack between two virtual machines.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Advanced Web & API Hacking / Mobile (Intro)</h3>
+                    <ul>
+                        <li>Server-Side Request Forgery (SSRF), XML External Entity (XXE).</li>
+                        <li>API hacking fundamentals (Postman, Burp Suite for API testing).</li>
+                        <li>Introduction to mobile application security (Android/iOS basics, common vulnerabilities).</li>
+                        <li>Explore deserialization vulnerabilities and their impact.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SSRF</span>
+                        <span class="tech-badge">API Security</span>
+                        <span class="tech-badge">Mobile App Security</span>
+                        <span class="tech-badge">XXE</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 10:</h4>
+                        <p>Identify and attempt to exploit an SSRF vulnerability on a vulnerable web application. Explore an intentionally vulnerable mobile app (e.g., OWASP GoatDroid).</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Cloud Security & Red Teaming Concepts</h3>
+                    <ul>
+                        <li>Introduction to cloud security (AWS, Azure basics for security assessments).</li>
+                        <li>Common cloud misconfigurations (S3 buckets, IAM roles).</li>
+                        <li>Understand the difference between penetration testing and red teaming.</li>
+                        <li>Explore advanced persistent threats (APTs) and threat intelligence.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cloud Security</span>
+                        <span class="tech-badge">AWS/Azure Basics</span>
+                        <span class="tech-badge">Red Teaming</span>
+                        <span class="tech-badge">Threat Intelligence</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 11:</h4>
+                        <p>Research common AWS S3 bucket misconfigurations and how they can be exploited. Create a small write-up on a recent APT attack.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Capture The Flag (CTF) & Bug Bounties</h3>
+                    <ul>
+                        <li>Participate in beginner to intermediate CTF challenges (TryHackMe, Hack The Box).</li>
+                        <li>Understand the ethical and legal aspects of bug bounty programs.</li>
+                        <li>Practice writing professional penetration test reports and remediation plans.</li>
+                        <li>Continuous learning strategies: staying updated with new vulnerabilities and tools.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">CTF</span>
+                        <span class="tech-badge">Bug Bounty</span>
+                        <span class="tech-badge">Reporting</span>
+                        <span class="tech-badge">Continuous Learning</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of Week 12:</h4>
+                        <p>Complete at least two "easy" or "medium" rated machines on TryHackMe or Hack The Box. Draft a professional bug bounty submission report for a hypothetical vulnerability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>You have completed a rigorous 90-day journey, transforming into a capable ethical hacker with a strong understanding of fundamental to advanced attack techniques and defensive strategies. Congratulations!</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Capstone Projects After Phase 3</h3>
+                <p>These projects combine all the skills you've learned, preparing you for real-world challenges.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Comprehensive Pentest Simulation</h4>
+                        <p>Conduct a full penetration test on a complex lab environment (e.g., a multi-tiered web application with a backend database and multiple network services). Document the entire process from reconnaissance to reporting.</p>
+                        <small>Hints: Emphasize stealth, persistence, and detailed reporting. Consider pivoting between systems.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Automated Vulnerability Scanner (Enhancement)</h4>
+                        <p>Build upon your scripting knowledge to create a more advanced Python-based vulnerability scanner that can detect specific types of web application vulnerabilities (e.g., XSS, SQLi) in a given URL.</p>
+                        <small>Hints: Research web parsing techniques; implement basic vulnerability checks based on input. Use `requests` library.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>CTF Grand Challenge</h4>
+                        <p>Participate in a more challenging, time-limited CTF event or a specific "hard" machine on platforms like Hack The Box, aiming for root access and comprehensive flag collection.</p>
+                        <small>Hints: Focus on critical thinking and combining multiple attack vectors.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Research & Exploit Development</h4>
+                        <p>Choose a recent, publicly disclosed vulnerability (e.g., a CVE) and research its technical details. If feasible and safe, attempt to replicate the exploit in your lab environment or write a conceptual exploit script.</p>
+                        <small>Hints: Start with simpler vulnerabilities; understand proof-of-concept code and security advisories.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Networking</div>
+                    <div class="skill-item">Linux</div>
+                    <div class="skill-item">Python Scripting</div>
+                    <div class="skill-item">Vulnerability Scanning</div>
+                    <div class="skill-item">Metasploit</div>
+                    <div class="skill-item">Web Hacking (OWASP Top 10)</div>
+                    <div class="skill-item">SQL Injection</div>
+                    <div class="skill-item">XSS</div>
+                    <div class="skill-item">Burp Suite</div>
+                    <div class="skill-item">Password Cracking</div>
+                    <div class="skill-item">Privilege Escalation</div>
+                    <div class="skill-item">Post-Exploitation</div>
+                    <div class="skill-item">Wireless Hacking</div>
+                    <div class="skill-item">API Hacking</div>
+                    <div class="skill-item">Cloud Security Concepts</div>
+                    <div class="skill-item">Reporting</div>
+                    <span class="skill-item">CTF/Bug Bounty Strategies</span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms and materials for your journey.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>The Hacker Playbook 3: Practical Guide To Penetration Testing</li>
+                        <li>Hacking: The Art of Exploitation by Jon Erickson</li>
+                        <li>Hands-On Ethical Hacking and Network Defense</li>
+                        <li>CompTIA Pentest+ Study Guide</li>
+                        <li>Web Application Hacker's Handbook</li>
+                        <li>Kali Linux Revealed</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>TryHackMe (Hands-on labs, guided learning paths)</li>
+                        <li>Hack The Box (CTF-style labs, real-world machines)</li>
+                        <li>PortSwigger Web Security Academy (Free web hacking labs by Burp Suite creators)</li>
+                        <li>Coursera / Udemy (Courses like "Penetration Testing and Ethical Hacking" by Georgia Tech)</li>
+                        <li>Cybrary (Free and paid cybersecurity training)</li>
+                        <li>Sans Cyber Aces Online (Free foundational courses)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>CompTIA Security+ (Good starting point for fundamentals)</li>
+                        <li>CompTIA PenTest+ (Practical penetration testing)</li>
+                        <li>EC-Council CEH (Certified Ethical Hacker - widely recognized)</li>
+                        <li>OSCP (Offensive Security Certified Professional - highly respected, practical)</li>
+                        <li>eJPT (eLearnSecurity Junior Penetration Tester - practical intro)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>Reddit (r/netsec, r/hacking, r/AskNetsec)</li>
+                        <li>Stack Exchange (Information Security)</li>
+                        <li>Discord Channels (Various hacking and cybersecurity communities)</li>
+                        <li>Local BSides / DefCon groups</li>
+                        <li>OWASP Chapters</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Operating Systems</h3>
+                    <ul>
+                        <li>Kali Linux</li>
+                        <li>Parrot OS</li>
+                        <li>Ubuntu/Debian (for customization)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Virtualization</h3>
+                    <ul>
+                        <li>VirtualBox</li>
+                        <li>VMware Workstation/Fusion</li>
+                        <li>QEMU/KVM</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Core Hacking Tools</h3>
+                    <ul>
+                        <li>Nmap (Network scanning)</li>
+                        <li>Metasploit Framework (Exploitation)</li>
+                        <li>Burp Suite (Web application testing)</li>
+                        <li>Wireshark (Network protocol analyzer)</li>
+                        <li>SQLmap (SQL Injection automation)</li>
+                        <li>Hydra (Password cracking)</li>
+                        <li>Hashcat (Password cracking)</li>
+                        <li>Aircrack-ng (Wireless auditing)</li>
+                        <li>Nessus/OpenVAS (Vulnerability scanning)</li>
+                        <li>Proxychains (Network anonymization)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Hands-on projects to reinforce your learning and build a portfolio.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Build a personal hacking lab with isolated VMs.</li>
+                        <li>Create a simple Python port scanner.</li>
+                        <li>Perform a comprehensive Nmap scan on your home network (with permission!).</li>
+                        <li>Analyze network traffic for common protocols using Wireshark.</li>
+                        <li>Set up a firewall on a Linux VM and test its rules.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Perform a full penetration test on a vulnerable web application (e.g., DVWA, bWAPP) and document all findings.</li>
+                        <li>Develop a script to automate a specific reconnaissance task (e.g., gathering subdomains).</li>
+                        <li>Exploit a vulnerable Windows machine using Metasploit and pivot to another system.</li>
+                        <li>Practice privilege escalation on various Linux machines (search for "Linux PrivEsc CTF").</li>
+                        <li>Analyze and re-create a simple web-based exploit from a public CVE.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Participate in a competitive Capture The Flag (CTF) event.</li>
+                        <li>Find and report a legitimate bug on a public bug bounty program (start with disclosure policies).</li>
+                        <li>Develop a custom tool for a specific security task (e.g., a web fuzzer, a custom payload generator).</li>
+                        <li>Contribute to an open-source security project.</li>
+                        <li>Design and implement a secure network architecture for a small business in a simulated environment.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Attempt to reverse engineer a piece of malware or a binary.</li>
+                        <li>Develop an exploit for a zero-day vulnerability (in a safe, isolated environment).</li>
+                        <li>Conduct a red team exercise against a simulated corporate network.</li>
+                        <li>Research and present on an advanced cybersecurity topic (e.g., supply chain attacks, AI in security).</li>
+                        <li>Mentor aspiring ethical hackers and share your knowledge.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>What Next: Beyond 90 Days</h2>
+                <span>Your journey doesn't end here. Continuous learning is key in cybersecurity.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialization</h3>
+                    <ul>
+                        <li>**Web Application Security:** Dive deep into specific frameworks (e.g., NodeJS, React), advanced bypass techniques, and cloud-native web apps.</li>
+                        <li>**Network Penetration Testing:** Focus on Active Directory, industrial control systems (ICS/SCADA), and advanced network segmentation bypasses.</li>
+                        <li>**Reverse Engineering & Malware Analysis:** Learn assembly language, debuggers (IDA Pro, Ghidra), and sandbox environments.</li>
+                        <li>**Mobile Security:** Master Android and iOS app analysis, static and dynamic analysis, and mobile API testing.</li>
+                        <li>**Cloud Security:** Specialize in securing specific cloud providers (AWS, Azure, GCP) and their native security services.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Advanced Certifications</h3>
+                    <ul>
+                        <li>**OSCE3 (Offensive Security Certified Expert):** For exploit development and advanced topics.</li>
+                        <li>**CRTP/CRTE (Certified Red Team Professional/Expert):** Focus on Active Directory and red teaming.</li>
+                        <li>**SANS Certifications (e.g., GWAPT, GPEN, GXPN):** Industry-leading, highly technical certifications.</li>
+                        <li>**CRTO (Certified Red Team Operator):** Another highly practical red teaming certification.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Contribute & Engage</h3>
+                    <ul>
+                        <li>**Open Source Projects:** Contribute to tools, frameworks, or security research.</li>
+                        <li>**Bug Bounty Programs:** Continuously hunt for vulnerabilities on live systems (with authorization).</li>
+                        <li>**CTF Competitions:** Participate regularly to keep your skills sharp and learn new techniques.</li>
+                        <li>**Conferences & Meetups:** Attend industry events (online or in-person) to network and learn from experts.</li>
+                        <li>**Mentorship:** Guide newcomers to the field, solidifying your own understanding.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Stay Current</h3>
+                    <ul>
+                        <li>**Follow Security News:** Subscribe to industry blogs, news feeds (e.g., The Hacker News, Dark Reading).</li>
+                        <li>**Read Research Papers:** Keep up with academic and industry security research.</li>
+                        <li>**Practice Daily:** Dedicate time each day or week to hands-on practice, even if it's just a short lab.</li>
+                        <li>**Learn New Languages/Technologies:** As technology evolves, so do attack surfaces. Keep learning new programming languages and emerging technologies (e.g., blockchain, IoT, AI security).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ A fully functional ethical hacking lab | ✅ Deep understanding of common attack vectors | ✅ Proficiency with essential hacking tools</p>
+                <p>✅ The ability to identify and exploit vulnerabilities | ✅ Strong foundation for advanced cybersecurity roles | ✅ Hands-on project experience</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Networking (TCP/IP, HTTP, DNS), Linux, Python, Virtualization (VirtualBox, VMware), Kali Linux, Metasploit, Burp Suite, Nmap, Wireshark, SQLmap, Hydra, Hashcat, Aircrack-ng, OpenVAS, Basic Cloud Security, Various Web Application Technologies.</p>
+                <br>
+                <p><strong>Remember:</strong> Ethical hacking is a journey of continuous learning. Stay curious, stay persistent, and always hack ethically and legally. The cybersecurity landscape evolves rapidly, so never stop sharpening your axe!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

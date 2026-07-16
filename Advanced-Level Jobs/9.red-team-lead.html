@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Red Team Lead" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Red Team Lead" Mastery</h1>
+            <p>An advanced-track plan for offensive specialists ready to run campaign-length adversary simulations — designing the objective, commanding operator tradecraft and OPSEC discipline, and turning every operation into a genuine improvement in the organization's detection capability.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: Operation Design & Threat-Informed Planning</h2>
+                <span>Days 1-30: Designing a red team campaign around real adversary behavior, objectives, and the rules that keep it safe</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Threat-Informed Operations</span>
+                    <span class="skill-tag">Campaign Planning</span>
+                    <span class="skill-tag">Rules of Engagement</span>
+                    <span class="skill-tag">Infrastructure Planning</span>
+                    <span class="skill-tag">Objective-Based Scoping</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: The Red Team Lead Role & Threat-Informed Operation Design</h3>
+                    <ul>
+                        <li>Study what changes between running a penetration test and leading a red team: the objective is testing detection and response, not maximizing findings</li>
+                        <li>Learn how to select a relevant threat actor profile (via MITRE ATT&CK groups, CTI reporting) to emulate based on a client's actual industry risk</li>
+                        <li>Study how operation objectives get defined collaboratively with the client: "reach the crown-jewel system" vs. "test our SOC's detection of X technique"</li>
+                        <li>Learn how to translate a threat actor's known TTPs into a concrete operation plan mapped to MITRE ATT&CK techniques</li>
+                        <li>Study how red team engagements differ in length and structure from standard pentests — weeks to months, not days</li>
+                        <li>Review one real public red team or adversary emulation report and evaluate how its objective and threat profile were framed</li>
+                        <li>Learn how to set success criteria that don't simply equal "we got domain admin" — detection time, response quality, and containment speed all matter</li>
+                        <li>Document a full threat-informed operation plan for a fictional client, including selected actor profile and mapped objectives</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Threat-Informed Ops</span>
+                        <span class="tech-badge">MITRE ATT&CK Mapping</span>
+                        <span class="tech-badge">Objective-Based Design</span>
+                        <span class="tech-badge">Success Criteria</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Threat-Informed Operation Plan</h4>
+                        <p>Build a complete operation plan for a fictional client mapped to one real threat actor's TTPs, including objectives, MITRE ATT&CK technique mapping, and success criteria beyond simple compromise.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Rules of Engagement & Operational Safety at Campaign Scale</h3>
+                    <ul>
+                        <li>Study how Rules of Engagement (RoE) for a red team differ from a standard pentest: longer duration means more opportunity for unintended impact</li>
+                        <li>Learn how to negotiate "white cell" awareness — who at the client knows the operation is happening, and how that's kept to a minimal trusted group</li>
+                        <li>Study how to plan for and document emergency stop procedures specific to stealth operations (how do you halt without immediately revealing the operation?)</li>
+                        <li>Learn how to scope authorized techniques carefully — physical access, social engineering, and destructive techniques each need explicit authorization</li>
+                        <li>Practice writing a full RoE document for a fictional multi-week campaign, including white cell contacts and physical/social engineering boundaries</li>
+                        <li>Study how to handle discovering a genuine, unrelated active compromise during a long-duration operation</li>
+                        <li>Learn how data handling and operational security obligations differ when an operation spans weeks (where is captured data stored, how is it protected)</li>
+                        <li>Document a campaign-scale pre-operation legal/safety checklist distinct from a short-engagement version</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Campaign RoE</span>
+                        <span class="tech-badge">White Cell Coordination</span>
+                        <span class="tech-badge">Emergency Stop Procedures</span>
+                        <span class="tech-badge">Social Engineering Authorization</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Campaign Rules of Engagement</h4>
+                        <p>Write a complete Rules of Engagement document for a fictional multi-week campaign, including white cell coordination plan, authorized technique boundaries, and an emergency stop procedure designed for stealth operations.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: C2 Infrastructure Design & Operational Resilience</h3>
+                    <ul>
+                        <li>Study how red team C2 (command and control) infrastructure gets architected for resilience and attribution avoidance: redirectors, domain fronting concepts, categorized domains</li>
+                        <li>Learn how to plan infrastructure that mimics legitimate traffic patterns to avoid trivial network-based detection</li>
+                        <li>Practice setting up a basic redirector chain in a fully isolated lab using a framework like Sliver or Mythic with a legitimate-looking front domain</li>
+                        <li>Study domain categorization and aging considerations — why a freshly registered domain is a red flag to most detection tooling</li>
+                        <li>Learn how to plan infrastructure teardown and rotation procedures for if/when infrastructure gets burned mid-operation</li>
+                        <li>Practice documenting an infrastructure architecture diagram for a fictional campaign, including redirectors, C2 profiles, and fallback channels</li>
+                        <li>Study how infrastructure cost and complexity should scale with operation duration and the sophistication of the threat actor being emulated</li>
+                        <li>Document a full C2 infrastructure plan and operational resilience procedure for your fictional campaign</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">C2 Infrastructure</span>
+                        <span class="tech-badge">Redirectors</span>
+                        <span class="tech-badge">Domain Categorization</span>
+                        <span class="tech-badge">Sliver/Mythic</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: C2 Infrastructure Architecture</h4>
+                        <p>Build a full C2 infrastructure plan for a fictional campaign including redirector chain, domain strategy, and a fallback/teardown procedure, with one working lab redirector setup.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Team Composition & Operator Direction</h3>
+                    <ul>
+                        <li>Study how a red team lead allocates operators across initial access, internal operations, and infrastructure maintenance roles</li>
+                        <li>Learn how to structure operator handoffs across time zones or shifts for a campaign that needs to maintain access over weeks</li>
+                        <li>Practice writing an operation runbook that lets an operator pick up an in-progress campaign thread without losing context</li>
+                        <li>Study how a lead reviews operator actions for OPSEC discipline before they execute — catching a noisy technique before it burns the operation</li>
+                        <li>Learn how to maintain a living operation log that captures every action taken, when, and why — both for OPSEC review and after-action reporting</li>
+                        <li>Practice a mock daily operator sync reviewing 2-3 operators' planned next actions and approving or redirecting them</li>
+                        <li>Study how to balance operator autonomy (senior operators need room to adapt in real time) against centralized OPSEC control</li>
+                        <li>Document a reusable operation log template and an operator sync/review process for ongoing campaign management</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Operator Allocation</span>
+                        <span class="tech-badge">Operation Logging</span>
+                        <span class="tech-badge">OPSEC Review</span>
+                        <span class="tech-badge">Shift Handoffs</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Operation Log & Sync Process</h4>
+                        <p>Build a reusable operation log template and an operator sync process, then run a mock daily sync reviewing 2-3 simulated operators' planned actions for OPSEC soundness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can design a threat-informed operation with real success criteria, write campaign-scale Rules of Engagement, architect resilient C2 infrastructure, and direct a team's operational discipline through a living operation log — the foundational toolkit of a Red Team Lead.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate operation design fundamentals before moving into tradecraft execution and defender collaboration.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Pre-Operation Package</h4>
+                        <p>Build a complete pre-operation package: threat-informed plan, RoE, infrastructure architecture, and operation log template, ready for reuse.</p>
+                        <small>Hint: This single package is the backbone of every future campaign you'll lead — make it genuinely operational, not theoretical.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Threat Actor Emulation Plan Series</h4>
+                        <p>Build 2 distinct threat-informed operation plans for different actor profiles relevant to different industries.</p>
+                        <small>Hint: Show how the same general objective requires very different TTPs and infrastructure depending on the actor being emulated.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Lab C2 Infrastructure Build</h4>
+                        <p>Build a working redirector chain with a legitimate-looking front domain in a fully isolated lab, documenting your architecture decisions.</p>
+                        <small>Hint: Research how real-world redirector chains use legitimate CDN/categorized domains as cover before building yours.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Red Team Operations Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: Frame it as "what changes when a pentest becomes a red team campaign" — that distinction is widely misunderstood.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Advanced Tradecraft & Defender Collaboration</h2>
+                <span>Days 31-60: Directing stealth tradecraft across the kill chain and turning operations into genuine purple team value</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Initial Access Tradecraft</span>
+                    <span class="skill-tag">EDR Evasion</span>
+                    <span class="skill-tag">Long-Dwell Operations</span>
+                    <span class="skill-tag">Purple Team Collaboration</span>
+                    <span class="skill-tag">Detection Validation</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Initial Access Tradecraft</h3>
+                    <ul>
+                        <li>Study how a lead directs initial access strategy: phishing, external exploitation, physical/USB drop, or vendor/supply-chain pretext — each with different risk and yield</li>
+                        <li>Learn how to design a phishing pretext that's realistic enough to succeed without being unfairly deceptive in ways the client wouldn't authorize</li>
+                        <li>Practice building one full phishing campaign plan (pretext, infrastructure, payload delivery) for a fictional operation, fully authorized in scope</li>
+                        <li>Study how initial access payloads get built to minimize static and behavioral detection signatures</li>
+                        <li>Learn how a lead decides which initial access vector best matches the threat actor being emulated, rather than just the easiest available option</li>
+                        <li>Practice reviewing two operators' proposed initial access approaches and selecting/refining the one most aligned with operation objectives</li>
+                        <li>Study how to handle an initial access attempt that fails or gets flagged early, and whether to retry, pivot vectors, or pause</li>
+                        <li>Document an initial access decision framework mapping vector selection to threat actor profile and client risk tolerance</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Phishing Pretexts</span>
+                        <span class="tech-badge">Payload Design</span>
+                        <span class="tech-badge">Vector Selection</span>
+                        <span class="tech-badge">Failed Attempt Recovery</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Initial Access Campaign Plan</h4>
+                        <p>Build a full authorized phishing campaign plan (pretext, infrastructure, delivery) for a fictional operation, plus an initial access decision framework mapping vector choice to threat actor and risk tolerance.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: EDR/AV Evasion & Detection-Aware Tradecraft</h3>
+                    <ul>
+                        <li>Study how modern EDR detects behavior (process injection, suspicious API call chains, memory anomalies), not just file signatures</li>
+                        <li>Learn living-off-the-land binary (LOLBin) usage as a way to blend malicious actions into expected system behavior</li>
+                        <li>Practice testing a known LOLBin technique against a lab EDR/AV setup and documenting whether it's flagged</li>
+                        <li>Study how a lead balances evasion sophistication against operational time budget — not every technique needs maximum stealth</li>
+                        <li>Learn how to direct operators to vary technique signatures across an operation so the same detection rule doesn't catch every action</li>
+                        <li>Practice reviewing a planned technique against your knowledge of common detection logic and flagging likely detection risk before execution</li>
+                        <li>Study how to document evasion technique usage for the eventual after-action report, even when the goal was to remain undetected</li>
+                        <li>Document a personal detection-risk assessment framework for evaluating planned techniques before operators execute them</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">EDR Behavioral Detection</span>
+                        <span class="tech-badge">LOLBins</span>
+                        <span class="tech-badge">Technique Variation</span>
+                        <span class="tech-badge">Pre-Execution Risk Review</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Detection-Risk Assessment Framework</h4>
+                        <p>Test one LOLBin technique against a lab EDR setup, document the result, and build a detection-risk assessment framework you'd use to review operator-planned techniques before execution.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Long-Dwell Operations & Persistence Strategy</h3>
+                    <ul>
+                        <li>Study how genuine adversaries maintain access over weeks or months, and how a red team operation should realistically mirror that dwell time</li>
+                        <li>Learn persistence mechanism selection: balancing reliability against detectability for an operation that needs to survive reboots and patches</li>
+                        <li>Practice designing a persistence strategy for a fictional long-dwell operation, including a fallback mechanism if primary persistence is discovered</li>
+                        <li>Study how a lead paces an operation deliberately — not rushing toward the objective, mirroring how patient real adversaries actually are</li>
+                        <li>Learn how to direct "low and slow" reconnaissance and lateral movement that avoids triggering volume-based detection thresholds</li>
+                        <li>Practice writing an operational pacing plan for a fictional 6-week campaign, spacing activity to avoid a burst pattern that's easy to detect</li>
+                        <li>Study how a lead decides when dwell time has served its purpose and it's time to move toward the objective more directly</li>
+                        <li>Document a long-dwell operational pacing and persistence strategy template for future campaigns</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Persistence Strategy</span>
+                        <span class="tech-badge">Operational Pacing</span>
+                        <span class="tech-badge">Low-and-Slow Technique</span>
+                        <span class="tech-badge">Dwell Time Management</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Long-Dwell Pacing & Persistence Plan</h4>
+                        <p>Write a full operational pacing plan for a fictional 6-week campaign with a paired persistence strategy, including a fallback mechanism and the decision criteria for when to accelerate toward the objective.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Purple Team Collaboration & Real-Time Defender Engagement</h3>
+                    <ul>
+                        <li>Study how purple teaming integrates the red team's operation with the defending blue team's learning in real time, rather than only at the final debrief</li>
+                        <li>Learn how to structure a purple team checkpoint: pausing an operation at key moments to show defenders what happened and discuss detection gaps</li>
+                        <li>Practice planning 2-3 purple team checkpoints within a fictional operation timeline, each tied to a specific completed technique</li>
+                        <li>Study how to facilitate a purple team session without simply handing over the answer — guiding defenders toward their own detection insight</li>
+                        <li>Learn how to balance "pure red team" value (testing detection blind) against "purple team" value (maximizing learning) within one engagement</li>
+                        <li>Practice a mock purple team checkpoint session, walking a "defender" through one completed technique and co-developing a detection rule</li>
+                        <li>Study how to document purple team session outcomes so they translate into actual production detection improvements afterward</li>
+                        <li>Document a purple team checkpoint facilitation guide for integrating real-time defender collaboration into future campaigns</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Purple Team Checkpoints</span>
+                        <span class="tech-badge">Real-Time Collaboration</span>
+                        <span class="tech-badge">Facilitated Detection Discovery</span>
+                        <span class="tech-badge">Detection Improvement Translation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Purple Team Checkpoint Facilitation Guide</h4>
+                        <p>Plan 2-3 purple team checkpoints within a fictional operation timeline, run one mock checkpoint session with a peer, and write a facilitation guide for translating sessions into production detection improvements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can direct realistic initial access tradecraft, assess and manage detection risk before operators execute, pace a genuine long-dwell operation, and run purple team checkpoints that turn stealth operations into real defender learning — the tradecraft-and-collaboration toolkit that defines a Red Team Lead.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into reporting depth, program building, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Operation Simulation with Purple Checkpoints</h4>
+                        <p>Run a complete mock operation from initial access through objective achievement, with 2-3 scheduled purple team checkpoints along the way.</p>
+                        <small>Hint: Recruit a peer to play the defender role at each checkpoint — the realism of their reaction is what makes this valuable practice.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Detection Evasion Test Matrix</h4>
+                        <p>Test 5 different LOLBin or living-off-the-land techniques against a lab EDR setup and build a results matrix documenting what was/wasn't detected.</p>
+                        <small>Hint: This matrix becomes genuinely operationally useful — keep it updated as you learn more techniques over time.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Operator Onboarding & OPSEC Standards Guide</h4>
+                        <p>Write a complete operator onboarding guide covering your team's OPSEC standards, operation logging requirements, and review process.</p>
+                        <small>Hint: Write it for someone who's a skilled pentester but has never operated in a true stealth context before.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Tradecraft & Purple Team Teaching Content</h4>
+                        <p>Turn your evasion and purple team work into a teaching walkthrough for testers wanting to move from pentesting into red team operations.</p>
+                        <small>Hint: Use one running campaign scenario throughout for consistency across the explainer.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: After-Action Reporting, Program Building & Career Readiness</h2>
+                <span>Days 61-90: Reports that drive real detection improvement, building a red team capability, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">After-Action Reporting</span>
+                    <span class="skill-tag">Detection Gap Mapping</span>
+                    <span class="skill-tag">Red Team Program Building</span>
+                    <span class="skill-tag">Atomic/BAS Integration</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: After-Action Reporting & ATT&CK-Mapped Findings</h3>
+                    <ul>
+                        <li>Study how a red team after-action report differs from a pentest report: it tells the story of what the defenders saw and didn't see, technique by technique</li>
+                        <li>Learn how to map every operation action to its corresponding MITRE ATT&CK technique for a structured, comparable report</li>
+                        <li>Practice building a full ATT&CK technique timeline for one mock operation, marking each technique as detected/undetected/detected-but-not-actioned</li>
+                        <li>Study how to write detection gap findings that are specific enough for a detection engineering team to act on immediately</li>
+                        <li>Learn how to present the operation narrative compellingly — the same narrative-building skill from pentest leadership, applied to a longer story</li>
+                        <li>Practice writing an executive summary for a campaign-length operation, emphasizing detection/response maturity rather than just compromise achieved</li>
+                        <li>Study how to credit genuine defender wins in the report (techniques that WERE caught) to build trust and an accurate picture, not just list failures</li>
+                        <li>Compile a full after-action report for one mock operation, including the ATT&CK technique timeline and balanced findings</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">After-Action Reports</span>
+                        <span class="tech-badge">ATT&CK Technique Timeline</span>
+                        <span class="tech-badge">Detection Gap Findings</span>
+                        <span class="tech-badge">Balanced Reporting</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Full After-Action Report</h4>
+                        <p>Build a complete after-action report for one mock operation, including an ATT&CK-mapped technique timeline marking detected/undetected actions and balanced findings crediting genuine defender wins.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Translating Operations into Detection Engineering</h3>
+                    <ul>
+                        <li>Study how a red team lead's findings should feed directly into a detection engineering backlog, not just sit in a report</li>
+                        <li>Learn how to write a detection engineering requirement from an operation finding: what data source, what logic, what expected behavior to alert on</li>
+                        <li>Practice writing 3 detection requirements derived from your Week 9 after-action report's undetected techniques</li>
+                        <li>Study how Atomic Red Team or breach-and-attack simulation (BAS) tooling lets defenders re-test a specific technique after building a new detection</li>
+                        <li>Learn how a red team lead supports the validation loop — confirming a new detection actually fires against the technique that originally evaded it</li>
+                        <li>Practice designing a re-test plan validating that 2 of your derived detection requirements, once implemented, would now catch the original technique</li>
+                        <li>Study how this closed loop (operate, find gap, engineer detection, validate) is what separates a mature red team program from a one-off exercise</li>
+                        <li>Document a full operation-to-detection-to-validation pipeline diagram for ongoing program use</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Detection Requirements</span>
+                        <span class="tech-badge">Atomic Red Team</span>
+                        <span class="tech-badge">Breach-and-Attack Simulation</span>
+                        <span class="tech-badge">Closed-Loop Validation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Operation-to-Detection Pipeline</h4>
+                        <p>Write 3 detection engineering requirements derived from your after-action report's gaps, design a re-test validation plan for 2 of them, and diagram the full closed-loop pipeline.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Building a Red Team Capability</h3>
+                    <ul>
+                        <li>Study how a lead contributes to building (not just executing within) a red team program: cadence, scope evolution, tooling investment</li>
+                        <li>Learn how to design an annual red team operating calendar balancing different threat actor emulations across the year</li>
+                        <li>Practice writing a 12-month red team program proposal for a fictional organization just establishing the capability</li>
+                        <li>Study how to justify red team program investment to leadership when its "success" sometimes looks like finding nothing (strong detection)</li>
+                        <li>Learn how internal red teams differ operationally and culturally from external consulting-style engagements</li>
+                        <li>Practice writing a business case memo for in-housing a red team capability vs. continuing to contract it out</li>
+                        <li>Study how to build and maintain operator skill development within a growing red team, including individual technique specialization</li>
+                        <li>Compile your 90-day work into a single portfolio-style master red team leadership package</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Program Calendar Design</span>
+                        <span class="tech-badge">Investment Justification</span>
+                        <span class="tech-badge">In-House vs. Contracted</span>
+                        <span class="tech-badge">Operator Skill Development</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: 12-Month Red Team Program Proposal</h4>
+                        <p>Write a complete 12-month red team program proposal for a fictional organization, including an operating calendar, investment justification, and an in-house-vs-contracted business case.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions/labs aligned to a target cert (e.g. CRTO, OSEP, or GIAC GDAT)</li>
+                        <li>Do a full mock operation segment under time pressure: plan, execute against a lab target with OPSEC discipline, and produce an after-action excerpt within a set window</li>
+                        <li>Prepare answers for red team lead interview questions (walk through designing a threat-informed operation, describe a purple team checkpoint you'd run, explain balancing stealth against time budget)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable tradecraft and leadership achievements</li>
+                        <li>Polish your portfolio: pin your best 3 artifacts (pre-operation package, after-action report, program proposal) with clean documentation</li>
+                        <li>Practice a mock behavioral interview using STAR format for your purple team facilitation and OPSEC review stories</li>
+                        <li>Research target organizations (consultancies, in-house red teams, MSSPs) and tailor your resume + LinkedIn headline to emphasize operation leadership specifically</li>
+                        <li>Plan your next 90 days: pick a direction (program builder/manager, deep tradecraft specialist, or independent red team consulting)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">STAR Behavioral Prep</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Red Team Lead Portfolio</h4>
+                        <p>Finalize a portfolio (pre-operation package, after-action report, program proposal), resume bullets, and 2 polished STAR-format leadership interview stories for Red Team Lead roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a complete red team leadership toolkit (threat-informed operation design, campaign-scale RoE and infrastructure, advanced tradecraft and OPSEC direction, purple team collaboration, after-action reporting, program building) plus a portfolio of real artifacts and a job-ready application package — the foundation of a genuinely capable Red Team Lead.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end red team leadership capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Campaign Lifecycle Package</h4>
+                        <p>Combine your threat-informed plan, RoE, infrastructure architecture, operation log, and after-action report template into one cohesive campaign lifecycle package.</p>
+                        <small>Hint: This single package is your strongest portfolio artifact — make it genuinely ready to run a real campaign from day one.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>End-to-End Mock Campaign</h4>
+                        <p>Run a complete simulated campaign from threat actor selection through initial access through purple team checkpoints through after-action report.</p>
+                        <small>Hint: Pace it deliberately over real time, not compressed into one sitting — the pacing discipline is part of what you're practicing.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Closed-Loop Detection Improvement Demonstration</h4>
+                        <p>Build one full operate-find-gap-engineer-validate cycle for a single technique, proving the loop genuinely closes.</p>
+                        <small>Hint: This demonstrates exactly the maturity that separates a real red team program from a one-off pentest with extra steps.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Red Team Lead Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching senior testers how to lead red team operations.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Threat-Informed Operation Design</div>
+                    <div class="skill-item">Campaign-Scale Rules of Engagement</div>
+                    <div class="skill-item">C2 Infrastructure & Operational Resilience</div>
+                    <div class="skill-item">Initial Access & EDR-Aware Tradecraft</div>
+                    <div class="skill-item">Long-Dwell Operation Pacing</div>
+                    <div class="skill-item">Purple Team Real-Time Collaboration</div>
+                    <div class="skill-item">ATT&CK-Mapped After-Action Reporting</div>
+                    <div class="skill-item">Red Team Program Building</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>Red Team Field Manual (RTFM) — Ben Clark</li>
+                        <li>Professional Red Teaming — Jacob G. Oakley</li>
+                        <li>Red Team Development and Operations — Joe Vest & James Tubberville</li>
+                        <li>The Hacker Playbook 3 — Peter Kim</li>
+                        <li>Tribe of Hackers Red Team — Marcus Carey & Jennifer Jin</li>
+                        <li>Intelligence-Driven Incident Response — Roberts & Brown (threat-informed context)</li>
+                        <li>Cult of the Dead Cow / hacker culture histories (tradecraft mindset context)</li>
+                        <li>Crafting the InfoSec Playbook — Bollinger, Enright, Valites (purple team context)</li>
+                        <li>Active Directory Security — Sean Metcalf's compiled research</li>
+                        <li>Antifragile — Nassim Nicholas Taleb (resilience-thinking context for infrastructure design)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>Zero-Point Security's CRTO course materials and labs</li>
+                        <li>SANS SEC565 (Red Team Operations and Adversary Emulation)</li>
+                        <li>MITRE ATT&CK official groups pages and CTI training resources</li>
+                        <li>MITRE Caldera documentation and labs</li>
+                        <li>Atomic Red Team (open-source adversary emulation testing)</li>
+                        <li>HackTheBox Academy (Red Teaming pathway and Pro Labs)</li>
+                        <li>TryHackMe (Red Teaming and OPSEC-focused rooms)</li>
+                        <li>Sliver/Mythic official documentation and community labs</li>
+                        <li>SpecterOps blog (BloodHound, AD attack research)</li>
+                        <li>YouTube: IppSec, Red Siege, TrustedSec webcasts</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>CRTO (Certified Red Team Operator)</li>
+                        <li>CRTL (Certified Red Team Lead)</li>
+                        <li>OSEP (Offensive Security Experienced Penetration Tester)</li>
+                        <li>GIAC Defending Advanced Threats (GDAT)</li>
+                        <li>CRTP (Certified Red Team Professional, AD-focused)</li>
+                        <li>OSCP (Offensive Security Certified Professional, foundational if not held)</li>
+                        <li>SANS SEC565 certificate of completion</li>
+                        <li>CompTIA PenTest+ (foundational)</li>
+                        <li>CISSP (broader leadership/management context)</li>
+                        <li>Project Management Professional (PMP) — useful for campaign/program management</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>r/redteamsec on Reddit</li>
+                        <li>NetSecFocus Trust Discord community</li>
+                        <li>TrustedSec / SpecterOps / Red Siege communities</li>
+                        <li>Zero-Point Security (CRTO) community</li>
+                        <li>Local BSides/DEF CON red team village meetups</li>
+                        <li>MITRE ATT&CK community workshops</li>
+                        <li>LinkedIn red team leadership and adversary emulation groups</li>
+                        <li>Twitter/X red team community (#RedTeam, #PurpleTeam, #OPSEC)</li>
+                        <li>SANS Pen Test Hackfest community</li>
+                        <li>CREST (Council for Registered Ethical Security Testers) community, where applicable regionally</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>C2 & Operation Tools</h3>
+                    <ul>
+                        <li>Sliver (open-source C2 framework)</li>
+                        <li>Mythic (open-source C2 framework)</li>
+                        <li>Cobalt Strike (commercial, where licensed)</li>
+                        <li>Caldera (MITRE's automated adversary emulation)</li>
+                        <li>Atomic Red Team</li>
+                        <li>Apache/nginx redirector configurations</li>
+                        <li>Domain categorization checking tools (various web filtering vendor lookups)</li>
+                        <li>BloodHound / SharpHound</li>
+                        <li>Impacket toolkit</li>
+                        <li>Rubeus / Mimikatz</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Tradecraft & Evasion Tools</h3>
+                    <ul>
+                        <li>Process Hacker / System Informer (behavioral testing/validation)</li>
+                        <li>Sysinternals Suite (Procmon, Autoruns for understanding what defenders see)</li>
+                        <li>LOLBAS project reference (living-off-the-land binaries/scripts database)</li>
+                        <li>Donut / shellcode loaders (for understanding payload delivery, lab use only)</li>
+                        <li>ScareCrow / evasion framework research (educational/lab context)</li>
+                        <li>Custom phishing infrastructure (Gophish or similar, authorized lab/engagement use)</li>
+                        <li>EDR/AV lab test environments (trial/community editions for testing)</li>
+                        <li>YARA (understanding what static detection looks for)</li>
+                        <li>Wireshark (validating C2 traffic blending/profile realism)</li>
+                        <li>VirusTotal (with private scanning awareness — never upload live operational payloads)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Reporting & Program Tools</h3>
+                    <ul>
+                        <li>MITRE ATT&CK Navigator (technique timeline mapping)</li>
+                        <li>PlexTrac / Dradis (operation and reporting collaboration)</li>
+                        <li>Obsidian / Notion (operation logging and campaign notes)</li>
+                        <li>Lucidchart / Draw.io (infrastructure and operation timeline diagrams)</li>
+                        <li>Google Docs/Slides (after-action reports and program proposals)</li>
+                        <li>Jira / Asana (detection engineering requirement tracking)</li>
+                        <li>Slack/Teams (white cell and purple team checkpoint coordination)</li>
+                        <li>Excel/Google Sheets (program calendar and operator scheduling)</li>
+                        <li>DocuSign (RoE and authorization sign-off)</li>
+                        <li>Loom (recording mock purple team sessions for self-review)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Write a basic threat-informed operation plan mapped to one ATT&CK technique set</li>
+                        <li>Draft a simple campaign-scale Rules of Engagement document</li>
+                        <li>Set up one basic redirector in a lab environment</li>
+                        <li>Write one authorized phishing pretext for a fictional operation</li>
+                        <li>Test one LOLBin technique against a lab EDR and document the result</li>
+                        <li>Draft a simple operational pacing plan for a short campaign</li>
+                        <li>Write one purple team checkpoint discussion outline</li>
+                        <li>Build a basic ATT&CK technique timeline for a mock operation</li>
+                        <li>Write one detection requirement derived from a technique that evaded detection</li>
+                        <li>Document the difference between pentest and red team objectives in your own words</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a complete threat-informed operation plan with success criteria</li>
+                        <li>Write a full campaign RoE including white cell coordination</li>
+                        <li>Build a C2 infrastructure architecture diagram with redirector chain</li>
+                        <li>Write a full initial access campaign plan with vector justification</li>
+                        <li>Build a detection-risk assessment framework for technique review</li>
+                        <li>Write a long-dwell operational pacing and persistence plan</li>
+                        <li>Run a mock purple team checkpoint session and document the outcome</li>
+                        <li>Build a complete after-action report with ATT&CK-mapped timeline</li>
+                        <li>Write 3 detection engineering requirements from operation findings</li>
+                        <li>Build an operation log template and run a mock operator sync</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a full campaign lifecycle package ready for real operational use</li>
+                        <li>Run a complete simulated campaign from initial access through after-action report</li>
+                        <li>Build a closed-loop detection improvement demonstration for one technique</li>
+                        <li>Write a complete operator onboarding and OPSEC standards guide</li>
+                        <li>Design a 12-month red team program proposal with operating calendar</li>
+                        <li>Build a detection evasion test matrix across 5+ techniques</li>
+                        <li>Architect an in-house vs. contracted red team business case</li>
+                        <li>Design a multi-operator shift handoff procedure for extended campaigns</li>
+                        <li>Build a comprehensive infrastructure resilience and teardown procedure</li>
+                        <li>Mentor a senior tester through their first lead-role mock campaign</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Lead a real or high-fidelity simulated campaign from threat selection to after-action delivery end-to-end</li>
+                        <li>Publish original research on a tradecraft technique or evasion method</li>
+                        <li>Design a complete red team program operating model for an enterprise</li>
+                        <li>Speak at a local BSides/DEF CON red team village or industry conference</li>
+                        <li>Build a custom adversary emulation plan tailored to a specific industry's threat landscape</li>
+                        <li>Architect a full purple-team-integrated detection engineering program with a defending SOC</li>
+                        <li>Contribute a tool, module, or technique writeup to an open-source red team project</li>
+                        <li>Design a comprehensive operator certification/skills progression path for a growing red team</li>
+                        <li>Mentor multiple operators toward lead-role readiness as a structured program</li>
+                        <li>Build a long-term breach-and-attack-simulation program integrating continuous red team validation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your red team career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize or Broaden</h3>
+                    <ul>
+                        <li>Decide: deepen toward elite tradecraft specialization, or broaden toward red team program management</li>
+                        <li>Consider a Tradecraft Specialist track if evasion research and infrastructure design energized you most</li>
+                        <li>Consider a Red Team Program Manager track if building and operating a capability stood out</li>
+                        <li>Explore independent red team consulting once your reputation and operator network are strong enough</li>
+                        <li>Look into specializing in cloud-native or OT/ICS red teaming as growth areas</li>
+                        <li>Consider a high-stakes industry vertical specialization (critical infrastructure, finance, defense)</li>
+                        <li>Pursue CRTL/OSEP if the elite tradecraft track is the clear direction</li>
+                        <li>Pursue CISSP/PMP if the program management track is the clear direction</li>
+                        <li>Join a specialized community for your chosen direction</li>
+                        <li>Set a 6-12 month direction-setting goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to Red Team Lead / Senior Red Team Operator / Adversary Emulation Lead roles weekly</li>
+                        <li>Tailor your resume per job description, emphasizing operation leadership and OPSEC discipline</li>
+                        <li>Attend local BSides/DEF CON red team village meetups</li>
+                        <li>Reach out to current red team leads and SpecterOps/TrustedSec-style practitioners on LinkedIn</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your portfolio updated with new operation artifacts and tradecraft research</li>
+                        <li>Practice behavioral (STAR-format) mock interviews monthly</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider boutique red team consultancies for varied, high-leadership-exposure engagements</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly tradecraft research and new evasion technique disclosures</li>
+                        <li>Do at least one new HackTheBox Pro Lab or red-team-style CTF per month to stay sharp</li>
+                        <li>Re-test old evasion techniques against updated EDR products as detection evolves</li>
+                        <li>Write a monthly technical blog post about something you learned</li>
+                        <li>Build a second, more advanced portfolio artifact every 90 days</li>
+                        <li>Track new C2 framework and infrastructure tooling developments</li>
+                        <li>Mentor junior testers moving toward red team readiness — teaching reinforces your own mastery</li>
+                        <li>Read one new offensive security book per month</li>
+                        <li>Attend at least one virtual conference talk per month</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a "becoming a red team lead" series for senior testers aspiring to lead campaigns</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your templates (RoE, operation log, after-action template) for others to use</li>
+                        <li>Host a free workshop/webinar on threat-informed operation design or purple teaming</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another aspiring lead for accountability</li>
+                        <li>Contribute documentation fixes to a tool you use often</li>
+                        <li>Review and give feedback on a peer's operation plan or after-action report</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Designed a threat-informed operation with real success criteria and written campaign-scale Rules of Engagement | ✅ Architected resilient C2 infrastructure and directed operator OPSEC discipline | ✅ Planned authorized initial access tradecraft and assessed detection risk before execution</p>
+                <p>✅ Paced a long-dwell operation with a sound persistence strategy | ✅ Facilitated purple team checkpoints that translated into real detection requirements | ✅ Written a balanced, ATT&CK-mapped after-action report and a 12-month program proposal</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Sliver/Mythic, Caldera, Atomic Red Team, BloodHound, Impacket, MITRE ATT&CK Navigator, LOLBAS project, PlexTrac, redirector/C2 infrastructure design.</p>
+                <br>
+                <p><strong>Remember:</strong> A red team operation that gets caught immediately teaches nothing, and one that never gets caught at all might mean your tradecraft was excellent — or that nobody was really watching. Every operation, checkpoint, and after-action report you lead exists to answer one question: "does this organization now detect and respond to real adversary behavior better than it did before we arrived?" Stay disciplined, stay patient, and always close the loop back into detection.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

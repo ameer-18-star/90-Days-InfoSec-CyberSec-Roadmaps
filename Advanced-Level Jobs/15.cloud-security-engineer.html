@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Cloud Security Engineer" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Cloud Security Engineer" Mastery</h1>
+            <p>An advanced-track plan for practitioners ready to move beyond monitoring dashboards and into building the cloud security controls themselves — engineering guardrail policies, implementing workload identity, authoring detection pipelines, and writing the automation that keeps cloud environments continuously compliant without human-in-the-loop remediation for every finding.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="phase-header">
+                <h2>Phase 1: Cloud Security Engineering Foundations & IAM Hardening</h2>
+                <span>Days 1-30: Building the infrastructure-engineering mindset and owning cloud identity as the foundational security control layer</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Cloud Security Engineering Mindset</span>
+                    <span class="skill-tag">IAM Hardening</span>
+                    <span class="skill-tag">SCPs &amp; Permission Boundaries</span>
+                    <span class="skill-tag">Workload Identity Federation</span>
+                    <span class="skill-tag">Secrets Management</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: The Cloud Security Engineer Role &amp; Engineering Mindset</h3>
+                    <ul>
+                        <li>Study what distinguishes a cloud security engineer from a cloud security analyst (triage and monitoring), a DevSecOps engineer (pipeline gates and IaC scanning), and a cloud architect (landing zone design) — the engineer builds and operates the controls the analyst monitors and the architect designed</li>
+                        <li>Learn how cloud security engineering shifts from reactive (alert → investigate → remediate manually) to preventive (policy → guardrail → automated enforcement) — treating every recurring remediation as a future automation target</li>
+                        <li>Study how cloud security engineers work across the shared responsibility boundary: what the provider controls, what the customer must engineer, and where the gaps live that require custom automation</li>
+                        <li>Learn how infrastructure-as-code (IaC) is the cloud security engineer's native medium — every control, every policy, every guardrail is code that lives in version control, gets peer-reviewed, and deploys through a pipeline</li>
+                        <li>Study how to audit an existing cloud environment for security control gaps: what's missing, what's misconfigured, and what's present but not enforced</li>
+                        <li>Practice running a Prowler or ScoutSuite scan against a lab AWS or Azure environment and categorizing findings by control gap type</li>
+                        <li>Learn how cloud security engineers document their work: runbooks, ADRs, and control implementation docs that let the next engineer understand what was built and why</li>
+                        <li>Document a personal cloud security engineering charter: your target cloud platform(s), control ownership scope, and IaC-first operating principles</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Engineering vs. Monitoring Mindset</span>
+                        <span class="tech-badge">Shared Responsibility</span>
+                        <span class="tech-badge">IaC-First Operations</span>
+                        <span class="tech-badge">Prowler / ScoutSuite</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Cloud Security Control Gap Audit</h4>
+                        <p>Run a security posture scan against a lab cloud environment, categorize every finding by control gap type, and document a personal IaC-first engineering charter covering platform scope and operating principles.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Cloud IAM Hardening — SCPs, Permission Boundaries &amp; Least Privilege</h3>
+                    <ul>
+                        <li>Study how AWS Service Control Policies (SCPs) and Azure Policy / GCP Organization Policies work as preventive guardrails — they deny actions before they happen rather than alerting after the fact</li>
+                        <li>Learn how to write SCPs that enforce least privilege at the organization level: denying dangerous actions across every account simultaneously — disabling CloudTrail, leaving S3 buckets public, attaching admin policies</li>
+                        <li>Practice writing and testing 5 SCPs in a lab: disable root user API access, restrict to approved regions, deny public S3 ACLs, require MFA for sensitive actions, and restrict IAM policy creation to approved patterns</li>
+                        <li>Study how AWS IAM Permission Boundaries work as a second guardrail layer: delegating IAM management to teams while ensuring they cannot create permissions that exceed their own boundary</li>
+                        <li>Learn how to audit existing IAM roles and policies for privilege escalation paths using automated tools and manual review techniques</li>
+                        <li>Practice using IAM Access Analyzer, Cloudsplaining, or CloudMapper to identify over-permissioned roles and privilege escalation paths in a lab environment</li>
+                        <li>Study how to implement IAM least privilege at scale across hundreds of roles without creating operational friction that causes teams to work around controls</li>
+                        <li>Document a complete SCP library and IAM hardening runbook covering the 10 highest-impact preventive guardrails for an AWS multi-account environment</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">AWS SCPs</span>
+                        <span class="tech-badge">Azure Policy</span>
+                        <span class="tech-badge">Permission Boundaries</span>
+                        <span class="tech-badge">IAM Access Analyzer</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: SCP Library &amp; IAM Hardening Runbook</h4>
+                        <p>Write and test 5 SCPs in a lab environment, use IAM Access Analyzer to identify privilege escalation paths, and document a 10-SCP library with deployment and testing instructions for a multi-account environment.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Workload Identity &amp; Secrets Management Engineering</h3>
+                    <ul>
+                        <li>Study why workload identity is the highest-impact IAM engineering problem in modern cloud: long-lived static credentials are the dominant cloud breach vector and entirely avoidable with proper workload identity design</li>
+                        <li>Learn how AWS IAM Roles for Service Accounts (IRSA), Azure Workload Identity Federation, and GCP Workload Identity work — how short-lived tokens replace long-lived keys using cryptographic trust between the cloud provider and the workload's identity</li>
+                        <li>Practice implementing IRSA for a Kubernetes workload in a lab: creating the OIDC provider, annotating the service account, and scoping the IAM role to least privilege</li>
+                        <li>Study how to implement cross-account role assumption patterns securely: trust policy scoping, external ID conditions, and session policy restrictions</li>
+                        <li>Learn how to engineer a secrets management architecture using AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault — rotation automation, access auditing, and application integration patterns</li>
+                        <li>Practice building a Secrets Manager rotation Lambda for a database credential, testing the rotation end-to-end in a lab environment</li>
+                        <li>Study how to detect and remediate existing long-lived credentials: credential age reporting, automated notification, and forced rotation workflows</li>
+                        <li>Document a complete workload identity implementation guide and a secrets management engineering runbook covering rotation, auditing, and application integration patterns</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">IRSA / Workload Identity Federation</span>
+                        <span class="tech-badge">OIDC Trust</span>
+                        <span class="tech-badge">Secrets Manager / Key Vault</span>
+                        <span class="tech-badge">Credential Rotation Automation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Workload Identity Implementation &amp; Secrets Rotation</h4>
+                        <p>Implement IRSA for a Kubernetes workload in a lab, build an automated secrets rotation Lambda for a database credential, and document the full workload identity and secrets management runbook.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Cloud Logging Architecture &amp; Centralized Telemetry Engineering</h3>
+                    <ul>
+                        <li>Study how cloud security engineers own the logging pipeline — ensuring every relevant event is captured, centralized, integrity-protected, and available to the detection team before an incident, not during</li>
+                        <li>Learn how to architect a centralized logging account: CloudTrail org trail, S3 log bucket with Object Lock, and CloudWatch Logs Insights for multi-account visibility</li>
+                        <li>Practice building a CloudTrail organization trail in a lab: enabling it across all accounts, shipping to a centralized log account, and configuring Object Lock to prevent tampering</li>
+                        <li>Study which specific log sources every cloud security program must capture: CloudTrail management and data events, VPC Flow Logs, DNS query logs, S3 access logs, IAM credential reports, and container runtime logs</li>
+                        <li>Learn how to calculate and manage cloud logging costs — ingestion and storage add up quickly and a cloud security engineer must design cost-efficient logging without creating coverage gaps</li>
+                        <li>Practice writing an S3 bucket policy and KMS key policy that protect log integrity from modification even by the account's own administrators</li>
+                        <li>Study how to validate logging coverage — confirming every account, region, and service that should be logging actually is, and alerting on coverage gaps</li>
+                        <li>Document a complete cloud logging architecture guide covering source-to-SIEM pipeline, integrity protection, cost optimization, and coverage validation for a multi-account environment</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">CloudTrail Org Trail</span>
+                        <span class="tech-badge">S3 Object Lock</span>
+                        <span class="tech-badge">VPC Flow Logs</span>
+                        <span class="tech-badge">Log Integrity Protection</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Centralized Cloud Logging Architecture</h4>
+                        <p>Build a CloudTrail organization trail with centralized log account, Object Lock, and KMS protection in a lab, and document a complete logging architecture guide with source coverage checklist and gap-alerting design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can audit a cloud environment for control gaps, engineer preventive IAM guardrails with SCPs and permission boundaries, implement workload identity to eliminate static credential risk, build automated secrets rotation, and architect a centralized multi-account logging pipeline with integrity protection — the foundational engineering toolkit of a Cloud Security Engineer.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate IAM and logging engineering before moving into network, detection, and automation work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Complete IAM Hardening Package</h4>
+                        <p>Build a full IAM hardening package: 10-SCP library, permission boundary implementation for a developer team, and workload identity implementation across 3 workload types (EC2, Lambda, EKS).</p>
+                        <small>Hint: Test every SCP in a lab against a role that should be blocked before documenting it — SCPs that are wrong in production cause outages, not alerts.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Secrets Management Engineering Lab</h4>
+                        <p>Build a complete secrets management implementation: Secrets Manager with automated rotation for 3 credential types (DB password, API key, TLS certificate), application integration patterns, and access audit reporting.</p>
+                        <small>Hint: The rotation Lambda failure mode — what happens to applications mid-rotation — is the hardest engineering problem here. Design it explicitly before you build.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Logging Coverage Validation Script</h4>
+                        <p>Write a script that queries a cloud environment and reports which accounts, regions, and services are missing required log sources, outputting a structured coverage gap report.</p>
+                        <small>Hint: Build it with a parameterizable required-log-source list so it works across different organizations' coverage requirements without code changes.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cloud Security Engineering Foundations Teaching Series</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer framed around "engineering preventive controls vs. monitoring reactive alerts."</p>
+                        <small>Hint: Open with a concrete before/after: "before SCPs, a compromised key can disable CloudTrail; after SCPs, that API call is denied before it executes" — the specific impact makes the abstract principle land.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 2: Network Security Engineering, Detection Pipelines &amp; Automation</h2>
+                <span>Days 31-60: Engineering cloud network controls, building detection at scale, and writing the automation that closes findings without human-in-the-loop remediation</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">VPC Security Engineering</span>
+                    <span class="skill-tag">Cloud Network Controls</span>
+                    <span class="skill-tag">Detection Rule Engineering</span>
+                    <span class="skill-tag">Automated Remediation</span>
+                    <span class="skill-tag">Security Automation (Lambda / Functions)</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Cloud Network Security Engineering</h3>
+                    <ul>
+                        <li>Study how cloud network security engineering differs from traditional perimeter networking: security groups and NACLs are software-defined, stateful, and programmable at scale — the engineer who writes the Terraform owns the enforcement</li>
+                        <li>Learn how to design and implement a multi-tier VPC: public subnets for load balancers, private subnets for application workloads, isolated subnets for data tiers, with security group rules enforcing tier-to-tier flow controls</li>
+                        <li>Practice building a 3-tier VPC with Terraform: Internet Gateway, NAT Gateway, route tables, security group rules with least-privilege egress, and VPC Flow Log enablement</li>
+                        <li>Study how to engineer AWS Network Firewall or Azure Firewall for deep-packet inspection and URL-based egress filtering for workloads that require internet access</li>
+                        <li>Learn how to implement VPC endpoints (AWS PrivateLink) and Private Endpoints (Azure) to route AWS/Azure API traffic through private network paths, eliminating internet exposure for service API calls</li>
+                        <li>Practice implementing VPC endpoints for S3, Secrets Manager, and EC2 APIs in a lab, updating security group rules to allow only endpoint-routed traffic</li>
+                        <li>Study how to detect and auto-remediate common network misconfigurations: overly permissive security groups, missing VPC Flow Logs, and unencrypted traffic flows</li>
+                        <li>Document a complete cloud network security engineering runbook covering VPC design patterns, security group policy, VPC endpoint implementation, and egress filtering</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Terraform VPC</span>
+                        <span class="tech-badge">Security Groups &amp; NACLs</span>
+                        <span class="tech-badge">AWS Network Firewall</span>
+                        <span class="tech-badge">VPC Endpoints / PrivateLink</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Multi-Tier VPC &amp; Network Control Implementation</h4>
+                        <p>Build a complete 3-tier VPC in Terraform with security group rules, NAT Gateway, VPC Flow Logs, and VPC endpoints for 3 AWS service APIs, with a full network security engineering runbook.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Cloud Detection Engineering — Rules, Queries &amp; Alerting</h3>
+                    <ul>
+                        <li>Study how cloud detection engineering differs from on-premises SIEM work: event sources are API calls and resource configuration changes, not network packets, and detection logic must account for normal automation traffic that resembles attacker behavior</li>
+                        <li>Learn how to write CloudWatch Metric Filters and Alarms (or Azure Monitor alert rules) for CIS AWS Foundations Benchmark detection requirements: unauthorized API calls, root account usage, MFA disablement, security group changes, and CloudTrail disabling attempts</li>
+                        <li>Practice writing and testing 5 CloudWatch detection rules in a lab: root account login, console login without MFA, IAM policy attachment to a user, security group ingress opened to 0.0.0.0/0, and S3 bucket policy modification</li>
+                        <li>Study how to write Athena queries (or Azure Log Analytics KQL) against CloudTrail logs for threat hunting: data exfiltration patterns, credential abuse, and lateral movement through role assumption chains</li>
+                        <li>Learn how to integrate cloud detection findings into a SIEM or security data lake — EventBridge to SNS to Lambda to SIEM ingestion pipeline architecture</li>
+                        <li>Practice writing a KQL or Athena query identifying all cross-account role assumptions in the last 30 days, flagging those from unexpected source accounts</li>
+                        <li>Study how to tune detection rules to reduce false positives from legitimate automation without creating evasion opportunities — the core signal-to-noise engineering challenge in cloud detection</li>
+                        <li>Document a cloud detection rule library covering CIS Benchmark requirements plus 5 custom higher-fidelity threat rules, each with tuning notes and SIEM integration architecture</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">CloudWatch Metric Filters</span>
+                        <span class="tech-badge">Athena / KQL Queries</span>
+                        <span class="tech-badge">CIS Benchmark Detection</span>
+                        <span class="tech-badge">EventBridge Pipeline</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Cloud Detection Rule Library</h4>
+                        <p>Write and test 5 CloudWatch detection rules in a lab, write 3 Athena or KQL threat hunting queries, and document a detection rule library with tuning notes and SIEM integration pipeline architecture.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Security Automation — Lambda Remediators &amp; Event-Driven Enforcement</h3>
+                    <ul>
+                        <li>Study how security automation transforms the cloud security program: instead of a human remediating every GuardDuty finding or Security Hub alert, a Lambda function evaluates the finding and takes calibrated action automatically</li>
+                        <li>Learn how to design event-driven security automation using EventBridge rules: GuardDuty finding → EventBridge → Lambda → remediation action, with notification and audit logging at each step</li>
+                        <li>Practice building a Lambda remediator that responds to a GuardDuty "IAMUser/AnomalousBehavior" finding by disabling the IAM user's access keys and notifying the security team via SNS</li>
+                        <li>Study how to design safe automation: the remediation action must be reversible, the automation must log everything it did, and false-positive handling must be built in before production deployment</li>
+                        <li>Learn how to use AWS Config Rules and Remediation Actions (or Azure Policy Remediation Tasks) for continuous compliance — automatically remediating non-compliant resources as they appear</li>
+                        <li>Practice writing a custom AWS Config rule that detects S3 buckets with public access block disabled and triggers automatic remediation to re-enable it</li>
+                        <li>Study how to manage Lambda remediators as production systems: version control, testing, rollback procedures, and monitoring for automation failures</li>
+                        <li>Document a complete security automation framework covering event-driven design, safe remediation principles, Config Rule authoring, and Lambda remediator lifecycle management</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">EventBridge Rules</span>
+                        <span class="tech-badge">Lambda Remediators</span>
+                        <span class="tech-badge">AWS Config Rules</span>
+                        <span class="tech-badge">Safe Automation Design</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Event-Driven Security Automation Pipeline</h4>
+                        <p>Build a GuardDuty finding to Lambda remediation pipeline in a lab, write a custom Config Rule with automated remediation for S3 public access, and document a security automation framework with safe-remediation design principles.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Data Security Engineering — Encryption, KMS &amp; Data Protection Controls</h3>
+                    <ul>
+                        <li>Study how cloud data security engineering goes beyond "encrypt everything": key management strategy, key rotation automation, key policy authoring, and ensuring encryption can't be silently disabled determine the actual protection level</li>
+                        <li>Learn how to design a KMS key hierarchy for an enterprise: customer-managed keys (CMKs) per data sensitivity tier, key policies with least privilege, and cross-account key sharing patterns</li>
+                        <li>Practice creating CMKs in a lab with restrictive key policies: allowing specific IAM roles to encrypt/decrypt, denying key deletion, and enabling automatic annual rotation</li>
+                        <li>Study how to use SCPs to enforce encryption at rest: denying creation of unencrypted EBS volumes, RDS instances, S3 buckets without default encryption, and Kinesis streams</li>
+                        <li>Learn how to implement S3 data protection controls: bucket policies enforcing HTTPS-only access, SSE-KMS default encryption, Object Lock for immutability, and Macie for sensitive data discovery</li>
+                        <li>Practice writing an S3 bucket module in Terraform that enforces all data protection controls by default, requiring explicit opt-out rather than opt-in</li>
+                        <li>Study how to implement data perimeter controls using resource policies and VPC endpoint policies to prevent data exfiltration to unauthorized destinations</li>
+                        <li>Document a complete cloud data security engineering runbook covering KMS key design, encryption enforcement SCPs, S3 hardening module, and data perimeter implementation</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">KMS Key Hierarchy</span>
+                        <span class="tech-badge">CMK Key Policies</span>
+                        <span class="tech-badge">S3 Data Protection</span>
+                        <span class="tech-badge">Data Perimeter Controls</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: KMS Design &amp; S3 Data Protection Module</h4>
+                        <p>Design and deploy a KMS key hierarchy with restrictive key policies in a lab, write a Terraform S3 hardening module enforcing all data protection controls by default, and document the full data security engineering runbook.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can engineer multi-tier VPC security with PrivateLink and egress filtering, write and tune cloud detection rules with SIEM integration pipelines, build event-driven Lambda remediators that safely auto-respond to GuardDuty findings, author custom Config Rules with automated remediation, and implement KMS key hierarchies with data perimeter controls — the operational engineering toolkit of a Cloud Security Engineer.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into container security, security-as-code, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Security Automation Pipeline</h4>
+                        <p>Build a complete event-driven security automation pipeline handling 5 different GuardDuty finding types, each with a distinct calibrated remediation action, rollback mechanism, and audit log.</p>
+                        <small>Hint: Build the false-positive handling path before the happy path — the automation that safely does nothing on ambiguous findings is more valuable than aggressive automation that breaks things.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Terraform Security Control Module Library</h4>
+                        <p>Build a library of reusable Terraform modules — VPC with security controls, S3 with data protection, IAM role with permission boundary — that enforce security by default.</p>
+                        <small>Hint: Write each module so insecure configurations require explicit overrides — the module should be the path of least resistance toward security, not away from it.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Detection Rule Coverage Map</h4>
+                        <p>Map your detection rule library against the MITRE ATT&CK Cloud matrix, showing which techniques are covered, which are partially covered, and which have no detection, with a prioritized improvement plan.</p>
+                        <small>Hint: The gaps in your coverage map are more valuable than the covered cells — they define your next engineering sprint.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cloud Security Engineering Teaching Series</h4>
+                        <p>Turn your Phase 2 work into a practical teaching series on "building security automation in AWS/Azure from scratch."</p>
+                        <small>Hint: Walk through one complete pipeline end-to-end — GuardDuty finding to Lambda to remediated resource to audit log — as the running example throughout the series.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 3: Container Security, Security-as-Code &amp; Career Readiness</h2>
+                <span>Days 61-90: Engineering Kubernetes and container security controls, building security-as-code pipelines, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Kubernetes Security Engineering</span>
+                    <span class="skill-tag">Container Security Controls</span>
+                    <span class="skill-tag">Security-as-Code Pipeline</span>
+                    <span class="skill-tag">Cloud Security Posture Management</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Kubernetes &amp; Container Security Engineering</h3>
+                    <ul>
+                        <li>Study how Kubernetes security engineering differs from VM-based cloud security: the attack surface includes the API server, the kubelet, etcd, the container runtime, and every workload's network policy — all requiring distinct controls</li>
+                        <li>Learn how to engineer Kubernetes RBAC: defining roles and cluster roles with least-privilege verb/resource combinations, binding them to service accounts, and auditing for over-permissioned bindings</li>
+                        <li>Practice writing Kubernetes RBAC manifests for a fictional application team: a developer role, an application service account, and an automated CI/CD deployment service account — each with least-privilege scoped to their namespace</li>
+                        <li>Study how to implement Kubernetes Network Policies: default-deny all ingress and egress, then explicitly permit only the traffic each workload legitimately requires</li>
+                        <li>Learn how to write and enforce Pod Security Admission (PSA) policies (or OPA/Gatekeeper policies) that prevent privileged containers, host path mounts, and containers running as root</li>
+                        <li>Practice writing a Gatekeeper ConstraintTemplate that denies any Pod that does not set a non-root runAsUser and that does not set readOnlyRootFilesystem: true</li>
+                        <li>Study how runtime security tools (Falco) detect container security threats at execution time — writing Falco rules for privileged execution, unexpected network connections, and sensitive file reads</li>
+                        <li>Document a complete Kubernetes security engineering runbook covering RBAC design, Network Policies, Pod Security Admission, and Falco runtime detection rules</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Kubernetes RBAC</span>
+                        <span class="tech-badge">Network Policies</span>
+                        <span class="tech-badge">OPA / Gatekeeper</span>
+                        <span class="tech-badge">Falco Runtime Security</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Kubernetes Security Engineering Runbook</h4>
+                        <p>Write least-privilege RBAC manifests for 3 workload types, implement a default-deny Network Policy set for a fictional application, write a Gatekeeper ConstraintTemplate preventing root containers, and author 3 Falco runtime detection rules.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Security-as-Code Pipelines &amp; IaC Security Enforcement</h3>
+                    <ul>
+                        <li>Study how security-as-code pipelines shift security left: every infrastructure change goes through automated security checks in the CI/CD pipeline before it can reach production, not after a misconfiguration is already live</li>
+                        <li>Learn how to implement a multi-layer IaC security scanning pipeline: Checkov and tfsec for static analysis of Terraform, Trivy for container image scanning, and OPA/Conftest for custom policy-as-code enforcement</li>
+                        <li>Practice building a GitHub Actions workflow that runs Checkov, Trivy, and a custom OPA policy check on every pull request, blocking merge on any HIGH or CRITICAL finding</li>
+                        <li>Study how to write custom Rego policies in OPA that enforce organization-specific security requirements that generic scanners don't cover — such as requiring specific tags, enforcing naming conventions for IAM roles, or requiring encryption with specific KMS key ARNs</li>
+                        <li>Learn how to manage the policy-as-code lifecycle: version control, testing, exception handling, and keeping policies current as cloud provider APIs evolve</li>
+                        <li>Practice writing 3 custom OPA/Rego policies for organization-specific requirements and testing them against both compliant and non-compliant Terraform configurations</li>
+                        <li>Study how to handle the false-positive and exception problem in CI/CD security gates without creating a culture of "just suppress the finding" that defeats the pipeline's purpose</li>
+                        <li>Document a complete security-as-code pipeline design covering tool selection, custom policy authoring, exception management, and pipeline failure handling</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Checkov / tfsec</span>
+                        <span class="tech-badge">OPA / Rego / Conftest</span>
+                        <span class="tech-badge">GitHub Actions Pipeline</span>
+                        <span class="tech-badge">Custom Policy Authoring</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Security-as-Code CI/CD Pipeline</h4>
+                        <p>Build a GitHub Actions pipeline running Checkov, Trivy, and custom OPA policies on every pull request with merge blocking on HIGH/CRITICAL findings, and write 3 custom Rego policies for organization-specific requirements.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Cloud Security Posture Management &amp; Continuous Compliance Engineering</h3>
+                    <ul>
+                        <li>Study how Cloud Security Posture Management (CSPM) works as a continuous control — not a quarterly audit artifact but a real-time view of every resource's compliance state that feeds directly into automated remediation and risk prioritization</li>
+                        <li>Learn how to configure AWS Security Hub or Microsoft Defender for Cloud as a centralized CSPM platform: enabling standards (CIS, AWS Foundational, PCI-DSS), aggregating findings across accounts, and integrating with your EventBridge automation pipeline</li>
+                        <li>Practice configuring Security Hub across 3 linked accounts in a lab, enabling CIS AWS Foundations standard, and building a dashboard showing compliance posture by account and control category</li>
+                        <li>Study how to engineer a continuous compliance reporting pipeline: Security Hub findings to a metrics database to a dashboard that shows compliance trend over time — not just current state but direction of travel</li>
+                        <li>Learn how to prioritize CSPM findings for remediation using risk-based scoring: asset criticality, finding severity, exploitability, and whether automated remediation is already in place</li>
+                        <li>Practice writing a Lambda that queries Security Hub findings daily, scores them by risk, and generates a prioritized remediation work queue delivered to the engineering team</li>
+                        <li>Compile your 90-day work into a single portfolio-style Cloud Security Engineering master document</li>
+                        <li>Document a complete CSPM engineering guide covering platform configuration, cross-account aggregation, continuous compliance reporting, and risk-based finding prioritization</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">AWS Security Hub</span>
+                        <span class="tech-badge">Microsoft Defender for Cloud</span>
+                        <span class="tech-badge">CIS Benchmark Standards</span>
+                        <span class="tech-badge">Risk-Based Prioritization</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: CSPM Platform &amp; Continuous Compliance Pipeline</h4>
+                        <p>Configure Security Hub across 3 linked lab accounts with CIS standard enabled, build a compliance posture dashboard, and write a Lambda that generates a risk-scored daily remediation work queue from Security Hub findings.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification &amp; Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (AWS Security Specialty, Azure Security Engineer Associate AZ-500, GCP Professional Cloud Security Engineer, or CKS for Kubernetes) and identify remaining gaps</li>
+                        <li>Do a full mock "day as cloud security engineer" exercise: write an SCP from a security requirement brief, build a Lambda remediator for a new finding type, and add an OPA policy to a CI/CD pipeline — all within a set time window</li>
+                        <li>Prepare answers for cloud security engineer interview questions (describe building an IAM least-privilege enforcement system, explain your approach to safe automated remediation, walk through your Kubernetes RBAC design process)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable engineering outcomes: SCPs deployed, Lambda remediators built, coverage percentages improved</li>
+                        <li>Polish your portfolio: pin your best 3 artifacts (SCP + IAM hardening package, security automation pipeline, Kubernetes security runbook) with inline code and design rationale</li>
+                        <li>Practice a mock technical interview: be ready to write SCP JSON, Terraform resource blocks, a Lambda handler skeleton, and KQL/Athena queries on a whiteboard or shared screen</li>
+                        <li>Research target organizations (cloud-native companies, financial services, healthcare, hyperscalers' professional services arms) and tailor your resume to their cloud platform and stack</li>
+                        <li>Plan your next 90 days: pick a direction (cloud security architect, platform security engineering lead, multi-cloud security specialist, or cloud security consulting)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">AWS Security Specialty</span>
+                        <span class="tech-badge">AZ-500 / CKS</span>
+                        <span class="tech-badge">Technical Interview Prep</span>
+                        <span class="tech-badge">Resume Building</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Cloud Security Engineer Portfolio</h4>
+                        <p>Finalize a portfolio (IAM hardening package, automation pipeline, Kubernetes runbook), build resume bullets with engineering metrics, and prepare for technical whiteboard questions covering SCP authoring, Lambda design, and Kubernetes RBAC.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a complete cloud security engineering toolkit — IAM guardrails and workload identity, centralized logging pipelines, network security engineering, event-driven Lambda remediators, KMS and data protection controls, Kubernetes security, security-as-code CI/CD pipelines, and CSPM continuous compliance — plus a portfolio of real artifacts and a job-ready application package.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 3</h3>
+                <p>Final capstone options to demonstrate end-to-end cloud security engineering capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Complete Cloud Security Engineering Baseline</h4>
+                        <p>Build a full cloud security engineering baseline for a fictional AWS organization: SCP library, Terraform security modules, centralized logging, Lambda automation pipeline, Kubernetes security controls, and CSPM configuration — all in a single coherent IaC repository.</p>
+                        <small>Hint: The repository structure itself demonstrates engineering discipline — make it something a new engineer could clone, read, and understand without a meeting.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Full Security Automation Playbook</h4>
+                        <p>Build a complete automation playbook handling 10 different security finding types across IAM, network, data, and container domains — each with a Lambda remediator, a rollback mechanism, and a test harness.</p>
+                        <small>Hint: The test harness — code that deliberately triggers the finding to verify the automation fires correctly — is the part most engineers skip and the part that prevents production incidents.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Multi-Cloud Security Engineering Comparison</h4>
+                        <p>Implement the same security control (e.g., "prevent public S3/blob storage") across AWS, Azure, and GCP simultaneously, documenting the platform-specific engineering differences and trade-offs.</p>
+                        <small>Hint: The differences are more instructive than the similarities — the places where one platform makes a control easy and another makes it hard reveal genuine platform security design choices.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cloud Security Engineering Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Build it around a single fictional organization's cloud security journey from "raw environment with full public access" to "fully hardened baseline" — the narrative arc makes the engineering progression feel purposeful and learnable.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Cloud IAM Hardening (SCPs, Permission Boundaries, Workload Identity)</div>
+                    <div class="skill-item">Secrets Management Engineering &amp; Rotation Automation</div>
+                    <div class="skill-item">Centralized Multi-Account Logging Architecture</div>
+                    <div class="skill-item">Cloud Network Security (VPC, PrivateLink, Network Firewall)</div>
+                    <div class="skill-item">Cloud Detection Rule Engineering (CloudWatch, Athena, KQL)</div>
+                    <div class="skill-item">Event-Driven Security Automation (Lambda, EventBridge, Config Rules)</div>
+                    <div class="skill-item">Kubernetes &amp; Container Security Engineering</div>
+                    <div class="skill-item">Security-as-Code Pipelines &amp; CSPM Continuous Compliance</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>Hacking the Cloud — HackTricks Cloud and similar community references</li>
+                        <li>Kubernetes Security — Rice &amp; Hausenblas</li>
+                        <li>Terraform: Up and Running — Brikman (IaC engineering foundation)</li>
+                        <li>Cloud Native Security — Sato (O'Reilly)</li>
+                        <li>AWS Security Best Practices — AWS official documentation and whitepapers</li>
+                        <li>Google Cloud Security Foundations Blueprint documentation</li>
+                        <li>NIST SP 800-207 Zero Trust Architecture</li>
+                        <li>Container Security — Liz Rice (O'Reilly)</li>
+                        <li>Hacking Kubernetes — Martin &amp; Hausenblas</li>
+                        <li>Learning Open Policy Agent — Baird &amp; Sheridan</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>AWS Skill Builder — Security Learning Plan and Security Specialty exam prep</li>
+                        <li>A Cloud Guru / Pluralsight — AWS/Azure/GCP Security Engineer paths</li>
+                        <li>Microsoft Learn — AZ-500 and Defender for Cloud learning paths</li>
+                        <li>KodeKloud / Linux Foundation — Kubernetes CKS certification training</li>
+                        <li>Wiz Academy — cloud-native security concepts and attack paths</li>
+                        <li>Rhino Security Labs blog — IAM privilege escalation research and tooling</li>
+                        <li>Datadog / Aqua Security blogs — cloud-native detection and container security</li>
+                        <li>CloudSecDocs.com and HackTricks Cloud — attack and defense reference</li>
+                        <li>Tetrate / Falco community docs — runtime security implementation</li>
+                        <li>GitHub: aws-samples, Azure-Samples, GoogleCloudPlatform example repos</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>AWS Certified Security — Specialty (SCS-C02)</li>
+                        <li>Microsoft Azure Security Engineer Associate (AZ-500)</li>
+                        <li>Google Professional Cloud Security Engineer</li>
+                        <li>Certified Kubernetes Security Specialist (CKS)</li>
+                        <li>AWS Certified Solutions Architect (context for security decisions)</li>
+                        <li>HashiCorp Terraform Associate (IaC engineering foundation)</li>
+                        <li>CCSP (Certified Cloud Security Professional)</li>
+                        <li>GIAC Cloud Security Essentials (GCLD)</li>
+                        <li>CompTIA Cloud+ (foundational cloud engineering context)</li>
+                        <li>Wiz Cloud Security Expert (vendor-neutral cloud attack path certification)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities &amp; Forums</h3>
+                    <ul>
+                        <li>CloudSecList newsletter (cloud security weekly digest)</li>
+                        <li>tl;dr sec newsletter — cloud security engineering focus</li>
+                        <li>r/netsec and r/aws on Reddit</li>
+                        <li>Cloud Security Alliance (CSA) working groups</li>
+                        <li>Kubernetes Slack — #sig-security channel</li>
+                        <li>AWS Security community — re:Post and community blogs</li>
+                        <li>Twitter/X cloud security community (#cloudsecurity, #awssecurity)</li>
+                        <li>fwd:cloudsec conference community</li>
+                        <li>SANS Cloud &amp; DevSecOps Summit communities</li>
+                        <li>Wiz community and cloud attack research blog</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Posture Assessment &amp; IAM Analysis</h3>
+                    <ul>
+                        <li>Prowler (AWS/Azure/GCP posture assessment)</li>
+                        <li>ScoutSuite (multi-cloud security auditing)</li>
+                        <li>IAM Access Analyzer</li>
+                        <li>Cloudsplaining (IAM least-privilege analysis)</li>
+                        <li>CloudMapper (AWS network and IAM visualization)</li>
+                        <li>Steampipe (SQL-based cloud configuration querying)</li>
+                        <li>Parliament (IAM policy linting)</li>
+                        <li>PMapper (IAM privilege escalation path analysis)</li>
+                        <li>AWS Config</li>
+                        <li>Microsoft Defender for Cloud</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>IaC Security &amp; Pipeline Tools</h3>
+                    <ul>
+                        <li>Checkov (IaC security scanning — Terraform, CloudFormation, K8s)</li>
+                        <li>tfsec / Terrascan (Terraform security scanning)</li>
+                        <li>Trivy (container image, IaC, and filesystem scanning)</li>
+                        <li>OPA / Conftest (policy-as-code enforcement)</li>
+                        <li>Gatekeeper (Kubernetes OPA admission controller)</li>
+                        <li>Terraform / OpenTofu (IaC engineering)</li>
+                        <li>GitHub Actions / GitLab CI (security pipeline implementation)</li>
+                        <li>Kyverno (Kubernetes policy engine alternative to Gatekeeper)</li>
+                        <li>KICS (Keeping Infrastructure as Code Secure)</li>
+                        <li>Snyk IaC (developer-friendly IaC scanning)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Detection, Automation &amp; Runtime Security</h3>
+                    <ul>
+                        <li>AWS GuardDuty</li>
+                        <li>AWS Security Hub</li>
+                        <li>AWS CloudTrail + Athena</li>
+                        <li>Amazon EventBridge + Lambda</li>
+                        <li>Azure Sentinel / Microsoft Sentinel</li>
+                        <li>Falco (Kubernetes runtime security)</li>
+                        <li>AWS Config + Remediation Actions</li>
+                        <li>CloudCustodian (policy-as-code cloud governance and remediation)</li>
+                        <li>MITRE ATT&amp;CK Cloud Matrix</li>
+                        <li>Wiz (cloud security graph platform, CSPM + CWPP)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Run a Prowler scan against a lab environment and categorize findings</li>
+                        <li>Write and test one SCP that denies root account API access</li>
+                        <li>Enable a CloudTrail org trail in a single-account lab environment</li>
+                        <li>Write an IAM role with permission boundary for a developer team</li>
+                        <li>Create a CMK with a least-privilege key policy for one application</li>
+                        <li>Write a basic CloudWatch Metric Filter and Alarm for root account login</li>
+                        <li>Enable VPC Flow Logs for a lab VPC and query them in CloudWatch Logs Insights</li>
+                        <li>Write a basic Lambda that sends an SNS notification when triggered by EventBridge</li>
+                        <li>Write a Kubernetes RBAC Role and RoleBinding for a read-only namespace user</li>
+                        <li>Run Checkov against a Terraform configuration and fix 3 findings</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a 5-SCP library tested against lab roles in a multi-account environment</li>
+                        <li>Implement IRSA for a Kubernetes workload and verify it works without access keys</li>
+                        <li>Build a centralized CloudTrail logging account with Object Lock and KMS protection</li>
+                        <li>Build a 3-tier VPC in Terraform with security groups, NAT Gateway, and VPC endpoints</li>
+                        <li>Write 5 CloudWatch detection rules mapped to CIS AWS Foundations Benchmark</li>
+                        <li>Build a GuardDuty finding to Lambda remediation pipeline in a lab</li>
+                        <li>Write a Terraform S3 hardening module enforcing encryption, HTTPS, and Object Lock by default</li>
+                        <li>Write a Kubernetes Network Policy implementing default-deny for a namespace</li>
+                        <li>Build a GitHub Actions pipeline running Checkov and Trivy on every pull request</li>
+                        <li>Configure Security Hub across 3 linked lab accounts with CIS standard enabled</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a complete IaC security control module library (VPC, S3, IAM role, KMS key)</li>
+                        <li>Build an event-driven automation pipeline handling 5 GuardDuty finding types</li>
+                        <li>Write a Secrets Manager rotation Lambda for 3 different credential types</li>
+                        <li>Design and implement a KMS key hierarchy for a multi-tier data environment</li>
+                        <li>Write a Gatekeeper ConstraintTemplate preventing privilege escalation patterns in Kubernetes</li>
+                        <li>Write 3 custom OPA/Rego policies for organization-specific cloud security requirements</li>
+                        <li>Build a continuous compliance reporting dashboard from Security Hub findings</li>
+                        <li>Write a Lambda that generates a risk-scored remediation work queue from CSPM findings</li>
+                        <li>Implement a data perimeter using VPC endpoint policies and S3 bucket policies</li>
+                        <li>Mentor a junior cloud security practitioner through their first SCP and automation build</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Build a complete cloud security engineering baseline for a fictional AWS organization in a single IaC repo</li>
+                        <li>Publish original research on a cloud security engineering topic or novel attack/defense pattern</li>
+                        <li>Design and build a multi-cloud security control parity implementation across AWS and Azure</li>
+                        <li>Speak at a local AWS / CNCF / cloud security community meetup or conference</li>
+                        <li>Build a fully automated cloud security onboarding pipeline for new accounts</li>
+                        <li>Contribute a pull request to Prowler, Checkov, Falco, or another open-source cloud security tool</li>
+                        <li>Design a comprehensive CSPM-to-remediation closed-loop system with SLA tracking</li>
+                        <li>Build a cloud security engineering apprenticeship curriculum for engineers new to security</li>
+                        <li>Mentor multiple practitioners toward cloud security engineering readiness</li>
+                        <li>Present a cloud security architecture review to a real or simulated engineering leadership audience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your cloud security engineering career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize or Broaden</h3>
+                    <ul>
+                        <li>Decide: deepen toward cloud security architecture, specialize in one domain (Kubernetes/container security, cloud detection engineering, IaC/platform security), or move toward multi-cloud security engineering</li>
+                        <li>Consider a Cloud Security Architect track if landing zone design and cross-domain integration energized you most</li>
+                        <li>Consider a Platform Security Engineering track if the Terraform modules, OPA policies, and security-as-code pipeline work pulled you most</li>
+                        <li>Consider a Cloud Detection Engineering specialization if the Athena queries, detection rule writing, and SIEM integration pipeline work stood out</li>
+                        <li>Pursue AWS Security Specialty or AZ-500 as your next cert — whichever platform you spent the most time building in</li>
+                        <li>Pursue CKS if Kubernetes security engineering is the clear direction</li>
+                        <li>Join a specialized cloud security engineering community for your chosen direction</li>
+                        <li>Set a 6-12 month direction-setting technical goal</li>
+                        <li>Identify one specific area where your engineering knowledge still has gaps and build a 30-day plan to close it</li>
+                        <li>Consider contributing to an open-source cloud security project to deepen expertise through public feedback</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply &amp; Network</h3>
+                    <ul>
+                        <li>Apply to Cloud Security Engineer / Platform Security Engineer / Security Infrastructure Engineer roles weekly</li>
+                        <li>Tailor your resume per job description, emphasizing engineering artifacts built and measurable outcomes achieved</li>
+                        <li>Attend fwd:cloudsec, AWS re:Inforce, or KubeCon security track events</li>
+                        <li>Reach out to working cloud security engineers on LinkedIn or GitHub for informational conversations</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your GitHub portfolio updated with new IaC modules and automation code</li>
+                        <li>Practice technical mock interviews (whiteboard-style SCP writing, Lambda design, Terraform resource blocks) monthly</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Target cloud-native organizations and companies with mature cloud security programs for fastest skill growth</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with AWS, Azure, and GCP security service releases — cloud providers ship new security controls constantly</li>
+                        <li>Re-run your cloud security posture scan quarterly and track improvement over time</li>
+                        <li>Write a monthly post about an engineering problem you solved or a new tool you evaluated</li>
+                        <li>Build a second, more advanced engineering artifact every 90 days</li>
+                        <li>Track new attack techniques against cloud environments and build detection for each one</li>
+                        <li>Contribute to or maintain a public IaC security module repository</li>
+                        <li>Mentor security practitioners transitioning into cloud engineering roles</li>
+                        <li>Read the security blogs from all three major cloud providers weekly for new service announcements</li>
+                        <li>Attend at least one cloud security-focused virtual conference per quarter</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a "building cloud security controls from scratch" series for practitioners transitioning from on-premises to cloud security</li>
+                        <li>Answer cloud security engineering questions in community forums, Reddit, and Discord regularly</li>
+                        <li>Open-source one of your Terraform security modules or Lambda remediators for the community</li>
+                        <li>Host a free workshop on SCP engineering or event-driven security automation</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another aspiring cloud security engineer for code review accountability</li>
+                        <li>Contribute a new check to Prowler, Checkov, or another open-source cloud security scanner</li>
+                        <li>Review and give feedback on a peer's Terraform security module or Lambda automation design</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Built a 10-SCP library and implemented workload identity across 3 workload types | ✅ Engineered a centralized multi-account logging pipeline with Object Lock integrity protection | ✅ Built a multi-tier VPC with VPC endpoints and least-privilege security groups in Terraform</p>
+                <p>✅ Written and tuned cloud detection rules with SIEM integration and an event-driven Lambda remediation pipeline | ✅ Implemented Kubernetes RBAC, Network Policies, and OPA admission controls | ✅ Built a GitHub Actions security-as-code pipeline with custom OPA policies and a CSPM continuous compliance dashboard</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> AWS SCPs, IAM Access Analyzer, IRSA, Secrets Manager, CloudTrail, Terraform, VPC PrivateLink, GuardDuty, EventBridge, Lambda, AWS Config, KMS, Kubernetes RBAC, Falco, OPA/Gatekeeper, Checkov, Trivy, AWS Security Hub, Prowler, Athena/KQL.</p>
+                <br>
+                <p><strong>Remember:</strong> Every manual remediation you perform is a future automation you haven't written yet. Every SCP you deploy is a class of findings you'll never see again. Every Terraform module you build with security by default is every future engineer's first correct choice made for them. The cloud security engineer's goal is to make the secure path the path of least resistance — so that security improves continuously whether or not anyone is watching the dashboard. Build it in code, version-control it, test it, and let the automation run.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

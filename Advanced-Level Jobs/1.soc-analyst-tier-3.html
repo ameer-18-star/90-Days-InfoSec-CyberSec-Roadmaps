@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "SOC Analyst – Tier 3" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "SOC Analyst – Tier 3" Mastery</h1>
+            <p>An advanced-track plan for analysts who've already worked Tier 1/2 alert triage and are ready to operate as the SOC's escalation point — threat hunting, deep malware/forensic analysis, detection engineering, and leading incident response when things get serious.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: Advanced Detection Engineering & Threat Intelligence</h2>
+                <span>Days 1-30: SIEM/detection-as-code, MITRE ATT&CK mastery, and operationalized threat intelligence</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">MITRE ATT&CK</span>
+                    <span class="skill-tag">Detection Engineering</span>
+                    <span class="skill-tag">Threat Intelligence (CTI)</span>
+                    <span class="skill-tag">SIEM Architecture</span>
+                    <span class="skill-tag">Sigma Rules</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Tier 3 Role Calibration & MITRE ATT&CK Mastery</h3>
+                    <ul>
+                        <li>Map the Tier 1/2/3 escalation model: what specifically gets pushed up to Tier 3 and why</li>
+                        <li>Study MITRE ATT&CK at depth: tactics, techniques, sub-techniques, and data sources per technique</li>
+                        <li>Learn how to build an ATT&CK Navigator heatmap reflecting your organization's actual visibility gaps</li>
+                        <li>Study the Pyramid of Pain and why IOC-only detection is the weakest layer to rely on</li>
+                        <li>Learn the Diamond Model of Intrusion Analysis as a complement to the ATT&CK kill chain view</li>
+                        <li>Review 3 real APT group profiles (MITRE ATT&CK groups pages) and their characteristic TTPs</li>
+                        <li>Study how detection coverage maturity gets measured against ATT&CK (technique coverage %)</li>
+                        <li>Document your own ATT&CK Navigator heatmap for a fictional org's current detection gaps</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">MITRE ATT&CK Navigator</span>
+                        <span class="tech-badge">Pyramid of Pain</span>
+                        <span class="tech-badge">Diamond Model</span>
+                        <span class="tech-badge">APT Profiling</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: ATT&CK Coverage Heatmap</h4>
+                        <p>Build a full ATT&CK Navigator heatmap for a fictional org, color-coded by detection confidence (none/partial/strong), and identify your top 5 coverage gaps.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: SIEM Architecture & Detection-as-Code</h3>
+                    <ul>
+                        <li>Study SIEM data pipeline architecture: log sources, parsers, normalization, indexing, retention tiers</li>
+                        <li>Set up a home/lab SIEM (Splunk Free, Elastic Security, or Wazuh) and ingest sample log sources</li>
+                        <li>Learn Sigma rule format as a vendor-agnostic detection-as-code standard</li>
+                        <li>Practice writing 5 Sigma rules covering common ATT&CK techniques, then convert them to your SIEM's query language</li>
+                        <li>Study detection rule lifecycle: draft, test against known-good/known-bad data, tune, deploy, monitor for drift</li>
+                        <li>Learn how false-positive rate and detection logic both get version-controlled like code (detection-as-code in Git)</li>
+                        <li>Practice setting up a basic CI check that validates Sigma rule syntax before merge</li>
+                        <li>Document a detection engineering workflow diagram from idea to production deployment</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Sigma Rules</span>
+                        <span class="tech-badge">Splunk/Elastic/Wazuh</span>
+                        <span class="tech-badge">Detection-as-Code</span>
+                        <span class="tech-badge">Rule Lifecycle</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Sigma Rule Pack</h4>
+                        <p>Write 5 Sigma rules covering distinct ATT&CK techniques, convert each to your lab SIEM's native query language, and test against sample log data.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Cyber Threat Intelligence (CTI) Operationalization</h3>
+                    <ul>
+                        <li>Study the intelligence cycle: direction, collection, processing, analysis, dissemination, feedback</li>
+                        <li>Learn strategic vs. operational vs. tactical threat intelligence and who consumes each level</li>
+                        <li>Practice using MISP (or a similar free CTI platform) to manage and correlate indicators</li>
+                        <li>Study STIX/TAXII as the standard format/protocol for sharing structured threat intelligence</li>
+                        <li>Learn how to pivot from a single IOC to a full campaign profile using OSINT and CTI platforms</li>
+                        <li>Practice writing a finished intelligence product: a threat actor profile brief for a fictional relevant adversary</li>
+                        <li>Study how CTI directly drives detection engineering priorities (closing the loop from Week 2)</li>
+                        <li>Learn how to assess CTI source reliability and avoid acting on low-confidence reporting</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">MISP</span>
+                        <span class="tech-badge">STIX/TAXII</span>
+                        <span class="tech-badge">Intelligence Cycle</span>
+                        <span class="tech-badge">OSINT Pivoting</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Threat Actor Intelligence Brief</h4>
+                        <p>Write a complete threat actor profile brief (TTPs, targeting, relevant IOCs) for one real, publicly-documented adversary group relevant to your industry context.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Network Forensics & Deep Packet Analysis</h3>
+                    <ul>
+                        <li>Study advanced Wireshark/tshark filtering for command-and-control (C2) traffic identification</li>
+                        <li>Learn to recognize C2 beaconing patterns in traffic: regular intervals, jitter, encoded payloads</li>
+                        <li>Practice analyzing a malicious PCAP (e.g. from Malware-Traffic-Analysis.net) end-to-end</li>
+                        <li>Study DNS tunneling and exfiltration-over-DNS detection patterns</li>
+                        <li>Learn TLS/JA3 fingerprinting basics for identifying malicious client behavior even in encrypted traffic</li>
+                        <li>Practice extracting files/payloads from PCAP captures using NetworkMiner or Wireshark's export feature</li>
+                        <li>Study how Zeek (formerly Bro) logs provide structured network metadata for faster triage than raw PCAP</li>
+                        <li>Write a full network forensics report for one analyzed malicious PCAP sample</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Wireshark/tshark</span>
+                        <span class="tech-badge">Zeek</span>
+                        <span class="tech-badge">JA3 Fingerprinting</span>
+                        <span class="tech-badge">C2 Beaconing</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: PCAP Forensics Report</h4>
+                        <p>Fully analyze one malicious PCAP sample, extract any payloads, identify C2 indicators, and write a forensic report suitable for an incident timeline.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can map detection coverage against MITRE ATT&CK, write and deploy detection-as-code rules, operationalize threat intelligence into a finished product, and perform deep network forensic analysis — the foundational toolkit of a Tier 3 SOC Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate detection/intel fundamentals before moving into hunting and malware analysis.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Detection Coverage Improvement Plan</h4>
+                        <p>Take your Week 1 ATT&CK heatmap's top 5 gaps and write 5 new Sigma rules specifically closing those gaps.</p>
+                        <small>Hint: Tie each rule back to a specific log source you'd need onboarded to make it actually work.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>CTI-to-Detection Pipeline</h4>
+                        <p>Take indicators from one real threat report and turn them into both MISP entries and corresponding detection rules.</p>
+                        <small>Hint: Document the "from intel to detection" pipeline as a repeatable process, not a one-off.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Malware-Traffic-Analysis Deep Dive</h4>
+                        <p>Analyze 3 different PCAP samples from Malware-Traffic-Analysis.net spanning different malware families.</p>
+                        <small>Hint: Compare their C2 patterns side by side — the differences are as instructive as the similarities.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Detection Engineering Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: One concept per piece (Sigma rules, ATT&CK, CTI cycle, etc.), aimed at Tier 1/2 analysts leveling up.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Threat Hunting & Malware Analysis</h2>
+                <span>Days 31-60: Proactive hypothesis-driven hunting and hands-on static/dynamic malware analysis</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Threat Hunting</span>
+                    <span class="skill-tag">Static Malware Analysis</span>
+                    <span class="skill-tag">Dynamic Analysis/Sandboxing</span>
+                    <span class="skill-tag">Memory Forensics</span>
+                    <span class="skill-tag">EDR Internals</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Hypothesis-Driven Threat Hunting</h3>
+                    <ul>
+                        <li>Study the difference between alert-driven (reactive) work and hypothesis-driven (proactive) hunting</li>
+                        <li>Learn the threat hunting loop: hypothesis, investigation, uncover new patterns, inform automated detection</li>
+                        <li>Study how to form a good hunting hypothesis from CTI, ATT&CK gaps, or anomaly observations</li>
+                        <li>Practice running a structured hunt for one specific technique (e.g. living-off-the-land binary abuse) across lab log data</li>
+                        <li>Learn baseline-and-deviation hunting: establishing "normal" before you can spot "abnormal"</li>
+                        <li>Study how successful hunts get converted into permanent detection rules (closing the loop again)</li>
+                        <li>Practice documenting a hunt using a structured hunt report template (hypothesis, scope, findings, follow-up)</li>
+                        <li>Learn how hunting metrics (hunts run, true positives found, detections created) demonstrate program value</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Threat Hunting Loop</span>
+                        <span class="tech-badge">LOLBins</span>
+                        <span class="tech-badge">Baseline & Deviation</span>
+                        <span class="tech-badge">Hunt Reporting</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Structured Hunt Report</h4>
+                        <p>Run a full hypothesis-driven hunt for one ATT&CK technique against lab data, and document it in a structured hunt report including any new detection rule created.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Static Malware Analysis</h3>
+                    <ul>
+                        <li>Set up an isolated malware analysis VM (FLARE VM or a hardened, network-isolated lab) — safety first</li>
+                        <li>Study PE file format basics: headers, sections, imports/exports, and what they reveal pre-execution</li>
+                        <li>Practice using PEStudio/PEiD to triage a sample's suspicious indicators before deeper analysis</li>
+                        <li>Learn string extraction and entropy analysis to spot packing/obfuscation in a sample</li>
+                        <li>Study YARA rule writing for identifying malware families based on static characteristics</li>
+                        <li>Practice writing 3 YARA rules against known malware samples (from a safe, curated repository)</li>
+                        <li>Learn basic disassembly reading in Ghidra: identifying suspicious API calls and control flow</li>
+                        <li>Document a static analysis report for one sample, including a YARA rule you wrote for it</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">FLARE VM</span>
+                        <span class="tech-badge">PEStudio</span>
+                        <span class="tech-badge">YARA</span>
+                        <span class="tech-badge">Ghidra</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Static Analysis + YARA Rule</h4>
+                        <p>Perform a full static analysis on one malware sample in an isolated lab, write a YARA rule that detects it, and validate the rule against a clean control sample.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Dynamic Analysis & Sandboxing</h3>
+                    <ul>
+                        <li>Study dynamic analysis principles: controlled detonation, behavioral observation, network/file system monitoring</li>
+                        <li>Practice using a sandbox (Any.Run, Joe Sandbox Cloud free tier, or a self-hosted Cuckoo/CAPE instance) safely</li>
+                        <li>Learn Procmon and Process Hacker/System Informer for live behavioral observation in an isolated VM</li>
+                        <li>Study common malware behaviors: persistence mechanisms, process injection, anti-analysis/anti-VM techniques</li>
+                        <li>Practice detonating one sample and documenting its full behavioral chain (process tree, file/registry changes, network calls)</li>
+                        <li>Learn how dynamic analysis findings feed directly back into Sigma/EDR detection rule creation</li>
+                        <li>Study how to recognize sandbox-evasion techniques malware uses to detect it's being analyzed</li>
+                        <li>Write a combined static+dynamic malware analysis report ready for sharing with the broader SOC</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Any.Run/CAPE</span>
+                        <span class="tech-badge">Procmon</span>
+                        <span class="tech-badge">Process Injection</span>
+                        <span class="tech-badge">Anti-VM Detection</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Combined Malware Analysis Report</h4>
+                        <p>Detonate one sample in a sandbox, document its full behavioral chain, and combine it with your Week 6 static findings into one full report plus a derived detection rule.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Memory Forensics & EDR Internals</h3>
+                    <ul>
+                        <li>Study why memory forensics matters: catching fileless malware and in-memory-only persistence</li>
+                        <li>Practice acquiring a memory image from a lab VM and analyzing it with Volatility 3</li>
+                        <li>Learn common Volatility plugins: pslist, pstree, netscan, malfind, and what each reveals</li>
+                        <li>Study process injection detection in memory: hollowed processes, unusual memory regions</li>
+                        <li>Learn how EDR agents work conceptually: kernel callbacks, ETW, behavioral telemetry collection</li>
+                        <li>Study how EDR detections differ from SIEM detections (endpoint behavior vs. aggregated log correlation)</li>
+                        <li>Practice reviewing a sample EDR alert/timeline and reconstructing the attack sequence from it</li>
+                        <li>Document a memory forensics walkthrough for one infected lab VM image</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Volatility 3</span>
+                        <span class="tech-badge">Memory Forensics</span>
+                        <span class="tech-badge">EDR Telemetry</span>
+                        <span class="tech-badge">Fileless Malware</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Memory Forensics Walkthrough</h4>
+                        <p>Acquire and analyze a memory image from an infected lab VM using Volatility 3, documenting your plugin-by-plugin findings and final reconstructed attack story.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can run hypothesis-driven hunts, perform full static and dynamic malware analysis, write YARA detection rules, and conduct memory forensics — the deep technical toolkit that defines Tier 3 SOC work.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into incident command, automation, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Hunt-to-Detection Pipeline</h4>
+                        <p>Run 3 separate hunts, document each, and convert every successful hunt into a production-ready Sigma rule.</p>
+                        <small>Hint: Track your hunt-to-detection conversion rate — it's a metric you'll want for interviews.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Malware Family Comparison Report</h4>
+                        <p>Analyze 2 samples from different malware families (e.g. a loader and a ransomware variant) and compare their TTPs side by side.</p>
+                        <small>Hint: Map both to MITRE ATT&CK techniques for a clean comparison structure.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>YARA Rule Library</h4>
+                        <p>Build a small library of 10 YARA rules covering different malware families, tested for both detection and false-positive rate.</p>
+                        <small>Hint: Test rules against a "known good" software sample set to catch overly broad rules.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Threat Hunting & Malware Analysis Teaching Content</h4>
+                        <p>Turn your hunting/malware analysis work into a teaching walkthrough for Tier 1/2 analysts wanting to level up.</p>
+                        <small>Hint: Use one running sample throughout, showing the same artifact at static, dynamic, and memory layers.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Incident Command, Automation & Career Readiness</h2>
+                <span>Days 61-90: Leading major incidents, SOAR/automation engineering, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Incident Command</span>
+                    <span class="skill-tag">SOAR Engineering</span>
+                    <span class="skill-tag">Purple Teaming</span>
+                    <span class="skill-tag">Executive Reporting</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Major Incident Response & Command</h3>
+                    <ul>
+                        <li>Study the incident commander role: who leads a major incident and how authority/communication flows</li>
+                        <li>Learn the full DFIR lifecycle: preparation, identification, containment, eradication, recovery, lessons learned</li>
+                        <li>Practice leading a tabletop exercise for a multi-stage incident (initial access through lateral movement to impact)</li>
+                        <li>Study containment strategy decisions: isolate now vs. observe-and-gather-more-intel tradeoffs</li>
+                        <li>Learn how to coordinate with legal, PR/comms, and executive stakeholders during a live incident</li>
+                        <li>Practice writing a real-time incident status update for non-technical executives mid-incident</li>
+                        <li>Study chain-of-custody and evidence handling requirements if law enforcement/legal involvement is possible</li>
+                        <li>Write a full incident command playbook for a ransomware scenario from detection through recovery</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Incident Command</span>
+                        <span class="tech-badge">DFIR Lifecycle</span>
+                        <span class="tech-badge">Containment Strategy</span>
+                        <span class="tech-badge">Chain of Custody</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Ransomware Incident Command Playbook</h4>
+                        <p>Write a complete incident command playbook for a ransomware scenario, covering roles, containment decisions, stakeholder communication, and recovery steps.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: SOAR Engineering & Automation</h3>
+                    <ul>
+                        <li>Study SOAR (Security Orchestration, Automation and Response) concepts and where Tier 3 analysts design playbooks rather than just running them</li>
+                        <li>Practice building a SOAR-style automated enrichment playbook (e.g. auto-enrich an IP with threat intel on alert creation)</li>
+                        <li>Learn how to script automated triage logic in Python using SIEM/EDR APIs</li>
+                        <li>Study auto-containment guardrails: how to automate response actions safely without causing self-inflicted outages</li>
+                        <li>Practice writing a Python script that queries a threat intel API and enriches a sample alert with context</li>
+                        <li>Learn how playbook metrics (mean time to respond, % auto-resolved) demonstrate automation program value</li>
+                        <li>Study how detection engineering (Phase 1) and SOAR automation connect into one continuous improvement loop</li>
+                        <li>Document a full automated triage workflow diagram for one common alert type</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SOAR</span>
+                        <span class="tech-badge">Python Automation</span>
+                        <span class="tech-badge">Auto-Enrichment</span>
+                        <span class="tech-badge">Playbook Design</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Automated Enrichment Script</h4>
+                        <p>Write a Python script that takes a sample alert, queries a threat intel API for enrichment, and outputs a triage-ready summary — document it as a reusable SOAR playbook design.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Purple Teaming & Detection Validation</h3>
+                    <ul>
+                        <li>Study purple teaming as the collaborative loop between offensive testing and defensive detection improvement</li>
+                        <li>Learn how to use an adversary emulation framework (Atomic Red Team) to safely test your own detection coverage</li>
+                        <li>Practice running 5 Atomic Red Team tests against your lab SIEM and confirming whether your rules actually fire</li>
+                        <li>Study breach-and-attack simulation (BAS) concepts as a continuous, automated version of purple teaming</li>
+                        <li>Learn how to write a detection validation report: technique tested, expected detection, actual result, gap closed</li>
+                        <li>Practice tuning a Sigma rule that failed to fire during testing until it correctly detects the simulated technique</li>
+                        <li>Study how purple team findings feed back into both detection engineering and the ATT&CK heatmap from Week 1</li>
+                        <li>Compile your 90-day labs into a single portfolio-style master detection validation report</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Purple Teaming</span>
+                        <span class="tech-badge">Atomic Red Team</span>
+                        <span class="tech-badge">BAS</span>
+                        <span class="tech-badge">Detection Validation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Detection Validation Report</h4>
+                        <p>Run 5 Atomic Red Team tests against your lab environment, document detection results for each, and tune any rule that failed to fire correctly.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (e.g. GCFA, GCIH, GREM, or CySA+)</li>
+                        <li>Do a full mock major incident response under time pressure: detect, investigate, contain, and brief in under 4 hours</li>
+                        <li>Prepare answers for common Tier 3 interview questions (walk through a hunt, explain a malware analysis, lead a mock incident debrief)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable skills/achievements</li>
+                        <li>Polish your GitHub: pin your best 3 projects (Sigma rule pack, malware analysis report, incident playbook) with clean READMEs</li>
+                        <li>Practice a mock technical interview (explain a full attack chain end-to-end out loud, attacker and defender view both)</li>
+                        <li>Research target SOCs/MSSPs/industries and tailor your resume + LinkedIn headline accordingly</li>
+                        <li>Plan your next 90 days: pick a specialization (DFIR lead, malware reverse engineering, or detection engineering management)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">GitHub Portfolio</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Tier 3 Portfolio</h4>
+                        <p>Finalize a GitHub portfolio, resume bullets, and one polished master detection/incident report — your complete application package for Tier 3 SOC Analyst roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a working Tier 3 toolkit (detection engineering, threat intelligence, threat hunting, malware/memory forensics, incident command, SOAR automation, purple teaming) plus a portfolio of real reports and a job-ready application package — the foundation of a genuinely senior SOC Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end Tier 3 capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Detection Engineering Program</h4>
+                        <p>Build an end-to-end pipeline: CTI ingestion → hypothesis → hunt → Sigma rule → Atomic Red Team validation → production deployment.</p>
+                        <small>Hint: Diagram the full loop — this is the single strongest artifact a hiring manager can evaluate.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>End-to-End Major Incident Simulation</h4>
+                        <p>Run a complete mock major incident from detection through executive briefing, with full DFIR documentation at every stage.</p>
+                        <small>Hint: Recruit a peer to play "executive stakeholder" and record how you brief them under pressure.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>SOAR-Driven Triage Suite</h4>
+                        <p>Build 3 automated enrichment/triage scripts covering your SOC's most common alert types, with before/after MTTR estimates.</p>
+                        <small>Hint: Quantify time saved — this becomes a powerful, specific interview talking point.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Tier 3 SOC Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching Tier 1/2 analysts how to grow.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">MITRE ATT&CK & Detection Engineering</div>
+                    <div class="skill-item">Threat Intelligence (MISP/STIX-TAXII)</div>
+                    <div class="skill-item">Network Forensics & C2 Analysis</div>
+                    <div class="skill-item">Hypothesis-Driven Threat Hunting</div>
+                    <div class="skill-item">Static & Dynamic Malware Analysis</div>
+                    <div class="skill-item">Memory Forensics (Volatility)</div>
+                    <div class="skill-item">Incident Command & DFIR Leadership</div>
+                    <div class="skill-item">SOAR Automation & Purple Teaming</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>The Practice of Network Security Monitoring — Richard Bejtlich</li>
+                        <li>Intelligence-Driven Incident Response — Roberts & Brown</li>
+                        <li>Practical Malware Analysis — Sikorski & Honig</li>
+                        <li>The Art of Memory Forensics — Ligh, Case, Levy, Walters</li>
+                        <li>Applied Network Security Monitoring — Sanders & Smith</li>
+                        <li>Incident Response & Computer Forensics — Luttgens, Pepe, Mandia</li>
+                        <li>Threat Hunting: A Practical Guide — Valentina Costa-Gazcón</li>
+                        <li>The Hacker Playbook 3 — Peter Kim (for adversary-mindset context)</li>
+                        <li>Crafting the InfoSec Playbook — Jeff Bollinger, Brandon Enright, Matthew Valites</li>
+                        <li>Blue Team Field Manual (BTFM) — Alan White & Ben Clark</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>Malware-Traffic-Analysis.net (free real-world PCAP exercises)</li>
+                        <li>LetsDefend (SOC analyst hands-on platform)</li>
+                        <li>TryHackMe (SOC Level 2, DFIR, and malware analysis paths)</li>
+                        <li>HackTheBox Academy (DFIR & threat hunting modules)</li>
+                        <li>SANS FOR508/FOR610/FOR578 course materials and webcasts</li>
+                        <li>MITRE ATT&CK official site and CTI training resources</li>
+                        <li>Atomic Red Team (open-source adversary emulation testing)</li>
+                        <li>MalwareUnicorn's RE101/RE102 reverse engineering workshops</li>
+                        <li>CyberDefenders (blue team forensic challenge platform)</li>
+                        <li>YouTube: 13Cubed, John Hammond, The Cyber Mentor (blue team content)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>GIAC Certified Forensic Analyst (GCFA)</li>
+                        <li>GIAC Certified Incident Handler (GCIH)</li>
+                        <li>GIAC Reverse Engineering Malware (GREM)</li>
+                        <li>CompTIA CySA+ (Cybersecurity Analyst)</li>
+                        <li>Certified Threat Intelligence Analyst (CTIA, EC-Council)</li>
+                        <li>Blue Team Level 1 (BTL1, Security Blue Team)</li>
+                        <li>GIAC Certified Detection Analyst (GCDA)</li>
+                        <li>EC-Council Certified SOC Analyst (CSA) — if not already held from Tier 1/2</li>
+                        <li>Splunk Core Certified Power User / Advanced Power User</li>
+                        <li>OSCP (offensive context strengthens defensive analysis significantly)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>r/blueteamsec and r/dfir on Reddit</li>
+                        <li>SANS Internet Storm Center community</li>
+                        <li>MISP community and threat-sharing communities</li>
+                        <li>DFIR Discord/Slack communities (13Cubed, SANS DFIR)</li>
+                        <li>MITRE ATT&CK community workshops and contributor channels</li>
+                        <li>Detection Engineering community (Detection Engineering Weekly newsletter/Slack)</li>
+                        <li>Twitter/X DFIR and threat hunting community (#DFIR, #ThreatHunting)</li>
+                        <li>FIRST.org (Forum of Incident Response and Security Teams) resources</li>
+                        <li>Local BSides/DEF CON group meetups (blue team villages)</li>
+                        <li>CyberDefenders and LetsDefend community forums</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>SIEM, Detection & CTI Tools</h3>
+                    <ul>
+                        <li>Splunk / Elastic Security / Wazuh</li>
+                        <li>Sigma (rule format) + sigmac/pySigma conversion tooling</li>
+                        <li>MITRE ATT&CK Navigator</li>
+                        <li>MISP</li>
+                        <li>OpenCTI</li>
+                        <li>YARA</li>
+                        <li>Atomic Red Team</li>
+                        <li>VirusTotal / Hybrid Analysis</li>
+                        <li>Shodan / Censys (OSINT pivoting)</li>
+                        <li>AlienVault OTX</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Malware Analysis & Forensics Tools</h3>
+                    <ul>
+                        <li>FLARE VM</li>
+                        <li>Ghidra</li>
+                        <li>PEStudio / PEiD</li>
+                        <li>Any.Run / CAPE Sandbox</li>
+                        <li>Volatility 3</li>
+                        <li>Process Hacker / System Informer</li>
+                        <li>Procmon (Sysinternals Suite)</li>
+                        <li>Wireshark / Zeek / NetworkMiner</li>
+                        <li>Autopsy / FTK Imager</li>
+                        <li>KAPE (Kroll Artifact Parser and Extractor)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Automation & Response Tools</h3>
+                    <ul>
+                        <li>Python (requests, pandas for triage scripting)</li>
+                        <li>Shuffle / TheHive / Cortex (open-source SOAR + case management)</li>
+                        <li>n8n (open-source workflow automation)</li>
+                        <li>Velociraptor (endpoint visibility & forensic collection)</li>
+                        <li>osquery</li>
+                        <li>GRR Rapid Response</li>
+                        <li>Jupyter Notebooks (analysis documentation & repeatable workflows)</li>
+                        <li>Git (detection-as-code version control)</li>
+                        <li>Slack/Teams API (automated alerting integration)</li>
+                        <li>Caldera (MITRE's automated adversary emulation platform)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Build an ATT&CK Navigator heatmap for a fictional org</li>
+                        <li>Write one Sigma rule and convert it to a SIEM query language</li>
+                        <li>Set up MISP and import a public threat feed</li>
+                        <li>Analyze one beginner-level PCAP from Malware-Traffic-Analysis.net</li>
+                        <li>Run static analysis (strings, PEStudio) on one safe sample</li>
+                        <li>Write one YARA rule for a known malware family</li>
+                        <li>Run 3 Atomic Red Team tests against a lab SIEM</li>
+                        <li>Acquire and review one memory image with Volatility's pslist</li>
+                        <li>Write a one-page hunt hypothesis for a chosen ATT&CK technique</li>
+                        <li>Document the DFIR lifecycle in your own words with an example</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Run a full hypothesis-driven hunt and produce a structured hunt report</li>
+                        <li>Perform combined static + dynamic analysis on one malware sample</li>
+                        <li>Write a full memory forensics walkthrough for an infected lab VM</li>
+                        <li>Build a CTI-to-detection pipeline from a real threat report</li>
+                        <li>Write an incident command playbook for one attack scenario</li>
+                        <li>Build a Python script that auto-enriches an alert with threat intel</li>
+                        <li>Run a full detection validation cycle with Atomic Red Team</li>
+                        <li>Write a network forensics report reconstructing a C2 communication chain</li>
+                        <li>Build a small YARA rule library (5+ rules) with false-positive testing</li>
+                        <li>Document a full hunt-to-production-detection pipeline diagram</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a full detection engineering program: CTI → hunt → rule → validation → deploy</li>
+                        <li>Lead a multi-stage incident tabletop exercise with a documented executive briefing</li>
+                        <li>Build a SOAR playbook suite automating your SOC's top 3 alert types</li>
+                        <li>Reverse engineer a more advanced sample with anti-analysis techniques present</li>
+                        <li>Build a detection coverage dashboard tracking ATT&CK technique coverage over time</li>
+                        <li>Design a full purple team exercise plan with offensive and defensive success criteria</li>
+                        <li>Build a threat intelligence fusion process combining 3+ feed sources into one actionable output</li>
+                        <li>Architect a complete DFIR evidence handling and chain-of-custody process</li>
+                        <li>Design a detection-as-code CI/CD pipeline with automated Sigma rule testing</li>
+                        <li>Mentor a Tier 1/2 analyst through escalation case studies</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Contribute a Sigma rule or YARA signature to a public open-source repository</li>
+                        <li>Publish original threat research or a malware analysis writeup</li>
+                        <li>Design a full SOC maturity model spanning Tier 1 through Tier 3 capability</li>
+                        <li>Build a custom detection engineering framework tailored to an organization's stack</li>
+                        <li>Speak at a local BSides/DEF CON blue team village or community meetup</li>
+                        <li>Lead a full red-vs-blue purple team engagement end-to-end</li>
+                        <li>Architect an automated breach-and-attack-simulation (BAS) program</li>
+                        <li>Build a custom EDR detection logic set based on observed adversary behavior</li>
+                        <li>Design an organization-wide incident command structure and RACI for major incidents</li>
+                        <li>Mentor multiple analysts through a structured Tier 2-to-Tier 3 progression path</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your SOC career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize</h3>
+                    <ul>
+                        <li>Pick one lane: DFIR/incident response, malware reverse engineering, or detection engineering</li>
+                        <li>Go deep on advanced malware reverse engineering (GREM, advanced Ghidra/IDA Pro work)</li>
+                        <li>Consider a cloud-focused DFIR specialization as cloud incident volume grows industry-wide</li>
+                        <li>Explore threat intelligence analyst roles as a CTI-focused specialization</li>
+                        <li>Look into SOC management/team lead as a leadership path</li>
+                        <li>Consider detection engineering as a dedicated, tooling-heavy specialization</li>
+                        <li>Specialize in a high-stakes industry vertical (finance, critical infrastructure, healthcare)</li>
+                        <li>Pursue an advanced cert aligned to your chosen lane</li>
+                        <li>Join a specialized community for that niche</li>
+                        <li>Set a 6-month deep-specialization goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to Tier 3 SOC Analyst / Senior SOC Analyst / DFIR Analyst roles weekly</li>
+                        <li>Tailor your resume per job description using your portfolio reports</li>
+                        <li>Attend local BSides/DEF CON blue team village meetups</li>
+                        <li>Reach out to senior SOC/DFIR professionals on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your GitHub portfolio updated with new detection/analysis work</li>
+                        <li>Practice mock interviews monthly to stay sharp</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider freelance/contract DFIR or detection engineering gigs to build experience</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly threat intelligence and malware research roundups</li>
+                        <li>Analyze at least one new PCAP or malware sample per week to stay sharp</li>
+                        <li>Re-run old hunts with new TTPs/techniques quarterly as adversaries evolve</li>
+                        <li>Write a monthly technical blog post about something you learned</li>
+                        <li>Build a second, more advanced portfolio project every 90 days</li>
+                        <li>Track new MITRE ATT&CK technique additions and update your heatmap</li>
+                        <li>Mentor Tier 1/2 analysts — teaching reinforces your own mastery</li>
+                        <li>Read one new DFIR/threat hunting book per month</li>
+                        <li>Attend at least one virtual conference talk per month</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create an intermediate-to-advanced SOC series for analysts leveling up from Tier 1/2</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your Sigma/YARA rule sets for others to use</li>
+                        <li>Host a free workshop/webinar on one threat hunting or malware analysis topic</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another analyst for accountability</li>
+                        <li>Contribute documentation fixes to a tool you use often</li>
+                        <li>Review and give feedback on a peer's hunt report or malware writeup</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Built an ATT&CK coverage heatmap and a working Sigma detection-as-code pipeline | ✅ Operationalized threat intelligence into actionable detections | ✅ Run hypothesis-driven hunts that converted into production rules</p>
+                <p>✅ Performed full static, dynamic, and memory forensic malware analysis | ✅ Led a major incident response tabletop with executive-ready communication | ✅ Built SOAR automation and validated detections through purple teaming</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> MITRE ATT&CK, Sigma, MISP/STIX-TAXII, Splunk/Elastic, YARA, Ghidra, Volatility 3, Wireshark/Zeek, Atomic Red Team, Python automation, TheHive/Cortex.</p>
+                <br>
+                <p><strong>Remember:</strong> Tier 3 isn't about working alerts faster — it's about making sure the same attack never needs a Tier 1 analyst's attention twice. Every hunt, rule, and forensic report you write exists to answer one question: "now that we've seen this once, will we ever miss it again?" Stay curious, document everything, and always close the loop back into detection.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

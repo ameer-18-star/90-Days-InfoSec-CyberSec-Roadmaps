@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Digital Forensics Analyst" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Digital Forensics Analyst"</h1>
+            <p>Become proficient in acquiring, preserving, and analyzing digital evidence to solve cybercrimes and incidents.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="phase-header">
+                <h2>Phase 1: Foundational Knowledge & Core Concepts</h2>
+                <span>Days 1-30: Build a solid understanding of digital forensics principles and basic techniques.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Operating System Fundamentals</span>
+                    <span class="skill-tag">Networking Basics</span>
+                    <span class="skill-tag">Evidence Handling</span>
+                    <span class="skill-tag">File Systems</span>
+                    <span class="skill-tag">Basic Tool Usage</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Introduction to Digital Forensics & OS Fundamentals</h3>
+                    <ul>
+                        <li>Understand the role of a Digital Forensics Analyst.</li>
+                        <li>Learn the phases of the digital forensics process (identification, preservation, analysis, documentation, presentation).</li>
+                        <li>Explore legal and ethical considerations in digital forensics.</li>
+                        <li>Review Windows operating system architecture (registry, event logs, file system).</li>
+                        <li>Understand Linux/Unix operating system basics (file system hierarchy, common commands).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Windows OS</span>
+                        <span class="tech-badge">Linux OS</span>
+                        <span class="tech-badge">Forensics Principles</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Setup a Forensic Workstation</h4>
+                        <p>Set up a virtual machine environment with a forensic workstation (e.g., REMnux, SIFT Workstation) and a target OS (e.g., Windows 10, Ubuntu) for practice.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Data Acquisition & Preservation</h3>
+                    <ul>
+                        <li>Learn about different types of digital evidence (volatile vs. non-volatile).</li>
+                        <li>Understand the importance of the chain of custody.</li>
+                        <li>Practice imaging hard drives (physical vs. logical acquisitions).</li>
+                        <li>Learn about hashing and its role in evidence integrity.</li>
+                        <li>Explore write blockers and their importance.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Disk Imaging</span>
+                        <span class="tech-badge">Hashing (MD5, SHA1, SHA256)</span>
+                        <span class="tech-badge">Write Blockers</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Create a Forensic Image</h4>
+                        <p>Using a tool like FTK Imager or Autopsy, create a forensic image of a small USB drive or a virtual disk. Verify its integrity using hashing.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: File Systems & Data Recovery</h3>
+                    <ul>
+                        <li>Deep dive into common file systems: NTFS, FAT32, ext4.</li>
+                        <li>Understand file carving and data recovery techniques for deleted files.</li>
+                        <li>Learn about slack space and unallocated space.</li>
+                        <li>Explore metadata analysis and its significance.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NTFS</span>
+                        <span class="tech-badge">FAT32</span>
+                        <span class="tech-badge">ext4</span>
+                        <span class="tech-badge">File Carving</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Recover Deleted Files</h4>
+                        <p>Delete some files from your practice virtual disk, then attempt to recover them using tools like PhotoRec, Foremost, or Autopsy.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Basic Analysis Techniques & Reporting</h3>
+                    <ul>
+                        <li>Introduce common forensic tools for initial analysis (Autopsy, FTK Imager).</li>
+                        <li>Learn to identify suspicious files and activities.</li>
+                        <li>Understand basic log analysis.</li>
+                        <li>Practice documenting findings and writing preliminary forensic reports.</li>
+                        <li>Understand forensic readiness and incident response basics.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Autopsy</span>
+                        <span class="tech-badge">FTK Imager</span>
+                        <span class="tech-badge">Log Analysis</span>
+                        <span class="tech-badge">Report Writing</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Analyze a Simple Case</h4>
+                        <p>Analyze a small provided forensic image (e.g., from a CTF challenge or a sample dataset) and write a short report detailing your findings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You have successfully grasped the core concepts of digital forensics, understood evidence handling, practiced basic data acquisition and recovery, and begun to analyze digital artifacts. You are now ready to delve deeper into specialized areas.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>These projects will solidify your foundational knowledge and provide practical experience.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>USB Drive Forensic Analysis</h4>
+                        <p>Acquire an image of a USB drive, analyze its file system, recover deleted files, and examine metadata for user activity.</p>
+                        <small>Hints: Use FTK Imager for acquisition, Autopsy for analysis. Pay attention to timestamps and file origins.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Basic Windows Registry Analysis</h4>
+                        <p>Analyze a captured Windows Registry hive to find evidence of recently opened files, connected USB devices, or installed programs.</p>
+                        <small>Hints: Use tools like Registry Explorer or RegRipper. Focus on common evidentiary keys (e.g., RunMRU, USBSTOR).</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Linux Log File Investigation</h4>
+                        <p>Examine syslog, auth.log, or other common Linux logs from a provided dataset to identify failed login attempts, user activity, or system errors.</p>
+                        <small>Hints: Use basic grep and less commands. Look for unusual patterns or specific error messages.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Simple Disk Carving Challenge</h4>
+                        <p>Given a raw disk image with fragmented or deleted data, use file carving tools to extract specific file types (e.g., JPG, PDF).</p>
+                        <small>Hints: Experiment with PhotoRec, Foremost, and Scalpel. Understand file headers and footers.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 2: Deep Dive into Specialized Forensics</h2>
+                <span>Days 31-60: Focus on specific areas of digital forensics and advanced analysis techniques.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Memory Forensics</span>
+                    <span class="skill-tag">Network Forensics</span>
+                    <span class="skill-tag">Malware Analysis (Basic)</span>
+                    <span class="skill-tag">Mobile Forensics (Intro)</span>
+                    <span class="skill-tag">Scripting for Forensics</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Memory Forensics</h3>
+                    <ul>
+                        <li>Understand the importance of RAM analysis in live forensics.</li>
+                        <li>Learn about memory acquisition techniques.</li>
+                        <li>Explore Volatility Framework for analyzing memory dumps.</li>
+                        <li>Identify running processes, network connections, and hidden malware in memory.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Volatility Framework</span>
+                        <span class="tech-badge">RAM Analysis</span>
+                        <span class="tech-badge">Memory Dumps</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Analyze a Memory Dump</h4>
+                        <p>Analyze a provided memory dump (e.g., from a malware infection scenario) using Volatility to extract process lists, open network connections, and potential malicious artifacts.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Network Forensics & Log Analysis</h3>
+                    <ul>
+                        <li>Understand network protocols relevant to forensics (TCP/IP, HTTP, DNS).</li>
+                        <li>Learn packet capture and analysis using Wireshark.</li>
+                        <li>Identify suspicious network traffic patterns.</li>
+                        <li>Advanced log analysis techniques (Sysmon, Windows Event Logs, firewall logs).</li>
+                        <li>Introduction to Security Information and Event Management (SIEM) systems.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Wireshark</span>
+                        <span class="tech-badge">tcpdump</span>
+                        <span class="tech-badge">ELK Stack (basic)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Network Traffic Analysis</h4>
+                        <p>Analyze a pcap file to identify signs of malicious activity, such as C2 communication, data exfiltration, or port scanning. Document your findings.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Malware Analysis Fundamentals</h3>
+                    <ul>
+                        <li>Understand different types of malware (viruses, worms, ransomware, rootkits).</li>
+                        <li>Learn static analysis techniques (string analysis, PE header analysis).</li>
+                        <li>Introduction to dynamic analysis in a sandbox environment.</li>
+                        <li>Identify indicators of compromise (IOCs).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">IDA Free</span>
+                        <span class="tech-badge">Ghidra</span>
+                        <span class="tech-badge">Cuckoo Sandbox (concept)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Basic Malware Triage</h4>
+                        <p>Perform static analysis on a provided benign suspicious executable (from a safe source like VirusTotal samples) to identify strings, imports, and other characteristics. Do NOT execute live malware.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Mobile Device Forensics & Cloud Forensics (Intro)</h3>
+                    <ul>
+                        <li>Overview of mobile operating systems (iOS, Android) and their forensic challenges.</li>
+                        <li>Learn about acquisition methods for mobile devices (logical vs. physical).</li>
+                        <li>Introduction to common mobile forensic tools.</li>
+                        <li>Understand the basics of cloud forensics and data sources in cloud environments.</li>
+                        <li>Introduction to scripting for automation (Python basics for parsing logs/data).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cellebrite (concept)</span>
+                        <span class="tech-badge">Magnet Axiom (concept)</span>
+                        <span class="tech-badge">Python (basics)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Simple Scripting for Forensics</h4>
+                        <p>Write a simple Python script to parse a log file for specific keywords or to automate a simple file system enumeration task on a practice image.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You've ventured into specialized forensic areas, gaining practical experience in memory and network analysis, malware triage, and an introduction to mobile and cloud forensics. Your analytical skills are becoming sharper, and you're starting to leverage scripting for efficiency.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>These projects will challenge your understanding of specialized forensic disciplines.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Memory Forensics Challenge (CTF-style)</h4>
+                        <p>Solve a CTF-style memory forensics challenge, focusing on extracting specific information (e.g., user passwords from memory, command history, running services) from a provided RAM dump.</p>
+                        <small>Hints: Use Volatility. Explore various plugins like `pslist`, `netscan`, `cmdscan`, `hashdump`.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Network Intrusion Analysis</h4>
+                        <p>Analyze a network packet capture containing signs of a simulated intrusion (e.g., port scan, exploit attempt, data exfiltration). Reconstruct the attack timeline.</p>
+                        <small>Hints: Use Wireshark's filtering capabilities. Follow TCP streams. Identify suspicious protocols or payloads.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Basic Mobile Application Data Extraction</h4>
+                        <p>Research and simulate the process of extracting data from a non-rooted Android emulator (e.g., WhatsApp chat history, SMS messages) and analyze the retrieved database files.</p>
+                        <small>Hints: Explore ADB commands. Look into SQLite databases for application data.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Automated Log Analysis Script</h4>
+                        <p>Develop a Python script that can read different types of log files (e.g., Apache access logs, Windows Event Logs exported to CSV) and identify patterns like repeated failed logins or unusual access times.</p>
+                        <small>Hints: Use Python's file I/O. Regular expressions can be powerful for pattern matching.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 3: Advanced Concepts & Practical Application</h2>
+                <span>Days 61-90: Refine your skills, learn advanced topics, and focus on practical, real-world scenario application.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Advanced Data Recovery</span>
+                    <span class="skill-tag">Incident Response Integration</span>
+                    <span class="skill-tag">Reporting & Expert Testimony</span>
+                    <span class="skill-tag">Cloud & IoT Forensics</span>
+                    <span class="skill-tag">Tool Customization</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Advanced Host Forensics & Anti-Forensics</h3>
+                    <ul>
+                        <li>Deep dive into Windows artifacts: Prefetch files, ShimCache, Amcache, Jump Lists, LNK files.</li>
+                        <li>Understand persistence mechanisms used by malware.</li>
+                        <li>Explore anti-forensic techniques (timestomping, data wiping, encryption) and countermeasures.</li>
+                        <li>Introduction to virtual machine forensics.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Eric Zimmerman's Tools</span>
+                        <span class="tech-badge">Sysinternals Suite</span>
+                        <span class="tech-badge">Timestomping Detection</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Analyze Advanced Windows Artifacts</h4>
+                        <p>Given a Windows forensic image, use specialized tools to analyze Prefetch files, Jump Lists, and the Amcache to reconstruct user and program execution history.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Digital Forensics & Incident Response (DFIR) Integration</h3>
+                    <ul>
+                        <li>Understand the synergy between digital forensics and incident response.</li>
+                        <li>Learn about incident response frameworks (NIST, SANS).</li>
+                        <li>Practice live response techniques (when and how to acquire volatile data).</li>
+                        <li>Develop an incident response plan for a simulated breach.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NIST IR Framework</span>
+                        <span class="tech-badge">SANS DFIR</span>
+                        <span class="tech-badge">Live Response Tools</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Simulate a Minor Incident Response</h4>
+                        <p>Given a simulated scenario (e.g., a suspicious email attachment executed), perform initial triage, acquire necessary data, and outline the immediate response steps as a digital forensics analyst.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Report Writing, Expert Testimony & Legal Aspects</h3>
+                    <ul>
+                        <li>Master the art of writing comprehensive and legally sound forensic reports.</li>
+                        <li>Understand the requirements for presenting evidence in court.</li>
+                        <li>Learn about expert witness roles and challenges.</li>
+                        <li>Review relevant laws and regulations (e.g., GDPR, HIPAA, local cybercrime laws).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Legal Principles</span>
+                        <span class="tech-badge">Evidence Admissibility</span>
+                        <span class="tech-badge">Communication Skills</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Draft a Comprehensive Forensic Report</h4>
+                        <p>Based on a more complex simulated case or a previous project, write a full forensic report that includes executive summary, methodology, findings, and conclusions, suitable for a professional audience.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Advanced Topics & Continuous Learning</h3>
+                    <ul>
+                        <li>Explore advanced topics: IoT forensics, automotive forensics, blockchain forensics (overview).</li>
+                        <li>Discuss open-source intelligence (OSINT) in forensics investigations.</li>
+                        <li>Learn about continuous learning strategies and staying updated in the field.</li>
+                        <li>Review key concepts and prepare for certification exams.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">OSINT Tools (concept)</span>
+                        <span class="tech-badge">Emerging Technologies</span>
+                        <span class="tech-badge">Self-Study</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Capstone Project - Full Forensics Case</h4>
+                        <p>Undertake a comprehensive simulated forensic case involving multiple artifacts (disk, memory, network, logs) and deliver a complete investigation report, potentially including a mock presentation of findings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You've completed an intensive 90-day roadmap, transforming from a foundational learner to a proficient Digital Forensics Analyst. You possess a strong understanding of forensic methodologies, tool usage, specialized analysis, and the critical skill of clear reporting, preparing you for real-world challenges.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects for Continued Growth After 90 Days</h3>
+                <p>These projects are designed to push your skills further and specialize your expertise.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Ransomware Incident Analysis</h4>
+                        <p>Analyze a disk image and memory dump from a simulated ransomware infection. Identify the initial compromise vector, ransomware type, and affected files. Propose remediation steps.</p>
+                        <small>Hints: Look for shadow copy deletions, specific file extensions, and network connections to C2 servers.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cloud Data Breach Investigation</h4>
+                        <p>Simulate a data breach in a cloud environment (e.g., AWS S3 bucket misconfiguration). Identify how the breach occurred, what data was exposed, and suggest preventive measures.</p>
+                        <small>Hints: Focus on cloud service logs (CloudTrail, VPC Flow Logs). Understand IAM roles and permissions.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Advanced Anti-Forensics Detection</h4>
+                        <p>Create a test environment where anti-forensic techniques are applied (e.g., using SDelete, Timestomp). Then, attempt to detect and analyze the remnants of these techniques.</p>
+                        <small>Hints: Use tools like EDR solutions (simulated) or deep dive into MFT and journal analysis for anomalies.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Custom Forensic Tool Development</h4>
+                        <p>Identify a specific gap in existing forensic tooling (e.g., a new log format, a niche artifact). Develop a small Python script or utility to parse and analyze that data, contributing to your personal toolkit.</p>
+                        <small>Hints: Start with a clear problem statement. Leverage existing forensic libraries if available (e.g., `python-registry`).</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skills-learned">
+                <h4>🚀 Key Skills Acquired</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Operating System Internals (Windows, Linux)</div>
+                    <div class="skill-item">Data Acquisition & Preservation</div>
+                    <div class="skill-item">File System Analysis</div>
+                    <div class="skill-item">Memory Forensics</div>
+                    <div class="skill-item">Network Forensics</div>
+                    <div class="skill-item">Malware Triage</div>
+                    <div class="skill-item">Mobile Forensics (Basic)</div>
+                    <div class="skill-item">Cloud Forensics (Basic)</div>
+                    <div class="skill-item">Report Writing & Documentation</div>
+                    <div class="skill-item">Scripting (Python)</div>
+                    <div class="skill-item">Chain of Custody</div>
+                    <div class="skill-item">Incident Response Principles</div>
+                    <div class="skill-item">Evidence Admissibility</div>
+                    <div class="skill-item">Problem Solving</div>
+                    <div class="skill-item">Critical Thinking</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms, books, and communities for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li><a href="https://www.amazon.com/Guide-Computer-Forensics-Investigations-7th/dp/1337568521" target="_blank">Guide to Computer Forensics and Investigations</a> by Bill Nelson et al.</li>
+                        <li><a href="https://www.amazon.com/Practical-Malware-Analysis-Dissecting-Malicious/dp/1593272901" target="_blank">Practical Malware Analysis</a> by Michael Sikorski and Andrew Honig</li>
+                        <li><a href="https://www.amazon.com/Blue-Team-Field-Guide-Cyber-Security/dp/1731151608" target="_blank">The Blue Team Field Guide</a> by Alan J White</li>
+                        <li><a href="https://www.amazon.com/Windows-Forensic-Analysis-Toolkit-Reconnaissance/dp/1597497298" target="_blank">Windows Forensic Analysis Toolkit</a> by Harlan Carvey</li>
+                        <li><a href="https://www.amazon.com/Art-Memory-Forensics-Detecting-Analyzing/dp/1118825098" target="_blank">The Art of Memory Forensics</a> by Chris Eagle et al.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li><a href="https://tryhackme.com/" target="_blank">TryHackMe</a> (Digital Forensics Path, Incident Response Path)</li>
+                        <li><a href="https://academy.hackthebox.com/" target="_blank">Hack The Box Academy</a> (DFIR modules)</li>
+                        <li><a href="https://www.sans.org/cyber-security-courses/" target="_blank">SANS Institute</a> (FOR courses - paid, but excellent curriculum)</li>
+                        <li><a href="https://www.udemy.com/" target="_blank">Udemy / Coursera</a> (Look for courses by reputable instructors in DFIR)</li>
+                        <li><a href="https://www.cybrary.it/" target="_blank">Cybrary</a> (DFIR content)</li>
+                        <li><a href="https://app.pluralsight.com/" target="_blank">Pluralsight</a> (Various DFIR courses)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>**CompTIA CySA+** (Cybersecurity Analyst+) - Good entry-level for understanding analysis.</li>
+                        <li>**CompTIA CASP+** (Advanced Security Practitioner) - Broader security, but helpful for context.</li>
+                        <li>**GIAC GCFE** (GIAC Certified Forensic Examiner) - Highly respected, focus on Windows.</li>
+                        <li>**GIAC GCFA** (GIAC Certified Forensic Analyst) - More advanced, covers broader topics.</li>
+                        <li>**EC-Council CHFI** (Certified Hacking Forensic Investigator) - Another well-known certification.</li>
+                        <li>**CCFE** (Certified Computer Forensics Examiner)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li><a href="https://www.reddit.com/r/digitalforensics/" target="_blank">r/digitalforensics (Reddit)</a></li>
+                        <li><a href="https://www.reddit.com/r/blueteamsec/" target="_blank">r/blueteamsec (Reddit)</a></li>
+                        <li><a href="https://discord.com/invite/digitalforensics" target="_blank">Digital Forensics Discord Servers</a> (Search for active ones)</li>
+                        <li>DFIR Community Blogs (e.g., SANS Digital Forensics Blog, various personal blogs of DFIR professionals)</li>
+                        <li>Local BSides / Cyber Security Meetups</li>
+                        <li>LinkedIn Groups for Digital Forensics Professionals</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Disk Imaging & Acquisition</h3>
+                    <ul>
+                        <li>**FTK Imager** (Free)</li>
+                        <li>**Autopsy** (Free, GUI for Sleuth Kit)</li>
+                        <li>**Magnet Acquire** (Free, from Magnet Forensics)</li>
+                        <li>**dd/dcfldd** (Linux command line)</li>
+                        <li>**AccessData AD Lab** (Commercial)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Analysis Suites</h3>
+                    <ul>
+                        <li>**Autopsy** (Free)</li>
+                        <li>**Magnet AXIOM** (Commercial)</li>
+                        <li>**EnCase Forensic** (Commercial)</li>
+                        <li>**X-Ways Forensics** (Commercial)</li>
+                        <li>**Sleuth Kit** (Command line tools, basis for Autopsy)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Specialized Tools</h3>
+                    <ul>
+                        <li>**Volatility Framework** (Memory Forensics)</li>
+                        <li>**Wireshark** (Network Protocol Analyzer)</li>
+                        <li>**Eric Zimmerman's Tools** (Windows Artifacts, highly recommended)</li>
+                        <li>**Registry Explorer / RegRipper** (Windows Registry Analysis)</li>
+                        <li>**PE-Studio / ExifTool** (Malware/File Analysis)</li>
+                        <li>**Cuckoo Sandbox** (Automated Malware Analysis Sandbox)</li>
+                        <li>**CyberChef** (Data manipulation and analysis)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practical projects to apply and hone your digital forensics skills.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Analyze a lost/found USB stick for owner identification and content.</li>
+                        <li>Recover deleted photos from a simulated camera SD card.</li>
+                        <li>Examine a web browser's history and cache to reconstruct user activity.</li>
+                        <li>Investigate basic email headers for spoofing or phishing attempts.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Investigate a simulated insider threat scenario on a corporate workstation.</li>
+                        <li>Analyze a memory dump for evidence of a remote access trojan (RAT).</li>
+                        <li>Reconstruct a network attack from a series of packet captures and log files.</li>
+                        <li>Perform a basic forensic analysis of an Android mobile device backup.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Conduct a full incident response and forensic investigation of a simulated ransomware attack, from initial detection to post-incident analysis.</li>
+                        <li>Analyze forensic artifacts from a compromised web server (e.g., Apache logs, web shell presence).</li>
+                        <li>Develop a custom Python script to automate the extraction and analysis of a specific, obscure forensic artifact.</li>
+                        <li>Participate in a multi-day, complex CTF (Capture The Flag) event with a strong DFIR component.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert (Beyond 90 Days)</h3>
+                    <ul>
+                        <li>Contribute to an open-source forensic tool or project.</li>
+                        <li>Research and publish findings on a new forensic artifact or technique.</li>
+                        <li>Specialize in a niche area like automotive forensics, industrial control system (ICS) forensics, or blockchain forensics.</li>
+                        <li>Mentor aspiring digital forensics analysts and share your knowledge.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>What's Next Beyond 90 Days?</h2>
+                <span>Your journey in digital forensics is continuous. Here's how to keep growing.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize & Deepen</h3>
+                    <ul>
+                        <li>**Cloud Forensics:** Dive deep into AWS, Azure, GCP specific artifacts and APIs.</li>
+                        <li>**Mobile Forensics:** Master commercial tools and advanced mobile data extraction.</li>
+                        <li>**Malware Reverse Engineering:** Learn assembly and advanced debugging for deeper malware analysis.</li>
+                        <li>**Threat Hunting:** Apply forensic skills proactively to identify ongoing threats.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Certifications & Education</h3>
+                    <ul>
+                        <li>Pursue advanced GIAC certifications (e.g., GCIA for network forensics, GREM for reverse engineering).</li>
+                        <li>Consider a Master's degree in Cybersecurity or Digital Forensics.</li>
+                        <li>Attend specialized workshops and training programs.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Contribute & Connect</h3>
+                    <ul>
+                        <li>Speak at industry conferences or local meetups.</li>
+                        <li>Write blog posts or articles sharing your knowledge and research.</li>
+                        <li>Contribute to open-source forensic tools or projects.</li>
+                        <li>Network with other professionals in the DFIR community.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Stay Current</h3>
+                    <ul>
+                        <li>Regularly read industry news, blogs, and research papers.</li>
+                        <li>Follow leading experts on social media and attend webinars.</li>
+                        <li>Practice regularly with new tools and techniques as they emerge.</li>
+                        <li>Participate in CTFs and labs to keep your skills sharp.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics for Day 90</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Solid understanding of the digital forensics lifecycle. | ✅ Proficiency in using key open-source forensic tools (e.g., Autopsy, Volatility, Wireshark). | ✅ Ability to acquire and preserve digital evidence ethically and legally.</p>
+                <p>✅ Competence in analyzing disk images, memory dumps, and network traffic. | ✅ Skill in recovering deleted files and analyzing system artifacts. | ✅ Capability to write clear, concise, and actionable forensic reports.</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Windows, Linux, NTFS, FAT32, ext4, TCP/IP, HTTP, DNS, Autopsy, FTK Imager, Volatility, Wireshark, Eric Zimmerman's Tools, Python scripting fundamentals, various log analysis tools.</p>
+                <br>
+                <p><strong>Remember:</strong> Consistency is key. Dedicate specific time each day to learning and practice. Don't be afraid to break things in your lab environment—that's how you learn. Join communities and ask questions. Practical experience is invaluable, so apply what you learn through hands-on labs and projects.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

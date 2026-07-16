@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Network Security Engineer" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Network Security Engineer"</h1>
+            <p>This 90-day roadmap is designed to equip you with the foundational to intermediate skills required to excel as a Network Security Engineer. It emphasizes practical application and hands-on experience, crucial for real-world scenarios.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="phase-header">
+                <h2>Phase 1: Network Fundamentals & Basic Security</h2>
+                <span>Days 1-30: Build a solid understanding of networking and foundational security concepts.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">TCP/IP Model</span>
+                    <span class="skill-tag">OSI Model</span>
+                    <span class="skill-tag">Subnetting</span>
+                    <span class="skill-tag">Basic Routing & Switching</span>
+                    <span class="skill-tag">Firewall Concepts</span>
+                    <span class="skill-tag">VPN Fundamentals</span>
+                    <span class="skill-tag">Packet Analysis</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Network Fundamentals (OSI/TCP-IP)</h3>
+                    <ul>
+                        <li>Understand the OSI Model layers and their functions.</li>
+                        <li>Grasp the TCP/IP Model and its comparison to OSI.</li>
+                        <li>Learn about IP addressing (IPv4 & IPv6), subnetting, and CIDR.</li>
+                        <li>Explore common network protocols (HTTP, DNS, DHCP, ARP, ICMP).</li>
+                        <li>Familiarize yourself with network topologies and hardware (routers, switches, hubs).</li>
+                        <li>Understand the basics of command-line tools for network diagnostics (ping, tracert/traceroute, ipconfig/ifconfig).</li>
+                        <li>Introduction to Virtual Machines (VMs) for lab environment setup.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cisco Packet Tracer</span>
+                        <span class="tech-badge">Wireshark (Basic)</span>
+                        <span class="tech-badge">VirtualBox/VMware Workstation Player</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Network Diagram & IP Scheme</h4>
+                        <p>Design a simple network diagram for a small office using Cisco Packet Tracer, including routers, switches, and end devices. Assign appropriate IP addresses and subnet masks.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Network Devices & Concepts</h3>
+                    <ul>
+                        <li>Deep dive into Router functions: routing tables, static vs. dynamic routing.</li>
+                        <li>Explore Switch functions: MAC addresses, VLANs, trunking.</li>
+                        <li>Understand network services: DNS resolution, DHCP process.</li>
+                        <li>Introduction to network segmentation and its importance for security.</li>
+                        <li>Learn about different types of network cables and their uses.</li>
+                        <li>Understand basic wireless networking concepts (SSID, encryption types).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cisco IOS (basic commands)</span>
+                        <span class="tech-badge">Packet Tracer</span>
+                        <span class="tech-badge">Windows/Linux Network Commands</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Configure Basic Routing & Switching</h4>
+                        <p>Set up a small network in Packet Tracer with two routers and two switches, configuring static routes between networks and creating VLANs on switches with inter-VLAN routing.</p>
+                    *</div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Introduction to Network Security</h3>
+                    <ul>
+                        <li>Understand core security principles: Confidentiality, Integrity, Availability (CIA Triad).</li>
+                        <li>Introduction to common network attack types (DoS, MitM, sniffing, spoofing).</li>
+                        <li>Learn about firewalls: types (packet-filtering, stateful, NGFW) and basic rule configuration.</li>
+                        <li>Explore Network Address Translation (NAT) and its security implications.</li>
+                        <li>Understand the concept of Virtual Private Networks (VPNs) and their uses.</li>
+                        <li>Basic understanding of encryption and hashing in network security.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">pfSense/OPNsense (virtual)</span>
+                        <span class="tech-badge">Wireshark</span>
+                        <span class="tech-badge">Netcat</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Basic Firewall Rule Implementation</h4>
+                        <p>Set up a virtual firewall (e.g., pfSense) and configure basic inbound/outbound rules to allow/deny specific traffic between two virtual networks.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Packet Analysis & Vulnerability Scanning Basics</h3>
+                    <ul>
+                        <li>Master Wireshark for capturing and analyzing network traffic.</li>
+                        <li>Identify normal vs. suspicious traffic patterns.</li>
+                        <li>Learn about common network security vulnerabilities.</li>
+                        <li>Introduction to vulnerability scanning tools and their purpose.</li>
+                        <li>Understand the importance of security updates and patch management.</li>
+                        <li>Begin exploring basic security hardening techniques for network devices.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Wireshark (Advanced)</span>
+                        <span class="tech-badge">Nmap (Basic)</span>
+                        <span class="tech-badge">Kali Linux (basic usage)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Network Traffic Analysis & Basic Scan</h4>
+                        <p>Capture network traffic on your lab environment, identify different protocols, and then perform a basic Nmap scan against a target VM to identify open ports.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You have a solid understanding of networking fundamentals, common network devices, and basic network security principles. You can analyze network traffic and implement basic security controls.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>These projects will help solidify your understanding of Phase 1 concepts.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Secure Home Network Design</h4>
+                        <p>Design a secure home network architecture, including router configuration, Wi-Fi security, and client device considerations.</p>
+                        <small>Hints: Consider WPA3, strong passwords, guest networks, and firewall on router.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Packet Capture Challenge</h4>
+                        <p>Analyze provided packet capture files (PCAP) to identify specific network events, such as a DNS query, an HTTP request, or a failed connection attempt.</p>
+                        <small>Hints: Use Wireshark display filters and follow TCP streams.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Basic VPN Setup</h4>
+                        <p>Set up a simple point-to-point VPN connection using a virtualized firewall (e.g., OpenVPN on pfSense) between two virtual networks.</p>
+                        <small>Hints: Refer to pfSense OpenVPN documentation or online tutorials.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Network Hardening Checklist</h4>
+                        <p>Create a checklist of basic security hardening steps for a network switch and a router, based on best practices learned.</p>
+                        <small>Hints: Think about password policies, unused ports, and secure management protocols.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 2: Advanced Network Security & Tooling</h2>
+                <span>Days 31-60: Deepen your knowledge of security technologies and learn to use advanced tools.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Intrusion Detection/Prevention Systems (IDS/IPS)</span>
+                    <span class="skill-tag">Security Information and Event Management (SIEM)</span>
+                    <span class="skill-tag">Endpoint Security</span>
+                    <span class="skill-tag">Web Application Firewalls (WAF)</span>
+                    <span class="skill-tag">Vulnerability Management</span>
+                    <span class="skill-tag">Penetration Testing Concepts</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: IDS/IPS & Threat Detection</h3>
+                    <ul>
+                        <li>Understand the difference between Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS).</li>
+                        <li>Learn about signature-based vs. anomaly-based detection.</li>
+                        <li>Explore common IDS/IPS tools and their deployment strategies.</li>
+                        <li>Analyze IDS/IPS alerts and interpret their significance.</li>
+                        <li>Introduction to threat intelligence and its role in network security.</li>
+                        <li>Understand common attack vectors and mitigation strategies.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Snort/Suricata</span>
+                        <span class="tech-badge">Security Onion (Basic)</span>
+                        <span class="tech-badge">Packet Analysis Tools</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Deploy & Monitor IDS</h4>
+                        <p>Set up Snort or Suricata in a lab environment and configure basic rules to detect common attack patterns (e.g., port scans). Generate some attack traffic and analyze the alerts.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Security Information and Event Management (SIEM)</h3>
+                    <ul>
+                        <li>Understand the purpose and architecture of SIEM systems.</li>
+                        <li>Learn about log collection, correlation, and analysis.</li>
+                        <li>Explore different log sources (firewalls, servers, endpoints).</li>
+                        <li>Familiarize yourself with common SIEM use cases (e.g., anomalous login detection).</li>
+                        <li>Introduction to basic SIEM query languages and alert customization.</li>
+                        <li>Understand the importance of incident response planning.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Splunk (Free/Community Edition)</span>
+                        <span class="tech-badge">ELK Stack (Elasticsearch, Logstash, Kibana)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Centralized Log Collection & Basic Dashboard</h4>
+                        <p>Set up a basic Splunk or ELK stack instance to collect logs from a few virtual machines (e.g., Windows Event Logs, Linux Syslog). Create a simple dashboard to visualize security events.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Advanced Firewall & VPN Concepts</h3>
+                    <ul>
+                        <li>Deep dive into Next-Generation Firewalls (NGFW) features (application control, IPS integration).</li>
+                        <li>Understand different VPN protocols (IPsec, SSL/TLS VPNs) and their configurations.</li>
+                        <li>Learn about remote access VPNs and site-to-site VPNs.</li>
+                        <li>Explore advanced firewall policies and object-oriented configuration.</li>
+                        <li>Understand high availability and load balancing for network security devices.</li>
+                        <li>Introduction to Network Access Control (NAC) concepts.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Palo Alto/FortiGate (Community/Trial)</span>
+                        <span class="tech-badge">Cisco ASA (Emulated)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Implement Site-to-Site VPN</h4>
+                        <p>Configure a site-to-site IPsec VPN tunnel between two virtualized firewalls (e.g., pfSense or a trial NGFW) to securely connect two remote networks.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Web Application Security & Cloud Security Basics</h3>
+                    <ul>
+                        <li>Introduction to Web Application Firewalls (WAF) and their role in protecting web applications.</li>
+                        <li>Understand common web vulnerabilities (OWASP Top 10) and how WAFs mitigate them.</li>
+                        <li>Basic understanding of cloud security concepts (IaaS, PaaS, SaaS security considerations).</li>
+                        <li>Explore network security challenges in cloud environments.</li>
+                        <li>Introduction to security groups and network ACLs in cloud platforms (AWS/Azure).</li>
+                        <li>Understand the concept of Zero Trust architecture in networking.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">ModSecurity (with Apache/Nginx)</span>
+                        <span class="tech-badge">Basic AWS/Azure Free Tier</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Simple WAF Implementation & Cloud Network Security</h4>
+                        <p>Set up a basic ModSecurity WAF in front of a simple web application (e.g., Apache/Nginx) to block common web attacks. Additionally, configure basic network security (security groups/NACLS) for a simple web server in a cloud free tier account.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can now deploy and manage IDS/IPS systems, understand SIEM functionalities, implement advanced firewall and VPN configurations, and have a foundational grasp of web application and cloud network security.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>These projects will further enhance your practical skills in network security.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Incident Simulation & Response (IDS/SIEM)</h4>
+                        <p>Simulate a common network attack (e.g., a port scan followed by an exploit attempt) in your lab and use your configured IDS/SIEM to detect and analyze the incident. Document your findings.</p>
+                        <small>Hints: Use Metasploit for attack simulation, analyze logs in your SIEM.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Advanced Firewall Policy Design</h4>
+                        <p>Design and implement a more complex firewall policy on a virtual NGFW (e.g., Palo Alto/FortiGate trial) that includes application control, user identification, and content filtering for a simulated enterprise network.</p>
+                        <small>Hints: Focus on granular control based on applications, users, and URLs.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cloud Network Security Architecture</h4>
+                        <p>Propose a network security architecture for a simple cloud-based application, outlining the use of security groups, network ACLs, VPNs, and potentially a WAF.</p>
+                        <small>Hints: Consider different layers of security and how they interact.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Vulnerability Assessment & Reporting</h4>
+                        <p>Perform a vulnerability scan on a vulnerable VM (e.g., Metasploitable2) and generate a basic report outlining the identified vulnerabilities and potential remediation steps.</p>
+                        <small>Hints: Use Nessus Essentials or OpenVAS for scanning.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 3: Security Operations & Automation</h2>
+                <span>Days 61-90: Focus on operational aspects, compliance, and automation in network security.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Security Hardening Best Practices</span>
+                    <span class="skill-tag">Compliance & Frameworks (NIST, ISO 27001)</span>
+                    <span class="skill-tag">Security Automation (Scripting)</span>
+                    <span class="skill-tag">Incident Response Lifecycle</span>
+                    <span class="skill-tag">Disaster Recovery Planning</span>
+                    <span class="skill-tag">Network Segmentation Strategies</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Security Hardening & Best Practices</h3>
+                    <ul>
+                        <li>Learn about advanced security hardening techniques for operating systems (Windows Server, Linux).</li>
+                        <li>Understand secure configuration of network devices (routers, switches, firewalls).</li>
+                        <li>Explore concepts like least privilege, defense in depth, and zero trust.</li>
+                        <li>Familiarize yourself with security baselines and configuration management.</li>
+                        <li>Understand the importance of regular security audits and reviews.</li>
+                        <li>Learn about physical security considerations for network infrastructure.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">CIS Benchmarks</span>
+                        <span class="tech-badge">Ansible (Basic)</span>
+                        <span class="tech-badge">PowerShell/Bash Scripting</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Implement OS Hardening & Automation Script</h4>
+                        <p>Harden a virtual Linux or Windows server following CIS Benchmarks. Write a simple automation script (Bash/PowerShell) to perform a routine security check or configuration task on a network device or server.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Compliance, Risk Management & Security Assessments</h3>
+                    <ul>
+                        <li>Introduction to cybersecurity frameworks and regulations (NIST, ISO 27001, GDPR, HIPAA).</li>
+                        <li>Understand the basics of risk assessment and risk management in network security.</li>
+                        <li>Learn about different types of security assessments (penetration testing, vulnerability assessment, audit).</li>
+                        <li>Familiarize yourself with reporting security posture and compliance.</li>
+                        <li>Understand business continuity and disaster recovery planning.</li>
+                        <li>Introduction to security policy development.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NIST Cybersecurity Framework</span>
+                        <span class="tech-badge">Common Vulnerability Scoring System (CVSS)</span>
+                        <span class="tech-badge">Audit Logs</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Risk Assessment Report & Compliance Checklist</h4>
+                        <p>Identify potential network security risks for a hypothetical small business and propose mitigation strategies in a brief report. Create a simple checklist of network security controls based on a chosen framework (e.g., NIST CSF).</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Advanced Network Security Architectures & Cloud Integration</h3>
+                    <ul>
+                        <li>Explore advanced network segmentation strategies (micro-segmentation).</li>
+                        <li>Understand Software-Defined Networking (SDN) and its security implications.</li>
+                        <li>Deep dive into cloud network security services (VPCs, transit gateways, cloud firewalls).</li>
+                        <li>Learn about hybrid cloud network security architectures.</li>
+                        <li>Introduction to DevSecOps principles in a network security context.</li>
+                        <li>Explore emerging threats and advanced persistent threats (APTs).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cisco ACI/NSX (Concepts)</span>
+                        <span class="tech-badge">AWS/Azure Advanced Networking & Security</span>
+                        <span class="tech-badge">Docker/Kubernetes (Basic Security)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Hybrid Cloud Network Security Design</h4>
+                        <p>Design a conceptual hybrid cloud network architecture that securely connects an on-premise network to a cloud provider (AWS/Azure), including firewall rules, VPNs, and identity management considerations.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Capstone Project & Career Preparation</h3>
+                    <ul>
+                        <li>Review and reinforce all concepts learned throughout the 90 days.</li>
+                        <li>Refine your lab environment for a comprehensive security setup.</li>
+                        <li>Work on a capstone project that integrates multiple security controls.</li>
+                        <li>Prepare for common interview questions for Network Security Engineer roles.</li>
+                        <li>Understand the importance of continuous learning and staying updated with threat landscapes.</li>
+                        <li>Network with professionals in the cybersecurity field.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">All previously mentioned tools</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">Interview Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Comprehensive Secure Network Deployment</h4>
+                        <p>Build a fully functional and secure network in your lab environment, incorporating firewalls, IDS/IPS, VPNs, and a centralized logging system. Document the architecture, configurations, and security policies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You've completed a rigorous 90-day roadmap, building a strong foundation as a Network Security Engineer. You're now equipped with practical skills, hands-on experience, and a foundational understanding of key security technologies and operations.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 3 (Continuous Learning)</h3>
+                <p>These projects are for ongoing learning and skill development beyond the 90-day roadmap.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Automated Security Policy Deployment</h4>
+                        <p>Develop advanced scripts (e.g., Python with Netmiko/Paramiko) to automate the deployment and management of security policies across multiple network devices.</p>
+                        <small>Hints: Use device APIs or SSH for programmatic access.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Threat Hunting Exercise</h4>
+                        <p>Utilize your SIEM and IDS logs to actively hunt for sophisticated threats or anomalous activities that might bypass traditional detections.</p>
+                        <small>Hints: Focus on obscure log entries, unusual connection patterns, or rare protocol usage.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Container Network Security</h4>
+                        <p>Explore and implement network security best practices for containerized environments (Docker, Kubernetes), focusing on network policies and segmentation.</p>
+                        <small>Hints: Learn about Calico, Cilium, or built-in Kubernetes Network Policies.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Building a Security Operations Center (SOC) Lab</h4>
+                        <p>Expand your lab to simulate a mini-SOC, integrating more security tools like a ticketing system, threat intelligence platform, and security orchestration, automation, and response (SOAR) components.</p>
+                        <small>Hints: Look into open-source SOAR tools or community editions.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Network Protocols (TCP/IP, UDP, DNS, DHCP)</div>
+                    <div class="skill-item">Routing and Switching Fundamentals</div>
+                    <div class="skill-item">Firewall Management (Packet Filtering, Stateful, NGFW)</div>
+                    <div class="skill-item">VPN Implementation (IPsec, SSL/TLS)</div>
+                    <div class="skill-item">Intrusion Detection/Prevention Systems (IDS/IPS)</div>
+                    <div class="skill-item">Security Information and Event Management (SIEM)</div>
+                    <div class="skill-item">Packet Analysis with Wireshark</div>
+                    <div class="skill-item">Vulnerability Scanning (Nmap, Nessus/OpenVAS)</div>
+                    <div class="skill-item">Network Segmentation & Micro-segmentation</div>
+                    <div class="skill-item">Cloud Network Security (AWS/Azure Basics)</div>
+                    <div class="skill-item">Basic Scripting (Bash/PowerShell/Python)</div>
+                    <div class="skill-item">Security Hardening & Best Practices</div>
+                    <div class="skill-item">Understanding of Cybersecurity Frameworks (NIST, ISO 27001)</div>
+                    <div class="skill-item">Incident Response Concepts</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms and materials for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>**CompTIA Network+ Study Guide** by Todd Lammle</li>
+                        <li>**CompTIA Security+ Study Guide** by Mike Chapple & David Seidl</li>
+                        <li>**Network Security Bible** by Eric Cole</li>
+                        <li>**Practical Packet Analysis** by Chris Sanders</li>
+                        <li>**TCP/IP Illustrated, Vol. 1: The Protocols** by W. Richard Stevens</li>
+                        <li>**The Practice of Network Security Monitoring** by Richard Bejtlich</li>
+                        <li>**Blue Team Handbook: Incident Response** by Don Murdoch</li>
+                        <li>**Firewalls and VPNs: A Practical Guide** by Jeremy Cioara</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>**Cisco Networking Academy (NetAcad)** - For networking fundamentals.</li>
+                        <li>**TryHackMe** - Hands-on labs for various security topics.</li>
+                        <li>**Hack The Box** - More advanced penetration testing labs.</li>
+                        <li>**Cybrary** - Free and paid cybersecurity courses.</li>
+                        <li>**Udemy/Coursera** - Courses by industry experts (e.g., Zaid Sabih, David Bombal).</li>
+                        <li>**SANS Institute (Reading Room)** - Free whitepapers and webcasts.</li>
+                        <li>**Immersive Labs** - Interactive labs for practical skills.</li>
+                        <li>**AttackIQ Academy** - Free courses on breach and attack simulation.</li>
+                        <li>**Open Security Training** - Free, in-depth security courses.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>**CompTIA Network+** - Excellent for networking basics.</li>
+                        <li>**CompTIA Security+** - Foundational security concepts.</li>
+                        <li>**CCNA (Cisco Certified Network Associate)** - Strong networking foundation.</li>
+                        <li>**CCNP Security (Cisco Certified Network Professional Security)** - Advanced Cisco security.</li>
+                        <li>**Palo Alto Networks Certified Network Security Administrator (PCNSA)**</li>
+                        <li>**Fortinet NSE 4 (FortiGate Network Security Professional)**</li>
+                        <li>**Certified Ethical Hacker (CEH)** - Introduces offensive security concepts.</li>
+                        <li>**GIAC Certified Incident Handler (GCIH)** - For incident response.</li>
+                        <li>**Certified Information Systems Security Professional (CISSP)** - Advanced management certification.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>**Reddit communities:** r/networking, r/sysadmin, r/cybersecurity, r/netsec, r/homelab</li>
+                        <li>**SANS Community Forums**</li>
+                        <li>**Stack Exchange (Information Security)**</li>
+                        <li>**Discord Channels:** Various cybersecurity and networking communities.</li>
+                        <li>**Local OWASP Chapters**</li>
+                        <li>**LinkedIn Groups:** Network Security Professional groups.</li>
+                        <li>**Twitter:** Follow leading cybersecurity experts and organizations.</li>
+                        <li>**The Cyber Mentor Discord Community**</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Network & Packet Analysis</h3>
+                    <ul>
+                        <li>**Wireshark**: For deep packet inspection.</li>
+                        <li>**tcpdump**: Command-line packet analyzer.</li>
+                        <li>**Nmap**: Network scanner and discovery tool.</li>
+                        <li>**Netcat**: Versatile network utility for reading/writing across network connections.</li>
+                        <li>**Scapy**: Python-based packet manipulation program.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Firewalls & IDS/IPS</h3>
+                    <ul>
+                        <li>**pfSense/OPNsense**: Open-source firewall distributions (for lab).</li>
+                        <li>**Snort/Suricata**: Open-source IDS/IPS engines.</li>
+                        <li>**Cisco ASA/Firepower (Emulated/Trial)**: Enterprise-grade firewall.</li>
+                        <li>**Palo Alto Networks (Trial/Community Edition)**: Next-Gen Firewall.</li>
+                        <li>**FortiGate (Trial/Community Edition)**: Next-Gen Firewall.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>SIEM & Logging</h3>
+                    <ul>
+                        <li>**Splunk (Free/Community Edition)**: Leading SIEM platform.</li>
+                        <li>**ELK Stack (Elasticsearch, Logstash, Kibana)**: Open-source logging and analysis.</li>
+                        <li>**Security Onion**: Linux distribution for NSM and SIEM.</li>
+                        <li>**Greylog**: Open-source log management.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Vulnerability Management & Pen Testing</h3>
+                    <ul>
+                        <li>**Nessus Essentials**: Vulnerability scanner (free for personal use).</li>
+                        <li>**OpenVAS/GVM**: Open-source vulnerability scanner.</li>
+                        <li>**Kali Linux**: Distribution for penetration testing.</li>
+                        <li>**Metasploit Framework**: Penetration testing framework.</li>
+                        <li>**OWASP ZAP**: Web application security scanner.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practical projects to build your portfolio and reinforce skills</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>**Network Topology Mapping**: Use Nmap and other tools to map out a small network (real or virtual) and document its devices and connections.</li>
+                        <li>**Firewall Rule Set for Home Network**: Design and implement a set of firewall rules on your home router or a virtual firewall to enhance security.</li>
+                        <li>**Packet Capture Analysis Challenge**: Given a PCAP file, identify the source of an attack, the type of attack, and any compromised data.</li>
+                        <li>**Basic VPN Tunnel Setup**: Configure an IPsec or OpenVPN tunnel between two virtual machines or networks.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>**IDS/IPS Deployment & Alerting**: Deploy Snort/Suricata, configure rules, and set up alerts for suspicious activities in a lab environment.</li>
+                        <li>**SIEM Log Integration & Dashboarding**: Integrate logs from multiple sources (e.g., firewall, server) into a SIEM and create custom dashboards for security monitoring.</li>
+                        <li>**Web Server Hardening with WAF**: Secure a web server (e.g., Apache/Nginx) with security best practices and deploy a WAF (e.g., ModSecurity) to protect a simple web application.</li>
+                        <li>**Active Directory Security Assessment (Lab)**: Set up a basic Active Directory lab and identify common vulnerabilities, then propose and implement security hardening measures.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>**Automated Vulnerability Remediation**: Write scripts to automate the process of identifying vulnerabilities and applying patches or configuration changes.</li>
+                        <li>**Cloud Network Security Design & Implementation**: Design and implement a secure network architecture for an application deployed in a public cloud (AWS/Azure/GCP), including VPCs, security groups, and network firewalls.</li>
+                        <li>**Simulated Incident Response Exercise**: Conduct a full incident response simulation, from detection (via SIEM/IDS) to containment, eradication, and recovery, documenting each step.</li>
+                        <li>**Building a Secure Micro-segmented Network**: Design and implement a micro-segmented network using virtual switches (e.g., Open vSwitch) or SDN concepts to isolate critical applications.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>**Purple Team Exercise**: Collaborate with an "attack" team (red team) to test your defensive capabilities and improve your network security posture.</li>
+                        <li>**Develop Custom IDS/IPS Signatures**: Create custom signatures for Snort/Suricata to detect specific, novel attack patterns not covered by default rules.</li>
+                        <li>**Threat Intelligence Platform Integration**: Research and integrate an open-source threat intelligence platform with your SIEM to enrich security alerts.</li>
+                        <li>**Network Security Automation Framework**: Build a small automation framework using Python for routine network security tasks like configuration backups, compliance checks, or rule updates.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Your journey doesn't end here! Continuous learning is key in cybersecurity.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialization & Advanced Certifications</h3>
+                    <ul>
+                        <li>**Cloud Security**: Deep dive into AWS, Azure, or GCP security certifications (e.g., AWS Certified Security - Specialty, Azure Security Engineer Associate).</li>
+                        <li>**Industrial Control Systems (ICS/OT) Security**: Explore SCADA and critical infrastructure protection.</li>
+                        <li>**Application Security**: Learn about secure coding practices and web application penetration testing.</li>
+                        <li>**Cybersecurity Management/Leadership**: Consider CISSP, CISM, or other management-focused certifications if you aspire to leadership roles.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Continuous Hands-on Practice</h3>
+                    <ul>
+                        <li>**Build and Break**: Continuously build new lab environments, deploy new technologies, and then try to break them to understand vulnerabilities.</li>
+                        <li>**CTF (Capture The Flag) Competitions**: Participate in CTF events to sharpen your problem-solving and technical skills under pressure.</li>
+                        <li>**Bug Bounty Programs**: Consider participating in bug bounty programs to hone your ethical hacking skills and potentially earn rewards.</li>
+                        <li>**Open Source Contributions**: Contribute to open-source security projects.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Stay Updated & Network</h3>
+                    <ul>
+                        <li>**Follow Industry News**: Read cybersecurity blogs, news sites, and subscribe to threat intelligence feeds (e.g., SANS Internet Storm Center).</li>
+                        <li>**Attend Conferences & Webinars**: Engage with the community at events like Black Hat, DEF CON, RSA Conference, or local meetups.</li>
+                        <li>**Professional Organizations**: Join organizations like ISACA, ISC², or local cybersecurity groups.</li>
+                        <li>**Mentorship**: Seek out mentors who can guide your career path and share their experiences.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Contribute & Teach</h3>
+                    <ul>
+                        <li>**Share Your Knowledge**: Blog about your experiences, create tutorials, or present at local meetups. Teaching others is an excellent way to solidify your own understanding.</li>
+                        <li>**Help Others Learn**: Mentor aspiring cybersecurity professionals.</li>
+                        <li>**Build a Personal Brand**: Share your projects on GitHub, write articles, or create a professional online presence.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ **Mastered Network Fundamentals** | ✅ **Proficiency in Core Security Tools** | ✅ **Implemented Essential Network Security Controls**</p>
+                <p>✅ **Understood Incident Response Basics** | ✅ **Developed Practical Lab Experience** | ✅ **Built a Foundational Portfolio**</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Cisco Packet Tracer, Wireshark, Nmap, pfSense/OPNsense, Snort/Suricata, Splunk/ELK Stack, ModSecurity, Kali Linux, VirtualBox/VMware, Basic AWS/Azure services, Bash/PowerShell/Python scripting, Git.</p>
+                <br>
+                <p><strong>Remember:</strong> **Consistency is Key.** Dedicate regular time each day. **Hands-on is Crucial.** Theory is important, but practice makes perfect. **Document Everything.** Your lab setups, commands, and findings are valuable. **Stay Curious.** The cybersecurity landscape is always evolving. **Network.** Connect with peers and mentors. **Don't Burn Out.** Take breaks and celebrate small victories.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

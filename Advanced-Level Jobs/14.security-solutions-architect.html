@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Security Solution Architect" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Security Solution Architect" Mastery</h1>
+            <p>An advanced-track plan for security practitioners ready to move from implementing controls to designing the systems that contain them — translating business requirements, threat intelligence, and risk appetite into concrete reference architectures, technology stack decisions, and integration blueprints that engineers can actually build.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <!-- Phase 1 -->
+            <div class="phase-header">
+                <h2>Phase 1: Architecture Thinking, Design Patterns & Threat Modeling</h2>
+                <span>Days 1-30: Shifting from control-level thinking to system-level design — learning how security architects think before they draw</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Architecture Thinking</span>
+                    <span class="skill-tag">Security Design Patterns</span>
+                    <span class="skill-tag">Threat Modeling</span>
+                    <span class="skill-tag">Reference Architecture</span>
+                    <span class="skill-tag">Requirements Translation</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: The Security Solution Architect Role & Architecture Thinking</h3>
+                    <ul>
+                        <li>Study what distinguishes a security solution architect from a security engineer, a security consultant, and a CISO: architects design systems that others implement, making decisions that are expensive to reverse and that affect everything downstream</li>
+                        <li>Learn the core architecture thinking shift: from "how do I configure this control?" to "how should this system be structured so that security is a property of the design, not an afterthought bolted on afterward?"</li>
+                        <li>Study how security architects operate at the intersection of business requirements, threat landscape, technology capability, and operational feasibility — all four simultaneously</li>
+                        <li>Learn how architects use established frameworks (SABSA, TOGAF with security layers, NIST SP 800-207 Zero Trust) as structured starting points rather than blank-sheet-every-time design</li>
+                        <li>Study how architecture decisions create technical debt: a poorly scoped identity architecture in Year 1 becomes the constraint that limits every subsequent security initiative</li>
+                        <li>Review one real public reference architecture (AWS Security Reference Architecture, Microsoft Zero Trust guidance, NIST SP 1800 series) and annotate the design decisions visible in the document</li>
+                        <li>Learn how to distinguish a reference architecture (reusable pattern) from a solution design (specific implementation for one environment) — both are in scope for this role</li>
+                        <li>Document a personal architecture philosophy statement: your principles for how security should be designed into systems, not retrofitted</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SABSA Framework</span>
+                        <span class="tech-badge">Architecture Thinking</span>
+                        <span class="tech-badge">Design vs. Implementation</span>
+                        <span class="tech-badge">Technical Debt</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Architecture Philosophy & Reference Architecture Annotation</h4>
+                        <p>Annotate one real public reference architecture documenting every visible design decision and its likely rationale, then write a personal architecture philosophy statement covering your core design principles.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Security Design Patterns & Foundational Principles</h3>
+                    <ul>
+                        <li>Study the foundational security design patterns every architect must know: defense in depth, least privilege, separation of duties, fail-secure defaults, complete mediation, zero trust network access, and assume-breach design</li>
+                        <li>Learn how to apply each pattern specifically — not as a checklist item but as a structural decision that shapes how components relate to each other</li>
+                        <li>Practice applying 5 design patterns to one fictional system design, documenting explicitly how each pattern changes the architecture vs. a pattern-free naive design</li>
+                        <li>Study how design patterns interact and sometimes conflict — least privilege implemented aggressively can conflict with operational availability if not designed carefully</li>
+                        <li>Learn how Zero Trust as an architectural principle (never trust, always verify; assume breach; verify explicitly) translates into specific component and network design choices</li>
+                        <li>Practice producing a Zero Trust network segmentation design for a fictional hybrid enterprise environment, making the assume-breach principle explicit in every component placement decision</li>
+                        <li>Study how security design patterns apply differently across on-premises, cloud-native, and hybrid architectures</li>
+                        <li>Document a security design pattern reference library — your personal catalogue of patterns with application examples across different environment types</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Defense in Depth</span>
+                        <span class="tech-badge">Zero Trust Design</span>
+                        <span class="tech-badge">Least Privilege Architecture</span>
+                        <span class="tech-badge">Assume-Breach Principle</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Design Pattern Library & Zero Trust Segmentation Design</h4>
+                        <p>Build a personal security design pattern library with application examples, and produce a Zero Trust network segmentation design for a fictional hybrid enterprise making assume-breach explicit in every decision.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Threat Modeling as an Architecture Discipline</h3>
+                    <ul>
+                        <li>Study how threat modeling at the architecture level differs from penetration testing or vulnerability scanning — it's about identifying design flaws before anything is built, not finding bugs in what already exists</li>
+                        <li>Learn the primary threat modeling methodologies (STRIDE, PASTA, LINDDUN, attack trees) and how to choose the right one based on the system being designed and the audience reviewing the output</li>
+                        <li>Practice running a complete STRIDE threat model for a fictional multi-tier web application, systematically identifying threats against each component and data flow</li>
+                        <li>Study how threat modeling output feeds directly back into architecture decisions — a threat model that doesn't change the design is a documentation exercise, not an architecture discipline</li>
+                        <li>Learn how to produce a threat model diagram (data flow diagram + trust boundary annotations) that communicates clearly to both engineers and non-technical stakeholders</li>
+                        <li>Practice producing a threat model for a fictional cloud-native microservices architecture, documenting the trust boundaries between services and the threats at each boundary</li>
+                        <li>Study how threat modeling integrates into the architecture review process and when in a project's lifecycle it should happen (as early as possible, always before detailed design is locked)</li>
+                        <li>Document a threat modeling methodology selection guide and a reusable threat modeling process template for use across future architecture engagements</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">STRIDE</span>
+                        <span class="tech-badge">PASTA</span>
+                        <span class="tech-badge">Data Flow Diagrams</span>
+                        <span class="tech-badge">Trust Boundary Analysis</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: STRIDE Threat Model & Cloud Microservices Threat Model</h4>
+                        <p>Produce a complete STRIDE threat model for a fictional multi-tier web app and a trust boundary threat model for a fictional cloud-native microservices architecture, each with design change recommendations.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Translating Business Requirements into Architecture Decisions</h3>
+                    <ul>
+                        <li>Study how security architects translate business requirements (regulatory obligations, risk appetite statements, operational constraints, budget limits) into specific architectural constraints and non-negotiable design decisions</li>
+                        <li>Learn how to run a requirements gathering session with business stakeholders that extracts security-relevant requirements they wouldn't think to articulate themselves</li>
+                        <li>Practice writing an architecture requirements specification for a fictional fintech company preparing for PCI-DSS compliance, translating regulatory obligations into architecture constraints</li>
+                        <li>Study how to document architecture decisions using Architecture Decision Records (ADRs): the decision, the context, the alternatives considered, and the rationale — creating an auditable record of why the design is what it is</li>
+                        <li>Learn how to handle conflicting requirements: when business wants maximum user experience and security requires friction, how the architect produces a design that satisfies both as far as possible and documents the tradeoff where not</li>
+                        <li>Practice producing 3 ADRs for a fictional identity architecture project, each covering a genuine architectural decision with alternatives and rationale</li>
+                        <li>Study how to communicate architecture constraints to stakeholders who see them as blockers rather than enablers — the language of risk, not the language of technical prohibition</li>
+                        <li>Document a requirements-to-architecture translation process including a requirements specification template and an ADR template ready for real use</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Requirements Specification</span>
+                        <span class="tech-badge">Architecture Decision Records</span>
+                        <span class="tech-badge">Constraint Translation</span>
+                        <span class="tech-badge">Tradeoff Documentation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Architecture Requirements Spec & ADRs</h4>
+                        <p>Write a full architecture requirements specification for a fictional PCI-DSS fintech environment, and produce 3 Architecture Decision Records for an identity architecture project covering real decisions with alternatives and rationale.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can articulate the architecture thinking shift from control-level to system-level, apply security design patterns explicitly to real design problems, produce threat models that change architecture decisions, and translate business requirements into documented architecture constraints and decisions — the foundational toolkit of a Security Solution Architect.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate architecture thinking before moving into domain-specific design work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Pattern-to-Design Comparison Study</h4>
+                        <p>Take one fictional system and design it twice — once without security patterns and once with all applicable patterns applied — documenting exactly what changed and why.</p>
+                        <small>Hint: The comparison is more instructive than either design alone — it makes the value of each pattern visible and concrete.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Threat Model Portfolio</h4>
+                        <p>Produce threat models for 3 different system types (web app, cloud-native microservices, OT/ICS-adjacent enterprise network) each using the most appropriate methodology.</p>
+                        <small>Hint: Show explicitly how the methodology choice changes based on the system type — that judgment is itself a core architect skill.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>ADR Library</h4>
+                        <p>Produce 10 Architecture Decision Records across different architecture domains (identity, network, cloud, data, application) covering real decisions an architect would face.</p>
+                        <small>Hint: The "alternatives considered" section is what makes an ADR genuinely useful — don't skip it or make it perfunctory.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Architecture Foundations Teaching Series</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer for your audience framed around "how security architects think before they draw."</p>
+                        <small>Hint: The design-pattern-as-structural-decision framing — not a checklist but a relationship between components — is the insight that's genuinely hard to find in most beginner content.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2 -->
+            <div class="phase-header">
+                <h2>Phase 2: Domain-Specific Architecture Design</h2>
+                <span>Days 31-60: Producing deployable reference architectures across identity, cloud, network, data, and application security domains</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Identity Architecture</span>
+                    <span class="skill-tag">Cloud Security Architecture</span>
+                    <span class="skill-tag">Network Security Design</span>
+                    <span class="skill-tag">Data Security Architecture</span>
+                    <span class="skill-tag">Application Security Design</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Identity & Access Management Architecture</h3>
+                    <ul>
+                        <li>Study how identity is the new perimeter: in a Zero Trust model, every access decision is an identity decision, and the quality of the identity architecture determines the quality of every downstream control</li>
+                        <li>Learn how to design an enterprise identity architecture covering authentication (MFA, passwordless, FIDO2), authorization (RBAC, ABAC, ReBAC), federation (SAML, OIDC, OAuth 2.0), and privileged access governance</li>
+                        <li>Practice producing a complete IAM reference architecture for a fictional hybrid enterprise, covering on-premises AD, cloud identity provider, federated SaaS, and privileged access management components</li>
+                        <li>Study how to design identity architecture for non-human identities (service accounts, workload identities, machine credentials) — often the most underdesigned and highest-risk identity category</li>
+                        <li>Learn how to design a Privileged Access Workstation (PAW) and just-in-time (JIT) access model for administrative access to critical systems</li>
+                        <li>Practice producing an ADR for the choice between a flat RBAC model and an attribute-based access control model for a data-sensitive environment</li>
+                        <li>Study how identity architecture decisions (directory structure, group design, delegation model) create constraints that affect every other security domain's architecture</li>
+                        <li>Document a complete IAM reference architecture package covering all identity layers with integration points and design rationale</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">RBAC / ABAC / ReBAC</span>
+                        <span class="tech-badge">Federation (SAML/OIDC)</span>
+                        <span class="tech-badge">PAM & JIT Access</span>
+                        <span class="tech-badge">Non-Human Identity</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Enterprise IAM Reference Architecture</h4>
+                        <p>Produce a complete IAM reference architecture for a fictional hybrid enterprise covering authentication, authorization, federation, privileged access, and non-human identity, with full ADR documentation.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Cloud Security Architecture</h3>
+                    <ul>
+                        <li>Study how cloud security architecture differs from on-premises: shared responsibility redraws the ownership boundary, infrastructure is code, and misconfiguration — not exploitation — is the dominant threat vector</li>
+                        <li>Learn how to design a cloud security landing zone architecture (AWS, Azure, or GCP) covering account/subscription structure, network topology, IAM delegation, logging pipeline, and guardrail policy enforcement</li>
+                        <li>Practice producing a cloud landing zone reference architecture for a fictional organization migrating 3 workload types (web app, data analytics, developer toolchain) to AWS</li>
+                        <li>Study how to design cloud-native security controls: SCPs/Azure Policies for guardrail enforcement, VPC/VNET design for network segmentation, KMS for data protection, and CloudTrail/Defender for detection</li>
+                        <li>Learn how to architect a secure multi-cloud environment where identity, network, and data controls span more than one cloud provider without creating inconsistent security posture</li>
+                        <li>Practice producing an ADR for VPC/VNET network topology design (hub-and-spoke vs. mesh vs. flat) for a security-sensitive multi-region deployment</li>
+                        <li>Study how infrastructure-as-code security fits into cloud architecture: IaC security scanning as a guardrail, not an afterthought, and drift detection as a continuous control</li>
+                        <li>Document a complete cloud security architecture package covering landing zone, network topology, IAM delegation, and detection pipeline for one cloud provider</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cloud Landing Zone</span>
+                        <span class="tech-badge">SCPs / Azure Policy</span>
+                        <span class="tech-badge">VPC / VNET Design</span>
+                        <span class="tech-badge">IaC Security</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Cloud Security Landing Zone Architecture</h4>
+                        <p>Produce a complete cloud landing zone reference architecture for a fictional multi-workload AWS migration, covering account structure, network topology, IAM delegation, guardrail policies, and detection pipeline.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Network Security Architecture & Data Security Design</h3>
+                    <ul>
+                        <li>Study how network security architecture has evolved: hard perimeter → DMZ model → software-defined segmentation → Zero Trust network access (ZTNA), and how to design for the current era without ripping out functional legacy infrastructure</li>
+                        <li>Learn how to design a micro-segmentation architecture for an enterprise environment, defining the segmentation boundaries, traffic flow rules, and enforcement points</li>
+                        <li>Practice producing a network security reference architecture for a fictional healthcare organization covering clinical, administrative, IoT/medical device, and remote access segments</li>
+                        <li>Study how to design a data security architecture covering data classification, encryption at rest and in transit, tokenization/masking, DLP placement, and data access governance</li>
+                        <li>Learn how to architect a data security program for a multi-cloud environment where sensitive data flows across organizational boundaries (SaaS, partners, cloud providers)</li>
+                        <li>Practice producing a data security architecture for a fictional financial services organization, mapping controls to data sensitivity tiers and regulatory requirements simultaneously</li>
+                        <li>Study how network and data security architectures must be designed together — a network segment boundary that doesn't align with a data classification boundary creates control gaps</li>
+                        <li>Document a combined network and data security architecture package for the fictional healthcare organization, showing how the two domains reinforce each other</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Micro-Segmentation</span>
+                        <span class="tech-badge">ZTNA Design</span>
+                        <span class="tech-badge">Data Classification Architecture</span>
+                        <span class="tech-badge">Encryption & DLP Placement</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Network & Data Security Reference Architectures</h4>
+                        <p>Produce a network security architecture for a fictional healthcare environment and a data security architecture for a fictional financial services organization, each with domain-appropriate design decisions documented.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Application Security Architecture & Detection-by-Design</h3>
+                    <ul>
+                        <li>Study how application security architecture shifts the OWASP Top 10 conversation from "find these vulnerabilities" to "design the application so these vulnerabilities structurally cannot exist"</li>
+                        <li>Learn how to produce an application security reference architecture covering: secure API gateway design, authentication/authorization flows, secrets management integration, input validation boundaries, and security logging requirements</li>
+                        <li>Practice producing an application security architecture for a fictional microservices-based SaaS platform, mapping each architecture component to the OWASP threats it structurally mitigates</li>
+                        <li>Study how to design a security logging and detection architecture: what telemetry each system layer must emit, how it flows to the detection platform, and what retention and integrity guarantees are required</li>
+                        <li>Learn how "detection by design" works — ensuring that every component in an architecture emits the telemetry needed to detect compromise of that component, designed in, not retrofitted</li>
+                        <li>Practice producing a detection architecture for the fictional SaaS platform from earlier this week, mapping each component to its required telemetry and the detection use cases that telemetry enables</li>
+                        <li>Study how security architects review code and infrastructure designs — what to look for in a design review vs. what belongs in a code review or penetration test</li>
+                        <li>Document a complete application security and detection architecture package ready for use as a reference in future SaaS or microservices design engagements</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">API Security Design</span>
+                        <span class="tech-badge">Secrets Management</span>
+                        <span class="tech-badge">Detection by Design</span>
+                        <span class="tech-badge">Telemetry Architecture</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Application Security & Detection Architecture</h4>
+                        <p>Produce an application security architecture for a fictional microservices SaaS platform mapped to OWASP mitigations, and a detection architecture mapping every component to its required telemetry and detection use cases.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can produce deployable reference architectures across all five major security domains — identity, cloud, network, data, and application/detection — with design decisions documented in ADRs and threat models attached to each. You can hold a technical design conversation with specialists in any of these domains without losing the cross-domain integration perspective that is the architect's unique contribution.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into integrated enterprise architecture, technology evaluation, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Cross-Domain Architecture Integration</h4>
+                        <p>Take your 4 domain architectures (IAM, cloud, network/data, application/detection) and produce an integrated enterprise architecture diagram showing how they connect and where cross-domain dependencies exist.</p>
+                        <small>Hint: The integration diagram will expose design decisions you didn't realize you made in isolation — that tension is valuable architecture insight.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Industry-Specific Architecture Deep Dive</h4>
+                        <p>Produce a complete security reference architecture for one regulated industry (healthcare, financial services, or critical infrastructure) covering all 5 domains with industry-specific threat and regulatory constraints.</p>
+                        <small>Hint: Industry-specific architecture work is the highest-value portfolio artifact for landing roles in that sector — make it genuinely specific, not a generic architecture with industry labels added.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Architecture Review Casebook</h4>
+                        <p>Review 3 publicly available architecture diagrams or case studies and produce architecture review findings for each — what the design gets right, what design gaps you identified, and what you would change.</p>
+                        <small>Hint: Reviewing others' architectures and articulating what's missing is itself the skill of architecture review — practice it explicitly.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Domain Architecture Teaching Series</h4>
+                        <p>Turn one domain architecture (your strongest from Phase 2) into a complete educational walkthrough for practitioners in that domain moving toward architecture roles.</p>
+                        <small>Hint: Walk through every design decision explicitly — the reasoning behind each choice is more valuable than the final diagram.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3 -->
+            <div class="phase-header">
+                <h2>Phase 3: Technology Evaluation, Architecture Governance & Career Readiness</h2>
+                <span>Days 61-90: Evaluating and selecting security technology stacks, governing architecture decisions at enterprise scale, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Technology Stack Evaluation</span>
+                    <span class="skill-tag">Architecture Governance</span>
+                    <span class="skill-tag">Architecture Review Boards</span>
+                    <span class="skill-tag">Roadmap & Migration Design</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Security Technology Evaluation & Stack Design</h3>
+                    <ul>
+                        <li>Study how security architects evaluate and select technology — not by product feature lists but by fit against architecture requirements, integration complexity, operational burden, and vendor risk</li>
+                        <li>Learn how to build a technology evaluation framework that weights architectural fit (does this tool fit the design or require the design to flex around the tool?) as a primary criterion</li>
+                        <li>Practice building a technology evaluation scorecard for a fictional SIEM platform selection, weighting integration architecture, telemetry ingestion flexibility, detection customization, and operational scalability</li>
+                        <li>Study how to design a security technology reference stack — the set of tools and their integration relationships that form the organization's target security architecture</li>
+                        <li>Learn how to manage technology portfolio sprawl: when two tools overlap significantly, how the architect makes the rationalization case and manages the migration</li>
+                        <li>Practice producing an ADR for a fictional choice between consolidating onto a platform vendor security stack vs. maintaining a best-of-breed point-solution architecture</li>
+                        <li>Study how vendor lock-in risk is an architecture concern — designing integration layers that make tool replacement possible without rebuilding the surrounding architecture</li>
+                        <li>Document a complete technology evaluation framework and a fictional target security technology reference stack with integration map</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Technology Evaluation Framework</span>
+                        <span class="tech-badge">Security Reference Stack</span>
+                        <span class="tech-badge">Platform vs. Best-of-Breed</span>
+                        <span class="tech-badge">Vendor Lock-In Design</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Technology Evaluation Framework & Reference Stack</h4>
+                        <p>Build a technology evaluation scorecard for a fictional SIEM selection, produce a target security technology reference stack with integration map, and write an ADR for the platform vs. best-of-breed decision.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Security Architecture Roadmaps & Migration Design</h3>
+                    <ul>
+                        <li>Study how security architects produce multi-year architecture roadmaps that sequence decisions to manage dependency order — you can't build Zero Trust without identity, and you can't build ZTNA without a usable network foundation</li>
+                        <li>Learn how to design a security architecture migration from current state to target state, identifying quick wins, critical dependencies, and irreversible decisions that need the most rigor</li>
+                        <li>Practice producing a 3-year security architecture roadmap for a fictional organization transitioning from perimeter-centric to Zero Trust design, with phased milestones and dependency sequencing</li>
+                        <li>Study how to design a migration without breaking operational security during the transition — maintaining the old controls while building the new architecture in parallel</li>
+                        <li>Learn how to quantify architecture roadmap investment in terms a CISO and CFO can evaluate: what each phase costs, what risk it reduces, and what capability it unlocks for subsequent phases</li>
+                        <li>Practice writing an architecture investment summary for each phase of your Zero Trust roadmap, framing each phase's business case independently</li>
+                        <li>Study how to adapt an architecture roadmap when business priorities shift mid-journey — how to resequence without losing the dependency logic</li>
+                        <li>Document a complete architecture roadmap package including phased migration design, dependency map, and per-phase business cases for the fictional Zero Trust transition</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Architecture Roadmapping</span>
+                        <span class="tech-badge">Zero Trust Migration</span>
+                        <span class="tech-badge">Dependency Sequencing</span>
+                        <span class="tech-badge">Per-Phase Business Cases</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Zero Trust Architecture Roadmap</h4>
+                        <p>Produce a complete 3-year Zero Trust architecture migration roadmap with phased milestones, dependency sequencing, parallel migration design, and per-phase investment business cases.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Architecture Governance & Architecture Review Boards</h3>
+                    <ul>
+                        <li>Study how architecture governance works at enterprise scale: the Security Architecture Review Board (SARB) or equivalent body that reviews and approves architectural decisions before they become irreversible commitments</li>
+                        <li>Learn how to design an architecture governance process — what triggers a mandatory architecture review, what the review examines, who has approval authority, and how exceptions are handled</li>
+                        <li>Practice writing an architecture governance framework covering mandatory review triggers, review criteria, approval tiers, and exception process for a fictional large enterprise</li>
+                        <li>Study how to run an architecture review meeting: presenting a proposed design, facilitating constructive challenge from subject matter experts, and producing a clear decision with documented rationale</li>
+                        <li>Practice facilitating a mock architecture review session for a fictional cloud migration proposal, with a peer playing skeptical reviewers raising integration and security concerns</li>
+                        <li>Study how to handle an architecture review finding where a proposed design has a significant security gap — communicating the concern clearly without blocking legitimate business progress</li>
+                        <li>Compile your 90-day work into a single portfolio-style master security architecture package</li>
+                        <li>Document a complete architecture governance framework and review facilitation playbook ready for organizational deployment</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Architecture Review Board</span>
+                        <span class="tech-badge">Governance Framework</span>
+                        <span class="tech-badge">Review Facilitation</span>
+                        <span class="tech-badge">Exception Management</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Architecture Governance Framework & Mock Review</h4>
+                        <p>Write a complete architecture governance framework covering mandatory triggers, review criteria, and exception process, then facilitate a mock architecture review session for a fictional cloud migration proposal.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (SABSA SCF, CISSP, CCSP, AWS/Azure/GCP Security Specialty, or TOGAF with security) and identify remaining gaps</li>
+                        <li>Do a full mock "day as security solution architect" exercise: respond to a requirements brief, produce a high-level architecture design, identify 3 key ADRs, and prepare a 5-minute architecture walkthrough — all within a set window</li>
+                        <li>Prepare answers for security architect interview questions (walk through your architecture process from requirements to design, describe a design decision you got wrong and how you'd approach it differently, explain your Zero Trust design philosophy)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable architecture design and technology decision achievements</li>
+                        <li>Polish your portfolio: pin your best 3 artifacts (IAM reference architecture, cloud landing zone design, Zero Trust roadmap) with clear annotation of design decisions</li>
+                        <li>Practice a mock behavioral interview using STAR format for your threat modeling, ADR, and architecture governance stories</li>
+                        <li>Research target organizations (cloud-forward enterprises, financial services, healthcare, defense contractors, major consultancies with security architecture practices) and tailor your resume accordingly</li>
+                        <li>Plan your next 90 days: pick a direction (enterprise security architect, cloud security architecture specialist, domain-specific specialist, or security architecture practice lead)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">STAR Behavioral Prep</span>
+                        <span class="tech-badge">Portfolio Annotation</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Security Architect Portfolio</h4>
+                        <p>Finalize a portfolio (IAM architecture, cloud landing zone, Zero Trust roadmap), annotate every major design decision, write resume bullets, and prepare 2 polished STAR-format stories for Security Solution Architect roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a complete security solution architecture toolkit — architecture thinking and design patterns, threat modeling, requirements-to-architecture translation, domain-specific reference architectures across identity/cloud/network/data/application, technology evaluation and stack design, multi-year roadmapping, and architecture governance — plus a portfolio of real artifacts and a job-ready application package.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 3</h3>
+                <p>Final capstone options to demonstrate end-to-end security solution architecture capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Complete Enterprise Security Architecture Package</h4>
+                        <p>Produce a single coherent enterprise security architecture covering all 5 domains, integrated into one architecture diagram with cross-domain dependencies shown, plus the ADR library, threat models, roadmap, and governance framework.</p>
+                        <small>Hint: The integration across all 5 domains in one coherent document is what distinguishes a solution architect's portfolio from a collection of domain specialist artifacts.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Architecture Design Sprint</h4>
+                        <p>Simulate a 3-day architecture design sprint: receive a requirements brief on Day 1, produce a high-level architecture and key ADRs by Day 2, and present with threat model by Day 3.</p>
+                        <small>Hint: Time pressure reveals which architecture principles are genuinely internalized vs. which require reference material — that's exactly the condition of a real engagement.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Industry Vertical Reference Architecture</h4>
+                        <p>Produce a complete security reference architecture for one industry vertical (healthcare, financial services, critical infrastructure, or SaaS) including all 5 domains with industry-specific threats and regulatory constraints.</p>
+                        <small>Hint: An industry-specific reference architecture is the single most transferable portfolio artifact for targeting roles in that sector.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Security Architecture Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Build the series around one fictional organization going through a full architecture engagement from requirements to roadmap — narrative continuity makes architecture teaching significantly more accessible.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Security Architecture Thinking & Design Patterns</div>
+                    <div class="skill-item">Threat Modeling (STRIDE, PASTA, Trust Boundary Analysis)</div>
+                    <div class="skill-item">Architecture Decision Records & Requirements Translation</div>
+                    <div class="skill-item">Identity & Access Management Architecture</div>
+                    <div class="skill-item">Cloud Security Landing Zone Design</div>
+                    <div class="skill-item">Network Micro-Segmentation & Data Security Architecture</div>
+                    <div class="skill-item">Application Security & Detection-by-Design Architecture</div>
+                    <div class="skill-item">Technology Evaluation, Roadmapping & Architecture Governance</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>Enterprise Security Architecture (SABSA) — Sherwood, Clark, Lynas</li>
+                        <li>Threat Modeling: Designing for Security — Adam Shostack</li>
+                        <li>Zero Trust Networks — Gilman & Barth</li>
+                        <li>Designing Distributed Systems — Burns (patterns applicable to secure distributed design)</li>
+                        <li>The TOGAF Standard — The Open Group (architecture framework context)</li>
+                        <li>Cloud Security Alliance: Security Guidance for Critical Areas of Cloud Computing</li>
+                        <li>NIST SP 800-207: Zero Trust Architecture</li>
+                        <li>Kubernetes Security — Rice, Hausenblas</li>
+                        <li>Secure by Design — Johnsson, Deogun, Sawano</li>
+                        <li>The Architecture of Trust — various NIST/CISA publications</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>SABSA Institute official training and resources</li>
+                        <li>AWS Security Reference Architecture documentation</li>
+                        <li>Microsoft Azure Security Architecture Center</li>
+                        <li>Google Cloud Security Foundations Blueprint</li>
+                        <li>NIST SP 800-series official publications (207, 53, 63, 171)</li>
+                        <li>SANS SEC549 (Enterprise Cloud Security Architecture)</li>
+                        <li>SANS SEC530 (Defensible Security Architecture and Engineering)</li>
+                        <li>Coursera / A Cloud Guru: Cloud Security Architecture tracks</li>
+                        <li>CISA Zero Trust Maturity Model and guidance documents</li>
+                        <li>SpecterOps and TrustedSec blog posts on identity and detection architecture</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>SABSA Chartered Security Architect (SCF) — the gold standard</li>
+                        <li>CISSP (Certified Information Systems Security Professional)</li>
+                        <li>CCSP (Certified Cloud Security Professional)</li>
+                        <li>AWS Certified Security — Specialty</li>
+                        <li>Microsoft Azure Security Engineer Associate / Expert</li>
+                        <li>Google Professional Cloud Security Engineer</li>
+                        <li>TOGAF 9/10 (enterprise architecture framework context)</li>
+                        <li>GIAC Defensible Security Architecture (GDSA)</li>
+                        <li>GIAC Cloud Security Essentials (GCLD)</li>
+                        <li>Certified Information Security Manager (CISM)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>SABSA Institute community and working groups</li>
+                        <li>Cloud Security Alliance (CSA) community and working groups</li>
+                        <li>r/netsec and r/cybersecurity on Reddit</li>
+                        <li>CISA Zero Trust community resources</li>
+                        <li>SpecterOps Discord and community blog</li>
+                        <li>AWS, Azure, and GCP security architecture community forums</li>
+                        <li>LinkedIn security architecture and enterprise security design groups</li>
+                        <li>ISACA community resources for architecture governance context</li>
+                        <li>DEF CON and RSA architecture and design track talks (YouTube)</li>
+                        <li>Twitter/X security architecture community (#infosecarchitect, #zerotrust)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Architecture Design & Diagramming</h3>
+                    <ul>
+                        <li>draw.io / Diagrams.net (free, architecture-grade diagramming)</li>
+                        <li>Lucidchart (collaborative architecture diagrams)</li>
+                        <li>Microsoft Visio (enterprise architecture diagrams)</li>
+                        <li>Miro / Mural (collaborative architecture whiteboarding)</li>
+                        <li>PlantUML (code-as-diagram for architecture documentation)</li>
+                        <li>Structurizr (C4 model architecture documentation)</li>
+                        <li>Cloudcraft (cloud architecture design with cost estimation)</li>
+                        <li>AWS Architecture Center templates</li>
+                        <li>Microsoft Azure Architecture Center templates</li>
+                        <li>Excalidraw (rapid hand-drawn style architecture sketching)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Threat Modeling Tools</h3>
+                    <ul>
+                        <li>Microsoft Threat Modeling Tool (STRIDE-based)</li>
+                        <li>OWASP Threat Dragon</li>
+                        <li>IriusRisk (enterprise threat modeling platform)</li>
+                        <li>Tutamantic (architecture-level threat modeling)</li>
+                        <li>draw.io (custom DFD and trust boundary diagrams)</li>
+                        <li>MITRE ATT&CK Navigator (threat model to detection gap mapping)</li>
+                        <li>Miro (collaborative threat modeling workshops)</li>
+                        <li>STRIDE-GPT (AI-assisted threat model generation for review)</li>
+                        <li>Deciduous (attack tree diagramming)</li>
+                        <li>Jupyter notebooks (quantitative threat modeling and risk modeling)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Cloud & Infrastructure Architecture Tools</h3>
+                    <ul>
+                        <li>AWS Security Hub / Macie / GuardDuty (cloud security posture context)</li>
+                        <li>Prowler / ScoutSuite (cloud security configuration assessment)</li>
+                        <li>Checkov / tfsec / KICS (IaC security scanning)</li>
+                        <li>Terraform / Pulumi (infrastructure-as-code for architecture implementation)</li>
+                        <li>OPA / Conftest (policy-as-code for guardrail enforcement)</li>
+                        <li>Falco (runtime security for cloud-native detection architecture)</li>
+                        <li>Trivy (container and IaC vulnerability scanning)</li>
+                        <li>BloodHound (identity architecture attack path analysis)</li>
+                        <li>Steampipe (cloud configuration querying for posture assessment)</li>
+                        <li>Cloud Custodian (policy-as-code for cloud governance)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Annotate one public reference architecture with design decision explanations</li>
+                        <li>Apply 3 security design patterns to one simple fictional system design</li>
+                        <li>Run a basic STRIDE threat model for a simple 3-tier web application</li>
+                        <li>Write an ADR for one real architecture decision you've encountered</li>
+                        <li>Produce a basic IAM architecture diagram for a small fictional organization</li>
+                        <li>Design a VPC/VNET network segmentation for a simple 2-tier cloud workload</li>
+                        <li>Write a data classification scheme and map it to 3 control tiers</li>
+                        <li>Produce a simple application security architecture covering auth flow and secrets management</li>
+                        <li>Write a technology evaluation scorecard for one security tool category</li>
+                        <li>Draft a basic architecture governance trigger list for one organizational context</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Produce a Zero Trust network segmentation design for a hybrid enterprise</li>
+                        <li>Write a complete STRIDE threat model for a cloud-native microservices application</li>
+                        <li>Produce a full IAM reference architecture covering all identity layers</li>
+                        <li>Design a cloud landing zone for a multi-workload AWS or Azure migration</li>
+                        <li>Produce a combined network and data security architecture for a regulated industry</li>
+                        <li>Build a detection architecture mapping components to telemetry and detection use cases</li>
+                        <li>Write a technology evaluation framework and fictional target reference stack</li>
+                        <li>Produce a 3-year architecture roadmap with dependency sequencing</li>
+                        <li>Write an architecture governance framework with mandatory triggers and exception process</li>
+                        <li>Produce 5 ADRs across 3 different architecture domains</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Produce a complete 5-domain enterprise security architecture for one fictional organization</li>
+                        <li>Design a Zero Trust migration from current-state perimeter architecture to target state</li>
+                        <li>Build an industry-specific reference architecture for a regulated vertical</li>
+                        <li>Facilitate a mock architecture review board session for a fictional design proposal</li>
+                        <li>Produce a security technology reference stack with vendor lock-in mitigations designed in</li>
+                        <li>Build a complete threat model to detection architecture pipeline for a complex system</li>
+                        <li>Architect a multi-cloud security design spanning 2 cloud providers with consistent posture</li>
+                        <li>Produce per-phase business cases for a multi-year architecture investment roadmap</li>
+                        <li>Design a non-human identity architecture for a microservices environment with workload identity federation</li>
+                        <li>Mentor a security engineer through their first architecture design exercise</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Lead a real or simulated architecture engagement from requirements through roadmap delivery</li>
+                        <li>Publish original research on a security architecture pattern or design challenge</li>
+                        <li>Design a complete enterprise security architecture governance operating model</li>
+                        <li>Speak at a local BSides, DEF CON, or RSA architecture/design track</li>
+                        <li>Build a custom security reference architecture framework for a specific industry</li>
+                        <li>Architect a fully automated architecture compliance validation pipeline (architecture-as-code)</li>
+                        <li>Contribute to an open-source or industry reference architecture publication</li>
+                        <li>Design a comprehensive security architecture maturity model for organizational self-assessment</li>
+                        <li>Mentor multiple practitioners toward security architecture readiness</li>
+                        <li>Build and present a board-level architecture investment roadmap in a real or simulated setting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your security architecture career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize or Broaden</h3>
+                    <ul>
+                        <li>Decide: deepen toward enterprise architecture leadership, specialize in one domain (cloud, identity, OT/ICS), or move toward security architecture practice management</li>
+                        <li>Consider an Enterprise Security Architect track if cross-domain integration and roadmapping energized you most</li>
+                        <li>Consider a Cloud Security Architecture Specialist track if cloud landing zone and cloud-native design stood out</li>
+                        <li>Explore security architecture consulting if you want maximum breadth across client environments and industry verticals</li>
+                        <li>Consider OT/ICS security architecture as a high-demand specialization with limited available talent</li>
+                        <li>Pursue SABSA SCF as the most credentialed signal of architecture-specific expertise</li>
+                        <li>Pursue CCSP or cloud provider security specialty certs if the cloud architecture track is the clear direction</li>
+                        <li>Join a specialized community for your chosen direction</li>
+                        <li>Set a 6-12 month direction-setting goal</li>
+                        <li>Identify your industry vertical of deepest interest and build toward recognized expertise in that sector</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to Security Solution Architect / Security Architect / Enterprise Security Architect / Cloud Security Architect roles weekly</li>
+                        <li>Tailor your resume per job description, emphasizing architecture artifacts produced and design decisions owned</li>
+                        <li>Attend SABSA Institute community events and working groups</li>
+                        <li>Reach out to working security architects on LinkedIn for informational conversations</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your portfolio updated with new reference architectures and ADR libraries</li>
+                        <li>Practice mock architecture walkthrough interviews monthly — verbal fluency explaining your own designs is a core architect interview skill</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Target organizations undergoing major transformations (cloud migration, Zero Trust initiatives, M&A integration) where architecture skills are most urgently valued</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with reference architecture publications from NIST, CISA, CSA, and cloud providers</li>
+                        <li>Re-review your own portfolio architectures quarterly — your judgment improves, and so should your designs</li>
+                        <li>Write a monthly post about an architecture design decision or pattern you encountered</li>
+                        <li>Build a second, more advanced architecture artifact every 90 days</li>
+                        <li>Track new technology categories (SSE, SASE, CDR, AI security) and understand how they change architecture designs</li>
+                        <li>Mentor security engineers moving toward architecture roles — explaining your design reasoning is itself architecture practice</li>
+                        <li>Read one new architecture or design patterns book per quarter</li>
+                        <li>Attend at least one virtual architecture-focused conference or summit per month</li>
+                        <li>Seek architecture design review from more experienced architects — put your designs in front of challenge</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a "thinking like a security architect" series for practitioners moving from engineering into design roles</li>
+                        <li>Answer architecture questions in community forums and Discords regularly</li>
+                        <li>Open-source one of your reference architectures or ADR templates for the community</li>
+                        <li>Host a free workshop on threat modeling or Zero Trust architecture design</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another aspiring security architect for mutual design review accountability</li>
+                        <li>Contribute to an open-source architecture or threat modeling tool</li>
+                        <li>Review and give feedback on a peer's architecture diagram and design decisions</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Applied security design patterns explicitly to real design problems and produced threat models that change architecture decisions | ✅ Produced deployable reference architectures across all 5 security domains with ADRs documenting every major decision | ✅ Designed a cloud security landing zone and a Zero Trust network segmentation architecture</p>
+                <p>✅ Built a security technology evaluation framework and a fictional target technology reference stack | ✅ Produced a multi-year Zero Trust architecture migration roadmap with dependency sequencing and per-phase business cases | ✅ Designed an architecture governance framework and facilitated a mock architecture review board session</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> SABSA, STRIDE/PASTA threat modeling, Zero Trust (NIST SP 800-207), AWS/Azure/GCP landing zone patterns, RBAC/ABAC/OIDC/SAML, Terraform/OPA/Checkov, BloodHound, draw.io/Lucidchart, Sigma/detection architecture.</p>
+                <br>
+                <p><strong>Remember:</strong> Architecture is the discipline of making decisions that are expensive to reverse carefully, and letting the decisions that are cheap to reverse be made later by the people closest to them. Every reference architecture, ADR, and threat model you produce exists to answer one question: "is security a property of this system's design, or a bolt-on that will erode the moment someone needs to go faster?" Design for the threat, document the decision, validate with a threat model, and always close the loop between the architecture on paper and the system that gets built.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

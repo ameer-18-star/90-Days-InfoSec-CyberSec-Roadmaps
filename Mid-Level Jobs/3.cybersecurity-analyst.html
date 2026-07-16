@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Cybersecurity Analyst" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Cybersecurity Analyst"</h1>
+            <p>This 90-day roadmap is designed to equip you with the foundational knowledge and practical skills necessary to excel as a Cybersecurity Analyst. From understanding core concepts to hands-on incident response, this guide will set you on the path to becoming a vigilant defender of digital assets.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="phase-header">
+                <h2>Phase 1: Foundational Knowledge & Network Security</h2>
+                <span>Days 1-30: Building Your Cybersecurity Base</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Networking Fundamentals</span>
+                    <span class="skill-tag">Operating Systems Basics</span>
+                    <span class="skill-tag">Security Principles</span>
+                    <span class="skill-tag">Basic Linux Commands</span>
+                    <span class="skill-tag">Introduction to Cryptography</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Core Networking & OS Concepts</h3>
+                    <ul>
+                        <li>Understand TCP/IP Model and OSI Model.</li>
+                        <li>Learn about common networking protocols (HTTP, DNS, DHCP, SMTP, FTP).</li>
+                        <li>Explore basic router and switch functionalities.</li>
+                        <li>Familiarize yourself with Windows and Linux operating system structures.</li>
+                        <li>Learn command-line basics (CMD, PowerShell for Windows; Bash for Linux).</li>
+                        <li>Understand user management and file permissions in both OS types.</li>
+                        <li>Introduction to Virtualization (VirtualBox/VMware).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">TCP/IP</span>
+                        <span class="tech-badge">OSI Model</span>
+                        <span class="tech-badge">Linux</span>
+                        <span class="tech-badge">Windows</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Setup Your Lab Environment:</h4>
+                        <p>Set up a virtual lab with Kali Linux and a Windows target machine (e.g., Windows 10/Server 2019) using VirtualBox or VMware Workstation Player.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Security Fundamentals & Threat Landscape</h3>
+                    <ul>
+                        <li>Grasp the CIA Triad (Confidentiality, Integrity, Availability).</li>
+                        <li>Understand common cyber threats (Malware, Phishing, DoS/DDoS, SQL Injection, XSS).</li>
+                        <li>Learn about attack vectors and attack surfaces.</li>
+                        <li>Introduction to vulnerability vs. exploit.</li>
+                        <li>Explore basic security controls (firewalls, IDS/IPS, antivirus).</li>
+                        <li>Understand the concept of defense-in-depth.</li>
+                        <li>Familiarize with security policies and procedures.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">CIA Triad</span>
+                        <span class="tech-badge">Malware</span>
+                        <span class="tech-badge">Phishing</span>
+                        <span class="tech-badge">Firewalls</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Threat Identification Exercise:</h4>
+                        <p>Research and document the top 5 cybersecurity threats impacting businesses today, detailing their impact and common prevention methods.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Network Security & Basic Cryptography</h3>
+                    <ul>
+                        <li>Deep dive into firewall rules and configurations.</li>
+                        <li>Understand Network Address Translation (NAT) and VPNs.</li>
+                        <li>Learn about common network scanning tools (Nmap fundamentals).</li>
+                        <li>Introduction to encryption, hashing, and digital signatures.</li>
+                        <li>Explore symmetric and asymmetric encryption concepts.</li>
+                        <li>Understand Public Key Infrastructure (PKI) basics.</li>
+                        <li>Study secure communication protocols (SSL/TLS).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Nmap</span>
+                        <span class="tech-badge">VPN</span>
+                        <span class="tech-badge">SSL/TLS</span>
+                        <span class="tech-badge">Cryptography</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Nmap Scan & Report:</h4>
+                        <p>Perform basic Nmap scans on your lab's target machine and interpret the results to identify open ports and services. Document your findings.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Introduction to Security Operations & Incident Response</h3>
+                    <ul>
+                        <li>Understand the role of a Security Operations Center (SOC).</li>
+                        <li>Learn about the Incident Response life cycle (Preparation, Identification, Containment, Eradication, Recovery, Post-Incident Analysis).</li>
+                        <li>Familiarize with security logging and monitoring.</li>
+                        <li>Introduction to Security Information and Event Management (SIEM) concepts.</li>
+                        <li>Understand basic log analysis from Windows Event Viewer and Linux syslog.</li>
+                        <li>Explore concepts of alerts, false positives, and true positives.</li>
+                        <li>Learn about security baselines and configuration management.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SOC</span>
+                        <span class="tech-badge">Incident Response</span>
+                        <span class="tech-badge">SIEM (concept)</span>
+                        <span class="tech-badge">Log Analysis</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Basic Log Analysis:</h4>
+                        <p>Generate some common logs in your lab environment (e.g., failed logins) and analyze them using Windows Event Viewer or Linux `grep` commands.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You've successfully built a foundational understanding of cybersecurity concepts, networking, operating systems, and introduced yourself to security operations principles. You can now articulate basic security threats and their mitigation strategies.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>These projects will solidify your understanding of Phase 1 concepts.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Network Topology Map</h4>
+                        <p>Draw a detailed network diagram of your home network, identifying devices, IP addresses, and security considerations.</p>
+                        <small>Hints: Use tools like draw.io or Visio. Include firewall placement and Wi-Fi security type.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Operating System Hardening Checklist</h4>
+                        <p>Create a checklist of 10 essential security hardening steps for a Windows 10 and a Kali Linux machine.</p>
+                        <small>Hints: Focus on user accounts, strong passwords, updates, firewall, and unnecessary services.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Basic Packet Analysis</h4>
+                        <p>Using Wireshark in your lab, capture traffic during a simple web Browse session and identify HTTP, DNS, and TCP packets.</p>
+                        <small>Hints: Filter traffic, observe source/destination IPs, and port numbers.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cryptographic Concept Explanation</h4>
+                        <p>Write a short explanation (1-2 pages) differentiating symmetric and asymmetric encryption, providing real-world examples for each.</p>
+                        <small>Hints: Consider TLS/SSL for asymmetric and AES for symmetric.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 2: Intermediate Security Concepts & Tooling</h2>
+                <span>Days 31-60: Deepening Your Analytical Skills</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Vulnerability Management</span>
+                    <span class="skill-tag">Endpoint Security</span>
+                    <span class="skill-tag">Web Application Security</span>
+                    <span class="skill-tag">Security Incident Handling</span>
+                    <span class="skill-tag">Python Scripting Basics</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Vulnerability Management & Scanning</h3>
+                    <ul>
+                        <li>Understand the vulnerability management life cycle.</li>
+                        <li>Learn about common vulnerability scanning tools (Nessus, OpenVAS concepts).</li>
+                        <li>Analyze vulnerability reports and prioritize remediation efforts.</li>
+                        <li>Understand Common Vulnerabilities and Exposures (CVE) and Common Vulnerability Scoring System (CVSS).</li>
+                        <li>Introduction to penetration testing concepts vs. vulnerability scanning.</li>
+                        <li>Explore secure configuration management best practices.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Nessus (concept)</span>
+                        <span class="tech-badge">OpenVAS (concept)</span>
+                        <span class="tech-badge">CVE</span>
+                        <span class="tech-badge">CVSS</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Vulnerability Scan Simulation:</h4>
+                        <p>Research how to conduct a basic vulnerability scan using OpenVAS (or a similar free tool) in your lab and interpret a sample report.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Endpoint Security & Malware Analysis Basics</h3>
+                    <ul>
+                        <li>Understand Endpoint Detection and Response (EDR) and Antivirus (AV) functionalities.</li>
+                        <li>Learn about host-based firewalls and intrusion prevention.</li>
+                        <li>Introduction to basic malware types and their characteristics.</li>
+                        <li>Familiarize with static and dynamic malware analysis concepts.</li>
+                        <li>Understand file integrity monitoring (FIM) and application whitelisting.</li>
+                        <li>Explore the principle of least privilege for users and applications.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">EDR</span>
+                        <span class="tech-badge">Antivirus</span>
+                        <span class="tech-badge">Malware Analysis</span>
+                        <span class="tech-badge">Least Privilege</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Malware Behavior Research:</h4>
+                        <p>Choose a recent, prominent malware (e.g., a specific ransomware strain) and research its attack vector, execution, and impact.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Web Application Security & OWASP Top 10</h3>
+                    <ul>
+                        <li>Understand common web application vulnerabilities (OWASP Top 10).</li>
+                        <li>Learn about SQL Injection, Cross-Site Scripting (XSS), and Broken Authentication.</li>
+                        <li>Explore basic concepts of web proxies (Burp Suite Community Edition basics).</li>
+                        <li>Understand input validation and secure coding practices.</li>
+                        <li>Familiarize with the importance of secure development life cycles (SDLC).</li>
+                        <li>Introduction to API security considerations.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">OWASP Top 10</span>
+                        <span class="tech-badge">SQL Injection</span>
+                        <span class="tech-badge">XSS</span>
+                        <span class="tech-badge">Burp Suite (basics)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>OWASP Top 10 Analysis:</h4>
+                        <p>Pick two vulnerabilities from the OWASP Top 10 and explain how they work and how to mitigate them.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Security Incident Handling & Basic Scripting</h3>
+                    <ul>
+                        <li>Deepen your understanding of the Incident Response phases with practical examples.</li>
+                        <li>Learn how to identify indicators of compromise (IOCs).</li>
+                        <li>Practice analyzing security alerts and triaging incidents.</li>
+                        <li>Introduction to basic Python scripting for security tasks (e.g., parsing logs, simple network tools).</li>
+                        <li>Understand forensic imaging concepts (basic `dd` command in Linux).</li>
+                        <li>Explore basic security automation concepts.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Incident Handling</span>
+                        <span class="tech-badge">IOCs</span>
+                        <span class="tech-badge">Python (basics)</span>
+                        <span class="tech-badge">Forensics (concept)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Simple Python Log Parser:</h4>
+                        <p>Write a basic Python script that reads a log file and extracts specific information (e.g., IP addresses, error messages).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You've moved beyond foundational concepts to understand intermediate security domains. You can identify and explain common vulnerabilities, understand basic incident handling procedures, and have started to automate simple tasks with scripting.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>These projects will allow you to apply your intermediate knowledge.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Vulnerability Report Analysis</h4>
+                        <p>Obtain a sample vulnerability scan report (publicly available or simulated) and write a summary identifying critical vulnerabilities and suggested remediations.</p>
+                        <small>Hints: Focus on CVSS scores and business impact.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Endpoint Security Policy Draft</h4>
+                        <p>Draft a basic endpoint security policy for a small business, covering antivirus, patching, and data encryption.</p>
+                        <small>Hints: Consider common attack vectors targeting endpoints.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Web Application Attack Scenario</h4>
+                        <p>Describe a scenario where a SQL Injection attack could occur and outline the steps an attacker would take and how to prevent it.</p>
+                        <small>Hints: Explain how user input is misused.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Incident Response Playbook Outline</h4>
+                        <p>Create a high-level outline for an incident response playbook for a phishing attack, including initial steps, containment, and communication.</p>
+                        <small>Hints: Think about who needs to be involved and what information needs to be gathered.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 3: Advanced Topics, Compliance & Career Readiness</h2>
+                <span>Days 61-90: Refining Your Expertise and Preparing for the Field</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Security Monitoring & SIEM</span>
+                    <span class="skill-tag">Cloud Security Basics</span>
+                    <span class="skill-tag">Compliance & Regulations</span>
+                    <span class="skill-tag">Advanced Threat Detection</span>
+                    <span class="skill-tag">Career Development & Interview Prep</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Advanced Security Monitoring & SIEM Operations</h3>
+                    <ul>
+                        <li>Dive deeper into SIEM systems (Splunk, ELK Stack concepts).</li>
+                        <li>Learn about correlation rules and alert tuning in a SIEM.</li>
+                        <li>Understand threat intelligence platforms (TIPs) and their integration with SIEM.</li>
+                        <li>Explore security automation and orchestration (SOAR) concepts.</li>
+                        <li>Practice creating security dashboards and reports.</li>
+                        <li>Familiarize with network flow data analysis (NetFlow/IPFIX).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SIEM (Splunk/ELK)</span>
+                        <span class="tech-badge">Threat Intelligence</span>
+                        <span class="tech-badge">SOAR</span>
+                        <span class="tech-badge">Log Correlation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>SIEM Use Case Development:</h4>
+                        <p>Propose three practical use cases for a SIEM system in a corporate environment (e.g., detecting brute-force attacks, unauthorized access).</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Cloud Security Fundamentals & IAM</h3>
+                    <ul>
+                        <li>Understand fundamental concepts of cloud computing (IaaS, PaaS, SaaS).</li>
+                        <li>Learn about shared responsibility model in the cloud.</li>
+                        <li>Explore basic cloud security best practices (AWS, Azure, GCP concepts).</li>
+                        <li>Deep dive into Identity and Access Management (IAM) in both on-premise and cloud environments.</li>
+                        <li>Understand principles of secure cloud configurations.</li>
+                        <li>Familiarize with data security in the cloud.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cloud Security</span>
+                        <span class="tech-badge">IAM</span>
+                        <span class="tech-badge">AWS/Azure (concepts)</span>
+                        <span class="tech-badge">Shared Responsibility</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Cloud Security Checklist:</h4>
+                        <p>Create a basic security checklist for deploying a web application in a public cloud environment (e.g., securing EC2 instances, S3 buckets).</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Governance, Risk, Compliance (GRC) & Security Frameworks</h3>
+                    <ul>
+                        <li>Understand the importance of GRC in cybersecurity.</li>
+                        <li>Learn about common compliance standards (GDPR, HIPAA, PCI DSS concepts).</li>
+                        <li>Familiarize with cybersecurity frameworks (NIST CSF, ISO 27001 concepts).</li>
+                        <li>Understand risk assessment methodologies and risk treatment options.</li>
+                        <li>Explore security audits and assessments.</li>
+                        <li>Learn about business continuity and disaster recovery planning.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">GRC</span>
+                        <span class="tech-badge">NIST CSF</span>
+                        <span class="tech-badge">ISO 27001</span>
+                        <span class="tech-badge">GDPR/HIPAA (concepts)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Compliance Overview:</h4>
+                        <p>Choose one cybersecurity framework (e.g., NIST CSF) and provide a brief overview of its core functions and why it's important.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Career Readiness, Advanced Threats & Specialization</h3>
+                    <ul>
+                        <li>Refine your resume and LinkedIn profile for cybersecurity analyst roles.</li>
+                        <li>Practice common cybersecurity interview questions.</li>
+                        <li>Explore advanced persistent threats (APTs) and their characteristics.</li>
+                        <li>Introduction to threat hunting concepts.</li>
+                        <li>Understand current and emerging cybersecurity trends (AI in security, OT/IoT security).</li>
+                        <li>Identify potential specialization areas within cybersecurity (e.g., GRC, Cloud Security, Incident Response).</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Career Prep</span>
+                        <span class="tech-badge">APTs</span>
+                        <span class="tech-badge">Threat Hunting</span>
+                        <span class="tech-badge">Industry Trends</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Mock Interview / Resume Review:</h4>
+                        <p>Perform a mock interview with a peer or mentor, or critically review and refine your resume based on job descriptions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You've completed a rigorous 90-day roadmap. You possess a strong understanding of cybersecurity principles, practical skills in various domains, and are well-prepared to enter or advance within the cybersecurity analyst field. Your ability to apply knowledge, analyze incidents, and understand the broader security landscape makes you a valuable asset.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 3</h3>
+                <p>These advanced projects will further hone your skills and demonstrate your comprehensive understanding.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Develop a Personal Incident Response Plan</h4>
+                        <p>Create a detailed incident response plan for a hypothetical small business experiencing a ransomware attack. Include steps from detection to post-incident review.</p>
+                        <small>Hints: Consider communication, data backup, and recovery strategies.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Simulated Phishing Campaign Analysis</h4>
+                        <p>Analyze a publicly available phishing email sample. Identify its characteristics, potential impact, and how an organization could detect and prevent it.</p>
+                        <small>Hints: Look for suspicious links, sender details, and social engineering tactics.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Build a Mini-SIEM Dashboard</h4>
+                        <p>Using a tool like Splunk Free or a local ELK Stack, ingest some system logs from your lab and create basic dashboards to monitor security events.</p>
+                        <small>Hints: Focus on login attempts, firewall blocks, or process creations.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cloud Security Assessment Report Outline</h4>
+                        <p>Outline the key sections and content for a security assessment report of a basic cloud deployment (e.g., a simple web server on AWS).</p>
+                        <small>Hints: Include network security, IAM, data protection, and compliance.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skills-learned">
+                <h4>🚀 Skills You Have Learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Network Security</div>
+                    <div class="skill-item">Operating Systems</div>
+                    <div class="skill-item">Incident Response</div>
+                    <div class="skill-item">Vulnerability Management</div>
+                    <div class="skill-item">Threat Intelligence</div>
+                    <div class="skill-item">Log Analysis</div>
+                    <div class="skill-item">Cloud Security</div>
+                    <div class="skill-item">GRC & Compliance</div>
+                    <div class="skill-item">Basic Scripting (Python)</div>
+                    <div class="skill-item">Endpoint Security</div>
+                    <div class="skill-item">Web Application Security</div>
+                    <div class="skill-item">Cybersecurity Frameworks</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms and materials for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li><strong>CompTIA Security+ Study Guide</strong> by Mike Chapple & David Seidl</li>
+                        <li><strong>Practical Packet Analysis</strong> by Chris Sanders</li>
+                        <li><strong>Blue Team Handbook: SOC Analyst's Guide</strong> by Nadean Tanner</li>
+                        <li><strong>Applied Cryptography</strong> by Bruce Schneier</li>
+                        <li><strong>The Phoenix Project</strong> by Gene Kim, Kevin Behr, George Spafford (for understanding IT operations)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>**TryHackMe:** Hands-on labs for various cybersecurity topics.</li>
+                        <li>**Hack The Box:** Advanced penetration testing labs and challenges.</li>
+                        <li>**Cybrary:** Free and paid courses on a wide range of cybersecurity domains.</li>
+                        <li>**Coursera / edX:** Courses from reputable universities (e.g., Google Cybersecurity Professional Certificate, IBM Cybersecurity Analyst Professional Certificate).</li>
+                        <li>**Sans.org Reading Room:** Free whitepapers and articles from SANS Institute.</li>
+                        <li>**OWASP Foundation:** Resources for web application security.</li>
+                        <li>**YouTube Channels:** David Bombal, NetworkChuck, John Hammond, The Cyber Mentor.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>**CompTIA Security+:** Excellent entry-level certification.</li>
+                        <li>**CompTIA CySA+ (Cybersecurity Analyst+):** Builds on Security+, focusing on analytical skills.</li>
+                        <li>**(ISC)² CCSP (Certified Cloud Security Professional):** For cloud security roles (consider after foundational cloud knowledge).</li>
+                        <li>**EC-Council CEH (Certified Ethical Hacker):** More offensive, but valuable for understanding attacker mindset.</li>
+                        <li>**Google Cybersecurity Professional Certificate:** Entry-level, practical skills focused.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>**Reddit:** r/cybersecurity, r/blueteam, r/netsec.</li>
+                        <li>**Stack Exchange:** Information Security Stack Exchange.</li>
+                        <li>**Discord/Slack Channels:** Many cybersecurity communities have active channels.</li>
+                        <li>**LinkedIn Groups:** Join cybersecurity professional groups.</li>
+                        <li>**Local Meetups:** Look for local cybersecurity meetups or OWASP chapters.</li>
+                        <li>**Conferences:** Attend virtual or local cybersecurity conferences (e.g., DEF CON, Black Hat, RSA Conference - even just watching talks online).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Operating Systems & Virtualization</h3>
+                    <ul>
+                        <li>**Kali Linux:** Penetration testing and security auditing OS.</li>
+                        <li>**Windows (VM):** For analyzing Windows-specific threats and understanding enterprise environments.</li>
+                        <li>**VirtualBox / VMware Workstation Player:** For creating and managing virtual lab environments.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Network & Traffic Analysis</h3>
+                    <ul>
+                        <li>**Wireshark:** Network protocol analyzer.</li>
+                        <li>**Nmap:** Network scanner and security auditor.</li>
+                        <li>**tcpdump:** Command-line packet analyzer.</li>
+                        <li>**Netcat (nc):** Network utility for reading from and writing to network connections.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Vulnerability & Exploitation (Ethical Hacking Context)</h3>
+                    <ul>
+                        <li>**OpenVAS / Greenbone Community Edition:** Vulnerability scanner.</li>
+                        <li>**Metasploit Framework (basics):** For understanding exploits and payloads.</li>
+                        <li>**Burp Suite Community Edition:** Web vulnerability scanner and proxy.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Log Management & Incident Response</h3>
+                    <ul>
+                        <li>**Splunk (Free/Trial):** SIEM for log aggregation and analysis.</li>
+                        <li>**ELK Stack (Elasticsearch, Logstash, Kibana):** Open-source alternative for log management.</li>
+                        <li>**Autopsy / FTK Imager Lite:** Basic forensic analysis tools.</li>
+                        <li>**Sysinternals Suite (for Windows):** Advanced system utilities for troubleshooting and security analysis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Hands-on projects to build your portfolio and reinforce learning</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>**Home Network Security Audit:** Identify devices, open ports, and suggest security improvements.</li>
+                        <li>**Password Policy Implementation:** Document and implement a strong password policy for a local system.</li>
+                        <li>**Basic Firewall Configuration:** Set up and configure a software firewall on a test machine to block specific traffic.</li>
+                        <li>**Malware Signature Creation:** Research a simple malware and try to identify a unique signature (e.g., hash, string) for it.</li>
+                        <li>**Network Scanning Report:** Conduct a detailed Nmap scan of your lab network and create a report of findings.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>**Incident Response Tabletop Exercise:** Simulate a small-scale incident (e.g., a suspected virus infection) and walk through your response steps.</li>
+                        <li>**Web Vulnerability Scan & Report:** Use a tool like Burp Suite Community Edition to scan a vulnerable web application (e.g., OWASP Juice Shop) and document findings.</li>
+                        <li>**Custom Log Monitoring Script:** Write a Python script to monitor a specific log file for suspicious activities and send alerts.</li>
+                        <li>**Active Directory Basics (Lab):** Set up a small Active Directory environment in your VM lab and explore user/group management and security policies.</li>
+                        <li>**Cloud Security Best Practices Deployment:** Deploy a simple web server in a free tier cloud account (AWS, Azure) and apply basic security best practices.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>**Threat Hunt Simulation:** Develop a hypothesis for a threat and use available logs (simulated or real from a lab) to "hunt" for evidence.</li>
+                        <li>**Build a Security Awareness Program:** Design a short security awareness training module for employees on phishing or strong passwords.</li>
+                        <li>**Implement a SIEM Home Lab:** Set up Splunk or ELK Stack to collect logs from multiple lab systems and create custom alerts/dashboards.</li>
+                        <li>**Capture The Flag (CTF) Participation:** Participate in beginner/intermediate-level CTFs to apply a wide range of skills.</li>
+                        <li>**Security Policy Development:** Draft a comprehensive security policy for a specific area (e.g., Data Loss Prevention, Remote Access) for a hypothetical company.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>**Develop a custom IOC Scanner:** Create a script to scan systems for specific indicators of compromise based on recent threat intelligence.</li>
+                        <li>**Automate Incident Response Tasks:** Use Python or PowerShell to automate parts of an incident response workflow (e.g., isolating a compromised host).</li>
+                        <li>**Cloud Security Assessment:** Conduct a mock security assessment of a cloud environment, identifying misconfigurations and vulnerabilities.</li>
+                        <li>**Contribution to Open Source Security Project:** Contribute code or documentation to an open-source security tool.</li>
+                        <li>**Simulated Attack & Defense:** Plan and execute a controlled attack in your lab environment and then respond as a cybersecurity analyst, documenting both sides.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>What Next: Beyond 90 Days</h2>
+                <span>Continuous learning and specialization are key in cybersecurity</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialization</h3>
+                    <ul>
+                        <li>**Incident Response & Forensics:** Dive deeper into memory forensics, malware analysis, and advanced incident handling.</li>
+                        <li>**Security Architecture & Engineering:** Learn about designing secure systems, secure development life cycles, and security controls implementation.</li>
+                        <li>**Cloud Security:** Focus on specific cloud platforms (AWS, Azure, GCP) and their native security services.</li>
+                        <li>**GRC & Audit:** Specialize in compliance frameworks, risk management, and security auditing.</li>
+                        <li>**Penetration Testing / Red Teaming:** Transition to offensive security to understand attacker methodologies in depth.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Advanced Certifications</h3>
+                    <ul>
+                        <li>**GIAC Certifications (GSEC, GCIH, GCIA):** Highly respected and practical certifications from SANS.</li>
+                        <li>** Offensive Security Certified Professional (OSCP):** If you lean towards offensive security.</li>
+                        <li>**Certified Information Systems Security Professional (CISSP):** For experienced professionals, covering a broad range of security domains.</li>
+                        <li>**Azure/AWS Security Speciality Certifications:** For deep cloud security expertise.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Continuous Learning</h3>
+                    <ul>
+                        <li>**Stay Updated:** Follow cybersecurity news, blogs (e.g., SANS Internet Storm Center, Krebs on Security), and threat intelligence feeds.</li>
+                        <li>**Participate in CTFs & Bug Bounties:** Keep your skills sharp and learn new techniques.</li>
+                        <li>**Networking:** Engage with the cybersecurity community through conferences, meetups, and online forums.</li>
+                        <li>**Read Research Papers:** Stay informed about cutting-edge security research and emerging threats.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Contribute & Mentor</h3>
+                    <ul>
+                        <li>**Share Knowledge:** Blog about your learning, contribute to open-source projects, or mentor newcomers.</li>
+                        <li>**Build Your Brand:** Create a professional online presence (GitHub, LinkedIn) showcasing your projects and skills.</li>
+                        <li>**Seek Advanced Roles:** Look for Senior Cybersecurity Analyst, Security Engineer, or Incident Responder positions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ A solid understanding of core cybersecurity domains | ✅ Practical experience with security tools and concepts | ✅ A foundational home lab for hands-on practice</p>
+                <p>✅ Developed basic scripting skills for security tasks | ✅ Identified potential specialization areas | ✅ Prepared a strong resume for entry to intermediate roles</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Networking (TCP/IP, OSI, Protocols), Operating Systems (Windows, Linux), Virtualization (VirtualBox, VMware), Security Controls (Firewalls, IDS/IPS, AV, EDR), Cryptography, SIEM (Concepts of Splunk, ELK), Vulnerability Scanners (Nmap, OpenVAS), Web Proxies (Burp Suite), Python, Cloud Platforms (AWS, Azure concepts).</p>
+                <br>
+                <p><strong>Remember:</strong> Cybersecurity is a field of continuous learning. Embrace challenges, stay curious, and never stop honing your skills. Hands-on practice and building a portfolio are crucial for success.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

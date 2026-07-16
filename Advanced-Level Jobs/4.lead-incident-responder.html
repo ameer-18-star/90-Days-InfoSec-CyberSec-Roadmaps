@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Lead Incident Responder" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Lead Incident Responder" Mastery</h1>
+            <p>An advanced-track plan for responders who've already worked individual incidents and are ready to lead them — running the full DFIR investigation, commanding the response team, and owning every decision from detection to lessons learned.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: Incident Command Fundamentals & Investigation Leadership</h2>
+                <span>Days 1-30: The lead's role, structured incident frameworks, and directing a multi-analyst investigation under pressure</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Incident Command System</span>
+                    <span class="skill-tag">DFIR Lifecycle</span>
+                    <span class="skill-tag">Evidence Coordination</span>
+                    <span class="skill-tag">Containment Strategy</span>
+                    <span class="skill-tag">War Room Operations</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: The Lead Responder Role & Incident Command Models</h3>
+                    <ul>
+                        <li>Study what changes between "working an incident" and "leading one": you now own decisions, delegation, and timing, not just findings</li>
+                        <li>Learn the Incident Command System (ICS) structure adapted for cyber: incident commander, operations, planning, logistics roles</li>
+                        <li>Study how a lead responder allocates investigators to threads (host forensics, network analysis, malware triage) without duplicating effort</li>
+                        <li>Learn the concept of "investigative momentum" and why a lead must constantly balance speed against thoroughness</li>
+                        <li>Study how severity classification (SEV1-4 or similar) determines response posture and who gets paged</li>
+                        <li>Review one real public incident response case study (a breach disclosure or vendor writeup) and map the command decisions made at each stage</li>
+                        <li>Learn how to run an effective incident kickoff: scoping the initial hypothesis, assigning roles, setting the first check-in time</li>
+                        <li>Document a personal incident command role chart you'd use to staff a mid-size incident</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Incident Command System</span>
+                        <span class="tech-badge">Severity Classification</span>
+                        <span class="tech-badge">Role Delegation</span>
+                        <span class="tech-badge">Investigative Momentum</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Incident Command Role Chart</h4>
+                        <p>Build a complete incident command staffing chart (roles, responsibilities, escalation triggers) for a mid-size incident, and write a one-page breakdown of a real breach case study's command decisions.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Structured DFIR Lifecycle at Lead Level</h3>
+                    <ul>
+                        <li>Study the full DFIR lifecycle from a lead's perspective: preparation, identification, containment, eradication, recovery, lessons learned</li>
+                        <li>Learn how a lead keeps the investigation moving through each phase without skipping ahead under pressure to "just fix it"</li>
+                        <li>Practice building an incident timeline template that investigators populate collaboratively in real time</li>
+                        <li>Study how scope creep happens in investigations (an incident that "grows") and how a lead manages re-scoping decisions</li>
+                        <li>Learn how to run a mid-incident status check that surfaces blockers without micromanaging investigators' technical work</li>
+                        <li>Practice facilitating a mock mid-incident sync: 3 investigators report findings, you synthesize and redirect</li>
+                        <li>Study how a lead decides when an incident is contained vs. eradicated vs. fully recovered — and who signs off on each transition</li>
+                        <li>Document a reusable incident timeline and status-tracking template for your own future use</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">DFIR Lifecycle</span>
+                        <span class="tech-badge">Incident Timeline</span>
+                        <span class="tech-badge">Scope Management</span>
+                        <span class="tech-badge">Status Synthesis</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Incident Timeline & Status Template</h4>
+                        <p>Build a reusable incident timeline template and a status-check script/format, then run a mock mid-incident sync facilitating 3 simulated investigator updates.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Evidence Coordination & Chain of Custody at Scale</h3>
+                    <ul>
+                        <li>Study why evidence coordination becomes a lead-level concern once multiple investigators are collecting artifacts simultaneously</li>
+                        <li>Learn how to structure a shared evidence repository so nothing gets lost, overwritten, or improperly handled mid-investigation</li>
+                        <li>Practice designing a chain-of-custody tracking process for an incident involving 5+ collected artifacts (disk images, memory dumps, logs)</li>
+                        <li>Study when and how to involve legal counsel in evidence handling decisions, and how that changes collection requirements</li>
+                        <li>Learn how to coordinate forensic acquisition priorities when you can't image everything at once (volatile evidence vs. persistent evidence)</li>
+                        <li>Practice writing acquisition priority guidance for a team facing a live, spreading incident with limited acquisition windows</li>
+                        <li>Study how evidence integrity (hashing, write-blockers, documented handling) supports both technical analysis and potential legal proceedings</li>
+                        <li>Document a full evidence handling and chain-of-custody process for your incident response program</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Chain of Custody</span>
+                        <span class="tech-badge">Evidence Repository</span>
+                        <span class="tech-badge">Acquisition Prioritization</span>
+                        <span class="tech-badge">Legal Coordination</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Evidence Handling Process Document</h4>
+                        <p>Write a complete evidence handling and chain-of-custody process for a multi-investigator incident, including an acquisition priority decision framework for volatile vs. persistent evidence.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Containment Strategy & Decision-Making Under Uncertainty</h3>
+                    <ul>
+                        <li>Study the core containment tension: act now with incomplete information vs. wait for more visibility and risk further spread</li>
+                        <li>Learn how to weigh containment options (isolate host, disable account, block network segment) against business disruption impact</li>
+                        <li>Practice making and documenting a containment decision under a realistic time-pressure scenario with incomplete information</li>
+                        <li>Study how "watch and learn" (delayed containment to gather more intelligence) gets justified and who needs to approve that risk</li>
+                        <li>Learn how a lead communicates a containment decision and its tradeoffs to business stakeholders who want the disruption to stop immediately</li>
+                        <li>Practice writing a containment decision memo justifying your choice and the risk accepted by not choosing the alternative</li>
+                        <li>Study how containment decisions differ for ransomware, business email compromise, and insider threat scenarios</li>
+                        <li>Document a decision framework for your 3 most common incident types, mapping typical containment options and tradeoffs for each</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Containment Decisions</span>
+                        <span class="tech-badge">Decision Memos</span>
+                        <span class="tech-badge">Business Disruption Tradeoffs</span>
+                        <span class="tech-badge">Scenario-Specific Strategy</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Containment Decision Framework</h4>
+                        <p>Build a containment decision framework for 3 common incident types (ransomware, BEC, insider threat), and write one full containment decision memo for a simulated time-pressured scenario.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can structure an incident command staffing model, run the DFIR lifecycle at lead level, coordinate evidence across multiple investigators, and make defensible containment decisions under uncertainty — the foundational toolkit of a Lead Incident Responder.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate command fundamentals before moving into investigation depth and stakeholder leadership.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Incident Command Playbook</h4>
+                        <p>Write a complete incident command playbook covering role staffing, severity classification, and kickoff procedures for your program.</p>
+                        <small>Hint: Make severity thresholds concrete — "SEV1 means X specific conditions," not vague descriptions.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Mock Multi-Investigator Incident Drill</h4>
+                        <p>Run a full mock incident with 2-3 peers playing investigators, practicing role assignment and mid-incident synthesis live.</p>
+                        <small>Hint: Deliberately introduce a complication mid-drill (new evidence that changes scope) to test your adaptability.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Evidence & Chain-of-Custody Toolkit</h4>
+                        <p>Build a complete evidence tracking spreadsheet/log template plus a one-page chain-of-custody procedure document.</p>
+                        <small>Hint: Include a field for "who touched this evidence and when" — that's the field auditors and lawyers care about most.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Incident Command Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: Frame it as "what changes when you go from investigator to incident lead" — that's the angle that resonates.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Advanced Investigation Direction & Stakeholder Management</h2>
+                <span>Days 31-60: Directing deep technical investigation across domains and managing the people pressures that come with leading a live incident</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Cross-Domain Investigation</span>
+                    <span class="skill-tag">Threat Actor Attribution</span>
+                    <span class="skill-tag">Legal & Regulatory Coordination</span>
+                    <span class="skill-tag">Vendor/MSSP Coordination</span>
+                    <span class="skill-tag">Stakeholder Communication</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Directing Cross-Domain Technical Investigation</h3>
+                    <ul>
+                        <li>Study how a lead directs investigation across host forensics, network analysis, and malware reverse engineering simultaneously</li>
+                        <li>Learn how to read and synthesize findings from specialists in domains you may not personally be deepest in</li>
+                        <li>Practice reviewing sample findings from 3 different investigative threads (host, network, malware) and identifying where they connect</li>
+                        <li>Study how to spot when an investigative thread has gone cold or is chasing a false lead, and redirect it</li>
+                        <li>Learn how to maintain one unified "attack story" as the single source of truth while multiple people investigate pieces of it</li>
+                        <li>Practice writing a synthesized attack narrative from disconnected findings across host, network, and malware analysis</li>
+                        <li>Study how to know when you have "enough" evidence to move from investigation to remediation confidently</li>
+                        <li>Document a cross-domain findings synthesis template for your own future incidents</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cross-Domain Synthesis</span>
+                        <span class="tech-badge">Attack Narrative</span>
+                        <span class="tech-badge">Investigation Direction</span>
+                        <span class="tech-badge">False Lead Detection</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Synthesized Attack Narrative</h4>
+                        <p>Take 3 sets of disconnected mock findings (host, network, malware) and write one unified attack narrative connecting them into a coherent timeline and root cause.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Threat Actor Attribution & Intelligence Integration</h3>
+                    <ul>
+                        <li>Study how attribution confidence levels work (low/moderate/high confidence) and why overclaiming attribution is a real operational risk</li>
+                        <li>Learn how a lead incorporates threat intelligence into an active investigation without letting assumptions bias evidence collection</li>
+                        <li>Practice cross-referencing observed TTPs against known threat actor profiles to inform (not dictate) investigation hypotheses</li>
+                        <li>Study how ransomware groups' known behaviors (double extortion, specific tooling) should and shouldn't shape response strategy</li>
+                        <li>Learn how to engage external threat intelligence resources (vendor reports, ISAC sharing, law enforcement) mid-incident</li>
+                        <li>Practice writing an attribution assessment section for an incident report with appropriately hedged confidence language</li>
+                        <li>Study how attribution informs (but shouldn't solely drive) decisions like ransom payment or law enforcement engagement</li>
+                        <li>Document a CTI integration checklist for incorporating intelligence into live investigations responsibly</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Attribution Confidence</span>
+                        <span class="tech-badge">CTI Integration</span>
+                        <span class="tech-badge">Ransomware TTPs</span>
+                        <span class="tech-badge">Law Enforcement Engagement</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Attribution Assessment Section</h4>
+                        <p>Write a complete attribution assessment for a mock incident, using appropriately hedged confidence language and explaining how it should (and shouldn't) influence response decisions.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Legal, Regulatory & External Coordination</h3>
+                    <ul>
+                        <li>Study how a lead responder works with legal counsel throughout an incident, not just at the breach-notification stage</li>
+                        <li>Learn how attorney-client privilege considerations can shape how investigation findings get documented (and when that matters)</li>
+                        <li>Practice drafting investigation status updates written with privilege and legal review considerations in mind</li>
+                        <li>Study how breach notification deadlines (GDPR 72 hours, US state laws) create hard constraints the investigation must work within</li>
+                        <li>Learn how to coordinate with external incident response retainers, forensics vendors, or law enforcement during a major incident</li>
+                        <li>Practice writing a vendor/external-party coordination brief assigning clear scope and avoiding duplicated work</li>
+                        <li>Study how cyber insurance carriers' requirements (approved vendors, notification timelines) can constrain incident response choices</li>
+                        <li>Document a legal/regulatory coordination checklist mapped to your most likely incident scenarios</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Legal Coordination</span>
+                        <span class="tech-badge">Breach Notification Law</span>
+                        <span class="tech-badge">External IR Vendors</span>
+                        <span class="tech-badge">Cyber Insurance</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Legal & Regulatory Coordination Checklist</h4>
+                        <p>Build a complete legal/regulatory coordination checklist covering notification deadlines, privilege considerations, and external vendor engagement for your top incident scenarios.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Stakeholder Communication & Team Wellbeing Under Pressure</h3>
+                    <ul>
+                        <li>Study how a lead manages anxious executives demanding constant updates without letting it derail the investigation</li>
+                        <li>Learn how to set and hold a communication cadence (e.g. updates every 2 hours) that satisfies stakeholders without overloading the team</li>
+                        <li>Practice writing a stakeholder update template that's reusable across an incident's lifecycle, scaling detail appropriately</li>
+                        <li>Study incident fatigue: how a lead recognizes when investigators need rotation, rest, or relief during a multi-day incident</li>
+                        <li>Learn how to make the call to bring in additional resources or extend shifts, and how to justify that decision upward</li>
+                        <li>Practice a mock difficult conversation: telling an executive "no, we can't have full attribution and root cause in 2 hours"</li>
+                        <li>Study how psychological safety during high-pressure incidents affects investigation quality and team retention long-term</li>
+                        <li>Document a stakeholder communication cadence plan and a team wellbeing/rotation policy for extended incidents</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Stakeholder Cadence</span>
+                        <span class="tech-badge">Incident Fatigue</span>
+                        <span class="tech-badge">Team Rotation</span>
+                        <span class="tech-badge">Psychological Safety</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Stakeholder Cadence & Team Wellbeing Plan</h4>
+                        <p>Build a stakeholder update cadence plan with a reusable template, plus a team rotation/wellbeing policy for incidents extending beyond 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can direct cross-domain technical investigation into one coherent narrative, integrate threat intelligence and attribution responsibly, coordinate with legal and external parties, and manage stakeholders and team wellbeing under sustained pressure — the operational leadership toolkit that defines a Lead Incident Responder.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into program-building, reporting, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Multi-Day Incident Simulation</h4>
+                        <p>Run a complete mock multi-day incident with rotation planning, stakeholder updates, and a synthesized final attack narrative.</p>
+                        <small>Hint: Simulate the fatigue factor — plan as if this really spans 48+ hours, not a tidy 2-hour drill.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Legal-Aware Investigation Documentation Pack</h4>
+                        <p>Write a set of investigation status update templates designed with privilege and legal review considerations built in from the start.</p>
+                        <small>Hint: Research how real privileged investigation reports are typically structured/labeled as a reference point.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Threat Actor Attribution Casebook</h4>
+                        <p>Write 3 attribution assessments for different mock incidents, practicing hedged-confidence language across varying evidence strength.</p>
+                        <small>Hint: Deliberately make one case have weak evidence — practicing restraint is as important as practicing confident attribution.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Incident Leadership Teaching Content</h4>
+                        <p>Turn your investigation direction and stakeholder management learning into a teaching walkthrough for senior analysts moving into lead roles.</p>
+                        <small>Hint: Use one running incident scenario throughout for consistency across the explainer.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Program Building, Reporting & Career Readiness</h2>
+                <span>Days 61-90: Building the IR program itself, writing reports that matter, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">IR Program Design</span>
+                    <span class="skill-tag">Tabletop Exercise Design</span>
+                    <span class="skill-tag">Executive Incident Reporting</span>
+                    <span class="skill-tag">Post-Incident Improvement</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Incident Response Program Design</h3>
+                    <ul>
+                        <li>Study how a lead responder often ends up owning the IR program itself, not just executing within it</li>
+                        <li>Learn how to write a complete incident response plan (IRP) document covering roles, procedures, and escalation paths</li>
+                        <li>Practice drafting playbooks for your organization's top 5 most likely incident types</li>
+                        <li>Study how IR retainers with external firms get scoped, activated, and budgeted for in advance of need</li>
+                        <li>Learn how to define and track IR program readiness metrics (time-to-detect, time-to-contain, playbook coverage %)</li>
+                        <li>Practice building a simple IR program maturity self-assessment for your organization</li>
+                        <li>Study how IR program investment gets justified to leadership (the "we hope we never need this" budget conversation)</li>
+                        <li>Document a complete incident response plan outline ready for organizational adoption</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">IR Plan (IRP)</span>
+                        <span class="tech-badge">Playbook Library</span>
+                        <span class="tech-badge">Retainer Management</span>
+                        <span class="tech-badge">Readiness Metrics</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Incident Response Plan Document</h4>
+                        <p>Write a complete IR plan outline for a fictional organization, including 2 fully detailed playbooks for your most likely incident types and a readiness metrics framework.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Tabletop Exercise & Drill Design</h3>
+                    <ul>
+                        <li>Study how a lead responder designs tabletop exercises that genuinely stress-test the program, not just check a compliance box</li>
+                        <li>Learn how to write a realistic incident scenario with planned complications (injects) that test specific weaknesses</li>
+                        <li>Practice designing a full tabletop exercise scenario with 3-4 injects spaced through a 90-minute session</li>
+                        <li>Study how to facilitate a tabletop without leading participants to the "right" answer — letting realistic friction surface</li>
+                        <li>Learn how to capture and report tabletop findings as concrete program improvements, not just "it went fine"</li>
+                        <li>Practice writing a tabletop after-action report with specific, owned improvement actions</li>
+                        <li>Study how live-fire/red-team-integrated exercises differ from tabletop discussions, and when each is appropriate</li>
+                        <li>Document a full tabletop exercise package (scenario, injects, facilitator guide, evaluation criteria) ready to run</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Tabletop Design</span>
+                        <span class="tech-badge">Scenario Injects</span>
+                        <span class="tech-badge">Facilitation</span>
+                        <span class="tech-badge">After-Action Reports</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Full Tabletop Exercise Package</h4>
+                        <p>Build a complete tabletop exercise package with scenario, 3-4 injects, a facilitator guide, and evaluation criteria; run it with peers if possible and write the after-action report.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Executive Incident Reporting & Post-Incident Improvement</h3>
+                    <ul>
+                        <li>Study how a final incident report differs for technical audiences vs. executive/board audiences — same facts, different framing</li>
+                        <li>Learn how to write an executive incident summary: what happened, what was the impact, what are we doing about it</li>
+                        <li>Practice writing both a full technical incident report and a one-page executive summary from the same underlying investigation</li>
+                        <li>Study how post-incident action items should be tracked with the same rigor as the incident itself, not left to fade</li>
+                        <li>Learn how to run a structured lessons-learned session that produces specific, owned, time-bound improvements</li>
+                        <li>Practice facilitating a mock lessons-learned session and documenting the resulting action items</li>
+                        <li>Study how repeated incident patterns (the same root cause recurring) should trigger a different conversation than a one-off failure</li>
+                        <li>Compile your 90-day labs into a single portfolio-style master incident leadership report</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Executive Summaries</span>
+                        <span class="tech-badge">Technical Reports</span>
+                        <span class="tech-badge">Lessons-Learned Facilitation</span>
+                        <span class="tech-badge">Action Item Tracking</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Dual-Audience Incident Report</h4>
+                        <p>Write both a full technical incident report and a one-page executive summary for the same mock incident, plus documented lessons-learned action items from a facilitated session.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (e.g. GCIH, GCFA, or CISSP)</li>
+                        <li>Do a full mock major incident under time pressure: detect, command, investigate, contain, and brief executives within 4 hours</li>
+                        <li>Prepare answers for lead responder interview questions (walk through a containment decision, describe managing a difficult stakeholder, explain a lessons-learned process)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable leadership and technical achievements</li>
+                        <li>Polish your portfolio: pin your best 3 artifacts (IR plan, tabletop package, dual-audience report) with clean documentation</li>
+                        <li>Practice a mock behavioral interview using STAR format for your containment decision and stakeholder management stories</li>
+                        <li>Research target organizations/MSSPs and tailor your resume + LinkedIn headline to emphasize incident leadership specifically</li>
+                        <li>Plan your next 90 days: pick a direction (DFIR practice lead, IR program manager, or broader security leadership)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">STAR Behavioral Prep</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Lead Responder Portfolio</h4>
+                        <p>Finalize a portfolio (IR plan, tabletop package, dual-audience report), resume bullets, and 2 polished STAR-format leadership interview stories for Lead Incident Responder roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a complete incident leadership toolkit (command structure, cross-domain investigation direction, legal/stakeholder coordination, program design, tabletop facilitation, dual-audience reporting) plus a portfolio of real artifacts and a job-ready application package — the foundation of a genuinely capable Lead Incident Responder.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end incident leadership capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Complete Incident Response Program</h4>
+                        <p>Combine your IRP document, playbook library, tabletop package, and reporting templates into one cohesive program ready for adoption.</p>
+                        <small>Hint: This single package is your strongest portfolio artifact — treat it as the centerpiece of your application.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Full End-to-End Major Incident Drill</h4>
+                        <p>Run a complete simulated major incident from detection through executive briefing through lessons-learned, with full documentation at every stage.</p>
+                        <small>Hint: Recruit peers for different roles (investigators, a skeptical executive) to add realistic friction.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Tabletop Exercise Series</h4>
+                        <p>Design and (where possible) run 3 distinct tabletop exercises covering ransomware, BEC, and insider threat scenarios.</p>
+                        <small>Hint: Compare the after-action reports across all three — the patterns in what breaks are often the most valuable insight.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Lead Incident Responder Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching senior responders how to lead.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Incident Command & Role Staffing</div>
+                    <div class="skill-item">Evidence Coordination & Chain of Custody</div>
+                    <div class="skill-item">Containment Decision-Making</div>
+                    <div class="skill-item">Cross-Domain Investigation Synthesis</div>
+                    <div class="skill-item">Threat Attribution & CTI Integration</div>
+                    <div class="skill-item">Legal & Regulatory Coordination</div>
+                    <div class="skill-item">IR Program Design & Tabletop Facilitation</div>
+                    <div class="skill-item">Executive & Technical Incident Reporting</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>Incident Response & Computer Forensics — Luttgens, Pepe, Mandia</li>
+                        <li>Intelligence-Driven Incident Response — Roberts & Brown</li>
+                        <li>Crafting the InfoSec Playbook — Bollinger, Enright, Valites</li>
+                        <li>The Art of Memory Forensics — Ligh, Case, Levy, Walters</li>
+                        <li>Blue Team Field Manual (BTFM) — Alan White & Ben Clark</li>
+                        <li>Tabletop Exercises for Cybersecurity — SANS/various practitioner guides</li>
+                        <li>Crisis Management: Planning for the Inevitable — Steven Fink</li>
+                        <li>The Checklist Manifesto — Atul Gawande (procedural discipline under pressure)</li>
+                        <li>Difficult Conversations — Stone, Patton, Heen (stakeholder management context)</li>
+                        <li>Site Reliability Engineering — Google SRE Team (post-incident culture)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>SANS FOR508 (Advanced Incident Response, Threat Hunting, and Digital Forensics)</li>
+                        <li>SANS MGT553 (Cyber Incident Management) for lead-level framing</li>
+                        <li>CISA Tabletop Exercise Packages (CTEPs) — free public scenarios</li>
+                        <li>FIRST.org incident response training resources</li>
+                        <li>CyberDefenders (blue team forensic challenge platform)</li>
+                        <li>LetsDefend (SOC/IR hands-on investigation platform)</li>
+                        <li>NIST SP 800-61 (Computer Security Incident Handling Guide)</li>
+                        <li>Black Hills Information Security webcasts (IR and leadership topics)</li>
+                        <li>13Cubed YouTube channel (DFIR technical depth)</li>
+                        <li>Verizon DBIR and Mandiant M-Trends reports (real incident pattern research)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>GIAC Certified Incident Handler (GCIH)</li>
+                        <li>GIAC Certified Forensic Analyst (GCFA)</li>
+                        <li>GIAC Cyber Incident Management (GCIM)</li>
+                        <li>CompTIA CySA+ (Cybersecurity Analyst)</li>
+                        <li>EC-Council Certified Incident Handler (ECIH)</li>
+                        <li>CISSP (broader security management context)</li>
+                        <li>Certified in Risk and Information Systems Control (CRISC)</li>
+                        <li>GIAC Reverse Engineering Malware (GREM) — depth complement</li>
+                        <li>Project Management Professional (PMP) — useful for program/playbook structuring</li>
+                        <li>Crisis communications/media training certificate programs</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>r/dfir and r/blueteamsec on Reddit</li>
+                        <li>FIRST.org (Forum of Incident Response and Security Teams) community</li>
+                        <li>SANS DFIR Slack/Discord communities</li>
+                        <li>13Cubed and DFIR-focused Discord servers</li>
+                        <li>ISAC member portals for incident pattern sharing (industry-specific)</li>
+                        <li>Local BSides/DEF CON blue team village meetups</li>
+                        <li>CISO Series community (for leadership-adjacent IR conversations)</li>
+                        <li>Twitter/X DFIR community (#DFIR, #IncidentResponse)</li>
+                        <li>LinkedIn Incident Response and DFIR leadership groups</li>
+                        <li>CyberDefenders and LetsDefend community forums</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Investigation Coordination Tools</h3>
+                    <ul>
+                        <li>TheHive / Cortex (open-source case management)</li>
+                        <li>Jira / ServiceNow (incident and action item tracking)</li>
+                        <li>Velociraptor (endpoint visibility and forensic collection at scale)</li>
+                        <li>KAPE (Kroll Artifact Parser and Extractor)</li>
+                        <li>Timesketch (collaborative timeline analysis)</li>
+                        <li>Slack/Teams + dedicated incident channels</li>
+                        <li>Zoom/Teams (war room video bridges)</li>
+                        <li>Confluence/Notion (live incident documentation)</li>
+                        <li>PagerDuty / Opsgenie (escalation and on-call coordination)</li>
+                        <li>Miro (live attack timeline/narrative whiteboarding)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Forensics & Evidence Tools</h3>
+                    <ul>
+                        <li>Volatility 3 (memory forensics)</li>
+                        <li>Autopsy / FTK Imager (disk forensics)</li>
+                        <li>Wireshark / Zeek (network forensics)</li>
+                        <li>Magnet AXIOM (commercial forensic suite)</li>
+                        <li>Write-blockers (hardware evidence integrity)</li>
+                        <li>VirusTotal / Hybrid Analysis (rapid malware triage)</li>
+                        <li>YARA (malware family identification)</li>
+                        <li>Splunk / Elastic Security (log correlation during investigation)</li>
+                        <li>osquery (live endpoint querying)</li>
+                        <li>Hashing utilities (md5sum/sha256sum for evidence integrity)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Program & Reporting Tools</h3>
+                    <ul>
+                        <li>CISA Tabletop Exercise Packages (CTEPs)</li>
+                        <li>NIST SP 800-61 templates and guidance</li>
+                        <li>Google Docs/Slides (executive incident summaries and briefings)</li>
+                        <li>Lucidchart/Visio (incident timeline and architecture diagrams)</li>
+                        <li>Excel/Google Sheets (readiness metrics tracking)</li>
+                        <li>Atlassian retrospective templates (lessons-learned facilitation)</li>
+                        <li>OneTrust/Vanta (breach notification and compliance evidence)</li>
+                        <li>DocuSign (incident report sign-off and approval tracking)</li>
+                        <li>Loom (recording mock briefings for self-review)</li>
+                        <li>Asana/Monday.com (post-incident action item tracking)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Build a basic incident severity classification scheme</li>
+                        <li>Write a one-page incident kickoff checklist</li>
+                        <li>Draft a simple chain-of-custody log template</li>
+                        <li>Write one containment decision memo for a simple scenario</li>
+                        <li>Build a basic stakeholder update template</li>
+                        <li>Write a one-page attribution confidence-language guide</li>
+                        <li>Draft a single playbook for one common incident type</li>
+                        <li>Write a short executive summary for a mock incident</li>
+                        <li>Design a 3-question lessons-learned facilitation prompt set</li>
+                        <li>Document the DFIR lifecycle phases in your own words with examples</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a complete incident command role staffing chart</li>
+                        <li>Write a full evidence handling and chain-of-custody process</li>
+                        <li>Build a containment decision framework for 3 incident types</li>
+                        <li>Write a synthesized attack narrative from disconnected findings</li>
+                        <li>Build a legal/regulatory coordination checklist</li>
+                        <li>Write a stakeholder cadence and team rotation plan</li>
+                        <li>Build a full incident response plan outline</li>
+                        <li>Design a complete tabletop exercise scenario with injects</li>
+                        <li>Write both a technical report and executive summary for one mock incident</li>
+                        <li>Run a mock multi-investigator incident sync and document the outcome</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Design a full incident response program: IRP, playbooks, metrics, retainer scoping</li>
+                        <li>Run a complete multi-day incident simulation with rotation planning</li>
+                        <li>Build a tabletop exercise series spanning 3+ incident types with after-action reports</li>
+                        <li>Write a full attribution casebook across multiple confidence levels</li>
+                        <li>Design a complete IR program maturity self-assessment</li>
+                        <li>Architect a cross-domain investigation coordination process for large incidents</li>
+                        <li>Build a vendor/MSSP coordination playbook for external IR engagement</li>
+                        <li>Design a psychological safety and team wellbeing policy for extended incidents</li>
+                        <li>Build a full breach notification decision tree spanning multiple jurisdictions</li>
+                        <li>Mentor a senior analyst through their first lead-responder tabletop</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Lead a real or high-fidelity simulated incident from start to finish end-to-end</li>
+                        <li>Publish original research or a writeup on incident command best practices</li>
+                        <li>Design a full incident response program for a multi-business-unit enterprise</li>
+                        <li>Speak at a local BSides/DEF CON blue team village or FIRST.org event</li>
+                        <li>Build a custom incident command training program for junior responders</li>
+                        <li>Architect a live-fire purple-team-integrated incident response exercise</li>
+                        <li>Design a complete crisis communications integration with legal and PR teams</li>
+                        <li>Contribute to or help shape an industry ISAC's incident-sharing protocols</li>
+                        <li>Build a comprehensive post-incident metrics program tracking program maturity over time</li>
+                        <li>Mentor multiple analysts toward lead-responder readiness as a structured program</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your incident response career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize or Broaden</h3>
+                    <ul>
+                        <li>Decide: deepen toward DFIR technical mastery, or broaden toward IR program management</li>
+                        <li>Consider a DFIR Practice Lead track if hands-on technical investigation still energizes you most</li>
+                        <li>Consider an IR Program Manager track if program design and tabletop facilitation stood out</li>
+                        <li>Explore a broader security leadership path if crisis communication and stakeholder management were your strength</li>
+                        <li>Look into external IR consulting/retainer firms as a path with high incident variety</li>
+                        <li>Consider specializing in a high-stakes industry vertical (critical infrastructure, healthcare, finance)</li>
+                        <li>Pursue GCFA/GREM if the DFIR depth track is the clear direction</li>
+                        <li>Pursue CISSP/CISM if the broader leadership track is the clear direction</li>
+                        <li>Join a specialized community for your chosen direction</li>
+                        <li>Set a 6-12 month direction-setting goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to Lead Incident Responder / IR Team Lead / Senior DFIR Consultant roles weekly</li>
+                        <li>Tailor your resume per job description, emphasizing command experience and leadership signals</li>
+                        <li>Attend local FIRST.org/BSides blue team meetups and introduce yourself</li>
+                        <li>Reach out to current IR leads and DFIR consultants on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your portfolio updated with new program/tabletop artifacts</li>
+                        <li>Practice behavioral (STAR-format) mock interviews monthly</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider IR retainer/consulting firms for exposure to a high volume of varied incidents</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly threat actor and ransomware trend reporting</li>
+                        <li>Run or participate in at least one tabletop exercise per quarter to stay sharp</li>
+                        <li>Re-test your IR plan and playbooks against new TTPs as adversaries evolve</li>
+                        <li>Write a monthly post about a leadership or investigative judgment call you navigated</li>
+                        <li>Build a second, more advanced portfolio artifact every 90 days</li>
+                        <li>Track new DFIR tooling and methodology developments</li>
+                        <li>Mentor junior responders moving toward lead readiness — teaching reinforces your own mastery</li>
+                        <li>Read one new DFIR/crisis leadership book per month</li>
+                        <li>Attend at least one virtual conference talk per month</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a "becoming a lead responder" series for senior analysts aspiring to lead</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your templates (IRP outline, tabletop package) for others to use</li>
+                        <li>Host a free workshop/webinar on incident command or tabletop design</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another aspiring lead for accountability</li>
+                        <li>Contribute documentation fixes to a tool you use often</li>
+                        <li>Review and give feedback on a peer's incident report or tabletop design</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Built an incident command staffing model and run a multi-investigator drill | ✅ Designed an evidence handling and chain-of-custody process | ✅ Made and documented defensible containment decisions under time pressure</p>
+                <p>✅ Synthesized cross-domain findings into one coherent attack narrative | ✅ Built a complete IR plan, playbook library, and tabletop exercise package | ✅ Written dual-audience incident reports and facilitated a lessons-learned session</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> TheHive/Cortex, Velociraptor, KAPE, Timesketch, Volatility 3, NIST SP 800-61, CISA Tabletop Exercise Packages, Splunk/Elastic, YARA, Magnet AXIOM.</p>
+                <br>
+                <p><strong>Remember:</strong> Leading an incident isn't about having every answer — it's about making the best decision available with the information you have, keeping a scattered team moving in one direction, and never losing the thread of what actually happened. Every playbook, drill, and report you build exists to answer one question: "if this happens again at 3am, will the team know exactly what to do, and will I be ready to lead them through it?" Stay calm, document everything, and always close the loop with lessons learned.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Senior Threat Intelligence Analyst" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Senior Threat Intelligence Analyst" Mastery</h1>
+            <p>An advanced-track plan for analysts who already understand the intelligence cycle and are ready to own it — running collection against real requirements, applying structured analytical techniques, and producing finished intelligence that shapes real decisions.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: Intelligence Requirements & Structured Collection</h2>
+                <span>Days 1-30: Owning the intelligence cycle from requirements through structured, defensible collection</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">PIRs/Intelligence Requirements</span>
+                    <span class="skill-tag">Collection Management</span>
+                    <span class="skill-tag">OSINT Tradecraft</span>
+                    <span class="skill-tag">Source Evaluation</span>
+                    <span class="skill-tag">Dark Web Monitoring</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Senior CTI Role Calibration & Priority Intelligence Requirements</h3>
+                    <ul>
+                        <li>Study what changes between "consuming threat feeds" and "running an intelligence program": you now own what gets collected and why</li>
+                        <li>Learn how Priority Intelligence Requirements (PIRs) get defined by working backward from real stakeholder decisions</li>
+                        <li>Study the difference between strategic, operational, and tactical intelligence requirements, and who consumes each</li>
+                        <li>Practice interviewing a fictional stakeholder (CISO, SOC manager, executive) to extract their actual intelligence needs, not assumed ones</li>
+                        <li>Learn how to translate a vague stakeholder ask ("tell me about ransomware risk") into 3-5 specific, answerable PIRs</li>
+                        <li>Study how PIRs should be revisited and refreshed as the threat landscape and business priorities shift</li>
+                        <li>Review one real public CTI program description (vendor or enterprise writeup) and identify how its priorities appear structured</li>
+                        <li>Document a full set of PIRs for a fictional organization across strategic, operational, and tactical levels</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">PIRs</span>
+                        <span class="tech-badge">Stakeholder Interviews</span>
+                        <span class="tech-badge">Strategic/Operational/Tactical</span>
+                        <span class="tech-badge">Requirements Refresh</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Priority Intelligence Requirements Set</h4>
+                        <p>Write a complete set of 5+ PIRs spanning strategic, operational, and tactical levels for a fictional organization, each traceable back to a specific stakeholder decision it would inform.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Collection Management & Planning</h3>
+                    <ul>
+                        <li>Study how a collection plan maps each PIR to specific sources, methods, and collection cadence</li>
+                        <li>Learn the major collection disciplines relevant to CTI: OSINT, technical (malware/network telemetry), HUMINT-adjacent (community/forum monitoring), and commercial feeds</li>
+                        <li>Practice building a full collection plan mapping your Week 1 PIRs to specific named sources and collection methods</li>
+                        <li>Study how collection gaps get identified and what to do when no good source exists for a stated requirement</li>
+                        <li>Learn how to evaluate and onboard a new commercial threat intel feed against your actual PIRs rather than its marketing claims</li>
+                        <li>Practice writing a feed evaluation memo comparing 2 fictional vendor offerings against specific PIRs</li>
+                        <li>Study how collection plans get reviewed periodically for redundancy (paying for 3 feeds that report the same thing) and coverage gaps</li>
+                        <li>Document a full collection management framework you could operate against on an ongoing basis</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Collection Plans</span>
+                        <span class="tech-badge">Collection Disciplines</span>
+                        <span class="tech-badge">Feed Evaluation</span>
+                        <span class="tech-badge">Coverage Gap Analysis</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Collection Plan & Feed Evaluation</h4>
+                        <p>Build a full collection plan mapping your PIRs to named sources and methods, plus one feed evaluation memo comparing two fictional vendor offerings against specific requirements.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Advanced OSINT Tradecraft</h3>
+                    <ul>
+                        <li>Study advanced OSINT methodology: pivoting from a single data point (domain, email, hash) into a fuller picture using structured technique, not random searching</li>
+                        <li>Practice using passive DNS, WHOIS history, and certificate transparency logs to map infrastructure relationships</li>
+                        <li>Learn how to use Shodan/Censys effectively for infrastructure attribution and exposure research</li>
+                        <li>Study operational security for the researcher: sock puppet account hygiene, sandboxed browsing, avoiding tipping off a target that they're being researched</li>
+                        <li>Practice a full OSINT pivot exercise starting from one public indicator and building out an infrastructure cluster</li>
+                        <li>Learn how social media and forum monitoring tools support early warning of planned attacks or leaked data</li>
+                        <li>Study legal and ethical boundaries of OSINT collection — what's fair game vs. what crosses into unauthorized access or harassment-adjacent behavior</li>
+                        <li>Document a full OSINT pivot writeup demonstrating your research methodology, not just the final answer</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Passive DNS/WHOIS</span>
+                        <span class="tech-badge">Shodan/Censys</span>
+                        <span class="tech-badge">Researcher OPSEC</span>
+                        <span class="tech-badge">Infrastructure Pivoting</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: OSINT Infrastructure Pivot Writeup</h4>
+                        <p>Starting from one public indicator, build out a full infrastructure cluster using passive DNS, WHOIS, and certificate transparency, documenting your methodology step by step.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Source Evaluation & Dark Web/Closed-Source Monitoring</h3>
+                    <ul>
+                        <li>Study the Admiralty Code (source reliability x information credibility) for rating raw intelligence systematically</li>
+                        <li>Learn how to apply consistent source evaluation across open, closed, and commercial sources so analysis isn't built on unvetted claims</li>
+                        <li>Practice rating 5 sample pieces of raw intelligence using the Admiralty Code and justifying each rating</li>
+                        <li>Study dark web/closed-forum monitoring at a conceptual and safety level: access methods, legal considerations, and what's realistically achievable without specialized access</li>
+                        <li>Learn how ransomware leak site monitoring provides early visibility into victim organizations and group activity patterns</li>
+                        <li>Practice (using safe, legal, publicly documented examples) tracing how a ransomware leak site posting gets identified and processed into intelligence</li>
+                        <li>Study how to avoid single-source reliance, especially for high-confidence claims that will inform major decisions</li>
+                        <li>Document a source evaluation framework and rating log you'll apply to all incoming raw intelligence going forward</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Admiralty Code</span>
+                        <span class="tech-badge">Source Reliability</span>
+                        <span class="tech-badge">Ransomware Leak Sites</span>
+                        <span class="tech-badge">Multi-Source Corroboration</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Source Evaluation Framework</h4>
+                        <p>Build a complete source evaluation framework using the Admiralty Code, rate 5 sample pieces of raw intelligence with it, and document your rationale for each rating.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can define PIRs traceable to real stakeholder decisions, build a structured collection plan against them, conduct disciplined OSINT pivoting, and rate source reliability consistently — the foundational toolkit of a Senior Threat Intelligence Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate requirements and collection fundamentals before moving into analysis and production.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full PIR-to-Collection Pipeline</h4>
+                        <p>Build a complete pipeline from PIRs through a collection plan through named sources mapped to each, ready for ongoing operation.</p>
+                        <small>Hint: This is the backbone artifact of an entire CTI program — make it genuinely reusable, not a one-off exercise.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>OSINT Pivot Case Study Series</h4>
+                        <p>Run 3 separate OSINT pivot exercises starting from different indicator types (domain, hash, email) and compare your methodology across them.</p>
+                        <small>Hint: Document what worked and what dead-ended in each — the failures teach as much as the successes.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Vendor Feed Comparison Report</h4>
+                        <p>Evaluate 3 fictional or publicly-described commercial CTI feed offerings against one consistent set of PIRs.</p>
+                        <small>Hint: Score them on a consistent rubric so the comparison is defensible, not just impressionistic.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>CTI Fundamentals Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: Frame it as "how real threat intel programs actually run" — most learners only see finished reports, never the requirements process.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Structured Analysis & Adversary Tracking</h2>
+                <span>Days 31-60: Applying rigorous analytical technique and building durable, evolving threat actor knowledge</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Structured Analytic Techniques</span>
+                    <span class="skill-tag">Threat Actor Tracking</span>
+                    <span class="skill-tag">Campaign Analysis</span>
+                    <span class="skill-tag">Geopolitical Context</span>
+                    <span class="skill-tag">Confidence Language</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Structured Analytic Techniques (SATs)</h3>
+                    <ul>
+                        <li>Study why structured analytic techniques exist: combating cognitive bias and groupthink in intelligence analysis</li>
+                        <li>Learn Analysis of Competing Hypotheses (ACH) as a method for systematically testing multiple explanations against evidence</li>
+                        <li>Practice running a full ACH matrix for one ambiguous incident scenario with at least 3 competing hypotheses</li>
+                        <li>Study Key Assumptions Check and how to surface unstated assumptions baked into an analytic judgment</li>
+                        <li>Learn devil's advocacy and "what if" analysis as techniques for pressure-testing a leading hypothesis before publishing</li>
+                        <li>Practice applying a Key Assumptions Check to one of your own Phase 1 analytic products, surfacing assumptions you hadn't stated</li>
+                        <li>Study how SATs get applied efficiently under real time pressure rather than as a slow academic exercise</li>
+                        <li>Document a personal SAT toolkit with quick-reference guides for when to use each technique</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Analysis of Competing Hypotheses</span>
+                        <span class="tech-badge">Key Assumptions Check</span>
+                        <span class="tech-badge">Devil's Advocacy</span>
+                        <span class="tech-badge">Cognitive Bias Mitigation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: ACH Matrix & Assumptions Check</h4>
+                        <p>Run a full Analysis of Competing Hypotheses matrix for one ambiguous scenario, then apply a Key Assumptions Check to your leading hypothesis before finalizing a judgment.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Threat Actor Tracking & Profile Maintenance</h3>
+                    <ul>
+                        <li>Study how a senior analyst builds and maintains living threat actor profiles, not one-off reports that go stale immediately</li>
+                        <li>Learn how to structure a threat actor profile: aliases, motivation, sponsorship assessment, TTPs, targeting patterns, known tooling, confidence level per claim</li>
+                        <li>Practice building one complete, properly-sourced threat actor profile for a real, publicly-documented group</li>
+                        <li>Study how to track a group's evolution over time — tooling changes, target shifts, apparent rebranding or splintering</li>
+                        <li>Learn how diamond model elements (adversary, infrastructure, capability, victim) keep a profile organized and complete</li>
+                        <li>Practice writing an update to an existing profile reflecting new reporting, distinguishing what's confirmed vs. assessed</li>
+                        <li>Study how internal "named" threat actor tracking differs from relying purely on vendor-assigned names, and the tradeoffs of each</li>
+                        <li>Document a reusable threat actor profile template you'll apply to all future tracked groups</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Threat Actor Profiles</span>
+                        <span class="tech-badge">Diamond Model</span>
+                        <span class="tech-badge">Profile Maintenance</span>
+                        <span class="tech-badge">Naming Conventions</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Living Threat Actor Profile</h4>
+                        <p>Build one complete, properly-sourced threat actor profile for a real group using your template, then write one update reflecting hypothetical new reporting.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Campaign Analysis & Pattern Recognition</h3>
+                    <ul>
+                        <li>Study how individual incidents get connected into a recognized "campaign" through shared infrastructure, tooling, or targeting</li>
+                        <li>Learn how to build a campaign timeline correlating multiple separate incidents/reports into one coherent narrative</li>
+                        <li>Practice clustering a set of mock incidents using shared indicators and TTPs to identify whether they form one campaign</li>
+                        <li>Study how targeting pattern analysis (which sectors, regions, or company sizes get hit) reveals likely motivation and future risk</li>
+                        <li>Learn how to distinguish a genuine campaign from coincidental similarity (commodity malware used by many unrelated actors)</li>
+                        <li>Practice writing a campaign analysis report connecting your clustered mock incidents into one narrative with confidence-rated conclusions</li>
+                        <li>Study how campaign tracking feeds proactive recommendations (likely next targets, recommended detections) rather than just historical description</li>
+                        <li>Document a campaign clustering methodology you can reapply to future incident sets</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Campaign Clustering</span>
+                        <span class="tech-badge">Targeting Pattern Analysis</span>
+                        <span class="tech-badge">Timeline Correlation</span>
+                        <span class="tech-badge">Proactive Recommendations</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Campaign Analysis Report</h4>
+                        <p>Cluster a set of mock incidents into a coherent campaign narrative using shared indicators and targeting patterns, and write a confidence-rated campaign analysis report with forward-looking recommendations.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Geopolitical Context & Confidence Language Discipline</h3>
+                    <ul>
+                        <li>Study how geopolitical events (sanctions, conflicts, elections) correlate with shifts in nation-state and hacktivist cyber activity</li>
+                        <li>Learn how to incorporate geopolitical context into a threat assessment without overreaching into pure political punditry</li>
+                        <li>Practice writing a short geopolitical context section for one threat assessment, grounded in cyber-relevant implications only</li>
+                        <li>Study standardized confidence language (low/moderate/high confidence) and words-of-estimative-probability conventions used in professional intelligence writing</li>
+                        <li>Learn why precise, consistent confidence language matters more than how it might sound — vague hedging undermines trust over time</li>
+                        <li>Practice rewriting a poorly-hedged mock analytic judgment into properly calibrated confidence language</li>
+                        <li>Study how to communicate a change in confidence level over time as new evidence arrives, without appearing to have been simply wrong before</li>
+                        <li>Document a personal confidence-language style guide for consistent use across all your future products</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Geopolitical Context</span>
+                        <span class="tech-badge">Words of Estimative Probability</span>
+                        <span class="tech-badge">Confidence Calibration</span>
+                        <span class="tech-badge">Analytic Rigor</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Confidence-Calibrated Threat Assessment</h4>
+                        <p>Write one threat assessment incorporating a grounded geopolitical context section, using your confidence-language style guide consistently throughout the analytic judgments.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can apply structured analytic techniques to pressure-test judgments, maintain living threat actor profiles, cluster incidents into campaign-level analysis, and write with disciplined, calibrated confidence language — the analytical rigor that defines senior CTI work.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into finished intelligence production, dissemination, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Threat Actor Profile Library</h4>
+                        <p>Build 3 complete threat actor profiles spanning different motivation types (financial, nation-state, hacktivist).</p>
+                        <small>Hint: The contrast between motivation types is instructive — show how it changes every section of the profile.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>SAT Application Casebook</h4>
+                        <p>Apply 3 different structured analytic techniques to 3 different ambiguous scenarios, documenting how each technique changed your conclusion.</p>
+                        <small>Hint: Include at least one case where the SAT genuinely overturned your initial gut read — that's the whole point of using them.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Multi-Incident Campaign Investigation</h4>
+                        <p>Take 5+ mock incidents and determine through clustering whether they represent one, two, or no real campaigns.</p>
+                        <small>Hint: Deliberately include some red herrings (similar but unrelated incidents) to practice avoiding false clustering.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Analytic Rigor Teaching Content</h4>
+                        <p>Turn your SAT and confidence-language work into a teaching walkthrough for analysts wanting to write more defensible intelligence.</p>
+                        <small>Hint: Show a "before and after" of a poorly-hedged judgment vs. a properly calibrated one — the contrast teaches fast.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Finished Intelligence Production, Dissemination & Career Readiness</h2>
+                <span>Days 61-90: Writing intelligence that drives decisions, building a program others trust, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Finished Intelligence Writing</span>
+                    <span class="skill-tag">Dissemination Strategy</span>
+                    <span class="skill-tag">CTI-to-Detection Bridge</span>
+                    <span class="skill-tag">Program Metrics</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Finished Intelligence Product Writing</h3>
+                    <ul>
+                        <li>Study the standard finished intelligence product types: spot reports, intelligence summaries, deep-dive assessments, executive briefs</li>
+                        <li>Learn the BLUF (Bottom Line Up Front) writing convention and why intelligence writing leads with the conclusion, not the buildup</li>
+                        <li>Practice writing one spot report (rapid, short) and one deep-dive assessment (comprehensive) on related but different aspects of one topic</li>
+                        <li>Study how to tailor the same underlying analysis for different audiences: technical SOC consumers vs. executive leadership</li>
+                        <li>Learn how visual products (infographics, heat maps, timelines) complement written analysis for faster consumption</li>
+                        <li>Practice building one visual summary product distilling a complex assessment into a single page</li>
+                        <li>Study how to write actionable recommendations that are specific enough to act on, not generic "increase monitoring" advice</li>
+                        <li>Compile a finished intelligence portfolio piece combining a deep-dive assessment, an executive brief version, and a visual summary</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">BLUF Writing</span>
+                        <span class="tech-badge">Spot Reports</span>
+                        <span class="tech-badge">Audience Tailoring</span>
+                        <span class="tech-badge">Visual Products</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Multi-Format Finished Intelligence Set</h4>
+                        <p>Write one deep-dive assessment, then produce an executive brief version and a one-page visual summary of the same analysis for different audiences.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: The CTI-to-Action Bridge</h3>
+                    <ul>
+                        <li>Study why intelligence that doesn't change a decision or detection capability has limited operational value, however accurate</li>
+                        <li>Learn how to translate a finished assessment into concrete detection requirements for a SOC/detection engineering team</li>
+                        <li>Practice writing a "so what does this mean for us" section bridging your Phase 2 campaign analysis into specific defensive recommendations</li>
+                        <li>Study how CTI feeds into vulnerability prioritization (which CVEs matter because actors are actively exploiting them)</li>
+                        <li>Learn how to track whether your intelligence actually got acted upon — closing the loop on impact, not just publishing and moving on</li>
+                        <li>Practice designing a simple feedback mechanism for stakeholders to confirm whether a product was useful and acted upon</li>
+                        <li>Study how proactive warning products (early indicators of likely future targeting) differ from retrospective campaign reports</li>
+                        <li>Document a CTI-to-action framework mapping your product types to their intended downstream action</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Detection Requirements</span>
+                        <span class="tech-badge">Vulnerability Prioritization</span>
+                        <span class="tech-badge">Impact Feedback Loops</span>
+                        <span class="tech-badge">Proactive Warning</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: CTI-to-Action Bridge Document</h4>
+                        <p>Write a "so what" section bridging your campaign analysis into specific detection requirements, plus a simple feedback mechanism design for tracking whether stakeholders acted on it.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Program Operations, Metrics & External Engagement</h3>
+                    <ul>
+                        <li>Study how a CTI program demonstrates its value to leadership: not raw report counts, but decisions influenced and risks mitigated</li>
+                        <li>Learn how to define meaningful CTI program metrics (PIR coverage %, time-to-publish, stakeholder feedback scores)</li>
+                        <li>Practice building a simple CTI program dashboard summarizing these metrics for a fictional quarter</li>
+                        <li>Study how information-sharing communities (ISACs, trusted peer groups) operate and what value participation provides both ways</li>
+                        <li>Learn how to responsibly share intelligence externally (sanitization, TLP markings) without exposing sensitive sourcing</li>
+                        <li>Practice applying Traffic Light Protocol (TLP) markings correctly to a set of mock intelligence products for different sharing contexts</li>
+                        <li>Study how a senior analyst contributes to industry-wide knowledge (conference talks, published research) while protecting client confidentiality</li>
+                        <li>Compile your 90-day work into a single portfolio-style master CTI program report</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Program Metrics</span>
+                        <span class="tech-badge">ISAC Participation</span>
+                        <span class="tech-badge">TLP Markings</span>
+                        <span class="tech-badge">Responsible Sharing</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: CTI Program Dashboard & TLP Practice</h4>
+                        <p>Build a simple CTI program metrics dashboard for a fictional quarter, and apply correct TLP markings to 3 mock products intended for different sharing audiences.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (e.g. GIAC GCTI, CTIA, or CISSP)</li>
+                        <li>Do a full mock rapid-response exercise: a breaking news event drops, produce a spot report and stakeholder notification within 2 hours</li>
+                        <li>Prepare answers for senior CTI interview questions (walk through building a threat actor profile, explain a confidence-language judgment call, describe influencing a real decision)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable analytical and program-impact achievements</li>
+                        <li>Polish your portfolio: pin your best 3 artifacts (PIR-to-collection pipeline, threat actor profile, multi-format finished intelligence set)</li>
+                        <li>Practice a mock behavioral interview using STAR format for your campaign analysis and stakeholder-influence stories</li>
+                        <li>Research target organizations/vendors and tailor your resume + LinkedIn headline to emphasize finished-intelligence production specifically</li>
+                        <li>Plan your next 90 days: pick a direction (strategic/geopolitical CTI specialist, CTI program lead, or technical CTI/malware-focused depth)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">STAR Behavioral Prep</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Senior CTI Portfolio</h4>
+                        <p>Finalize a portfolio (PIR-to-collection pipeline, threat actor profile, finished intelligence set), resume bullets, and 2 polished STAR-format interview stories for Senior Threat Intelligence Analyst roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a complete strategic CTI toolkit (requirements management, structured collection, rigorous analytic technique, threat actor/campaign tracking, finished intelligence production, program operations) plus a portfolio of real artifacts and a job-ready application package — the foundation of a genuinely senior Threat Intelligence Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end senior CTI capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Intelligence Cycle Demonstration</h4>
+                        <p>Run one complete cycle from PIR definition through collection through analysis through a multi-format finished product, with the feedback loop closed.</p>
+                        <small>Hint: This single, complete cycle is the strongest artifact you can bring to an interview — it proves you understand the whole discipline, not just one piece.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Comparative Threat Actor Deep-Dive</h4>
+                        <p>Build full, detailed profiles for 2 threat actors that target similar industries, comparing their TTPs, motivations, and recommended defenses.</p>
+                        <small>Hint: A side-by-side comparison table at the end makes this immediately useful to a real SOC reader.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>CTI Program Operations Manual</h4>
+                        <p>Write a complete operations manual for running a CTI function: PIR management, collection, SATs, product types, metrics, and sharing protocols.</p>
+                        <small>Hint: Write it as if a new hire needs to run the program solo from this document alone.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Senior CTI Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching analysts how the discipline really works end-to-end.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Priority Intelligence Requirements (PIRs)</div>
+                    <div class="skill-item">Collection Management & Advanced OSINT</div>
+                    <div class="skill-item">Source Evaluation (Admiralty Code)</div>
+                    <div class="skill-item">Structured Analytic Techniques (ACH)</div>
+                    <div class="skill-item">Threat Actor & Campaign Tracking</div>
+                    <div class="skill-item">Confidence Language & Analytic Rigor</div>
+                    <div class="skill-item">Finished Intelligence Product Writing</div>
+                    <div class="skill-item">CTI Program Metrics & Responsible Sharing</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>Psychology of Intelligence Analysis — Richards J. Heuer Jr.</li>
+                        <li>Structured Analytic Techniques for Intelligence Analysis — Heuer & Pherson</li>
+                        <li>Intelligence-Driven Incident Response — Roberts & Brown</li>
+                        <li>Intelligence: From Secrets to Policy — Mark Lowenthal</li>
+                        <li>The Open Source Intelligence Encyclopedia — various OSINT practitioner resources</li>
+                        <li>Cyber Threat Intelligence — Aaron Roberts</li>
+                        <li>Thinking, Fast and Slow — Daniel Kahneman (cognitive bias foundation)</li>
+                        <li>Superforecasting — Philip Tetlock & Dan Gardner (probability calibration)</li>
+                        <li>The Threat Intelligence Handbook — Recorded Future (practitioner-oriented, vendor-published)</li>
+                        <li>Tribe of Hackers Red Team / Blue Team series (adversary-context reading)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>SANS FOR578 (Cyber Threat Intelligence) course materials and webcasts</li>
+                        <li>MITRE ATT&CK official groups and CTI training resources</li>
+                        <li>OSINT Framework (osintframework.com) for tool discovery</li>
+                        <li>Bellingcat's online investigation toolkit and guides</li>
+                        <li>Recorded Future, Mandiant, and CrowdStrike public threat research blogs</li>
+                        <li>MISP project documentation and training resources</li>
+                        <li>VirusTotal/Hybrid Analysis (technical indicator research)</li>
+                        <li>TryHackMe/CyberDefenders CTI-focused rooms and challenges</li>
+                        <li>Information Warfare and geopolitics-focused podcasts (Risky Business, CyberWire)</li>
+                        <li>YouTube: SANS DFIR webcasts, OSINT Curious project content</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>GIAC Cyber Threat Intelligence (GCTI)</li>
+                        <li>Certified Threat Intelligence Analyst (CTIA, EC-Council)</li>
+                        <li>SANS FOR578 certificate of completion</li>
+                        <li>Certified in Open Source Intelligence (various OSINT-specific certs)</li>
+                        <li>CompTIA CySA+ (Cybersecurity Analyst, foundational)</li>
+                        <li>CISSP (broader security management context)</li>
+                        <li>GIAC Certified Incident Handler (GCIH) — complementary DFIR depth</li>
+                        <li>Bellingcat/online investigation specific training certificates</li>
+                        <li>Recorded Future University certifications (vendor-specific but practitioner-relevant)</li>
+                        <li>SANS MGT/leadership tracks if program management is a future direction</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>r/threatintel and r/OSINT on Reddit</li>
+                        <li>OSINT Curious community and Discord</li>
+                        <li>Trace Labs (OSINT-for-good community practice)</li>
+                        <li>MISP community and threat-sharing communities</li>
+                        <li>ISAC member portals for your industry vertical</li>
+                        <li>SANS CTI Summit community and talk archives</li>
+                        <li>FIRST.org community resources</li>
+                        <li>LinkedIn Threat Intelligence and CTI leadership groups</li>
+                        <li>Twitter/X CTI community (#ThreatIntel, #OSINT, #CTI)</li>
+                        <li>Bellingcat community and open investigation forums</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Collection & OSINT Tools</h3>
+                    <ul>
+                        <li>Shodan / Censys</li>
+                        <li>SpiderFoot (automated OSINT reconnaissance)</li>
+                        <li>Maltego (link analysis and OSINT visualization)</li>
+                        <li>crt.sh (certificate transparency search)</li>
+                        <li>SecurityTrails / DNSDB (passive DNS history)</li>
+                        <li>WHOISXML / DomainTools</li>
+                        <li>VirusTotal / Hybrid Analysis / urlscan.io</li>
+                        <li>Have I Been Pwned (breach database research)</li>
+                        <li>Google dorking / advanced search operators</li>
+                        <li>Wayback Machine / archive.today (historical web research)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Analysis & Knowledge Management Tools</h3>
+                    <ul>
+                        <li>MISP (Malware Information Sharing Platform)</li>
+                        <li>OpenCTI</li>
+                        <li>MITRE ATT&CK Navigator</li>
+                        <li>Obsidian / Notion (analyst notebook and threat actor profile maintenance)</li>
+                        <li>Maltego (also useful for analytic link-chart building)</li>
+                        <li>Excel/Google Sheets (ACH matrices, source rating logs)</li>
+                        <li>Draw.io / Lucidchart (campaign timelines, diamond model diagrams)</li>
+                        <li>STIX/TAXII tooling for structured intelligence exchange</li>
+                        <li>Timesketch (collaborative timeline analysis)</li>
+                        <li>Jupyter Notebooks (structured data analysis and repeatable workflows)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Production & Dissemination Tools</h3>
+                    <ul>
+                        <li>Microsoft Word/Google Docs (finished intelligence product writing)</li>
+                        <li>Canva/Figma (visual summary and infographic products)</li>
+                        <li>PowerPoint/Google Slides (executive briefing decks)</li>
+                        <li>Power BI/Tableau (CTI program metrics dashboards)</li>
+                        <li>Traffic Light Protocol (TLP) marking guidance/templates</li>
+                        <li>Slack/Teams/Email (stakeholder dissemination channels)</li>
+                        <li>SharePoint/Confluence (product archive and version control)</li>
+                        <li>Google Forms/Surveys (stakeholder feedback collection)</li>
+                        <li>RSS aggregators (Feedly or similar, for ongoing source monitoring)</li>
+                        <li>Zotero/reference managers (source citation tracking for rigor)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Write 3 PIRs traceable to a specific stakeholder decision</li>
+                        <li>Build a simple collection plan mapping one PIR to 3 sources</li>
+                        <li>Run a basic OSINT pivot starting from one public indicator</li>
+                        <li>Rate 5 pieces of raw intelligence using the Admiralty Code</li>
+                        <li>Write a one-page summary of a real, publicly-documented threat actor</li>
+                        <li>Build a simple ACH matrix for one ambiguous scenario</li>
+                        <li>Rewrite one poorly-hedged statement using calibrated confidence language</li>
+                        <li>Write a short BLUF-style spot report on a recent public security event</li>
+                        <li>Apply TLP markings correctly to 3 mock intelligence products</li>
+                        <li>Document the intelligence cycle phases in your own words with examples</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a complete PIR set and collection plan for a fictional org</li>
+                        <li>Write a full, properly-sourced threat actor profile using a structured template</li>
+                        <li>Run a full ACH matrix and Key Assumptions Check on one real scenario</li>
+                        <li>Cluster a set of mock incidents into a campaign analysis report</li>
+                        <li>Write a deep-dive assessment with an executive brief and visual summary version</li>
+                        <li>Build a feed evaluation memo comparing two vendor CTI offerings</li>
+                        <li>Write a CTI-to-detection bridge document for one campaign finding</li>
+                        <li>Build a simple CTI program metrics dashboard with mock data</li>
+                        <li>Write a geopolitical context section for one threat assessment</li>
+                        <li>Run a multi-source OSINT investigation and document your full methodology</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a full intelligence cycle demonstration from PIRs through finished product</li>
+                        <li>Build a library of 3+ complete threat actor profiles across different motivation types</li>
+                        <li>Design a complete CTI program operations manual</li>
+                        <li>Build a comparative threat actor analysis report for 2 related groups</li>
+                        <li>Architect a feedback loop system for tracking intelligence product impact over time</li>
+                        <li>Design a responsible information-sharing protocol for ISAC-style participation</li>
+                        <li>Build a multi-incident campaign tracking system with a living timeline</li>
+                        <li>Write a full strategic assessment incorporating geopolitical and sector-specific risk</li>
+                        <li>Design a CTI program maturity model for self-assessment</li>
+                        <li>Mentor a junior analyst through their first complete intelligence product</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Contribute original research or analysis to a public CTI community (with appropriate sanitization)</li>
+                        <li>Publish a substantive threat actor or campaign analysis writeup</li>
+                        <li>Design a full CTI program for an organization from scratch, including budget justification</li>
+                        <li>Speak at a local CTI-focused meetup, SANS CTI Summit-adjacent event, or OSINT community gathering</li>
+                        <li>Build a custom analytic technique adapted to your organization's specific intelligence needs</li>
+                        <li>Architect a CTI-to-automated-detection pipeline integrating with detection engineering teams</li>
+                        <li>Contribute to or help shape an industry ISAC's analytic standards or sharing protocols</li>
+                        <li>Build a comprehensive geopolitical risk monitoring program for executive consumption</li>
+                        <li>Mentor multiple analysts toward senior CTI readiness as a structured program</li>
+                        <li>Lead a full red-team-informed threat emulation exercise based on your own actor research</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your threat intelligence career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize or Broaden</h3>
+                    <ul>
+                        <li>Decide: deepen toward strategic/geopolitical CTI, technical CTI (malware-adjacent), or broaden toward CTI program leadership</li>
+                        <li>Consider a Strategic Intelligence specialization if geopolitical context and executive products energized you most</li>
+                        <li>Consider a Technical CTI track (closer to SOC Tier 3/malware analysis) if indicator-level depth appeals more</li>
+                        <li>Explore CTI Program Lead/Manager as a path if requirements management and metrics stood out</li>
+                        <li>Look into vendor-side CTI research roles (Mandiant, Recorded Future, CrowdStrike) for industry-wide visibility</li>
+                        <li>Consider specializing in a high-stakes industry vertical (financial sector fraud intel, critical infrastructure)</li>
+                        <li>Pursue GCTI/CTIA if the technical/structured-analysis track is the clear direction</li>
+                        <li>Pursue program management or CISSP-adjacent paths if leadership is the clear direction</li>
+                        <li>Join a specialized community for your chosen direction</li>
+                        <li>Set a 6-12 month direction-setting goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to Senior Threat Intelligence Analyst / CTI Lead / Threat Researcher roles weekly</li>
+                        <li>Tailor your resume per job description, emphasizing finished-product writing and analytical rigor</li>
+                        <li>Attend local CTI/OSINT meetups and FIRST.org events</li>
+                        <li>Reach out to senior CTI analysts and researchers on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your portfolio updated with new threat actor profiles and analytic writeups</li>
+                        <li>Practice behavioral (STAR-format) mock interviews monthly</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider vendor CTI research teams for high-volume exposure to diverse threats</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly threat research and geopolitical developments relevant to cyber</li>
+                        <li>Update your tracked threat actor profiles regularly as new reporting emerges</li>
+                        <li>Re-apply SATs to old judgments periodically to check your calibration over time</li>
+                        <li>Write a monthly post or analytic piece about something you've researched</li>
+                        <li>Build a second, more advanced portfolio artifact every 90 days</li>
+                        <li>Track new OSINT tooling and CTI platform developments</li>
+                        <li>Mentor junior analysts — teaching reinforces your own analytical discipline</li>
+                        <li>Read one new intelligence analysis or geopolitics book per month</li>
+                        <li>Attend at least one virtual conference talk per month</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create an "introduction to real CTI work" series for analysts who've only seen finished reports</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your templates (threat actor profile, PIR framework) for others to use</li>
+                        <li>Host a free workshop/webinar on structured analytic techniques or OSINT methodology</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another aspiring senior analyst for accountability</li>
+                        <li>Contribute documentation or templates to a community resource hub</li>
+                        <li>Review and give feedback on a peer's threat actor profile or analytic product</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Defined PIRs traceable to real stakeholder decisions and built a structured collection plan | ✅ Conducted disciplined OSINT pivoting and rated sources using the Admiralty Code | ✅ Applied structured analytic techniques to pressure-test your own judgments</p>
+                <p>✅ Built and maintained a living threat actor profile and a campaign analysis report | ✅ Written finished intelligence products tailored across multiple audiences | ✅ Bridged analysis into detection requirements and built CTI program metrics</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> MISP/OpenCTI, MITRE ATT&CK, Shodan/Censys, SpiderFoot, Maltego, Admiralty Code, STIX/TAXII, ACH structured analytic technique, TLP marking protocols.</p>
+                <br>
+                <p><strong>Remember:</strong> Threat intelligence that doesn't change a decision is just trivia with good production values. Every PIR, profile, and finished product you write exists to answer one question: "does the person reading this now know what to do differently?" Stay rigorous, stay honest about your confidence level, and always trace your work back to the decision it was meant to inform.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

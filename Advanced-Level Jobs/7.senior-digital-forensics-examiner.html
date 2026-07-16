@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Senior Digital Forensics Examiner" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Senior Digital Forensics Examiner" Mastery</h1>
+            <p>An advanced-track plan for examiners who already know the core tools and are ready to operate at expert depth — file system and mobile forensic internals, evidentiary rigor that survives cross-examination, and the credibility to testify to your own findings.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: File System Internals & Forensic Acquisition Rigor</h2>
+                <span>Days 1-30: Deep file system artifact analysis and acquisition practices that will withstand legal scrutiny</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">File System Forensics</span>
+                    <span class="skill-tag">Forensic Acquisition</span>
+                    <span class="skill-tag">Chain of Custody</span>
+                    <span class="skill-tag">Windows Artifacts</span>
+                    <span class="skill-tag">Timeline Analysis</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Senior Examiner Role Calibration & Forensic Acquisition Standards</h3>
+                    <ul>
+                        <li>Study what changes between "running forensic tools" and "being the senior examiner": your work must now survive challenge, not just produce findings</li>
+                        <li>Learn the forensic soundness principles: do no harm to original evidence, document everything, ensure reproducibility</li>
+                        <li>Study write-blocker usage and verification (hash before and after) as the foundation of defensible acquisition</li>
+                        <li>Practice acquiring a forensic disk image in a lab using proper hardware/software write-blocking and documenting the full process</li>
+                        <li>Learn the difference between dead-box (powered off) and live (running system) acquisition, and when each is appropriate</li>
+                        <li>Study how acquisition order of volatility (RAM before disk, network state before either) drives triage decisions on scene</li>
+                        <li>Review one real published forensic case study or court case summary involving a chain-of-custody or acquisition challenge</li>
+                        <li>Document a personal acquisition standard operating procedure (SOP) you'd follow on every case</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Write-Blockers</span>
+                        <span class="tech-badge">Forensic Soundness</span>
+                        <span class="tech-badge">Order of Volatility</span>
+                        <span class="tech-badge">Dead-Box vs Live Acquisition</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Forensic Acquisition SOP</h4>
+                        <p>Write a complete acquisition standard operating procedure covering write-blocker verification, hashing, and order-of-volatility decisions, then perform one documented lab disk acquisition following it exactly.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: File System Internals — NTFS Deep Dive</h3>
+                    <ul>
+                        <li>Study NTFS structure in depth: Master File Table (MFT), $LogFile, $UsnJrnl, file record attributes</li>
+                        <li>Learn how to parse the MFT directly to recover file metadata even when a file has been deleted</li>
+                        <li>Practice using MFTECmd and analyzing MFT entries for timestamp and file existence evidence</li>
+                        <li>Study NTFS timestamp behavior in depth: the four timestamps (created, modified, accessed, MFT-modified) and how each one changes</li>
+                        <li>Learn timestomping detection: how anti-forensic timestamp manipulation leaves telltale signs in $STANDARD_INFORMATION vs $FILE_NAME attributes</li>
+                        <li>Practice identifying a timestomped file in a lab sample by comparing both timestamp attribute sets</li>
+                        <li>Study how the $UsnJrnl (USN Journal) and $LogFile provide a secondary record of file system activity even after MFT entries are reused</li>
+                        <li>Document a full NTFS artifact analysis report identifying file existence, timestamps, and any detected timestomping in one lab disk image</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NTFS/MFT</span>
+                        <span class="tech-badge">MFTECmd</span>
+                        <span class="tech-badge">Timestomping Detection</span>
+                        <span class="tech-badge">$UsnJrnl/$LogFile</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: NTFS Artifact Analysis Report</h4>
+                        <p>Analyze one lab disk image's MFT, $UsnJrnl, and timestamp attributes, identify any timestomped files, and write a full artifact analysis report documenting your methodology.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Windows Artifact Analysis at Depth</h3>
+                    <ul>
+                        <li>Study Windows Registry forensics: NTUSER.DAT, SYSTEM, SOFTWARE hives and what each reveals about user and system activity</li>
+                        <li>Learn Shellbags, Jump Lists, and LNK files as evidence of file/folder access even after the file itself is gone</li>
+                        <li>Practice extracting and analyzing Prefetch files and Amcache/Shimcache for program execution evidence</li>
+                        <li>Study Windows Event Log analysis at depth: key Event IDs for logon activity, process creation (4688), and PowerShell logging</li>
+                        <li>Learn how Volume Shadow Copies preserve historical file system states and how to mount/analyze them</li>
+                        <li>Practice building a full "program execution and file access" evidence package combining Prefetch, Shimcache, LNK, and Jump List artifacts</li>
+                        <li>Study how artifact correlation (the same activity appearing across multiple independent artifact types) strengthens an evidentiary claim</li>
+                        <li>Document a complete Windows artifact analysis report demonstrating program execution and user activity for one lab scenario</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Registry Forensics</span>
+                        <span class="tech-badge">Shellbags/Jump Lists</span>
+                        <span class="tech-badge">Prefetch/Shimcache</span>
+                        <span class="tech-badge">Volume Shadow Copies</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Program Execution Evidence Package</h4>
+                        <p>Build a complete program execution and file access evidence package for one lab scenario, correlating Prefetch, Shimcache, LNK files, Jump Lists, and Registry artifacts into one coherent finding.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Timeline Analysis & Super Timelines</h3>
+                    <ul>
+                        <li>Study how a super timeline (combining many artifact sources into one chronological view) reveals activity patterns invisible in any single source</li>
+                        <li>Practice building a super timeline using Plaso/log2timeline against a lab disk image</li>
+                        <li>Learn how to filter and pivot a massive timeline down to the relevant window of activity without losing context</li>
+                        <li>Study how to use Timesketch for collaborative timeline analysis and annotation</li>
+                        <li>Practice annotating a super timeline to build a narrative of attacker or user activity across a defined incident window</li>
+                        <li>Learn how timeline gaps (periods with suspiciously little activity) can themselves be evidence of anti-forensic activity</li>
+                        <li>Study how to cross-validate timeline findings against independent sources (network logs, physical access records) for corroboration</li>
+                        <li>Document a full timeline analysis report for one lab scenario, with the narrative built from the super timeline and supporting artifact citations</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Plaso/log2timeline</span>
+                        <span class="tech-badge">Super Timelines</span>
+                        <span class="tech-badge">Timesketch</span>
+                        <span class="tech-badge">Cross-Validation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Super Timeline Narrative Report</h4>
+                        <p>Build a super timeline for one lab disk image using Plaso, annotate it in Timesketch, and write a full narrative report citing the specific artifacts supporting each claim in the timeline.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can perform a forensically sound acquisition, parse NTFS internals to detect anti-forensic manipulation, build a full Windows artifact evidence package, and construct a defensible super timeline narrative — the foundational toolkit of a Senior Digital Forensics Examiner.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate file system and acquisition fundamentals before moving into mobile, anti-forensics, and reporting depth.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Disk Image Forensic Workup</h4>
+                        <p>Take one lab disk image and produce a complete workup: acquisition documentation, MFT analysis, artifact correlation, and a super timeline.</p>
+                        <small>Hint: This single end-to-end workup is the strongest portfolio artifact you can build — treat it as a real case from start to finish.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Timestomping Detection Casebook</h4>
+                        <p>Build 3 lab scenarios with different anti-forensic timestamp manipulation techniques and document how you detected each.</p>
+                        <small>Hint: Include at least one subtle case where the manipulation almost passes casual review — that's where examiner skill actually shows.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Windows Artifact Reference Guide</h4>
+                        <p>Build a comprehensive personal reference guide mapping each major Windows artifact type to what it proves and its limitations.</p>
+                        <small>Hint: Include the caveats explicitly — knowing what an artifact can't prove is as valuable as knowing what it can.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Forensic Fundamentals Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: Frame it as "what your computer remembers even when you think it doesn't" — that angle hooks a general audience well.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Mobile Forensics & Anti-Forensic Countermeasures</h2>
+                <span>Days 31-60: Extending deep examination skill to mobile devices and recognizing deliberate evidence destruction</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Mobile Forensics</span>
+                    <span class="skill-tag">iOS/Android Internals</span>
+                    <span class="skill-tag">Anti-Forensics Detection</span>
+                    <span class="skill-tag">Cloud Forensics</span>
+                    <span class="skill-tag">Encryption Challenges</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Mobile Forensics Fundamentals — Acquisition Methods</h3>
+                    <ul>
+                        <li>Study the mobile acquisition hierarchy: manual, logical, file system, and physical extraction, and what each yields</li>
+                        <li>Learn why physical extraction (full bit-for-bit) is increasingly difficult on modern locked/encrypted devices</li>
+                        <li>Practice a logical extraction on a lab Android device using Cellebrite/Magnet AXIOM (or a free alternative like ALEAPP) and reviewing the output</li>
+                        <li>Study iOS-specific acquisition challenges: Secure Enclave, full-disk encryption, and the role of jailbreaking in older extraction methods</li>
+                        <li>Learn how to handle a locked device scenario: what's legally and technically possible vs. what requires specialized vendor tools or law enforcement assistance</li>
+                        <li>Practice analyzing a sample mobile extraction's file structure to locate app data, messages, and location artifacts</li>
+                        <li>Study chain-of-custody considerations specific to mobile devices (airplane mode, Faraday bags, remote wipe risk)</li>
+                        <li>Document a mobile device handling SOP covering on-scene preservation through lab acquisition</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cellebrite/Magnet AXIOM</span>
+                        <span class="tech-badge">ALEAPP/iLEAPP</span>
+                        <span class="tech-badge">Faraday Bags</span>
+                        <span class="tech-badge">Extraction Hierarchy</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Mobile Device Handling SOP</h4>
+                        <p>Write a complete mobile device handling SOP from on-scene preservation through lab acquisition, and perform one documented logical extraction on a lab device.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Mobile Artifact Analysis at Depth</h3>
+                    <ul>
+                        <li>Study Android-specific artifacts: SQLite database structures for messaging/call logs, shared preferences, and app-specific data stores</li>
+                        <li>Learn how to manually parse a SQLite database when automated tooling doesn't fully support a specific app</li>
+                        <li>Practice extracting and correlating location data (GPS, Wi-Fi, cell tower) across multiple app sources for one lab scenario</li>
+                        <li>Study iOS-specific artifacts: the knowledgeC.db (app usage), CallHistory.storedata, and Health app data structures</li>
+                        <li>Learn how deleted SQLite records can sometimes be recovered from write-ahead logs (WAL) or unallocated space within the database file</li>
+                        <li>Practice recovering a deleted message or record from a lab SQLite database using manual or tool-assisted carving</li>
+                        <li>Study how cross-app correlation (messaging app + location data + call log) builds a stronger evidentiary picture than any single app alone</li>
+                        <li>Document a full mobile artifact analysis report correlating multiple app data sources into one coherent activity narrative</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SQLite Forensics</span>
+                        <span class="tech-badge">Location Correlation</span>
+                        <span class="tech-badge">Deleted Record Recovery</span>
+                        <span class="tech-badge">Cross-App Analysis</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Mobile Artifact Correlation Report</h4>
+                        <p>Build a full mobile artifact analysis correlating messaging, location, and call log data from one lab extraction, including at least one recovered deleted record.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Anti-Forensic Technique Recognition</h3>
+                    <ul>
+                        <li>Study the major categories of anti-forensic activity: data destruction, data hiding, trail obfuscation, and attacks against the forensic tools/process itself</li>
+                        <li>Learn how secure deletion and wiping tools leave their own forensic signatures (tool artifacts, characteristic overwrite patterns)</li>
+                        <li>Practice identifying evidence of a wiping tool's prior execution on a lab disk image</li>
+                        <li>Study steganography and alternate data streams (ADS) as data-hiding techniques, and basic detection approaches</li>
+                        <li>Learn how encrypted containers (VeraCrypt, BitLocker) get identified even when their contents can't be accessed, and what that absence itself can prove</li>
+                        <li>Practice detecting the presence of an encrypted container or hidden volume in a lab scenario using signature and entropy analysis</li>
+                        <li>Study how an examiner documents anti-forensic findings credibly — describing what evidence of tampering exists without overclaiming intent</li>
+                        <li>Document an anti-forensic findings report for one lab scenario, carefully separating "evidence of X technique being used" from "evidence of why"</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Anti-Forensics</span>
+                        <span class="tech-badge">Wiping Tool Signatures</span>
+                        <span class="tech-badge">Steganography/ADS</span>
+                        <span class="tech-badge">Encrypted Container Detection</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Anti-Forensic Findings Report</h4>
+                        <p>Analyze a lab scenario for evidence of wiping tool use and/or an encrypted hidden container, and write a findings report that carefully distinguishes confirmed technical findings from interpretive claims about intent.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Cloud & Cross-Platform Forensics</h3>
+                    <ul>
+                        <li>Study how cloud-native evidence (email, cloud storage, SaaS application logs) differs from traditional device-based evidence collection</li>
+                        <li>Learn legal process considerations for obtaining cloud provider data: preservation requests, subpoenas, and provider-specific procedures</li>
+                        <li>Practice analyzing a sample set of cloud account artifacts (login history, shared file activity, sync logs) for a lab scenario</li>
+                        <li>Study how cross-device correlation works when a user's activity spans a phone, laptop, and cloud account simultaneously</li>
+                        <li>Learn how browser forensics (history, cache, downloaded file records, extension data) complements cloud and device artifacts</li>
+                        <li>Practice building a cross-platform activity timeline correlating device, browser, and cloud account evidence for one lab scenario</li>
+                        <li>Study how multi-jurisdictional data location (where cloud data physically resides) can complicate legal access even with proper authorization</li>
+                        <li>Document a full cross-platform forensic report demonstrating one coherent activity narrative spanning device and cloud evidence</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cloud Forensics</span>
+                        <span class="tech-badge">Browser Forensics</span>
+                        <span class="tech-badge">Cross-Device Correlation</span>
+                        <span class="tech-badge">Legal Process for Cloud Data</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Cross-Platform Forensic Report</h4>
+                        <p>Build a cross-platform activity timeline correlating device, browser, and cloud account artifacts for one lab scenario, with a complete forensic report documenting the unified narrative.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can acquire and analyze mobile devices at depth, recover deleted application data, recognize and credibly document anti-forensic activity, and correlate evidence across devices, browsers, and cloud accounts — the expanded technical range that defines a senior examiner.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into court-readiness, reporting excellence, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Mobile-to-Cloud Investigation</h4>
+                        <p>Build one complete investigation spanning a mobile extraction and corresponding cloud account artifacts for the same lab scenario.</p>
+                        <small>Hint: This cross-platform scope is exactly what real cases increasingly require — make it your strongest mobile-adjacent artifact.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Anti-Forensic Technique Reference Library</h4>
+                        <p>Build a reference library documenting 5 distinct anti-forensic techniques, their detection signatures, and the limits of what detection can prove.</p>
+                        <small>Hint: This becomes genuinely useful to other examiners — write it for that audience, not just yourself.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Deleted Data Recovery Casebook</h4>
+                        <p>Document 3 separate deleted-data recovery scenarios across file system, SQLite, and one other source type.</p>
+                        <small>Hint: Compare recovery confidence levels across the three — full recovery, partial fragment, and metadata-only are very different evidentiary strengths.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Mobile & Anti-Forensics Teaching Content</h4>
+                        <p>Turn your mobile and anti-forensic detection work into a teaching walkthrough for examiners moving beyond basic disk forensics.</p>
+                        <small>Hint: Use one running lab scenario throughout for consistency across the explainer.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Court-Ready Reporting, Expert Witness Skills & Career Readiness</h2>
+                <span>Days 61-90: Reports and testimony that hold up under cross-examination, plus the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Forensic Report Writing</span>
+                    <span class="skill-tag">Expert Witness Testimony</span>
+                    <span class="skill-tag">Daubert/Admissibility Standards</span>
+                    <span class="skill-tag">Peer Review</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Forensic Report Writing for Legal Scrutiny</h3>
+                    <ul>
+                        <li>Study how a forensic report differs from a technical incident report: it must stand alone and survive being read by a hostile cross-examiner</li>
+                        <li>Learn the standard forensic report structure: scope, methodology, tools used and their validation status, findings, limitations, conclusions</li>
+                        <li>Practice writing a methodology section detailed enough that another examiner could reproduce your exact steps</li>
+                        <li>Study how to write a "limitations" section honestly — what your evidence can't prove is as important as what it can</li>
+                        <li>Learn how to avoid overstatement: writing "the evidence is consistent with X" rather than overclaiming certainty the evidence doesn't support</li>
+                        <li>Practice rewriting an overconfident mock conclusion into properly hedged, defensible language</li>
+                        <li>Study how report appendices (full artifact listings, hash values, tool version documentation) support reproducibility claims</li>
+                        <li>Compile a full court-ready forensic report for one of your Phase 1/2 lab investigations, applying every standard above</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Report Methodology</span>
+                        <span class="tech-badge">Limitations Sections</span>
+                        <span class="tech-badge">Reproducibility</span>
+                        <span class="tech-badge">Defensible Language</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Court-Ready Forensic Report</h4>
+                        <p>Take one of your Phase 1 or 2 lab investigations and rewrite it as a complete court-ready forensic report with full methodology, limitations, and appendices.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Tool Validation & Methodology Defensibility</h3>
+                    <ul>
+                        <li>Study why forensic tool validation matters: a tool's output is only as credible as the evidence that it works correctly</li>
+                        <li>Learn how to validate a forensic tool's output against a known-answer test set before relying on it in a real case</li>
+                        <li>Practice running a validation test comparing two different tools' output on the same lab evidence to confirm consistency</li>
+                        <li>Study admissibility standards relevant to forensic evidence (Daubert/Frye standards at a conceptual level) and what they require of methodology</li>
+                        <li>Learn how peer review within a forensics lab/team catches errors before a report ever reaches a courtroom or client</li>
+                        <li>Practice conducting a structured peer review of a mock colleague's forensic report, looking specifically for unsupported claims</li>
+                        <li>Study how documented standard operating procedures (from Phase 1) themselves support admissibility by demonstrating consistent practice</li>
+                        <li>Document a tool validation log and a peer review checklist for ongoing use in your practice</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Tool Validation</span>
+                        <span class="tech-badge">Daubert/Frye Standards</span>
+                        <span class="tech-badge">Peer Review</span>
+                        <span class="tech-badge">Methodology Defensibility</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Tool Validation Log & Peer Review</h4>
+                        <p>Run a validation test comparing two tools against the same evidence, document the results in a validation log, and conduct a structured peer review of one mock colleague report.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Expert Witness Preparation & Testimony Skills</h3>
+                    <ul>
+                        <li>Study the structure of expert testimony: qualification, direct examination, cross-examination, and how each phase differs</li>
+                        <li>Learn how to explain a technical finding in plain language for a jury without sacrificing accuracy</li>
+                        <li>Practice a mock direct examination, walking through one of your forensic findings as if explaining it to a non-technical jury</li>
+                        <li>Study common cross-examination tactics used against forensic experts (challenging credentials, methodology, alternative explanations)</li>
+                        <li>Learn how to answer a hostile cross-examination question honestly and concisely without becoming defensive or over-explaining</li>
+                        <li>Practice a mock cross-examination with a peer playing an aggressive opposing attorney challenging your methodology</li>
+                        <li>Study how to maintain credibility by acknowledging genuine limitations rather than defending every point as if your reputation depends on it</li>
+                        <li>Document a personal testimony preparation checklist covering case file review, exhibit preparation, and anticipated challenge questions</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Direct Examination</span>
+                        <span class="tech-badge">Cross-Examination</span>
+                        <span class="tech-badge">Plain-Language Translation</span>
+                        <span class="tech-badge">Testimony Credibility</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Mock Testimony Session</h4>
+                        <p>Run a full mock direct and cross-examination session with a peer for one of your forensic findings, and write a personal testimony preparation checklist from the experience.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (e.g. GCFE, GCFA, or CCE)</li>
+                        <li>Do a full mock case under time pressure: acquire, analyze, and produce a court-ready report for a lab scenario within a set window</li>
+                        <li>Prepare answers for senior examiner interview questions (walk through a timestomping case, describe handling a locked device, explain testifying under cross-examination)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable forensic and credibility achievements</li>
+                        <li>Polish your portfolio: pin your best 3 artifacts (full disk workup, mobile-to-cloud investigation, court-ready report) with clean documentation</li>
+                        <li>Practice a mock behavioral interview using STAR format for your anti-forensic detection and testimony-preparation stories</li>
+                        <li>Research target organizations (law enforcement, private forensics firms, corporate IR teams) and tailor your resume accordingly</li>
+                        <li>Plan your next 90 days: pick a direction (mobile forensics specialist, expert witness practice, or forensics lab leadership)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">STAR Behavioral Prep</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Senior Examiner Portfolio</h4>
+                        <p>Finalize a portfolio (full disk workup, mobile-to-cloud investigation, court-ready report), resume bullets, and 2 polished STAR-format interview stories for Senior Digital Forensics Examiner roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a complete senior forensics toolkit (deep file system and mobile artifact analysis, anti-forensic detection, cross-platform correlation, court-ready reporting, tool validation, expert testimony skills) plus a portfolio of real investigations and a job-ready application package — the foundation of a genuinely senior Digital Forensics Examiner.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end senior forensic examiner capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Complete Multi-Source Investigation</h4>
+                        <p>Build one full investigation spanning disk, mobile, and cloud evidence for a single coherent lab scenario, with a court-ready final report.</p>
+                        <small>Hint: This single comprehensive case is your strongest portfolio artifact — make it genuinely indistinguishable from real casework in rigor.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Full Mock Trial Forensic Testimony</h4>
+                        <p>Run a complete mock trial scenario: written report, direct examination, and cross-examination with peers playing both attorneys.</p>
+                        <small>Hint: Record it — reviewing your own composure and clarity under hostile questioning is uncomfortable but invaluable.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Forensic Methodology Validation Package</h4>
+                        <p>Build a complete tool validation and methodology defensibility package covering 3 different forensic tools you regularly rely on.</p>
+                        <small>Hint: This demonstrates exactly the kind of rigor that separates a senior examiner from a tool operator.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Senior Forensics Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching examiners how to reach courtroom-ready rigor.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Forensically Sound Acquisition</div>
+                    <div class="skill-item">NTFS & Windows Artifact Deep Analysis</div>
+                    <div class="skill-item">Super Timeline Construction (Plaso)</div>
+                    <div class="skill-item">Mobile Device Forensics (iOS/Android)</div>
+                    <div class="skill-item">Anti-Forensic Technique Detection</div>
+                    <div class="skill-item">Cross-Platform & Cloud Correlation</div>
+                    <div class="skill-item">Court-Ready Forensic Report Writing</div>
+                    <div class="skill-item">Expert Witness Testimony Skills</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>File System Forensic Analysis — Brian Carrier</li>
+                        <li>Windows Forensic Analysis Toolkit — Harlan Carvey</li>
+                        <li>The Art of Memory Forensics — Ligh, Case, Levy, Walters</li>
+                        <li>Practical Mobile Forensics — Mahalik, Tamma, Bommisetty</li>
+                        <li>Digital Forensics with Open Source Tools — Altheide & Carvey</li>
+                        <li>Guide to Computer Forensics and Investigations — Nelson, Phillips, Steuart</li>
+                        <li>Incident Response & Computer Forensics — Luttgens, Pepe, Mandia</li>
+                        <li>Anti-Forensics: The Rootkit Connection (and related anti-forensics research papers)</li>
+                        <li>Cross-Examination: Science and Techniques — Pozner & Dodd (testimony skills)</li>
+                        <li>Forensic Examination of Digital Evidence (NIJ guide) — U.S. Department of Justice</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>SANS FOR500 (Windows Forensic Analysis) and FOR585 (Smartphone Forensics) course materials</li>
+                        <li>13Cubed YouTube channel (deep DFIR technical walkthroughs)</li>
+                        <li>CyberDefenders (blue team/DFIR forensic challenge platform)</li>
+                        <li>Digital Corpora (free, legally-shareable forensic disk images for practice)</li>
+                        <li>Magnet Forensics free training resources and CTF challenges</li>
+                        <li>Belkasoft / Cellebrite vendor training resources (where accessible)</li>
+                        <li>NIST Computer Forensics Tool Testing (CFTT) program publications</li>
+                        <li>DFIR Training (dfir.training) curated resource aggregator</li>
+                        <li>Eric Zimmerman's tools documentation and associated training materials</li>
+                        <li>NIJ (National Institute of Justice) digital evidence guides</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>GIAC Certified Forensic Examiner (GCFE)</li>
+                        <li>GIAC Certified Forensic Analyst (GCFA)</li>
+                        <li>Certified Computer Examiner (CCE, ISFCE)</li>
+                        <li>Certified Forensic Computer Examiner (CFCE, IACIS)</li>
+                        <li>AccessData Certified Examiner (ACE)</li>
+                        <li>Cellebrite Certified Mobile Examiner (CCME)</li>
+                        <li>Magnet Certified Forensic Examiner (MCFE)</li>
+                        <li>GIAC Mobile Device Forensics (no longer offered new, but GASF/related GIAC mobile-relevant certs)</li>
+                        <li>CompTIA CySA+ (foundational, if not already held)</li>
+                        <li>EnCase Certified Examiner (EnCE)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>r/computerforensics and r/dfir on Reddit</li>
+                        <li>IACIS (International Association of Computer Investigative Specialists) community</li>
+                        <li>13Cubed and DFIR-focused Discord servers</li>
+                        <li>SANS DFIR Slack/Discord communities</li>
+                        <li>Digital Forensics Discord/Slack practitioner groups</li>
+                        <li>HTCIA (High Technology Crime Investigation Association) local chapters</li>
+                        <li>FIRST.org community resources</li>
+                        <li>LinkedIn Digital Forensics and DFIR groups</li>
+                        <li>Twitter/X DFIR community (#DFIR, #ForensicsFriday)</li>
+                        <li>Local law enforcement/private forensics practitioner meetups</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Disk & File System Forensics Tools</h3>
+                    <ul>
+                        <li>Autopsy / The Sleuth Kit</li>
+                        <li>FTK Imager / AccessData FTK</li>
+                        <li>EnCase</li>
+                        <li>X-Ways Forensics</li>
+                        <li>Eric Zimmerman's tools (MFTECmd, RegistryExplorer, PECmd, AmcacheParser, etc.)</li>
+                        <li>Plaso / log2timeline</li>
+                        <li>Timesketch</li>
+                        <li>Volatility 3 (memory forensics complement)</li>
+                        <li>Write-blockers (hardware: Tableau/WiebeTech; software: write-protect utilities)</li>
+                        <li>Hashing utilities (md5sum/sha256sum/HashCalc)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Mobile & Cloud Forensics Tools</h3>
+                    <ul>
+                        <li>Cellebrite UFED / Physical Analyzer</li>
+                        <li>Magnet AXIOM</li>
+                        <li>ALEAPP / iLEAPP (free artifact parsers)</li>
+                        <li>Belkasoft X</li>
+                        <li>Oxygen Forensic Detective</li>
+                        <li>SQLite Browser / SQLite Forensic Explorer</li>
+                        <li>Faraday bags (evidence isolation)</li>
+                        <li>Elcomsoft tools (cloud/password recovery, where legally applicable)</li>
+                        <li>Browser forensic tools (Hindsight, BrowsingHistoryView)</li>
+                        <li>KAPE (Kroll Artifact Parser and Extractor)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Reporting & Validation Tools</h3>
+                    <ul>
+                        <li>Microsoft Word/Google Docs (forensic report writing)</li>
+                        <li>Digital Corpora sample images (validation/test data)</li>
+                        <li>NIST CFTT test methodology documentation</li>
+                        <li>Lucidchart/Visio (timeline and case diagrams)</li>
+                        <li>Case management software (specific to forensics labs/agencies)</li>
+                        <li>Hash verification tools (built into most forensic suites)</li>
+                        <li>Excel/Google Sheets (artifact tracking, hash logs, validation logs)</li>
+                        <li>Adobe Acrobat (exhibit preparation, PDF/A archival reports)</li>
+                        <li>Presentation software for courtroom exhibit preparation (PowerPoint/Keynote)</li>
+                        <li>Evidence/exhibit labeling and tracking systems (per agency/firm standard)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Perform one documented disk image acquisition with hash verification</li>
+                        <li>Parse an MFT and identify 3 deleted file records</li>
+                        <li>Compare $STANDARD_INFORMATION and $FILE_NAME timestamps on one sample file</li>
+                        <li>Extract and review Prefetch files from a lab system</li>
+                        <li>Perform one logical mobile extraction and review the output structure</li>
+                        <li>Identify one wiping tool's signature artifact on a lab disk</li>
+                        <li>Write a one-page methodology section for a simple lab finding</li>
+                        <li>Build a basic super timeline using Plaso on a small lab image</li>
+                        <li>Document the order-of-volatility principle with a real-world example</li>
+                        <li>Write a one-page "limitations" section for a mock finding</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a full NTFS artifact analysis report with timestomping detection</li>
+                        <li>Build a program execution evidence package correlating 4+ artifact types</li>
+                        <li>Build and annotate a super timeline narrative in Timesketch</li>
+                        <li>Perform a mobile extraction and recover one deleted SQLite record</li>
+                        <li>Build a cross-app location correlation report from mobile artifacts</li>
+                        <li>Write an anti-forensic findings report with carefully hedged conclusions</li>
+                        <li>Build a cross-platform timeline spanning device, browser, and cloud evidence</li>
+                        <li>Write a full court-ready report for one lab investigation</li>
+                        <li>Run a tool validation test comparing two forensic tools' output</li>
+                        <li>Conduct a structured peer review of a mock colleague's report</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a complete multi-source investigation spanning disk, mobile, and cloud evidence</li>
+                        <li>Run a full mock trial testimony exercise with direct and cross-examination</li>
+                        <li>Build a comprehensive anti-forensic technique reference library</li>
+                        <li>Design a complete forensic lab SOP covering acquisition through reporting</li>
+                        <li>Build a tool validation and methodology defensibility package for 3+ tools</li>
+                        <li>Architect a deleted-data recovery methodology spanning file system and database sources</li>
+                        <li>Design a mobile device handling and chain-of-custody program for a forensics team</li>
+                        <li>Build a comprehensive Windows artifact reference guide for team-wide use</li>
+                        <li>Write a full case study analyzing a publicly-documented real forensic investigation</li>
+                        <li>Mentor a junior examiner through their first complete court-ready report</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Serve as an expert witness or mock expert witness in a real or simulated legal proceeding</li>
+                        <li>Publish original forensic research or a tool validation study</li>
+                        <li>Design a complete digital forensics lab operating model including QA and peer review processes</li>
+                        <li>Speak at a local HTCIA chapter, DFIR conference, or law enforcement training event</li>
+                        <li>Contribute to or validate an open-source forensic tool's accuracy claims</li>
+                        <li>Build a custom artifact parser for an application/format not well-supported by existing tools</li>
+                        <li>Design a comprehensive examiner certification/training pathway for a growing forensics team</li>
+                        <li>Architect a forensic lab accreditation readiness program (ISO 17025-adjacent standards)</li>
+                        <li>Mentor multiple examiners toward senior/court-ready readiness as a structured program</li>
+                        <li>Lead a complex multi-examiner case requiring coordinated disk, mobile, and cloud analysis</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your digital forensics career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize or Broaden</h3>
+                    <ul>
+                        <li>Decide: deepen toward mobile forensics specialization, expert witness practice, or broaden toward forensics lab leadership</li>
+                        <li>Consider a Mobile Forensics Specialist track if device-level depth energized you most</li>
+                        <li>Consider an Expert Witness/Litigation Support track if testimony and legal coordination stood out</li>
+                        <li>Explore corporate IR-aligned forensics if you prefer faster-paced incident-driven work over case-by-case legal casework</li>
+                        <li>Look into law enforcement digital forensics units as a path with high case volume and legal exposure</li>
+                        <li>Consider private forensics consulting/litigation support firms for varied civil and criminal casework</li>
+                        <li>Pursue CCE/CFCE if the court-focused track is the clear direction</li>
+                        <li>Pursue GCFE/GCFA depth certs if the technical specialist track is the clear direction</li>
+                        <li>Join a specialized community for your chosen direction</li>
+                        <li>Set a 6-12 month direction-setting goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to Senior Digital Forensics Examiner / Forensic Investigator / Litigation Support Analyst roles weekly</li>
+                        <li>Tailor your resume per job description, emphasizing courtroom-readiness and methodology rigor</li>
+                        <li>Attend local HTCIA chapter meetings and DFIR community events</li>
+                        <li>Reach out to practicing examiners and forensic experts on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your portfolio updated with new investigation artifacts</li>
+                        <li>Practice behavioral (STAR-format) mock interviews monthly</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider private forensics firms or law enforcement auxiliary roles to build casework volume</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly forensic tool updates and new artifact research</li>
+                        <li>Practice with at least one new Digital Corpora sample image per month to stay sharp</li>
+                        <li>Re-validate your go-to tools periodically as new versions release</li>
+                        <li>Write a monthly technical post about an artifact or technique you researched</li>
+                        <li>Build a second, more advanced portfolio artifact every 90 days</li>
+                        <li>Track new mobile OS forensic challenges as device security evolves</li>
+                        <li>Mentor junior examiners — teaching reinforces your own rigor and discipline</li>
+                        <li>Read one new forensics/legal-testimony book per month</li>
+                        <li>Attend at least one virtual conference talk or HTCIA meeting per month</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a "becoming court-ready" series for examiners aspiring to senior/expert-witness work</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your templates (acquisition SOP, report template) for others to use</li>
+                        <li>Host a free workshop/webinar on a specific artifact analysis technique</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another aspiring senior examiner for accountability</li>
+                        <li>Contribute documentation fixes to a forensic tool you use often</li>
+                        <li>Review and give feedback on a peer's forensic report or methodology</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Performed a forensically sound acquisition and detected timestomping in NTFS artifacts | ✅ Built a super timeline narrative correlating multiple Windows artifact sources | ✅ Conducted mobile device extraction and recovered deleted application data</p>
+                <p>✅ Identified and credibly documented anti-forensic activity | ✅ Built a cross-platform investigation spanning device, browser, and cloud evidence | ✅ Written a court-ready report and survived a mock cross-examination</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Autopsy/The Sleuth Kit, Eric Zimmerman's tools, Plaso/Timesketch, Cellebrite/Magnet AXIOM, ALEAPP/iLEAPP, SQLite forensics, Volatility 3, NIST CFTT methodology, Daubert/Frye admissibility standards.</p>
+                <br>
+                <p><strong>Remember:</strong> A finding nobody can challenge is worth more than ten findings nobody can verify. Every acquisition, artifact, and report you produce exists to answer one question: "if a skilled opposing expert tore this apart line by line, would it hold?" Stay rigorous, document everything, and never claim more certainty than your evidence actually supports.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

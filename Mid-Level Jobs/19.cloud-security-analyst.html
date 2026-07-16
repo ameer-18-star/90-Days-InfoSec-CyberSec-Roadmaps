@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Cloud Security Analyst" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Cloud Security Analyst" Mastery</h1>
+            <p>An intermediate-track plan for learners who already know basic networking, Linux, and one cloud provider at a beginner level — and are ready to specialize in securing cloud infrastructure, identity, containers, and workloads at scale.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: Cloud Security Fundamentals & IAM</h2>
+                <span>Days 1-30: Shared responsibility, identity & access management, networking, and your first cloud lab account</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Shared Responsibility Model</span>
+                    <span class="skill-tag">IAM</span>
+                    <span class="skill-tag">VPC/Network Security</span>
+                    <span class="skill-tag">Storage Security</span>
+                    <span class="skill-tag">Logging & Monitoring</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Cloud Security Foundations</h3>
+                    <ul>
+                        <li>Study the shared responsibility model in depth across AWS, Azure, and GCP</li>
+                        <li>Set up a free-tier AWS account with billing alerts and root account MFA enabled</li>
+                        <li>Learn the AWS Well-Architected Framework's Security Pillar at a high level</li>
+                        <li>Study how cloud security differs from on-prem: ephemeral resources, API-driven everything, shared infra</li>
+                        <li>Learn the basics of cloud regions, availability zones, and how they affect security/compliance</li>
+                        <li>Install and configure the AWS CLI and AWS CloudShell for hands-on practice</li>
+                        <li>Read through one real-world cloud breach case study (e.g. Capital One S3/IAM breach) and map root cause</li>
+                        <li>Document 15 cloud security terms in your own glossary (CSPM, IAM, KMS, VPC, etc.)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">AWS Free Tier</span>
+                        <span class="tech-badge">Shared Responsibility</span>
+                        <span class="tech-badge">AWS CLI</span>
+                        <span class="tech-badge">Well-Architected</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Cloud Breach Case Study</h4>
+                        <p>Write a one-page breakdown of a real cloud security incident: what misconfiguration enabled it, what control would have prevented it, and your glossary of 15 terms.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Identity & Access Management (IAM) Deep Dive</h3>
+                    <ul>
+                        <li>Study IAM users, groups, roles, and policies in AWS — and how Azure AD/Entra ID and GCP IAM compare conceptually</li>
+                        <li>Learn the principle of least privilege and how to apply it to IAM policy writing</li>
+                        <li>Practice writing custom IAM policies (JSON) instead of relying only on managed policies</li>
+                        <li>Study IAM privilege escalation paths: common misconfigurations attackers chase</li>
+                        <li>Learn cross-account roles, assume-role workflows, and federation basics (SAML/OIDC)</li>
+                        <li>Practice using the IAM Policy Simulator to test policy effects before applying</li>
+                        <li>Study service control policies (SCPs) in AWS Organizations as guardrails</li>
+                        <li>Learn MFA enforcement, access key rotation, and credential lifecycle management</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">IAM Policies</span>
+                        <span class="tech-badge">Least Privilege</span>
+                        <span class="tech-badge">SCPs</span>
+                        <span class="tech-badge">Federation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Least-Privilege IAM Policy Set</h4>
+                        <p>Write 3 custom IAM policies from scratch for a fictional 3-tier app (read-only analyst, deploy role, admin role), then test each with the Policy Simulator.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Network Security in the Cloud</h3>
+                    <ul>
+                        <li>Study VPC architecture: subnets, route tables, internet/NAT gateways, peering</li>
+                        <li>Learn security groups vs. network ACLs — stateful vs. stateless filtering</li>
+                        <li>Practice building a segmented VPC (public/private subnets) with proper routing</li>
+                        <li>Study VPC endpoints and PrivateLink as ways to avoid public internet exposure</li>
+                        <li>Learn how cloud load balancers and WAFs (AWS WAF) fit into the security architecture</li>
+                        <li>Study DDoS protection basics (AWS Shield) and when it matters</li>
+                        <li>Practice flow log analysis: enable VPC Flow Logs and identify suspicious traffic patterns</li>
+                        <li>Learn bastion host vs. Session Manager / SSM as secure access patterns</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">VPC</span>
+                        <span class="tech-badge">Security Groups</span>
+                        <span class="tech-badge">AWS WAF</span>
+                        <span class="tech-badge">Flow Logs</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Segmented VPC Build</h4>
+                        <p>Build a VPC with public/private subnets, correct security group rules, and VPC Flow Logs enabled; document your architecture with a diagram.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Storage, Encryption & Logging Fundamentals</h3>
+                    <ul>
+                        <li>Study S3 bucket security: public access blocks, bucket policies, ACLs, versioning</li>
+                        <li>Learn encryption at rest (KMS, SSE-S3, SSE-KMS) and encryption in transit basics</li>
+                        <li>Practice setting up a KMS customer-managed key and applying it to an S3 bucket</li>
+                        <li>Study how key rotation and key policies affect access control separately from IAM</li>
+                        <li>Learn CloudTrail fundamentals: what it logs, how to enable org-wide trails, log integrity validation</li>
+                        <li>Study CloudWatch alarms and metrics for security-relevant events</li>
+                        <li>Practice configuring a CloudTrail trail with S3 log storage and basic alerting on root account usage</li>
+                        <li>Document common storage misconfigurations and a personal checklist to catch them</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">S3 Security</span>
+                        <span class="tech-badge">KMS</span>
+                        <span class="tech-badge">CloudTrail</span>
+                        <span class="tech-badge">CloudWatch</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Storage & Logging Baseline</h4>
+                        <p>Configure a KMS-encrypted, public-access-blocked S3 bucket plus an org-wide CloudTrail trail with a CloudWatch alarm for root account login.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can configure least-privilege IAM, build a properly segmented VPC, secure storage with encryption, and set up logging/monitoring baselines — the foundational toolkit of a Cloud Security Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate cloud fundamentals before moving into CSPM and container security.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Secure 3-Tier Architecture Build</h4>
+                        <p>Build a full VPC with web/app/database tiers, correct IAM roles per tier, and encrypted storage end to end.</p>
+                        <small>Hint: Diagram it first — this becomes a strong portfolio piece with an architecture diagram attached.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>IAM Privilege Escalation Lab</h4>
+                        <p>Deliberately misconfigure IAM permissions, identify 3 privilege escalation paths, then fix each one.</p>
+                        <small>Hint: Research known AWS IAM privesc techniques (e.g. iam:PassRole misuse) as your starting point.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>CloudTrail Investigation Exercise</h4>
+                        <p>Generate intentional suspicious activity in a sandbox account, then investigate it purely through CloudTrail/CloudWatch logs.</p>
+                        <small>Hint: Try to reconstruct the full "story" of what happened using only log timestamps and event names.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cloud Security Fundamentals Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: One concept per piece (IAM, VPC, S3 security, CloudTrail, etc.), beginner-friendly language.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: CSPM, Container Security & Multi-Cloud Awareness</h2>
+                <span>Days 31-60: Move from manual configuration into automated posture management, container/Kubernetes security, and cross-cloud concepts</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">CSPM Tooling</span>
+                    <span class="skill-tag">Container & K8s Security</span>
+                    <span class="skill-tag">IaC Security</span>
+                    <span class="skill-tag">Secrets Management</span>
+                    <span class="skill-tag">Multi-Cloud Basics</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Cloud Security Posture Management (CSPM)</h3>
+                    <ul>
+                        <li>Learn what CSPM tools actually do: continuous configuration drift detection against benchmarks</li>
+                        <li>Set up and run Prowler against your free-tier AWS account, triaging real findings</li>
+                        <li>Practice running ScoutSuite for a broader multi-service security audit</li>
+                        <li>Study the CIS AWS Foundations Benchmark and map findings to specific controls</li>
+                        <li>Learn how AWS Security Hub and AWS Config aggregate and continuously monitor compliance</li>
+                        <li>Practice writing a remediation plan from CSPM output, prioritized by severity</li>
+                        <li>Study how commercial CSPM platforms (Wiz, Orca, Prisma Cloud) extend beyond open-source tools</li>
+                        <li>Document false-positive triage logic so you don't waste remediation effort on non-issues</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Prowler</span>
+                        <span class="tech-badge">ScoutSuite</span>
+                        <span class="tech-badge">CIS Benchmarks</span>
+                        <span class="tech-badge">AWS Security Hub</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: CSPM Findings Report</h4>
+                        <p>Run Prowler + ScoutSuite against your lab account, triage the top 15 findings, and produce a prioritized remediation report mapped to CIS Benchmark control IDs.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Infrastructure-as-Code (IaC) Security</h3>
+                    <ul>
+                        <li>Study why IaC scanning matters: catching misconfigurations before they're ever deployed</li>
+                        <li>Set up Checkov and tfsec to scan a sample Terraform configuration</li>
+                        <li>Practice fixing common Terraform security findings: open security groups, unencrypted resources, public S3</li>
+                        <li>Learn how to integrate IaC scanning into a CI/CD pipeline (GitHub Actions) as a pre-deploy gate</li>
+                        <li>Study CloudFormation security scanning basics (cfn-lint, cfn-nag) for AWS-native IaC</li>
+                        <li>Learn policy-as-code concepts using Open Policy Agent (OPA) / Sentinel at a conceptual level</li>
+                        <li>Practice writing a custom Checkov rule for an organization-specific requirement</li>
+                        <li>Build a personal "IaC security checklist" for reviewing any new Terraform module</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Checkov</span>
+                        <span class="tech-badge">tfsec</span>
+                        <span class="tech-badge">Terraform</span>
+                        <span class="tech-badge">OPA</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: IaC Security Pipeline</h4>
+                        <p>Take a deliberately insecure Terraform module, scan it, fix every finding, and wire Checkov into a GitHub Actions workflow as a deploy gate.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Container & Kubernetes Security</h3>
+                    <ul>
+                        <li>Study container security fundamentals: image layers, base image risk, privileged containers</li>
+                        <li>Practice scanning container images with Trivy and Grype for known CVEs</li>
+                        <li>Learn Dockerfile hardening best practices (non-root users, minimal images, multi-stage builds)</li>
+                        <li>Study Kubernetes architecture security basics: control plane, etcd, kubelet exposure risks</li>
+                        <li>Learn Kubernetes RBAC: roles, role bindings, and least-privilege service accounts</li>
+                        <li>Study network policies for pod-to-pod traffic restriction in Kubernetes</li>
+                        <li>Practice running kube-bench against a sample cluster (or managed EKS) for CIS Kubernetes Benchmark checks</li>
+                        <li>Learn pod security standards (restricted/baseline/privileged) and admission controllers</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Trivy</span>
+                        <span class="tech-badge">Kubernetes RBAC</span>
+                        <span class="tech-badge">kube-bench</span>
+                        <span class="tech-badge">Network Policies</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Hardened K8s Namespace</h4>
+                        <p>Build a Kubernetes namespace with least-privilege RBAC, network policies restricting pod traffic, and Trivy-scanned hardened container images.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Secrets Management & Multi-Cloud Concepts</h3>
+                    <ul>
+                        <li>Learn why hardcoded secrets are a top cloud breach cause and how secrets sprawl happens</li>
+                        <li>Set up AWS Secrets Manager or HashiCorp Vault and migrate a hardcoded credential into it</li>
+                        <li>Practice scanning a repo with gitleaks/trufflehog for leaked secrets in commit history</li>
+                        <li>Study secret rotation strategies and how applications should retrieve secrets at runtime</li>
+                        <li>Learn the basic security model differences between AWS, Azure, and GCP (IAM naming, network constructs)</li>
+                        <li>Study cloud metadata service abuse (IMDSv1 vs IMDSv2) and how to enforce the safer version</li>
+                        <li>Practice a cross-cloud terminology mapping exercise (e.g. AWS IAM Role ≈ Azure Managed Identity ≈ GCP Service Account)</li>
+                        <li>Document your own "multi-cloud Rosetta Stone" cheat sheet for quick reference</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Secrets Manager/Vault</span>
+                        <span class="tech-badge">gitleaks</span>
+                        <span class="tech-badge">IMDSv2</span>
+                        <span class="tech-badge">Multi-Cloud IAM</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Secrets Migration & Cheat Sheet</h4>
+                        <p>Migrate 3 hardcoded credentials into AWS Secrets Manager with runtime retrieval code, plus a one-page multi-cloud terminology cheat sheet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can run CSPM tooling, scan and secure IaC before deployment, harden containers and Kubernetes clusters, and manage secrets properly — the practical toolkit that fills a Cloud Security Analyst's day-to-day work.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into incident response, automation, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Cloud Security Pipeline</h4>
+                        <p>Combine IaC scanning (Checkov), container scanning (Trivy), and CSPM (Prowler) into one CI/CD pipeline with severity gates.</p>
+                        <small>Hint: Document the architecture — this is a strong portfolio centerpiece.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Kubernetes Security Baseline</h4>
+                        <p>Build a reusable "secure-by-default" namespace template with RBAC, network policies, and pod security standards pre-configured.</p>
+                        <small>Hint: Package it as a Helm chart or set of YAML manifests others can reuse.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Secrets Sprawl Audit Tool</h4>
+                        <p>Build a script wrapping gitleaks output into a readable report, then run it against 5 public repos for practice.</p>
+                        <small>Hint: Only scan repos you own or have explicit permission to scan.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>CSPM Findings Teaching Content</h4>
+                        <p>Turn your CSPM/CIS Benchmark learning into a teaching carousel explaining the top 10 cloud misconfigurations.</p>
+                        <small>Hint: Use one running fictional company example throughout for consistency.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Incident Response, Automation & Career Readiness</h2>
+                <span>Days 61-90: Cloud-native incident response, security automation, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Cloud Incident Response</span>
+                    <span class="skill-tag">SOAR/Automation</span>
+                    <span class="skill-tag">Zero Trust Concepts</span>
+                    <span class="skill-tag">Compliance in Cloud</span>
+                    <span class="skill-tag">Interview Prep</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Cloud Incident Response</h3>
+                    <ul>
+                        <li>Study the cloud incident response lifecycle: detection, containment, eradication, recovery, lessons learned</li>
+                        <li>Learn how to isolate a compromised EC2 instance (security group quarantine, snapshot for forensics)</li>
+                        <li>Practice a tabletop exercise: a leaked IAM access key scenario, and the exact response steps</li>
+                        <li>Study how to use GuardDuty findings to drive an investigation workflow</li>
+                        <li>Learn cloud forensics basics: preserving EBS snapshots, memory capture limitations in cloud</li>
+                        <li>Practice writing an incident timeline reconstruction using CloudTrail + GuardDuty + VPC Flow Logs together</li>
+                        <li>Study key rotation and credential revocation as immediate containment actions</li>
+                        <li>Write a one-page cloud incident response runbook for a "leaked access key" scenario</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">GuardDuty</span>
+                        <span class="tech-badge">Incident Response</span>
+                        <span class="tech-badge">Forensic Snapshots</span>
+                        <span class="tech-badge">Containment</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Leaked Key IR Runbook</h4>
+                        <p>Write a complete incident response runbook for a leaked AWS access key, covering detection, containment, eradication, and a CloudTrail-based timeline reconstruction.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Security Automation & SOAR Concepts</h3>
+                    <ul>
+                        <li>Learn how Lambda functions can auto-remediate common findings (e.g. auto-revoke a public S3 bucket)</li>
+                        <li>Practice writing a simple Lambda function triggered by a GuardDuty/Security Hub finding</li>
+                        <li>Study EventBridge rules for routing security events to automated response workflows</li>
+                        <li>Learn SOAR (Security Orchestration, Automation and Response) concepts at a platform-agnostic level</li>
+                        <li>Practice building an automated Slack/email alert pipeline for high-severity CSPM findings</li>
+                        <li>Study how auto-remediation guardrails prevent automation from causing its own outages</li>
+                        <li>Learn the basics of Zero Trust architecture as it applies to cloud-native environments</li>
+                        <li>Document a personal "automation candidates" list from your Phase 1-2 manual remediation work</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Lambda Auto-Remediation</span>
+                        <span class="tech-badge">EventBridge</span>
+                        <span class="tech-badge">SOAR Concepts</span>
+                        <span class="tech-badge">Zero Trust</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Auto-Remediation Lambda</h4>
+                        <p>Build a Lambda function triggered by a Security Hub finding that automatically blocks public access on a misconfigured S3 bucket, with logging of the action taken.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Cloud Compliance & Professional Reporting</h3>
+                    <ul>
+                        <li>Study how compliance frameworks (PCI-DSS, HIPAA, SOC 2) map to cloud-specific controls</li>
+                        <li>Learn AWS Artifact and how cloud providers supply their own compliance attestations</li>
+                        <li>Practice mapping CIS Benchmark findings to a relevant compliance framework for a client-style report</li>
+                        <li>Study how to write a cloud security assessment report: scope, methodology, findings, remediation</li>
+                        <li>Learn CVSS scoring as applied to cloud misconfigurations (not just code vulnerabilities)</li>
+                        <li>Practice presenting a cloud risk finding to a "non-technical stakeholder" in plain language</li>
+                        <li>Study cost-of-breach context (e.g. industry breach cost reports) to frame business impact in reports</li>
+                        <li>Compile your 90-day labs into a single portfolio-style master cloud security report</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">AWS Artifact</span>
+                        <span class="tech-badge">Compliance Mapping</span>
+                        <span class="tech-badge">CVSS</span>
+                        <span class="tech-badge">Report Writing</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Master Cloud Security Report</h4>
+                        <p>Compile your strongest 5 findings across all 90 days into one polished report, including compliance framework mapping and CVSS-scored severity.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (e.g. AWS Security Specialty, CCSK, or Security+)</li>
+                        <li>Do a full mock cloud security assessment under time pressure on a fresh sandbox account, then report within 4 hours</li>
+                        <li>Prepare answers for common cloud security interview questions (explain shared responsibility, walk through IAM policy design, etc.)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable skills/achievements</li>
+                        <li>Polish your GitHub: pin your best 3 projects (security pipeline, K8s baseline, IR runbook) with clean READMEs</li>
+                        <li>Practice a mock technical interview (explain a cloud breach chain end-to-end out loud)</li>
+                        <li>Research target companies/industries and tailor your resume + LinkedIn headline accordingly</li>
+                        <li>Plan your next 90 days: pick a specialization (Kubernetes security, cloud IR, or DevSecOps engineering)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">GitHub Portfolio</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Cloud Security Portfolio</h4>
+                        <p>Finalize a GitHub portfolio, resume bullets, and one polished cloud security assessment report — your complete application package for Cloud Security Analyst roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a working cloud security toolkit (IAM, network security, CSPM, IaC scanning, container/K8s security, incident response, automation) plus a portfolio of real reports and a job-ready application package — the foundation of a genuinely employable Cloud Security Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end cloud security capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Cloud Security Reference Architecture</h4>
+                        <p>Design and build an end-to-end secure cloud environment: VPC, IAM, encrypted storage, CSPM monitoring, and IaC-scanned deployment.</p>
+                        <small>Hint: Document it as a reference architecture diagram — this is a strong portfolio centerpiece.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>End-to-End Cloud Security Assessment</h4>
+                        <p>Pick a fresh sandbox account and run a complete mock engagement: scoping doc, CSPM scan, manual review, report, re-test.</p>
+                        <small>Hint: Treat it like a real client engagement, including a kickoff and closing summary.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Automated Cloud Remediation Suite</h4>
+                        <p>Build 3 Lambda auto-remediation functions for the most common findings from your CSPM scans, with full logging.</p>
+                        <small>Hint: Add a dry-run mode so the automation can be tested safely before going live.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cloud Security Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">IAM & Least Privilege Design</div>
+                    <div class="skill-item">VPC & Network Security</div>
+                    <div class="skill-item">CSPM Tooling (Prowler/ScoutSuite)</div>
+                    <div class="skill-item">IaC Security (Checkov/tfsec)</div>
+                    <div class="skill-item">Container & Kubernetes Security</div>
+                    <div class="skill-item">Secrets Management</div>
+                    <div class="skill-item">Cloud Incident Response</div>
+                    <div class="skill-item">Security Automation (Lambda/EventBridge)</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>Cloud Security Handbook — Eyal Estrin</li>
+                        <li>AWS Security — Dylan Shields</li>
+                        <li>Container Security — Liz Rice</li>
+                        <li>Practical Cloud Security — Chris Dotson</li>
+                        <li>Kubernetes Security and Observability — Brendan Creane & Amit Gupta</li>
+                        <li>Securing DevOps — Julien Vehent</li>
+                        <li>Zero Trust Networks — Gilman & Barth</li>
+                        <li>The Cloud Security Rules — Marco Lancini</li>
+                        <li>Threat Modeling: Designing for Security — Adam Shostack</li>
+                        <li>AWS Certified Security Specialty Study Guide — Marin/Renfro</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>AWS Skill Builder (Security learning path)</li>
+                        <li>TryHackMe (AWS/Cloud Security paths)</li>
+                        <li>HackTheBox Academy (Cloud modules)</li>
+                        <li>KodeKloud (Kubernetes & cloud security courses)</li>
+                        <li>A Cloud Guru / Pluralsight cloud security tracks</li>
+                        <li>Cloud Security Alliance (CSA) training resources</li>
+                        <li>flAWS / flAWS2 (free AWS security CTF-style challenges)</li>
+                        <li>CloudGoat (Rhino Security Labs vulnerable AWS environment)</li>
+                        <li>Microsoft Learn (Azure security paths)</li>
+                        <li>YouTube: Cloud Security Podcast, The Cyber Mentor, freeCodeCamp cloud security</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>AWS Certified Security – Specialty</li>
+                        <li>Certificate of Cloud Security Knowledge (CCSK)</li>
+                        <li>Certified Cloud Security Professional (CCSP)</li>
+                        <li>Certified Kubernetes Security Specialist (CKS)</li>
+                        <li>Microsoft Certified: Azure Security Engineer Associate</li>
+                        <li>Google Professional Cloud Security Engineer</li>
+                        <li>CompTIA Security+ (foundational, if not already held)</li>
+                        <li>GIAC Cloud Security Automation (GCSA)</li>
+                        <li>HashiCorp Certified: Vault Associate</li>
+                        <li>EC-Council CEH (broader pentesting context)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>Cloud Security Alliance (CSA) local chapter meetups</li>
+                        <li>r/AWSCertifications and r/cybersecurity on Reddit</li>
+                        <li>Cloud Security Podcast community (Slack/Discord)</li>
+                        <li>AWS re:Post community forums</li>
+                        <li>Kubernetes Slack (#security channel)</li>
+                        <li>InfoSec Discord servers (TCM Security, TryHackMe)</li>
+                        <li>LinkedIn Cloud Security community groups</li>
+                        <li>Twitter/X cloud security community (#CloudSecurity)</li>
+                        <li>DEF CON Cloud Village talk archives on YouTube</li>
+                        <li>Stack Exchange / Server Fault for hands-on troubleshooting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>CSPM & Auditing Tools</h3>
+                    <ul>
+                        <li>Prowler</li>
+                        <li>ScoutSuite</li>
+                        <li>AWS Security Hub</li>
+                        <li>AWS Config</li>
+                        <li>CloudSploit</li>
+                        <li>Wiz (commercial, free trial)</li>
+                        <li>Cloud Custodian</li>
+                        <li>Steampipe</li>
+                        <li>Pacu (AWS exploitation framework, for defensive understanding)</li>
+                        <li>CloudMapper</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>IaC & Container Security Tools</h3>
+                    <ul>
+                        <li>Checkov</li>
+                        <li>tfsec</li>
+                        <li>Trivy</li>
+                        <li>Grype</li>
+                        <li>kube-bench</li>
+                        <li>kube-hunter</li>
+                        <li>Syft (SBOM generation)</li>
+                        <li>Open Policy Agent (OPA)</li>
+                        <li>Docker Bench for Security</li>
+                        <li>Snyk IaC/Container scanning</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Identity, Secrets & Monitoring Tools</h3>
+                    <ul>
+                        <li>AWS IAM Policy Simulator</li>
+                        <li>AWS Secrets Manager</li>
+                        <li>HashiCorp Vault</li>
+                        <li>gitleaks / trufflehog</li>
+                        <li>Amazon GuardDuty</li>
+                        <li>AWS CloudTrail Lake</li>
+                        <li>Amazon Detective</li>
+                        <li>CloudWatch Logs Insights</li>
+                        <li>Athena (for log querying at scale)</li>
+                        <li>EventBridge + Lambda (automation pairing)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Set up a free-tier AWS account with MFA and billing alerts</li>
+                        <li>Write a least-privilege IAM policy for a single S3 use case</li>
+                        <li>Build a simple two-subnet VPC with correct routing</li>
+                        <li>Enable and review CloudTrail logs for a day's activity</li>
+                        <li>Scan one container image with Trivy and fix the top finding</li>
+                        <li>Run Prowler and triage the first 10 findings</li>
+                        <li>Document the OWASP/CIS difference between SG and NACL behavior</li>
+                        <li>Set up a CloudWatch alarm for root account usage</li>
+                        <li>Practice rotating an IAM access key manually</li>
+                        <li>Map 5 AWS services to their Azure/GCP equivalents</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a full segmented VPC with public/private tiers and NAT</li>
+                        <li>Integrate Checkov into a CI pipeline as a Terraform deploy gate</li>
+                        <li>Harden a Kubernetes namespace with RBAC and network policies</li>
+                        <li>Run a full CSPM audit and produce a CIS-mapped remediation report</li>
+                        <li>Migrate hardcoded secrets into AWS Secrets Manager</li>
+                        <li>Write an incident response runbook for a leaked access key</li>
+                        <li>Build a Lambda function that auto-tags non-compliant resources</li>
+                        <li>Set up GuardDuty and trigger a test finding to review the alert flow</li>
+                        <li>Build a cross-cloud IAM terminology cheat sheet</li>
+                        <li>Practice IMDSv2 enforcement on an EC2 instance</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a full DevSecOps pipeline (IaC scan + container scan + CSPM gate)</li>
+                        <li>Design a complete reference architecture with defense-in-depth layers</li>
+                        <li>Build an auto-remediation suite for your top 5 recurring CSPM findings</li>
+                        <li>Run a full cloud incident response tabletop with timeline reconstruction</li>
+                        <li>Design a Zero Trust access model for a fictional cloud environment</li>
+                        <li>Build a custom Checkov rule pack for organization-specific policies</li>
+                        <li>Set up cross-account IAM federation with proper boundary controls</li>
+                        <li>Build a centralized logging architecture (CloudTrail Lake + Athena queries)</li>
+                        <li>Design a multi-account AWS Organizations structure with SCP guardrails</li>
+                        <li>Mentor a junior learner through your own 90-day roadmap</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Contribute a fix or finding to an open-source cloud security tool</li>
+                        <li>Build a custom CSPM rule engine for an organization's specific stack</li>
+                        <li>Design a full cloud security maturity model for a hypothetical company</li>
+                        <li>Research and responsibly disclose a real-world cloud misconfiguration pattern</li>
+                        <li>Speak at a local Cloud Security Alliance or AWS community meetup</li>
+                        <li>Build a security champions program framework for platform/DevOps teams</li>
+                        <li>Architect a zero-trust, multi-account landing zone from scratch</li>
+                        <li>Publish original cloud security research or a technical whitepaper</li>
+                        <li>Build an automated compliance evidence pipeline (CSPM to SOC 2 mapping)</li>
+                        <li>Lead a full-scale cloud breach tabletop exercise for a team</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your cloud security career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize</h3>
+                    <ul>
+                        <li>Pick one lane: cloud architecture security, Kubernetes/container security, or cloud incident response</li>
+                        <li>Go deep on a second cloud provider (Azure or GCP) to become genuinely multi-cloud</li>
+                        <li>Consider DevSecOps engineering as a hybrid automation-focused role</li>
+                        <li>Explore cloud forensics and incident response as a specialized track</li>
+                        <li>Look into security architecture/landing zone design as a senior path</li>
+                        <li>Consider a CSPM/SOAR platform specialization (Wiz, Orca, Prisma Cloud)</li>
+                        <li>Specialize in compliance-heavy industries (finance, healthcare) in the cloud</li>
+                        <li>Pursue an advanced cert aligned to your chosen lane</li>
+                        <li>Join a specialized community for that niche</li>
+                        <li>Set a 6-month deep-specialization goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to entry-level Cloud Security Analyst / Cloud Security Engineer roles weekly</li>
+                        <li>Tailor your resume per job description using your portfolio reports</li>
+                        <li>Attend local Cloud Security Alliance/AWS user group meetups</li>
+                        <li>Reach out to cloud security professionals on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your GitHub portfolio updated with new projects</li>
+                        <li>Practice mock interviews monthly to stay sharp</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider freelance/contract cloud security audits to build experience</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly cloud security advisories and CVE roundups</li>
+                        <li>Do at least one cloud CTF (flAWS, CloudGoat) or lab per week to stay sharp</li>
+                        <li>Re-test old projects with new tools/techniques quarterly</li>
+                        <li>Write a monthly technical blog post about something you learned</li>
+                        <li>Build a second, more advanced portfolio project every 90 days</li>
+                        <li>Track new cloud-native security service releases (AWS re:Inforce announcements, etc.)</li>
+                        <li>Mentor beginners — teaching reinforces your own mastery</li>
+                        <li>Read one new cloud security book per month</li>
+                        <li>Attend at least one virtual conference talk per month</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a beginner-friendly cloud security series for your audience</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your lab setups or remediation scripts for others to use</li>
+                        <li>Host a free workshop/webinar on one cloud security topic</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another learner for accountability</li>
+                        <li>Contribute documentation fixes to a tool you use often</li>
+                        <li>Review and give feedback on a peer's cloud security assessment</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Designed least-privilege IAM and a properly segmented VPC | ✅ Run CSPM audits and remediated findings against CIS Benchmarks | ✅ Scanned and hardened both IaC and container images before deployment</p>
+                <p>✅ Secured a Kubernetes namespace with RBAC and network policies | ✅ Written a cloud incident response runbook with log-based timeline reconstruction | ✅ Built security automation with Lambda/EventBridge</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> AWS IAM, VPC, S3/KMS, CloudTrail/CloudWatch, Prowler, ScoutSuite, Checkov, tfsec, Trivy, Kubernetes RBAC, GuardDuty, Lambda, EventBridge.</p>
+                <br>
+                <p><strong>Remember:</strong> Cloud Security is about designing systems where misconfiguration is hard and visibility is constant — every IAM policy, network rule, and log you set up exists to answer one question: "if something goes wrong, will we see it, and can it actually reach anything?" Stay curious, document everything, and keep auditing what you build.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

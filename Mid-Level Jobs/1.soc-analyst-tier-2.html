@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "SOC Analyst – Tier 2" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For SOC Analyst – Tier 2</h1>
+            <p>Accelerate your expertise in security operations, incident response, and threat detection.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="phase-header">
+                <h2>Phase 1: Deepening Core Skills</h2>
+                <span>Days 1-30: Establishing a Strong Baseline</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Advanced SIEM proficiency</span>
+                    <span class="skill-tag">Log Analysis Mastery</span>
+                    <span class="skill-tag">Network Protocol Deep Dive</span>
+                    <span class="skill-tag">Endpoint Security Understanding</span>
+                    <span class="skill-tag">Incident Triage & Escalation</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Advanced SIEM & Log Management</h3>
+                    <ul>
+                        <li>Master advanced search queries, filtering, and correlation rules in a SIEM (e.g., Splunk ES, Azure Sentinel, QRadar).</li>
+                        <li>Understand data sources and log ingestion best practices.</li>
+                        <li>Familiarize yourself with common log formats (Syslog, JSON, XML) and their security relevance.</li>
+                        <li>Learn to create custom dashboards and reports for effective monitoring.</li>
+                        <li>Review and optimize existing SIEM rules to reduce false positives.</li>
+                        <li>Explore the SIEM's threat intelligence integration capabilities.</li>
+                        <li>Practice log review for various attack types (e.g., brute force, credential stuffing).</li>
+                        <li>Understand the lifecycle of a security event within the SIEM.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Splunk</span>
+                        <span class="tech-badge">ELK Stack</span>
+                        <span class="tech-badge">Log Management</span>
+                        <span class="tech-badge">Regex</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: SIEM Rule Optimization Project</h4>
+                        <p>Analyze a set of high-volume alerts in your SIEM, identify common false positives, and propose/implement rule adjustments to improve accuracy by 15%.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Network Security & Traffic Analysis</h3>
+                    <ul>
+                        <li>Deep dive into TCP/IP, DNS, HTTP/S, SMTP, SMB, and other critical protocols.</li>
+                        <li>Learn to interpret network traffic captures using Wireshark or similar tools.</li>
+                        <li>Understand common network attacks (e.g., DDoS, MITM, port scanning) and their signatures.</li>
+                        <li>Explore IDS/IPS alert analysis and bypass techniques.</li>
+                        <li>Familiarize yourself with network segmentation and firewall logs.</li>
+                        <li>Understand netflow/IPFIX data and its use in anomaly detection.</li>
+                        <li>Analyze network forensic artifacts for incident investigations.</li>
+                        <li>Learn about common network security devices and their logging capabilities.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Wireshark</span>
+                        <span class="tech-badge">IDS/IPS</span>
+                        <span class="tech-badge">TCP/IP</span>
+                        <span class="tech-badge">Firewalls</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Network Anomaly Detection</h4>
+                        <p>Given a PCAP file, identify at least three suspicious network activities and articulate your reasoning, including relevant protocols, source/destination, and potential attack vectors.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Endpoint Security & Malware Analysis Fundamentals</h3>
+                    <ul>
+                        <li>Understand Endpoint Detection and Response (EDR) solutions (e.g., CrowdStrike, SentinelOne).</li>
+                        <li>Learn to analyze endpoint logs (process creation, file modifications, registry changes).</li>
+                        <li>Familiarize yourself with common malware types (ransomware, trojans, worms) and their indicators of compromise (IOCs).</li>
+                        <li>Basic static malware analysis: string extraction, hash analysis, packed executables.</li>
+                        <li>Understand anti-malware and antivirus technologies.</li>
+                        <li>Learn about system hardening best practices for endpoints.</li>
+                        <li>Explore forensic artifacts on endpoints like prefetch, MFT, and jump lists.</li>
+                        <li>Differentiate between legitimate and malicious processes.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">EDR</span>
+                        <span class="tech-badge">Sysmon</span>
+                        <span class="tech-badge">Volatility</span>
+                        <span class="tech-badge">Malware Analysis</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Endpoint Compromise Scenario</h4>
+                        <p>Simulate an endpoint compromise (e.g., using a benign executable that mimics malware behavior). Use EDR/Sysmon logs to trace the activity and identify the initial infection vector and subsequent actions.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Threat Intelligence & Vulnerability Management</h3>
+                    <ul>
+                        <li>Understand the different types of threat intelligence (strategic, operational, tactical).</li>
+                        <li>Learn to leverage threat intelligence platforms (TIPs) and feeds.</li>
+                        <li>Familiarize yourself with common vulnerability scanning tools (e.g., Nessus, OpenVAS).</li>
+                        <li>Understand CVSS scoring and prioritize vulnerabilities.</li>
+                        <li>Learn about common attack frameworks (MITRE ATT&CK, Kill Chain).</li>
+                        <li>Develop skills in correlating threat intelligence with SIEM alerts.</li>
+                        <li>Practice creating custom threat intelligence indicators.</li>
+                        <li>Understand the importance of continuous vulnerability assessment.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">MITRE ATT&CK</span>
+                        <span class="tech-badge">OSINT</span>
+                        <span class="tech-badge">Nessus</span>
+                        <span class="tech-badge">Threat Intelligence</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Vulnerability Prioritization Exercise</h4>
+                        <p>Given a vulnerability scan report and a set of active threat intelligence feeds, prioritize the top 5 vulnerabilities that pose the most immediate risk to a hypothetical organization, justifying your choices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You have a solid understanding of core security concepts, advanced SIEM operations, network traffic analysis, basic endpoint security, and the role of threat intelligence in a SOC. You can effectively triage and escalate common security incidents.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Apply your foundational knowledge to practical scenarios.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Project A: SIEM Use Case Development</h4>
+                        <p>Develop and implement a new SIEM correlation rule to detect a specific threat (e.g., suspicious RDP activity, multiple failed logins followed by a successful one), including testing and tuning.</p>
+                        <small>Hints: Focus on a specific attack pattern, identify relevant log sources, define correlation logic, test with simulated data.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Project B: Network Traffic Investigation</h4>
+                        <p>Analyze a provided network packet capture (PCAP) to identify and document a simulated intrusion, detailing the attack steps and exfiltrated data (if any).</p>
+                        <small>Hints: Use Wireshark filters, follow TCP streams, look for unusual ports or protocols, analyze HTTP requests/responses.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Project C: Malware Initial Triage</h4>
+                        <p>Perform basic static analysis on a benign executable (simulating malware) to extract IOCs (hashes, strings, imported functions) and determine its potential functionality.</p>
+                        <small>Hints: Use tools like strings, pefile, VirusTotal. Do NOT run actual malware.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Project D: Threat Landscape Report</h4>
+                        <p>Research a recent cyberattack or APT group and create a brief report summarizing their TTPs (Tactics, Techniques, and Procedures) and recommended detection/mitigation strategies.</p>
+                        <small>Hints: Refer to MITRE ATT&CK, reputable threat intelligence sources, and cybersecurity news outlets.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 2: Advanced Analysis & Incident Response</h2>
+                <span>Days 31-60: Developing Deeper Analytical and Response Capabilities</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Advanced Threat Hunting</span>
+                    <span class="skill-tag">Malware Reverse Engineering (Basic)</span>
+                    <span class="skill-tag">Cloud Security Monitoring</span>
+                    <span class="skill-tag">Scripting for Automation</span>
+                    <span class="skill-tag">Digital Forensics Fundamentals</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Advanced Threat Hunting Techniques</h3>
+                    <ul>
+                        <li>Learn proactive threat hunting methodologies (hypothesis-driven, intelligence-driven, anomaly-driven).</li>
+                        <li>Utilize advanced SIEM queries and EDR capabilities for threat hunting.</li>
+                        <li>Understand common threat hunting frameworks and tools (e.g., Kape, Sigma rules).</li>
+                        <li>Develop and test threat hunting playbooks.</li>
+                        <li>Practice hunting for specific TTPs from the MITRE ATT&CK framework.</li>
+                        <li>Identify unusual user behavior and privileged account misuse.</li>
+                        <li>Learn about applying statistical analysis to log data for anomaly detection.</li>
+                        <li>Familiarize yourself with open-source threat hunting resources.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Splunk Hunting</span>
+                        <span class="tech-badge">Kusto Query Language (KQL)</span>
+                        <span class="tech-badge">Sigma Rules</span>
+                        <span class="tech-badge">MITRE ATT&CK</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Hypothesis-Driven Threat Hunt</h4>
+                        <p>Formulate a hypothesis about a potential threat in a given dataset (e.g., "Are there signs of lateral movement via SMB in the network logs?"). Develop and execute queries to prove or disprove your hypothesis, documenting your findings.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Cloud Security Monitoring & Incident Response</h3>
+                    <ul>
+                        <li>Understand cloud service models (IaaS, PaaS, SaaS) and their security implications.</li>
+                        <li>Learn to monitor cloud environments (AWS, Azure, GCP) for suspicious activity.</li>
+                        <li>Familiarize yourself with cloud security posture management (CSPM) and cloud workload protection platforms (CWPP).</li>
+                        <li>Understand cloud logging and auditing services (e.g., CloudTrail, Azure Monitor).</li>
+                        <li>Practice incident response scenarios in cloud environments.</li>
+                        <li>Learn about identity and access management (IAM) in the cloud.</li>
+                        <li>Explore serverless security and container security best practices.</li>
+                        <li>Understand data exfiltration techniques in cloud environments.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">AWS Security</span>
+                        <span class="tech-badge">Azure Security</span>
+                        <span class="tech-badge">CloudTrail</span>
+                        <span class="tech-badge">CSPM</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Cloud Alert Triage</h4>
+                        <p>Analyze a set of simulated cloud security alerts (e.g., unusual IAM activity, S3 bucket policy change) and determine the severity, potential impact, and initial response steps.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Scripting for Automation & Analysis</h3>
+                    <ul>
+                        <li>Learn basic Python for security automation (e.g., parsing logs, interacting with APIs).</li>
+                        <li>Understand PowerShell for Windows forensics and automation.</li>
+                        <li>Explore basic Bash scripting for Linux system analysis.</li>
+                        <li>Automate repetitive SOC tasks (e.g., IOC lookup, alert enrichment).</li>
+                        <li>Develop simple scripts for data extraction and manipulation.</li>
+                        <li>Understand the concept of Security Orchestration, Automation, and Response (SOAR).</li>
+                        <li>Practice writing scripts to pull data from external APIs (e.g., VirusTotal).</li>
+                        <li>Learn about error handling and modularity in scripting.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">PowerShell</span>
+                        <span class="tech-badge">Bash</span>
+                        <span class="tech-badge">SOAR</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Alert Enrichment Script</h4>
+                        <p>Write a Python script that takes an IP address or hash as input, queries a public threat intelligence API (e.g., VirusTotal), and returns relevant information to enrich a security alert.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Advanced Digital Forensics & Incident Response (DFIR)</h3>
+                    <ul>
+                        <li>Deepen understanding of the IR lifecycle (Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned).</li>
+                        <li>Learn about memory forensics and its importance in IR (e.g., Volatility Framework).</li>
+                        <li>Understand disk forensics fundamentals (file systems, artifact collection).</li>
+                        <li>Practice timeline analysis and event correlation across multiple data sources.</li>
+                        <li>Familiarize yourself with legal and compliance considerations in IR.</li>
+                        <li>Explore advanced containment strategies (e.g., network isolation, process termination).</li>
+                        <li>Learn about effective communication during an incident.</li>
+                        <li>Participate in simulated incident response exercises.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Volatility Framework</span>
+                        <span class="tech-badge">FTK Imager</span>
+                        <span class="tech-badge">Autopsy</span>
+                        <span class="tech-badge">IR Playbooks</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Memory Dump Analysis</h4>
+                        <p>Given a memory dump from a compromised system, use Volatility to identify running processes, network connections, and any potential malware artifacts, and reconstruct a timeline of events.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can now perform advanced threat hunting, respond to cloud security incidents, automate routine tasks with scripting, and contribute effectively to digital forensics investigations. You're ready to tackle more complex security challenges.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Reinforce your advanced skills with hands-on incident response and automation.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Project E: Automated Response Playbook</h4>
+                        <p>Design a basic automated response playbook for a common alert (e.g., suspicious login from a new geolocation). Outline the steps, including automated actions and human interventions.</p>
+                        <small>Hints: Use a flow chart, consider API integrations, define clear decision points.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Project F: Cloud Incident Simulation</h4>
+                        <p>Simulate a cloud data exfiltration incident in a sandbox AWS/Azure environment. Identify the breach, contain it, and report on the findings and remediation steps.</p>
+                        <small>Hints: Use temporary credentials, simulate S3 bucket misconfigurations or EC2 instance compromise, practice log analysis.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Project G: Advanced Network Forensics Challenge</h4>
+                        <p>Analyze a complex multi-stage attack scenario provided as a PCAP, identifying initial access, persistence, lateral movement, and data exfiltration. Create a detailed incident report.</p>
+                        <small>Hints: Look for uncommon protocols, encoded data, C2 traffic, and analyze flow data.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Project H: Custom Threat Hunting Rule Development</h4>
+                        <p>Develop a new threat hunting rule (e.g., a Sigma rule or custom SIEM query) to detect a specific, sophisticated TTP not covered by existing alerts. Validate its effectiveness.</p>
+                        <small>Hints: Focus on advanced adversary behaviors, test against known attack simulations or publicly available datasets.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Phase 3: Strategic Impact & Specialization</h2>
+                <span>Days 61-90: Becoming a Proactive & Impactful SOC Analyst</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Proactive Security Hardening</span>
+                    <span class="skill-tag">Mentorship & Knowledge Sharing</span>
+                    <span class="skill-tag">Purple Teaming Concepts</span>
+                    <span class="skill-tag">Advanced Malware Analysis (Dynamic)</span>
+                    <span class="skill-tag">Compliance & Reporting</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Proactive Security & Purple Teaming</h3>
+                    <ul>
+                        <li>Understand the concepts of red teaming, blue teaming, and purple teaming.</li>
+                        <li>Learn to interpret penetration test reports and translate findings into actionable security improvements.</li>
+                        <li>Contribute to the development of defensive strategies based on observed threats.</li>
+                        <li>Participate in purple team exercises, working with red teams to improve detection capabilities.</li>
+                        <li>Understand vulnerability management lifecycle and patching strategies.</li>
+                        <li>Learn about security architecture review and secure design principles.</li>
+                        <li>Explore deception technologies and their role in a SOC.</li>
+                        <li>Advise on security control improvements based on incident analysis.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Red Teaming</span>
+                        <span class="tech-badge">Blue Teaming</span>
+                        <span class="tech-badge">Purple Teaming</span>
+                        <span class="tech-badge">Vulnerability Management</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Purple Team Exercise Debrief</h4>
+                        <p>Analyze the results of a simulated purple team exercise. Identify gaps in detection and response, and propose concrete recommendations for improving security controls and SOC procedures.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Advanced Malware Analysis (Dynamic) & Reverse Engineering</h3>
+                    <ul>
+                        <li>Set up a safe malware analysis environment (e.g., REMnux, Cuckoo Sandbox).</li>
+                        <li>Perform basic dynamic malware analysis to observe behavior (network connections, file system changes).</li>
+                        <li>Understand anti-analysis techniques used by malware.</li>
+                        <li>Learn to identify common malware families based on behavior.</li>
+                        <li>Introduction to reverse engineering tools (e.g., Ghidra, IDA Pro) for basic analysis.</li>
+                        <li>Extract configuration and C2 information from malware samples.</li>
+                        <li>Learn about sandboxing and its limitations.</li>
+                        <li>Develop signatures for newly discovered malware.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">REMnux</span>
+                        <span class="tech-badge">Cuckoo Sandbox</span>
+                        <span class="tech-badge">Ghidra</span>
+                        <span class="tech-badge">IDA Pro (Free)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Dynamic Malware Analysis Report</h4>
+                        <p>Using a provided benign executable (mimicking malware), perform dynamic analysis in a sandbox environment. Document observed behaviors, network connections, and any dropped files, and generate an IOC report.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Security Metrics, Reporting & Compliance</h3>
+                    <ul>
+                        <li>Understand key security metrics for a SOC (MTTD, MTTR, false positive rate).</li>
+                        <li>Learn to create impactful security reports for various stakeholders (technical, management).</li>
+                        <li>Familiarize yourself with common compliance frameworks (e.g., NIST, ISO 27001, GDPR).</li>
+                        <li>Understand how SOC operations contribute to compliance requirements.</li>
+                        <li>Develop presentations on security incidents and trends.</li>
+                        <li>Learn about auditing and evidence collection for compliance.</li>
+                        <li>Explore risk management frameworks and their application in a SOC.</li>
+                        <li>Communicate effectively with legal and compliance teams.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NIST CSF</span>
+                        <span class="tech-badge">ISO 27001</span>
+                        <span class="tech-badge">Reporting Tools</span>
+                        <span class="tech-badge">GRC</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Monthly SOC Report Draft</h4>
+                        <p>Draft a hypothetical monthly SOC report for management, including key metrics, a summary of significant incidents, and recommendations for improvement based on trends and analysis.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Capstone & Specialization</h3>
+                    <ul>
+                        <li>Review and solidify all learned concepts through comprehensive exercises.</li>
+                        <li>Choose an area of specialization (e.g., Cloud Security, Threat Hunting, Malware Analysis, DFIR) and deep dive further.</li>
+                        <li>Participate in a full-scale simulated incident response exercise as a Tier 2 analyst.</li>
+                        <li>Mentor a junior analyst (even if simulated) on a topic you've mastered.</li>
+                        <li>Prepare for relevant certifications (e.g., GCIH, CySA+, CASP+).</li>
+                        <li>Contribute to open-source security projects or share knowledge in forums.</li>
+                        <li>Network with other cybersecurity professionals.</li>
+                        <li>Reflect on your journey and identify areas for continuous improvement.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Capstone Project</span>
+                        <span class="tech-badge">Specialization</span>
+                        <span class="tech-badge">Certifications</span>
+                        <span class="tech-badge">Networking</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task: Tier 2 SOC Analyst Simulation</h4>
+                        <p>Work through a comprehensive, multi-stage attack simulation that requires advanced SIEM analysis, endpoint forensics, and potentially network and cloud investigation, culminating in a detailed incident report and remediation plan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You've completed a rigorous 90-day roadmap, transforming into a highly capable and proactive SOC Analyst – Tier 2. You possess the skills to conduct advanced investigations, contribute to strategic security initiatives, and effectively respond to complex cyber threats.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Long-Term & Continuous Learning Projects</h3>
+                <p>These projects are designed to foster continuous growth beyond the 90-day mark.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Develop a Personal Lab Environment</h4>
+                        <p>Build and maintain a home lab with a SIEM (e.g., Security Onion), an EDR agent, and various virtual machines (Windows, Linux) to practice detection, logging, and response scenarios.</p>
+                        <small>Hints: Use virtualization software (VMware Workstation/VirtualBox), install security tools, configure logging.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Open-Source Intelligence (OSINT) Project</h4>
+                        <p>Choose a publicly reported cyberattack and use OSINT techniques to gather additional information about the threat actor, their infrastructure, and TTPs, beyond what is officially reported.</p>
+                        <small>Hints: Use public search engines, social media, specialized OSINT tools, Shodan, Censys.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Contribute to a Threat Hunting Community</h4>
+                        <p>Share your threat hunting queries, Sigma rules, or analysis techniques with a relevant cybersecurity community (e.g., GitHub, security blogs, forums).</p>
+                        <small>Hints: Identify a specific threat, develop a detection method, document it clearly, solicit feedback.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Pursue a Niche Specialization</h4>
+                        <p>Deep dive into a highly specialized area like ICS/OT security, mobile forensics, application security, or blockchain security, conducting research and building practical skills.</p>
+                        <small>Hints: Identify a passionate interest, find relevant resources, pursue advanced certifications in that domain.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">SIEM Administration & Tuning</div>
+                    <div class="skill-item">Advanced Log Analysis</div>
+                    <div class="skill-item">Network Forensics</div>
+                    <div class="skill-item">Endpoint Detection & Response (EDR)</div>
+                    <div class="skill-item">Threat Intelligence Integration</div>
+                    <div class="skill-item">Vulnerability Management</div>
+                    <div class="skill-item">Proactive Threat Hunting</div>
+                    <div class="skill-item">Cloud Security Monitoring</div>
+                    <div class="skill-item">Python Scripting for Security</div>
+                    <div class="skill-item">PowerShell for Forensics</div>
+                    <div class="skill-item">Incident Response Lifecycle</div>
+                    <div class="skill-item">Memory Forensics</div>
+                    <div class="skill-item">Static Malware Analysis</div>
+                    <div class="skill-item">Dynamic Malware Analysis</div>
+                    <div class="skill-item">Purple Teaming Concepts</div>
+                    <div class="skill-item">Security Metrics & Reporting</div>
+                    <div class="skill-item">Compliance Understanding</div>
+                    <div class="skill-item">Communication & Documentation</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li><a href="https://www.amazon.com/Applied-Network-Security-Monitoring-Detection/dp/0123704879" target="_blank">Applied Network Security Monitoring</a></li>
+                        <li><a href="https://www.amazon.com/Blue-Team-Field-Guide-Operations/dp/1090310423" target="_blank">The Blue Team Field Guide</a></li>
+                        <li><a href="https://www.amazon.com/Malware-Analysis-Cookbook-Dissecting-Malicious/dp/1461437190" target="_blank">Malware Analysis Cookbook</a></li>
+                        <li><a href="https://www.amazon.com/Practical-Malware-Analysis-Hands-Building/dp/1593272901" target="_blank">Practical Malware Analysis</a></li>
+                        <li><a href="https://www.amazon.com/Incident-Response-Forensics-Practical-Cybersecurity/dp/1492083163" target="_blank">Incident Response & Forensics</a></li>
+                        <li><a href="https://www.amazon.com/Cybersecurity-Blue-Team-Strategies-Protect/dp/1838827725" target="_blank">Cybersecurity Blue Team Strategies</a></li>
+                        <li><a href="https://www.amazon.com/Defensive-Security-Handbook-Detection-Prevention/dp/1491967204" target="_blank">Defensive Security Handbook</a></li>
+                        <li><a href="https://www.amazon.com/Python-Forensics-Jon-Plumley/dp/1597497270" target="_blank">Python for Forensics</a></li>
+                        <li><a href="https://www.amazon.com/Hands-On-Threat-Hunting-practically-proactively/dp/1788839088" target="_blank">Hands-On Threat Hunting</a></li>
+                        <li><a href="https://www.amazon.com/NIST-Cybersecurity-Framework-Beginners-Guide/dp/B08GPK2Q4F" target="_blank">NIST Cybersecurity Framework: A Beginner's Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li><a href="https://tryhackme.com/" target="_blank">TryHackMe (Paths: SOC Level 1, SOC Level 2, Blue Team)</a></li>
+                        <li><a href="https://academy.hackthebox.com/" target="_blank">Hack The Box Academy (Modules: SIEM, OSINT, Malware Analysis)</a></li>
+                        <li><a href="https://www.sans.org/cyber-security-courses/" target="_blank">SANS Institute (Specific courses like SEC401, SEC504, FOR508)</a></li>
+                        <li><a href="https://udemy.com/" target="_blank">Udemy (Look for courses on Splunk, EDRs, Cloud Security)</a></li>
+                        <li><a href="https://coursera.org/" target="_blank">Coursera (Google Cybersecurity Professional Certificate, IBM Cybersecurity Analyst)</a></li>
+                        <li><a href="https://pluralsight.com/" target="_blank">Pluralsight (Wide range of cybersecurity topics)</a></li>
+                        <li><a href="https://youtube.com/c/JohnHammond" target="_blank">John Hammond (YouTube Channel - Practical Demos)</a></li>
+                        <li><a href="https://www.blackhillsinfosec.com/webcasts/" target="_blank">Black Hills InfoSec (Webcasts & Training)</a></li>
+                        <li><a href="https://elastic.co/training/kibana-fundamentals" target="_blank">Elastic Training (for ELK Stack)</a></li>
+                        <li><a href="https://learn.microsoft.com/en-us/training/browse/" target="_blank">Microsoft Learn (Azure Security)</a></li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li><a href="https://www.comptia.org/certifications/cysa" target="_blank">CompTIA CySA+</a></li>
+                        <li><a href="https://www.giac.org/certifications/certified-incident-handler-gcih/" target="_blank">GIAC GCIH (GIAC Certified Incident Handler)</a></li>
+                        <li><a href="https://www.giac.org/certifications/giac-certified-forensic-analyst-gcfa/" target="_blank">GIAC GCFA (GIAC Certified Forensic Analyst)</a></li>
+                        <li><a href="https://www.isc2.org/certifications/casp" target="_blank">ISC2 CASP+ (Advanced Security Practitioner)</a></li>
+                        <li><a href="https://www.eccouncil.org/programs/certified-soc-analyst-csa/" target="_blank">EC-Council Certified SOC Analyst (CSA)</a></li>
+                        <li><a href="https://learn.microsoft.com/en-us/certifications/azure-security-engineer/" target="_blank">Microsoft Certified: Azure Security Engineer Associate</a></li>
+                        <li><a href="https://aws.amazon.com/certification/security-specialty/" target="_blank">AWS Certified Security - Specialty</a></li>
+                        <li><a href="https://www.offensive-security.com/pwk-oscp/" target="_blank">OSCP (Offensive Security Certified Professional - for offensive understanding)</a></li>
+                        <li><a href="https://www.splunken.com/en_us/training/certification.html" target="_blank">Splunk Certified User/Admin/Power User</a></li>
+                        <li><a href="https://learn.splunk.com/certifications/security-analyst/" target="_blank">Splunk Certified Security Analyst</a></li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li><a href="https://www.reddit.com/r/cybersecurity/" target="_blank">r/cybersecurity (Reddit)</a></li>
+                        <li><a href="https://www.reddit.com/r/blueteam/" target="_blank">r/blueteam (Reddit)</a></li>
+                        <li><a href="https://www.sans.org/blog/" target="_blank">SANS Internet Storm Center (ISC)</a></li>
+                        <li><a href="https://twitter.com/hashtag/cybersecurity" target="_blank">Cybersecurity Twitter (#Cybersecurity, #InfoSec)</a></li>
+                        <li><a href="https://discord.com/invite/infosec" target="_blank">InfoSec Prep Discord</a></li>
+                        <li><a href="https://malware-traffic-analysis.net/" target="_blank">Malware Traffic Analysis (Blog & PCAPs)</a></li>
+                        <li><a href="https://www.dfir.training/" target="_blank">DFIR Training</a></li>
+                        <li><a href="https://www.owasp.org/www-community/lists" target="_blank">OWASP Community</a></li>
+                        <li>Local cybersecurity meetups and B-Sides conferences.</li>
+                        <li>LinkedIn groups for cybersecurity professionals.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>SIEM & Log Analysis</h3>
+                    <ul>
+                        <li>Splunk (Enterprise Security)</li>
+                        <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                        <li>Microsoft Sentinel</li>
+                        <li>IBM QRadar</li>
+                        <li>Chronicle Security Operations</li>
+                        <li>Greylog</li>
+                        <li>Security Onion (Distro with many tools)</li>
+                        <li>Wazuh</li>
+                        <li>Syslog-NG/Rsyslog</li>
+                        <li>NXLog</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Network & Endpoint Forensics</h3>
+                    <ul>
+                        <li>Wireshark</li>
+                        <li>Zeek (formerly Bro)</li>
+                        <li>Snort/Suricata (IDS/IPS)</li>
+                        <li>Nmap</li>
+                        <li>Kape (Kroll Artifact Parser and Extractor)</li>
+                        <li>Volatility Framework</li>
+                        <li>Autopsy</li>
+                        <li>FTK Imager</li>
+                        <li>Sysinternals Suite (Procmon, Autoruns, etc.)</li>
+                        <li>BloodHound</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Malware Analysis & Threat Intelligence</h3>
+                    <ul>
+                        <li>VirusTotal</li>
+                        <li>Any.Run (Interactive Sandbox)</li>
+                        <li>Cuckoo Sandbox</li>
+                        <li>REMnux (Linux distro for reverse engineering)</li>
+                        <li>Ghidra</li>
+                        <li>IDA Pro (Free/Pro)</li>
+                        <li>Cortex</li>
+                        <li>MISP (Malware Information Sharing Platform)</li>
+                        <li>YARA</li>
+                        <li>Sigma Converter</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Hands-on projects to solidify your skills at different levels of complexity.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Set up a basic SIEM (e.g., Wazuh or ELK) on a VM and ingest logs from a few sources (e.g., Windows Event Logs, Syslog).</li>
+                        <li>Analyze a given Wireshark capture to identify common network protocols and basic traffic patterns.</li>
+                        <li>Research and document 5 common cyberattack techniques (e.g., Phishing, Brute Force) and their typical indicators.</li>
+                        <li>Configure Sysmon on a Windows VM and collect process creation events.</li>
+                        <li>Create a simple Python script to parse a log file and extract IP addresses.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Develop a custom SIEM correlation rule to detect a specific, more complex attack chain (e.g., successful phishing leading to credential access).</li>
+                        <li>Perform a basic network forensic investigation on a provided dataset to identify command and control (C2) communication.</li>
+                        <li>Conduct a static and dynamic analysis of a benign executable (e.g., a simple custom script) in a controlled environment to understand its behavior.</li>
+                        <li>Utilize a threat intelligence platform to enrich alerts and identify known malicious IOCs.</li>
+                        <li>Write a PowerShell script to gather specific forensic artifacts from a Windows endpoint.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Design and implement an automated response playbook (using a SOAR concept, even if manual steps initially) for a specific high-priority alert.</li>
+                        <li>Lead a simulated incident response exercise, taking on the role of the lead Tier 2 analyst, coordinating with a Tier 1 analyst.</li>
+                        <li>Perform a full memory forensic analysis on a given memory dump to identify persistence mechanisms and process injection.</li>
+                        <li>Develop a threat hunting hypothesis based on emerging threats and execute the hunt across a simulated environment, documenting findings and new detection opportunities.</li>
+                        <li>Create a comprehensive incident report for a multi-stage, complex attack, detailing the timeline, impact, and recommendations.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Contribute a new detection rule (e.g., Sigma rule) to a public repository for a novel attack technique.</li>
+                        <li>Research and implement a deception technology (e.g., honeypot) in your lab and integrate its logs into your SIEM for anomaly detection.</li>
+                        <li>Develop a custom tool or script to automate a complex and time-consuming SOC task.</li>
+                        <li>Act as a mentor for aspiring SOC analysts, guiding them through complex scenarios and sharing your expertise.</li>
+                        <li>Present a deep-dive analysis of a complex malware family or APT group's TTPs at a local meetup or online forum.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Your journey doesn't end here. Continuous learning is key in cybersecurity.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialization & Deep Dive</h3>
+                    <ul>
+                        <li>Choose an area that genuinely excites you within the SOC domain and specialize further. This could be Cloud Security, Industrial Control Systems (ICS) Security, Digital Forensics & Incident Response (DFIR), or Advanced Threat Hunting.</li>
+                        <li>Seek out advanced certifications in your chosen specialization (e.g., SANS GIAC courses).</li>
+                        <li>Engage with experts in that specific field through conferences, webinars, and online communities.</li>
+                        <li>Contribute to open-source projects or write technical blogs about your deep-dive findings.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Proactive Security & Engineering</h3>
+                    <ul>
+                        <li>Transition towards more proactive roles like Security Engineer, building and maintaining security infrastructure.</li>
+                        <li>Learn about security architecture, secure development lifecycles (SDLC), and DevSecOps.</li>
+                        <li>Focus on preventing incidents rather than just reacting to them.</li>
+                        <li>Explore offensive security concepts (ethical hacking) to better understand attacker methodologies and improve defensive strategies.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Leadership & Mentorship</h3>
+                    <ul>
+                        <li>Step into a leadership role within a SOC, managing teams and optimizing operations.</li>
+                        <li>Mentor junior analysts, sharing your knowledge and experience to help them grow.</li>
+                        <li>Develop and refine SOC playbooks, runbooks, and standard operating procedures (SOPs).</li>
+                        <li>Contribute to strategic security planning and roadmap development for your organization.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Research & Innovation</h3>
+                    <ul>
+                        <li>Stay at the forefront of emerging threats and technologies by continuously researching new attack techniques and defensive measures.</li>
+                        <li>Experiment with new security tools and platforms.</li>
+                        <li>Participate in security conferences, give presentations, and publish research papers.</li>
+                        <li>Explore areas like AI/ML in cybersecurity for advanced anomaly detection and automation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Mastered advanced SIEM operations | ✅ Proficient in network traffic analysis | ✅ Solid grasp of endpoint forensics</p>
+                <p>✅ Developed basic automation scripts | ✅ Contributed to incident response | ✅ Applied threat intelligence proactively</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Splunk, ELK Stack, Wireshark, Sysmon, EDR solutions (concepts), MITRE ATT&CK, Python, PowerShell, Cloud Security Platforms (AWS/Azure concepts), Volatility Framework, Ghidra/IDA Pro (concepts), Security Onion, Nessus (concepts), SOAR concepts.</p>
+                <br>
+                <p><strong>Remember:</strong> Consistency is key. Practice daily, stay curious, network with peers, and never stop learning. The threat landscape is constantly evolving, and so should your skills.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

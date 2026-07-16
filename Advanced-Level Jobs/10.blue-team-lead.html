@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Blue Team Lead" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Blue Team Lead" Mastery</h1>
+            <p>An advanced-track plan for defenders ready to own the whole defensive operation — directing a SOC team, owning detection engineering as a program rather than a task list, and turning every red team finding and real incident into measurable, lasting improvement.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: Defensive Architecture & Detection Program Ownership</h2>
+                <span>Days 1-30: Owning the SOC's detection capability as a system, not a collection of individual rules</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Detection Engineering Program</span>
+                    <span class="skill-tag">SOC Architecture</span>
+                    <span class="skill-tag">Visibility Coverage</span>
+                    <span class="skill-tag">ATT&CK Defense Mapping</span>
+                    <span class="skill-tag">Team Direction</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: The Blue Team Lead Role & Defensive Posture Ownership</h3>
+                    <ul>
+                        <li>Study what changes between being a strong SOC analyst and leading the SOC: you now own whether the team's collective output is improving over time</li>
+                        <li>Learn how a blue team lead is accountable for outcomes (mean time to detect, coverage gaps closed) rather than individual alert resolution</li>
+                        <li>Study how to inherit and audit an existing detection program: what's actually being monitored vs. what's assumed to be monitored</li>
+                        <li>Practice reviewing a fictional SOC's current rule set and identifying which rules are stale, duplicative, or no longer tied to real risk</li>
+                        <li>Learn how to build an honest baseline assessment of current defensive maturity before proposing any improvements</li>
+                        <li>Study how a lead balances "keep the lights on" alert triage capacity against time invested in program improvement</li>
+                        <li>Review one real public SOC/detection program writeup and evaluate how its maturity and priorities appear structured</li>
+                        <li>Document a baseline defensive posture assessment for a fictional organization's SOC, including a stale-rule audit</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Defensive Posture Audit</span>
+                        <span class="tech-badge">Rule Set Review</span>
+                        <span class="tech-badge">Outcome Accountability</span>
+                        <span class="tech-badge">Baseline Assessment</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Defensive Posture Baseline Assessment</h4>
+                        <p>Audit a fictional SOC's existing rule set for staleness and duplication, and write a complete baseline defensive posture assessment documenting current maturity honestly before proposing changes.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Visibility & Telemetry Coverage Mapping</h3>
+                    <ul>
+                        <li>Study how "detection coverage" is meaningless without first knowing what telemetry actually exists to detect against</li>
+                        <li>Learn how to map data source coverage (endpoint, network, identity, cloud, application logs) against what's actually flowing into the SIEM</li>
+                        <li>Practice building a telemetry coverage map for a fictional environment, flagging which asset classes have strong, partial, or no logging</li>
+                        <li>Study how log retention, parsing quality, and field normalization affect whether collected data is actually usable for detection</li>
+                        <li>Learn how to prioritize closing visibility gaps based on risk (a blind spot on the internet-facing perimeter matters more than one on an air-gapped test server)</li>
+                        <li>Practice writing a visibility gap remediation plan prioritizing 5 identified blind spots by risk and effort</li>
+                        <li>Study how EDR, network sensors, and cloud-native logging each contribute differently to overall visibility, and where overlaps and gaps commonly occur</li>
+                        <li>Document a full telemetry coverage map and prioritized remediation plan for a fictional environment</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Telemetry Coverage</span>
+                        <span class="tech-badge">Log Source Mapping</span>
+                        <span class="tech-badge">Visibility Gap Prioritization</span>
+                        <span class="tech-badge">Field Normalization</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Telemetry Coverage Map & Remediation Plan</h4>
+                        <p>Build a full telemetry coverage map for a fictional environment identifying logging blind spots, and write a prioritized remediation plan for closing the top 5 gaps by risk.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: ATT&CK-Mapped Defensive Coverage Strategy</h3>
+                    <ul>
+                        <li>Study how to use the MITRE ATT&CK framework as a defensive planning tool, not just an offensive reference</li>
+                        <li>Learn how to build a defensive ATT&CK Navigator heatmap reflecting actual detection confidence per technique, not aspirational coverage</li>
+                        <li>Practice mapping a fictional SOC's existing detection rules to specific ATT&CK techniques and identifying coverage density by tactic</li>
+                        <li>Study how to prioritize which uncovered techniques to address first based on relevance to your organization's actual threat profile</li>
+                        <li>Learn how detection coverage should weight toward techniques adversaries relevant to your industry actually use, not generic completeness</li>
+                        <li>Practice writing a detection roadmap prioritizing 8 uncovered or weakly-covered techniques based on threat relevance</li>
+                        <li>Study how ATT&CK Defense (D3FEND) complements the offensive framework by cataloging specific defensive countermeasures per technique</li>
+                        <li>Document a full ATT&CK-mapped defensive coverage heatmap and an 8-technique prioritized improvement roadmap</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">ATT&CK Navigator</span>
+                        <span class="tech-badge">Defensive Heatmapping</span>
+                        <span class="tech-badge">D3FEND</span>
+                        <span class="tech-badge">Threat-Relevant Prioritization</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: ATT&CK Defensive Coverage Heatmap</h4>
+                        <p>Build a defensive ATT&CK Navigator heatmap mapping existing rules to techniques, and write a prioritized 8-technique improvement roadmap weighted toward your organization's actual threat relevance.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: SOC Team Structure & Daily Operations Direction</h3>
+                    <ul>
+                        <li>Study how a lead structures a SOC across shifts/tiers and balances alert triage capacity against detection engineering and hunting time</li>
+                        <li>Learn how to design an escalation path that gets the right alert to the right analyst quickly without overwhelming senior staff with noise</li>
+                        <li>Practice writing a tiered escalation matrix for a fictional SOC, defining what triggers Tier 1 to Tier 2 to lead-level escalation</li>
+                        <li>Study how to run effective shift handoffs so context doesn't get lost between analysts working different hours</li>
+                        <li>Learn how to balance individual analyst development time (learning, certifications) against operational coverage needs</li>
+                        <li>Practice designing a weekly team schedule balancing triage coverage, detection engineering sprints, and dedicated learning time</li>
+                        <li>Study how a lead reviews analyst alert-handling quality without becoming a bottleneck reviewing every single ticket</li>
+                        <li>Document a full SOC team structure, escalation matrix, and weekly operating rhythm for a fictional team of 8 analysts</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Tiered Escalation</span>
+                        <span class="tech-badge">Shift Handoffs</span>
+                        <span class="tech-badge">Team Scheduling</span>
+                        <span class="tech-badge">Quality Review</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: SOC Team Structure & Operating Rhythm</h4>
+                        <p>Design a complete SOC team structure for 8 analysts, including a tiered escalation matrix and a weekly operating schedule balancing triage, detection engineering, and learning time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can audit an inherited detection program honestly, map telemetry and ATT&CK coverage to find real gaps, and structure a SOC team's operating rhythm to balance triage against improvement work — the foundational toolkit of a Blue Team Lead.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate program ownership fundamentals before moving into detection engineering depth and adversary response.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Defensive Program Audit</h4>
+                        <p>Run a complete audit combining your posture assessment, telemetry map, and ATT&CK heatmap into one cohesive program health document.</p>
+                        <small>Hint: This single combined document is the strongest "day one as the new lead" artifact you could produce — make it genuinely thorough.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>SOC Operating Model Design</h4>
+                        <p>Design a complete SOC operating model for a fictional 12-analyst team, including structure, escalation, and a 6-month improvement roadmap.</p>
+                        <small>Hint: Show how the model would scale or contract if the team were half or double the size — that flexibility demonstrates real understanding.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>ATT&CK Coverage Improvement Sprint</h4>
+                        <p>Take your top 3 uncovered techniques and write the actual detection rules (Sigma format) that would close those specific gaps.</p>
+                        <small>Hint: This bridges planning into execution — exactly the kind of follow-through a lead is expected to demonstrate.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Blue Team Leadership Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: Frame it as "how a new SOC lead figures out what's actually broken in their first 30 days" — genuinely useful, rarely discussed content.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Detection Engineering Leadership & Adversary Response</h2>
+                <span>Days 31-60: Running detection engineering as a structured program and directing the team's response to real and simulated attacks</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Detection-as-Code Program</span>
+                    <span class="skill-tag">Major Incident Direction</span>
+                    <span class="skill-tag">Red Team Collaboration</span>
+                    <span class="skill-tag">Threat Hunting Program</span>
+                    <span class="skill-tag">Tool/Platform Strategy</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Detection Engineering as a Structured Program</h3>
+                    <ul>
+                        <li>Study how a mature detection engineering function operates: intake, development, testing, deployment, and tuning as a repeatable pipeline</li>
+                        <li>Learn how to set up a detection-as-code workflow with version control, peer review, and automated testing before rules reach production</li>
+                        <li>Practice designing a detection rule lifecycle process for a fictional team, including who approves a rule before it goes live</li>
+                        <li>Study how to track and reduce false-positive rates systematically rather than tuning reactively rule by rule</li>
+                        <li>Learn how to prioritize a detection engineering backlog using the same risk-based thinking from your Phase 1 coverage roadmap</li>
+                        <li>Practice writing a detection engineering sprint plan for a fictional 2-week cycle, with 5 prioritized rules to build and test</li>
+                        <li>Study how to measure detection engineering output meaningfully (rules shipped, false-positive rate trend, coverage % growth)</li>
+                        <li>Document a full detection engineering program process and a sample sprint plan ready for team adoption</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Detection-as-Code Pipeline</span>
+                        <span class="tech-badge">Peer Review Process</span>
+                        <span class="tech-badge">False-Positive Reduction</span>
+                        <span class="tech-badge">Sprint Planning</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Detection Engineering Program & Sprint Plan</h4>
+                        <p>Design a complete detection engineering lifecycle process with peer review, and write a sample 2-week sprint plan with 5 prioritized rules including their testing criteria.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Major Incident Direction from the Defensive Side</h3>
+                    <ul>
+                        <li>Study how a blue team lead directs a SOC's response during a major incident: coordinating analysts, escalating appropriately, and maintaining situational awareness</li>
+                        <li>Learn how to make real-time containment recommendations based on incomplete information without panicking the team or the business</li>
+                        <li>Practice leading a mock major incident drill, directing 2-3 simulated analysts through investigation and containment decisions</li>
+                        <li>Study how a lead balances "stop the bleeding now" against "preserve evidence for proper investigation" during active response</li>
+                        <li>Learn how to keep the SOC operating normally for unrelated alerts while a subset of the team is consumed by a major incident</li>
+                        <li>Practice writing a surge staffing plan for how your SOC would handle a major incident without dropping baseline coverage</li>
+                        <li>Study how post-incident, the lead ensures findings get converted into new detections rather than just closing the ticket</li>
+                        <li>Document a major incident direction playbook covering team coordination, surge staffing, and the detection-conversion follow-through</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Incident Direction</span>
+                        <span class="tech-badge">Surge Staffing</span>
+                        <span class="tech-badge">Containment Under Uncertainty</span>
+                        <span class="tech-badge">Post-Incident Detection Conversion</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Major Incident Direction Playbook</h4>
+                        <p>Run a mock major incident drill directing 2-3 simulated analysts, and write a complete direction playbook covering coordination, surge staffing, and the process for converting findings into new detections.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Red Team & Purple Team Collaboration from the Blue Side</h3>
+                    <ul>
+                        <li>Study how a blue team lead prepares the SOC to genuinely benefit from a red team engagement rather than treating it as an adversarial test to "win"</li>
+                        <li>Learn how to participate constructively in purple team checkpoints — asking the right questions to extract maximum detection insight</li>
+                        <li>Practice a mock purple team checkpoint from the defender's side, working through one red team technique and identifying why it wasn't detected</li>
+                        <li>Study how to triage a red team after-action report into a prioritized detection engineering backlog rather than letting findings sit unaddressed</li>
+                        <li>Learn how to communicate red team findings to the broader SOC team constructively, avoiding blame while building urgency</li>
+                        <li>Practice writing a post-engagement detection improvement plan derived from a mock red team after-action report</li>
+                        <li>Study how to use breach-and-attack simulation (BAS) or Atomic Red Team for continuous validation between formal red team engagements</li>
+                        <li>Document a red team collaboration protocol covering pre-engagement prep, real-time checkpoint participation, and post-engagement follow-through</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Purple Team Participation</span>
+                        <span class="tech-badge">Finding Triage</span>
+                        <span class="tech-badge">Constructive Team Communication</span>
+                        <span class="tech-badge">Continuous Validation (BAS)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Red Team Collaboration Protocol</h4>
+                        <p>Write a complete red team collaboration protocol for your SOC, and produce one post-engagement detection improvement plan derived from a mock after-action report's findings.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Proactive Threat Hunting Program Direction</h3>
+                    <ul>
+                        <li>Study how a lead builds and sustains a hunting program rather than letting hunting happen only when an analyst has spare time</li>
+                        <li>Learn how to source hunt hypotheses systematically: from CTI, from ATT&CK coverage gaps, and from prior incident patterns</li>
+                        <li>Practice designing a recurring hunting cadence (e.g. one structured hunt per sprint) with hypothesis assignment and reporting requirements</li>
+                        <li>Study how to track hunting program value: hunts run, true positives found, and conversion rate into permanent detections</li>
+                        <li>Learn how a lead reviews a hunt's methodology for rigor before its conclusions get trusted, similar to peer-reviewing detection rules</li>
+                        <li>Practice reviewing a mock hunt report for methodology gaps and providing structured feedback to strengthen it</li>
+                        <li>Study how hunting program maturity progresses from ad hoc to fully structured, hypothesis-driven, and metric-tracked</li>
+                        <li>Document a full threat hunting program design including cadence, hypothesis sourcing, and value-tracking metrics</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Hunting Program Design</span>
+                        <span class="tech-badge">Hypothesis Sourcing</span>
+                        <span class="tech-badge">Hunt Methodology Review</span>
+                        <span class="tech-badge">Hunting Value Metrics</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Threat Hunting Program Design</h4>
+                        <p>Build a complete threat hunting program design with a recurring cadence and hypothesis sourcing process, plus structured feedback on one mock hunt report's methodology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can run detection engineering as a structured program, direct a SOC through a major incident, collaborate constructively with red teams to extract maximum value, and build a sustained proactive hunting program — the operational leadership toolkit that defines a Blue Team Lead.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into program metrics, tooling strategy, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Detection Engineering Pipeline</h4>
+                        <p>Build a working detection-as-code pipeline with version control, peer review, and automated Sigma rule validation in CI.</p>
+                        <small>Hint: This bridges Phase 1's coverage planning into a real, runnable engineering pipeline — extremely strong portfolio material.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Major Incident Multi-Analyst Drill Series</h4>
+                        <p>Run 2 distinct major incident drills with different scenarios, comparing how your direction approach adapted to each.</p>
+                        <small>Hint: Vary the incident type (ransomware vs. data exfiltration) to show range in your direction style.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Red Team Finding Conversion Casebook</h4>
+                        <p>Take 3 mock red team findings and fully convert each into a tested Sigma rule with documented validation.</p>
+                        <small>Hint: This demonstrates the complete closed loop from red team finding to production detection — exactly what hiring managers want to see.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Detection Engineering & Hunting Teaching Content</h4>
+                        <p>Turn your program design work into a teaching walkthrough for SOC analysts wanting to move into lead roles.</p>
+                        <small>Hint: Use one running fictional SOC throughout for consistency across the explainer.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Program Metrics, Tooling Strategy & Career Readiness</h2>
+                <span>Days 61-90: Proving the program's value, choosing the right tools, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Defensive Program Metrics</span>
+                    <span class="skill-tag">SIEM/EDR Tooling Strategy</span>
+                    <span class="skill-tag">Stakeholder Reporting</span>
+                    <span class="skill-tag">Team Development</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Defensive Program Metrics That Matter</h3>
+                    <ul>
+                        <li>Study why mean time to detect (MTTD) and mean time to respond (MTTR) matter more to leadership than raw alert volume</li>
+                        <li>Learn how to define a balanced metrics set: detection coverage growth, false-positive trend, hunt-to-detection conversion, MTTD/MTTR</li>
+                        <li>Practice building a defensive program metrics dashboard for a fictional quarter combining detection engineering, hunting, and incident response data</li>
+                        <li>Study how to avoid vanity metrics that look good but don't reflect real defensive improvement (e.g. raw alert count as a "productivity" measure)</li>
+                        <li>Learn how to present a metrics trend honestly even when it's not improving, and frame the corrective plan alongside it</li>
+                        <li>Practice writing a monthly defensive operations report combining metrics, narrative context, and next-period priorities</li>
+                        <li>Study how metrics should evolve as program maturity increases — early-stage programs track different things than mature ones</li>
+                        <li>Document a full defensive program metrics framework ready for ongoing operation</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">MTTD/MTTR</span>
+                        <span class="tech-badge">Metrics Dashboards</span>
+                        <span class="tech-badge">Avoiding Vanity Metrics</span>
+                        <span class="tech-badge">Monthly Operations Reports</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Defensive Program Metrics Dashboard</h4>
+                        <p>Build a complete defensive program metrics dashboard for a fictional quarter and write a monthly operations report combining the metrics with narrative context and priorities.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: SIEM/EDR Tooling Strategy & Platform Decisions</h3>
+                    <ul>
+                        <li>Study how a lead evaluates whether the current SIEM/EDR stack actually serves the detection program's needs or is just inherited legacy tooling</li>
+                        <li>Learn how to run a structured tool evaluation comparing platforms against your specific ATT&CK coverage and telemetry needs from Phase 1</li>
+                        <li>Practice writing a tooling gap analysis identifying where current platforms fail to support your detection engineering or hunting program</li>
+                        <li>Study how total cost of ownership and analyst workflow efficiency both factor into a SIEM/EDR migration or upgrade decision</li>
+                        <li>Learn how to plan a phased tooling migration that doesn't create a detection coverage gap during the transition</li>
+                        <li>Practice writing a tooling investment proposal justifying a specific platform change with risk-reduction and efficiency rationale</li>
+                        <li>Study how automation (SOAR-style enrichment and response) reduces analyst toil and where a lead should prioritize automating first</li>
+                        <li>Document a full tooling strategy assessment and investment proposal for a fictional SOC's next fiscal year</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Tool Evaluation</span>
+                        <span class="tech-badge">Migration Planning</span>
+                        <span class="tech-badge">TCO Analysis</span>
+                        <span class="tech-badge">SOAR Automation Priorities</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Tooling Strategy & Investment Proposal</h4>
+                        <p>Write a full tooling gap analysis comparing current platforms against your program's needs, plus a tooling investment proposal with a phased migration plan that avoids coverage gaps.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Stakeholder Reporting & Team Development</h3>
+                    <ul>
+                        <li>Study how to translate SOC program health into language a CISO or executive audience can act on quickly</li>
+                        <li>Learn how to build a quarterly business review (QBR)-style presentation summarizing defensive program progress and priorities</li>
+                        <li>Practice building a board/executive-ready summary of your Phase 3 metrics and tooling proposal for a fictional quarterly review</li>
+                        <li>Study how a lead identifies and develops analyst career paths within the SOC, preventing burnout and turnover on a high-pressure team</li>
+                        <li>Learn how to structure individual analyst development plans tied to both team coverage needs and the analyst's own growth interests</li>
+                        <li>Practice writing a development plan for a fictional mid-level analyst aiming toward a senior or specialist track</li>
+                        <li>Study how a lead recognizes and addresses early burnout signs in a high-alert-volume team before it becomes attrition</li>
+                        <li>Compile your 90-day work into a single portfolio-style master blue team leadership report</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">QBR Presentations</span>
+                        <span class="tech-badge">Analyst Development Plans</span>
+                        <span class="tech-badge">Burnout Prevention</span>
+                        <span class="tech-badge">Career Pathing</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: QBR Presentation & Analyst Development Plan</h4>
+                        <p>Build a board/executive-ready quarterly business review presentation summarizing your program's metrics and priorities, plus one individual analyst development plan.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (e.g. GIAC GDSA, CySA+, or CISSP)</li>
+                        <li>Do a full mock "day as lead" exercise: triage a coverage gap, direct a mock incident, and brief a stakeholder, all within a time limit</li>
+                        <li>Prepare answers for blue team lead interview questions (walk through inheriting and auditing a detection program, describe directing a major incident, explain a red team collaboration that improved coverage)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable program and leadership achievements</li>
+                        <li>Polish your portfolio: pin your best 3 artifacts (defensive program audit, detection engineering pipeline, metrics dashboard) with clean documentation</li>
+                        <li>Practice a mock behavioral interview using STAR format for your incident-direction and red-team-collaboration stories</li>
+                        <li>Research target organizations and tailor your resume + LinkedIn headline to emphasize program leadership specifically</li>
+                        <li>Plan your next 90 days: pick a direction (detection engineering specialist, SOC manager/director, or broader security leadership)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">STAR Behavioral Prep</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Blue Team Lead Portfolio</h4>
+                        <p>Finalize a portfolio (defensive program audit, detection engineering pipeline, metrics dashboard), resume bullets, and 2 polished STAR-format leadership interview stories for Blue Team Lead roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a complete defensive leadership toolkit (program auditing, telemetry and ATT&CK coverage strategy, detection engineering pipelines, incident direction, red team collaboration, hunting program design, metrics, tooling strategy, team development) plus a portfolio of real artifacts and a job-ready application package — the foundation of a genuinely capable Blue Team Lead.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end blue team leadership capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Complete SOC Transformation Plan</h4>
+                        <p>Combine your posture audit, coverage roadmap, team structure, and metrics framework into one cohesive "first 90 days as new lead" transformation plan.</p>
+                        <small>Hint: This single document is your strongest portfolio artifact — make it genuinely ready to present on your actual first day in a real role.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Full Red-Team-to-Production-Detection Cycle</h4>
+                        <p>Run a complete cycle: a mock red team finding, your triage, a built Sigma rule, validation testing, and a metrics update showing coverage improvement.</p>
+                        <small>Hint: This demonstrates the entire closed loop a hiring manager wants to see in one connected story.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>SOC Tooling Modernization Proposal</h4>
+                        <p>Build a complete tooling strategy assessment and migration plan for a fictional SOC moving from a legacy platform to a modern stack.</p>
+                        <small>Hint: Address the coverage-gap-during-migration risk explicitly — that's the detail that separates a real plan from a wish list.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Blue Team Lead Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching senior analysts how to lead a defensive program.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Defensive Program Auditing</div>
+                    <div class="skill-item">Telemetry & ATT&CK Coverage Mapping</div>
+                    <div class="skill-item">Detection Engineering Pipeline Design</div>
+                    <div class="skill-item">Major Incident Direction</div>
+                    <div class="skill-item">Red/Purple Team Collaboration</div>
+                    <div class="skill-item">Threat Hunting Program Building</div>
+                    <div class="skill-item">Defensive Metrics & Tooling Strategy</div>
+                    <div class="skill-item">SOC Team Development & Leadership</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>The Practice of Network Security Monitoring — Richard Bejtlich</li>
+                        <li>Crafting the InfoSec Playbook — Bollinger, Enright, Valites</li>
+                        <li>Blue Team Field Manual (BTFM) — Alan White & Ben Clark</li>
+                        <li>Intelligence-Driven Incident Response — Roberts & Brown</li>
+                        <li>Applied Network Security Monitoring — Sanders & Smith</li>
+                        <li>Site Reliability Engineering — Google SRE Team (operational metrics and culture)</li>
+                        <li>The Manager's Path — Camille Fournier (team leadership context)</li>
+                        <li>Measure What Matters — John Doerr (OKR framing for program goals)</li>
+                        <li>Tribe of Hackers Blue Team — Marcus Carey & Jennifer Jin</li>
+                        <li>Threat Hunting: A Practical Guide — Valentina Costa-Gazcón</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>SANS MGT553 (Cyber Incident Management) and SEC555 (SIEM with Tactical Analytics)</li>
+                        <li>MITRE ATT&CK and D3FEND official documentation</li>
+                        <li>MITRE Caldera and Atomic Red Team documentation</li>
+                        <li>Detection Engineering Weekly newsletter/community resources</li>
+                        <li>LetsDefend (SOC hands-on investigation platform)</li>
+                        <li>CyberDefenders (blue team forensic challenge platform)</li>
+                        <li>Splunk/Elastic official detection engineering training</li>
+                        <li>SpecterOps blog (BloodHound-aware detection research)</li>
+                        <li>Black Hills Information Security webcasts (blue team and leadership topics)</li>
+                        <li>YouTube: 13Cubed, John Hammond, Detection Engineering talks from SANS/DEF CON Blue Team Village</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>GIAC Defensible Security Architecture (GDSA)</li>
+                        <li>GIAC Certified Detection Analyst (GCDA)</li>
+                        <li>CompTIA CySA+ (Cybersecurity Analyst)</li>
+                        <li>GIAC Certified Incident Handler (GCIH)</li>
+                        <li>Blue Team Level 2 (BTL2, Security Blue Team)</li>
+                        <li>CISSP (broader security management context)</li>
+                        <li>GIAC Security Essentials (GSEC)</li>
+                        <li>CRISC (Certified in Risk and Information Systems Control)</li>
+                        <li>Splunk Core Certified Power User / Advanced Power User</li>
+                        <li>Project Management Professional (PMP) — useful for program/sprint management</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>r/blueteamsec and r/dfir on Reddit</li>
+                        <li>Detection Engineering community (newsletter and associated Slack)</li>
+                        <li>SANS DFIR and blue team Slack/Discord communities</li>
+                        <li>SpecterOps and TrustedSec communities</li>
+                        <li>Local BSides/DEF CON blue team village meetups</li>
+                        <li>MITRE ATT&CK community workshops</li>
+                        <li>LinkedIn SOC leadership and detection engineering groups</li>
+                        <li>Twitter/X blue team community (#BlueTeam, #DetectionEngineering)</li>
+                        <li>FIRST.org community resources</li>
+                        <li>CyberDefenders and LetsDefend community forums</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>SIEM, Detection & Hunting Tools</h3>
+                    <ul>
+                        <li>Splunk / Elastic Security / Wazuh / Microsoft Sentinel</li>
+                        <li>Sigma (rule format) + pySigma conversion tooling</li>
+                        <li>MITRE ATT&CK Navigator</li>
+                        <li>MITRE D3FEND</li>
+                        <li>Atomic Red Team</li>
+                        <li>Caldera</li>
+                        <li>Velociraptor (endpoint visibility at scale)</li>
+                        <li>osquery</li>
+                        <li>Zeek (network telemetry)</li>
+                        <li>YARA</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>EDR, Automation & Pipeline Tools</h3>
+                    <ul>
+                        <li>CrowdStrike / SentinelOne / Microsoft Defender for Endpoint</li>
+                        <li>TheHive / Cortex (case management)</li>
+                        <li>Shuffle / n8n (open-source SOAR/automation)</li>
+                        <li>Git (detection-as-code version control)</li>
+                        <li>GitHub Actions / GitLab CI (automated Sigma rule testing pipelines)</li>
+                        <li>Jira / ServiceNow (incident and engineering backlog tracking)</li>
+                        <li>PagerDuty / Opsgenie (escalation and on-call management)</li>
+                        <li>Slack/Teams APIs (alert routing and team coordination)</li>
+                        <li>Python (automation scripting, enrichment, metrics extraction)</li>
+                        <li>Jupyter Notebooks (analysis and repeatable reporting workflows)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Program & Reporting Tools</h3>
+                    <ul>
+                        <li>Power BI / Tableau / Grafana (defensive metrics dashboards)</li>
+                        <li>Excel/Google Sheets (coverage maps, sprint planning, scorecards)</li>
+                        <li>Lucidchart / Draw.io / Miro (architecture and coverage diagrams)</li>
+                        <li>Confluence / Notion (program documentation, runbooks)</li>
+                        <li>Google Slides/PowerPoint (QBR and executive presentations)</li>
+                        <li>15Five / Lattice (team performance and development tracking)</li>
+                        <li>Asana / Monday.com (cross-functional program tracking)</li>
+                        <li>OWASP SAMM / NIST CSF self-assessment templates (maturity benchmarking)</li>
+                        <li>PlexTrac / Dradis (red team collaboration and finding tracking)</li>
+                        <li>Loom (recording mock QBRs and team briefings for self-review)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Audit a small mock rule set for staleness and duplication</li>
+                        <li>Build a basic telemetry coverage map for one fictional environment</li>
+                        <li>Build a simple ATT&CK Navigator heatmap for existing detection rules</li>
+                        <li>Write a basic tiered escalation matrix for a small SOC</li>
+                        <li>Write one Sigma rule following a structured rule lifecycle process</li>
+                        <li>Draft a one-page surge staffing plan for a major incident scenario</li>
+                        <li>Write a basic hunt hypothesis sourced from an ATT&CK coverage gap</li>
+                        <li>Build a simple MTTD/MTTR tracking spreadsheet with mock data</li>
+                        <li>Write a one-page tooling gap analysis for a single platform limitation</li>
+                        <li>Draft a basic individual analyst development plan outline</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a complete defensive posture baseline assessment</li>
+                        <li>Build a full ATT&CK-mapped coverage heatmap with a prioritized roadmap</li>
+                        <li>Design a complete SOC team structure and weekly operating rhythm</li>
+                        <li>Build a detection engineering lifecycle process with a sample sprint plan</li>
+                        <li>Run a mock major incident drill and write a direction playbook</li>
+                        <li>Write a red team collaboration protocol and a post-engagement improvement plan</li>
+                        <li>Design a full threat hunting program with cadence and metrics</li>
+                        <li>Build a defensive program metrics dashboard for a mock quarter</li>
+                        <li>Write a tooling investment proposal with a phased migration plan</li>
+                        <li>Build a QBR-style presentation summarizing program metrics and priorities</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a complete "first 90 days as new lead" SOC transformation plan</li>
+                        <li>Build a working detection-as-code pipeline with CI-based rule validation</li>
+                        <li>Run a full red-team-finding-to-production-detection cycle with metrics update</li>
+                        <li>Design a complete SOC tooling modernization proposal with migration risk mitigation</li>
+                        <li>Build a comprehensive analyst career pathing and development program</li>
+                        <li>Architect a continuous validation program integrating BAS/Atomic Red Team into regular operations</li>
+                        <li>Design a multi-shift, multi-timezone SOC coverage model</li>
+                        <li>Build a full detection engineering backlog prioritization framework tied to threat intelligence</li>
+                        <li>Write a complete burnout-prevention and team wellbeing program for a high-alert-volume SOC</li>
+                        <li>Mentor a senior analyst through their first lead-role mock program audit</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Lead a real or high-fidelity simulated SOC transformation from audit through measurable improvement</li>
+                        <li>Publish original research on detection engineering methodology or program design</li>
+                        <li>Design a complete SOC operating model for a multi-business-unit enterprise</li>
+                        <li>Speak at a local BSides/DEF CON blue team village or detection engineering conference</li>
+                        <li>Build a custom detection engineering framework tailored to an organization's specific stack</li>
+                        <li>Architect a full purple-team-integrated continuous improvement program with a red team partner</li>
+                        <li>Contribute a Sigma rule or D3FEND mapping to a public open-source repository</li>
+                        <li>Design a comprehensive SOC maturity model spanning visibility, detection, hunting, and response</li>
+                        <li>Mentor multiple analysts toward lead-role readiness as a structured program</li>
+                        <li>Build a board-level defensive program reporting package and present it in a real or simulated setting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your blue team career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize or Broaden</h3>
+                    <ul>
+                        <li>Decide: deepen toward detection engineering specialization, or broaden toward SOC manager/director leadership</li>
+                        <li>Consider a Detection Engineering Lead track if pipeline design and ATT&CK coverage work energized you most</li>
+                        <li>Consider a SOC Manager/Director track if team development and program metrics stood out</li>
+                        <li>Explore a Purple Team Lead hybrid path if collaboration with offensive teams was your strongest area</li>
+                        <li>Look into Detection-as-a-Service or MSSP leadership roles for cross-client program exposure</li>
+                        <li>Consider specializing in a high-stakes industry vertical (critical infrastructure, finance, healthcare)</li>
+                        <li>Pursue GDSA/GCDA if the technical detection engineering track is the clear direction</li>
+                        <li>Pursue CISSP/PMP if the broader SOC leadership track is the clear direction</li>
+                        <li>Join a specialized community for your chosen direction</li>
+                        <li>Set a 6-12 month direction-setting goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to Blue Team Lead / SOC Lead / Detection Engineering Lead roles weekly</li>
+                        <li>Tailor your resume per job description, emphasizing program ownership and measurable improvement</li>
+                        <li>Attend local BSides/DEF CON blue team village meetups</li>
+                        <li>Reach out to current SOC/blue team leads on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your portfolio updated with new program and pipeline artifacts</li>
+                        <li>Practice behavioral (STAR-format) mock interviews monthly</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider MSSP or consulting-adjacent blue team roles for varied program exposure</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly detection engineering and threat research content</li>
+                        <li>Re-run your ATT&CK coverage heatmap quarterly as a personal practice habit</li>
+                        <li>Write a monthly post about a program improvement or leadership judgment call you navigated</li>
+                        <li>Build a second, more advanced portfolio artifact every 90 days</li>
+                        <li>Track new SIEM/EDR platform capabilities and detection engineering tooling</li>
+                        <li>Mentor junior analysts moving toward lead readiness — teaching reinforces your own mastery</li>
+                        <li>Read one new blue team/leadership book per month</li>
+                        <li>Attend at least one virtual conference talk per month</li>
+                        <li>Seek structured feedback on your team direction and stakeholder communication skills</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a "becoming a blue team lead" series for senior analysts aspiring to lead a SOC</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your templates (coverage map, sprint plan, escalation matrix) for others to use</li>
+                        <li>Host a free workshop/webinar on detection engineering program design or SOC leadership</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another aspiring lead for accountability</li>
+                        <li>Contribute documentation fixes to a detection tool you use often</li>
+                        <li>Review and give feedback on a peer's detection rule or coverage roadmap</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Audited an inherited detection program and built a telemetry/ATT&CK coverage roadmap | ✅ Designed a SOC team structure and operating rhythm | ✅ Built a detection-as-code engineering pipeline and directed a major incident drill</p>
+                <p>✅ Collaborated with a red team to convert findings into production detections | ✅ Designed a proactive threat hunting program | ✅ Built defensive metrics dashboards, a tooling strategy, and analyst development plans</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Splunk/Elastic/Sentinel, Sigma, MITRE ATT&CK/D3FEND, Atomic Red Team, Caldera, Velociraptor, TheHive/Cortex, Shuffle/n8n, Power BI/Grafana, Git-based detection-as-code pipelines.</p>
+                <br>
+                <p><strong>Remember:</strong> A blue team that only reacts to alerts is managing a queue, not running a defense. Every coverage map, sprint plan, and incident you direct exists to answer one question: "is this organization measurably harder to compromise than it was 90 days ago, and can I prove it?" Stay rigorous, invest in your team, and always close the loop from finding to fixed.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

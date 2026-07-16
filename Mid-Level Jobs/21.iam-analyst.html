@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "IAM Analyst" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "IAM Analyst" Mastery</h1>
+            <p>An intermediate-track plan for learners who understand basic IT/security concepts and are ready to specialize in identity lifecycle management, access governance, and the directory/authentication systems that decide who can reach what.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: Identity Fundamentals & Directory Services</h2>
+                <span>Days 1-30: Identity lifecycle concepts, authentication/authorization mechanics, and directory service fundamentals</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Identity Lifecycle</span>
+                    <span class="skill-tag">Active Directory</span>
+                    <span class="skill-tag">Authentication Protocols</span>
+                    <span class="skill-tag">RBAC/ABAC</span>
+                    <span class="skill-tag">MFA</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Identity & Access Fundamentals</h3>
+                    <ul>
+                        <li>Study the core IAM triad: identification, authentication, and authorization — and how they differ</li>
+                        <li>Learn the identity lifecycle stages: joiner, mover, leaver (JML) and why each transition is a risk point</li>
+                        <li>Study identity types: human users, service accounts, machine identities, and privileged accounts</li>
+                        <li>Learn the difference between authentication factors: something you know/have/are, and factor strength</li>
+                        <li>Study how identity underpins zero trust — "never trust, always verify" in practical terms</li>
+                        <li>Read one real-world IAM-related breach case study (e.g. an orphaned account or excessive access incident)</li>
+                        <li>Learn the basics of single sign-on (SSO) conceptually before touching any specific protocol</li>
+                        <li>Document 20 IAM terms in your own glossary (JML, SoD, RBAC, federation, provisioning, etc.)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">AuthN vs AuthZ</span>
+                        <span class="tech-badge">JML Lifecycle</span>
+                        <span class="tech-badge">Zero Trust</span>
+                        <span class="tech-badge">SSO Basics</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: IAM Glossary & Breach Case Study</h4>
+                        <p>Build a personal 20-term IAM glossary and write a one-page breakdown of a real orphaned-account or excessive-access breach, mapping it to a JML lifecycle failure.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Active Directory & Directory Services</h3>
+                    <ul>
+                        <li>Study Active Directory architecture: domains, forests, organizational units (OUs), trees</li>
+                        <li>Set up a small lab AD environment (Windows Server + domain-joined client) for hands-on practice</li>
+                        <li>Learn Group Policy Objects (GPOs) and how they enforce baseline security settings</li>
+                        <li>Study AD groups: security groups vs. distribution groups, and nested group risks</li>
+                        <li>Learn how LDAP works conceptually as the protocol underlying directory queries</li>
+                        <li>Study Azure AD/Entra ID as the cloud-native directory evolution of on-prem AD</li>
+                        <li>Practice creating users, groups, and OUs in your lab AD, then applying a basic GPO</li>
+                        <li>Learn common AD attack paths at a defensive-awareness level (Kerberoasting, excessive group nesting)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Active Directory</span>
+                        <span class="tech-badge">GPOs</span>
+                        <span class="tech-badge">LDAP</span>
+                        <span class="tech-badge">Azure AD/Entra ID</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Lab AD Build</h4>
+                        <p>Build a small AD lab with 3 OUs, 5 users, 2 security groups, and one GPO enforcing a password policy; document your structure with a diagram.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Authentication Protocols & Federation</h3>
+                    <ul>
+                        <li>Study SAML 2.0 flow: identity provider, service provider, assertions, and where trust is established</li>
+                        <li>Learn OAuth 2.0 and OpenID Connect (OIDC) — and how they differ from SAML and from each other</li>
+                        <li>Study Kerberos basics: tickets, the KDC, and how it underpins AD authentication</li>
+                        <li>Learn how SSO actually reduces risk (fewer credentials) vs. introduces risk (single point of compromise)</li>
+                        <li>Practice configuring a test SSO connection using a free IdP (e.g. Okta developer account or Azure AD trial)</li>
+                        <li>Study federation trust relationships between organizations and common misconfiguration risks</li>
+                        <li>Learn how token-based authentication (JWTs) fits into modern API/app authentication flows</li>
+                        <li>Build a personal comparison chart: SAML vs OAuth2 vs OIDC — use case, actors, and trust model</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SAML 2.0</span>
+                        <span class="tech-badge">OAuth2/OIDC</span>
+                        <span class="tech-badge">Kerberos</span>
+                        <span class="tech-badge">SSO</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Test SSO Configuration</h4>
+                        <p>Configure a working SAML or OIDC SSO connection between a free IdP trial and a test application, and document the trust relationship and assertion flow.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Access Control Models & MFA</h3>
+                    <ul>
+                        <li>Study Role-Based Access Control (RBAC): roles, permissions, and role-to-user assignment</li>
+                        <li>Learn Attribute-Based Access Control (ABAC) and when it's used instead of/alongside RBAC</li>
+                        <li>Study segregation of duties (SoD) and how to design roles that avoid toxic permission combinations</li>
+                        <li>Learn multi-factor authentication (MFA) methods: TOTP, push notification, FIDO2/WebAuthn, SMS (and its weaknesses)</li>
+                        <li>Practice setting up MFA on a test account using an authenticator app and reviewing the enrollment flow</li>
+                        <li>Study conditional access policies: how risk-based signals (location, device) can modify auth requirements</li>
+                        <li>Learn how privileged access differs from standard access and why it needs extra controls</li>
+                        <li>Document a role design for a fictional 4-role organization, mapping permissions and flagging SoD conflicts</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">RBAC/ABAC</span>
+                        <span class="tech-badge">MFA/FIDO2</span>
+                        <span class="tech-badge">Conditional Access</span>
+                        <span class="tech-badge">SoD</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Role Design & SoD Matrix</h4>
+                        <p>Design an RBAC role matrix for a fictional 4-role organization, mapping each role's permissions and identifying 2 segregation-of-duties conflicts to resolve.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You understand the identity lifecycle, can build and manage a directory service lab, configure federation/SSO, and design RBAC roles with proper segregation of duties — the foundational toolkit of an IAM Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate identity fundamentals before moving into governance and operational IAM work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Lab AD Environment</h4>
+                        <p>Build a richer AD lab with 5 OUs, nested groups, 3 GPOs, and a documented org chart mapped to your structure.</p>
+                        <small>Hint: Intentionally create one risky nested-group scenario, then document how you'd detect and fix it.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>SAML vs OIDC Hands-On Comparison</h4>
+                        <p>Configure both a SAML and an OIDC SSO connection to two different test apps, and write a comparison of the setup experience and trust model.</p>
+                        <small>Hint: Okta and Auth0 both offer free developer tiers well suited for this.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>RBAC Role Catalog</h4>
+                        <p>Build a complete role catalog for a fictional 50-person company across 5 departments, with a full SoD conflict matrix.</p>
+                        <small>Hint: Use a spreadsheet with roles as rows and permissions as columns for a clean conflict-detection view.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>IAM Fundamentals Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: One concept per piece (JML, SSO, MFA, RBAC, etc.), beginner-friendly language.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Access Governance, IGA & Privileged Access</h2>
+                <span>Days 31-60: Move from identity mechanics into governance — provisioning, access reviews, IGA tooling, and privileged access management</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Identity Governance (IGA)</span>
+                    <span class="skill-tag">Access Reviews</span>
+                    <span class="skill-tag">Privileged Access (PAM)</span>
+                    <span class="skill-tag">Provisioning/SCIM</span>
+                    <span class="skill-tag">Joiner-Mover-Leaver</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Identity Governance & Administration (IGA)</h3>
+                    <ul>
+                        <li>Study what IGA platforms actually do: centralizing identity governance across many connected systems</li>
+                        <li>Explore a free trial/demo of an IGA tool (SailPoint, Saviynt, or Microsoft Entra ID Governance)</li>
+                        <li>Learn how access certification campaigns work: who reviews what, how often, and why</li>
+                        <li>Study how IGA platforms model entitlements and roles across disparate connected applications</li>
+                        <li>Learn the concept of "toxic combinations" and how IGA tools automatically flag SoD violations</li>
+                        <li>Practice mapping a fictional company's applications to an entitlement catalog structure</li>
+                        <li>Study how IGA reporting feeds directly into compliance audits (tying back to GRC concepts)</li>
+                        <li>Document how an access certification campaign would be scoped for a 100-person org</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SailPoint/Saviynt</span>
+                        <span class="tech-badge">Access Certification</span>
+                        <span class="tech-badge">Entitlement Catalog</span>
+                        <span class="tech-badge">Toxic Combinations</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Access Certification Campaign Design</h4>
+                        <p>Design a full access certification campaign for a fictional 100-person org: scope, reviewer assignment, cadence, and escalation process for non-response.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Provisioning, Deprovisioning & SCIM</h3>
+                    <ul>
+                        <li>Study automated provisioning: how a new hire in HR systems triggers downstream account creation</li>
+                        <li>Learn SCIM (System for Cross-domain Identity Management) as the standard protocol for automated provisioning</li>
+                        <li>Practice tracing a fictional joiner workflow end-to-end: HRIS trigger → IGA → target app account creation</li>
+                        <li>Study why deprovisioning delays are one of the highest-risk gaps in real organizations</li>
+                        <li>Learn how orphaned and dormant accounts get detected (and why they're a recurring audit finding)</li>
+                        <li>Practice building a simple "leaver checklist" covering every system an employee might have access to</li>
+                        <li>Study just-in-time (JIT) provisioning as an alternative to standing access</li>
+                        <li>Document a full JML workflow diagram for a fictional mid-size company</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SCIM</span>
+                        <span class="tech-badge">Automated Provisioning</span>
+                        <span class="tech-badge">Orphaned Accounts</span>
+                        <span class="tech-badge">JIT Access</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: JML Workflow Diagram</h4>
+                        <p>Build a full joiner-mover-leaver workflow diagram for a fictional mid-size company, including every system touched and the deprovisioning SLA for each.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Privileged Access Management (PAM)</h3>
+                    <ul>
+                        <li>Study why privileged accounts (admins, service accounts, break-glass accounts) need separate controls from standard access</li>
+                        <li>Learn PAM core concepts: credential vaulting, session recording, just-in-time privilege elevation</li>
+                        <li>Explore a free trial/demo of a PAM tool (CyberArk, BeyondTrust, or HashiCorp Boundary)</li>
+                        <li>Study how privileged session monitoring and recording supports both security and audit needs</li>
+                        <li>Learn the concept of "zero standing privilege" and how it differs from traditional always-on admin access</li>
+                        <li>Practice designing a privileged access workflow: request, approval, time-boxed elevation, automatic revocation</li>
+                        <li>Study service account management challenges: rotation, ownership, and the common "nobody owns this" problem</li>
+                        <li>Document a PAM policy outline covering vaulting, session recording, and approval workflows</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">PAM</span>
+                        <span class="tech-badge">Credential Vaulting</span>
+                        <span class="tech-badge">Zero Standing Privilege</span>
+                        <span class="tech-badge">Session Recording</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Privileged Access Workflow Design</h4>
+                        <p>Design a complete just-in-time privileged access workflow for a fictional admin role, including request, approval, time-boxed elevation, and automatic revocation steps.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Access Reviews & Audit Support</h3>
+                    <ul>
+                        <li>Learn how periodic access reviews work in practice: pulling reports, distributing to managers, tracking responses</li>
+                        <li>Practice running a mock quarterly access review for a fictional 20-user, 5-system environment</li>
+                        <li>Study how to detect and document excessive/stale access during a review cycle</li>
+                        <li>Learn how IAM audit evidence gets prepared for external auditors (SOC 2, ISO 27001 control testing)</li>
+                        <li>Practice writing an access review summary report with findings and remediation actions</li>
+                        <li>Study how to handle manager non-response during a review (escalation paths, default actions)</li>
+                        <li>Learn how access review metrics (completion rate, revocation rate) get tracked over time</li>
+                        <li>Build a reusable access review tracker template you could apply to a real organization</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Access Reviews</span>
+                        <span class="tech-badge">Audit Evidence</span>
+                        <span class="tech-badge">Stale Access Detection</span>
+                        <span class="tech-badge">Review Metrics</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Mock Access Review Cycle</h4>
+                        <p>Run a complete mock quarterly access review for a fictional 20-user environment, producing a findings summary and a remediation tracker for flagged access.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can design access certification campaigns, map full JML provisioning workflows, build privileged access controls, and run a complete access review cycle — the practical toolkit that fills an IAM Analyst's day-to-day work.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into reporting, communication, and audit-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>End-to-End IGA Program Design</h4>
+                        <p>Design a complete identity governance program for a fictional 200-person company: entitlement catalog, certification cadence, and SoD policy.</p>
+                        <small>Hint: Show how it scales — what's manual at 50 people becomes automated tooling at 200+.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>PAM Policy & Service Account Inventory</h4>
+                        <p>Build a complete PAM policy document plus a service account inventory template with ownership and rotation tracking.</p>
+                        <small>Hint: Service account "ownership" is the field every real organization struggles with — make it mandatory in your template.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Orphaned Account Detection Script</h4>
+                        <p>Write a script (Python/PowerShell) that flags accounts with no recent login activity in a sample dataset.</p>
+                        <small>Hint: Use a CSV of fake user/login data so you can demonstrate the logic without needing real systems access.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>IAM Governance Teaching Content</h4>
+                        <p>Turn your access review and PAM learning into a teaching walkthrough explaining why these processes exist.</p>
+                        <small>Hint: Use one running fictional company example throughout for consistency.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Identity Security, Reporting & Career Readiness</h2>
+                <span>Days 61-90: Identity threat detection, executive reporting, certification prep, and the job-search push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Identity Threat Detection</span>
+                    <span class="skill-tag">IAM Metrics & Reporting</span>
+                    <span class="skill-tag">Cloud IAM Awareness</span>
+                    <span class="skill-tag">Cert Prep</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Identity Threat Detection & Response</h3>
+                    <ul>
+                        <li>Study identity threat detection and response (ITDR) as an emerging IAM-adjacent discipline</li>
+                        <li>Learn common identity attack patterns: credential stuffing, password spraying, MFA fatigue/push bombing</li>
+                        <li>Study impossible travel and anomalous sign-in detection logic used in real identity platforms</li>
+                        <li>Practice reviewing sample sign-in logs (Azure AD/Entra ID sign-in logs format) to spot suspicious patterns</li>
+                        <li>Learn how conditional access policies serve as both prevention and detection-adjacent controls</li>
+                        <li>Study how compromised credential alerts typically get triaged and escalated to a SOC</li>
+                        <li>Practice writing a one-page incident response runbook for a "suspected account compromise" scenario</li>
+                        <li>Document how identity logs would feed into a broader SIEM/SOC workflow</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">ITDR</span>
+                        <span class="tech-badge">Anomalous Sign-In Detection</span>
+                        <span class="tech-badge">Push Bombing/MFA Fatigue</span>
+                        <span class="tech-badge">Conditional Access</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Account Compromise Runbook</h4>
+                        <p>Write a complete incident response runbook for a suspected account compromise, covering detection signals, immediate containment steps, and escalation path.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Cloud IAM & Multi-System Identity Awareness</h3>
+                    <ul>
+                        <li>Study how cloud provider IAM (AWS IAM, Azure RBAC, GCP IAM) relates to and differs from enterprise IAM/IGA</li>
+                        <li>Learn how hybrid identity works: syncing on-prem AD to a cloud directory (Azure AD Connect concept)</li>
+                        <li>Practice tracing how a single user identity flows from HR system → AD → cloud directory → SaaS apps</li>
+                        <li>Study identity federation across SaaS applications and the role of an identity provider as the hub</li>
+                        <li>Learn how API/service-to-service identity (machine identity, workload identity) differs from human identity</li>
+                        <li>Study how non-human identity sprawl (API keys, service accounts) is becoming a major IAM governance gap</li>
+                        <li>Practice mapping a fictional company's full identity ecosystem across on-prem, cloud, and SaaS</li>
+                        <li>Document a "single identity, many systems" diagram showing the full chain for one sample user</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Hybrid Identity</span>
+                        <span class="tech-badge">SaaS Federation</span>
+                        <span class="tech-badge">Machine Identity</span>
+                        <span class="tech-badge">Identity Sprawl</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Full Identity Ecosystem Map</h4>
+                        <p>Build a complete diagram tracing one fictional user's identity from HR system through AD, cloud directory, and 3 SaaS apps, noting the trust relationship at each hop.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: IAM Metrics, Reporting & Stakeholder Communication</h3>
+                    <ul>
+                        <li>Learn how to translate IAM program health into metrics leadership actually cares about</li>
+                        <li>Study key IAM metrics: time-to-provision, time-to-deprovision, % of access reviews completed on time, orphaned account count</li>
+                        <li>Practice building a simple IAM program dashboard summarizing these metrics for a fictional quarter</li>
+                        <li>Learn how to write an executive summary translating a messy access review into a clear "here's our risk posture" statement</li>
+                        <li>Study how IAM program gaps typically get framed as audit findings, and how to write a remediation plan for one</li>
+                        <li>Practice presenting one IAM finding (e.g. deprovisioning delays) in plain, board-ready language</li>
+                        <li>Learn how IAM roadmaps get prioritized: quick wins vs. platform investments vs. process fixes</li>
+                        <li>Compile your 90-day labs into a single portfolio-style master IAM program report</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">IAM Metrics</span>
+                        <span class="tech-badge">Executive Reporting</span>
+                        <span class="tech-badge">Audit Findings</span>
+                        <span class="tech-badge">Program Roadmaps</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Master IAM Program Report</h4>
+                        <p>Compile your strongest artifacts from all 90 days (role matrix, JML workflow, access review, PAM policy) into one polished IAM program report with metrics and an executive summary.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (e.g. CompTIA Security+, SailPoint IdentityNow Engineer, or CIAM-related certs)</li>
+                        <li>Do a full mock IAM program review under time pressure: assess a fictional company's access controls and report within 4 hours</li>
+                        <li>Prepare answers for common IAM interview questions (explain JML, walk through an access review, explain SAML vs OIDC, etc.)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable skills/achievements</li>
+                        <li>Compile your strongest artifacts (role matrix, JML diagram, PAM policy, program report) into one portfolio</li>
+                        <li>Practice a mock technical interview (explain identity federation to a non-technical hiring manager)</li>
+                        <li>Research target companies/industries (finance, healthcare, SaaS) and tailor your resume accordingly</li>
+                        <li>Plan your next 90 days: pick a specialization (IGA platform engineering, PAM, or identity security/ITDR)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">Portfolio Building</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready IAM Portfolio</h4>
+                        <p>Finalize a portfolio folder (role matrix, JML diagram, access review, PAM policy, IAM program report), resume bullets, and a 2-minute mock interview recording.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a working IAM toolkit (identity lifecycle, directory services, federation, access governance, privileged access, identity threat detection, program reporting) plus a portfolio of real artifacts and a job-ready application package — the foundation of a genuinely employable IAM Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end IAM capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Identity Lifecycle Program Design</h4>
+                        <p>Design a complete identity lifecycle program for a fictional company: provisioning, RBAC, access reviews, PAM, and deprovisioning SLAs.</p>
+                        <small>Hint: Show the full lifecycle as one connected diagram — this is your strongest portfolio centerpiece.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>End-to-End IAM Audit Simulation</h4>
+                        <p>Run a complete mock IAM audit: scope, access review testing, PAM control testing, report, and remediation tracker.</p>
+                        <small>Hint: Treat it like a real engagement, including an opening and closing meeting summary.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Identity Threat Detection Playbook</h4>
+                        <p>Build a complete identity threat detection playbook covering 5 attack patterns, detection signals, and response runbooks for each.</p>
+                        <small>Hint: Pair each attack pattern with a real conditional access or alerting control that would catch it.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>IAM Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Identity Lifecycle (JML) Management</div>
+                    <div class="skill-item">Active Directory & Directory Services</div>
+                    <div class="skill-item">SAML/OAuth2/OIDC Federation</div>
+                    <div class="skill-item">RBAC/ABAC & SoD Design</div>
+                    <div class="skill-item">Identity Governance & Access Certification</div>
+                    <div class="skill-item">Privileged Access Management (PAM)</div>
+                    <div class="skill-item">Identity Threat Detection (ITDR)</div>
+                    <div class="skill-item">IAM Metrics & Program Reporting</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>Identity and Access Management: Business Performance Through Connected Intelligence — Ertem Osmanoglu</li>
+                        <li>Solving Identity Management in Modern Applications — Yvonne Wilson & Abhishek Hingnikar</li>
+                        <li>Zero Trust Networks — Gilman & Barth</li>
+                        <li>Privileged Attack Vectors — Morey Haber</li>
+                        <li>Identity Attack Vectors — Morey Haber & Darran Rolls</li>
+                        <li>The Identity Management Handbook — Graham Williamson et al.</li>
+                        <li>Mastering Identity and Access Management with Microsoft Azure — Jochen Nickel</li>
+                        <li>OAuth 2 in Action — Justin Richer & Antonio Sanso</li>
+                        <li>CISSP All-in-One Exam Guide (IAM domain chapters) — Shon Harris</li>
+                        <li>Active Directory: Designing, Deploying, and Running Active Directory — Brian Desmond et al.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>Microsoft Learn (Entra ID / Identity learning paths)</li>
+                        <li>SailPoint Identity University (free tier resources)</li>
+                        <li>Okta Developer documentation and free trial labs</li>
+                        <li>CyberArk Skill Center / training resources</li>
+                        <li>TryHackMe (Active Directory and identity-focused rooms)</li>
+                        <li>HackTheBox Academy (AD enumeration & attack modules, for defensive context)</li>
+                        <li>Pluralsight / A Cloud Guru identity management courses</li>
+                        <li>IDPro Body of Knowledge (free, community-maintained IAM reference)</li>
+                        <li>Gartner IAM research summaries (publicly available excerpts)</li>
+                        <li>YouTube: John Hammond (AD labs), Identity at the Center podcast</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>CompTIA Security+ (foundational, if not already held)</li>
+                        <li>Certified Identity and Access Manager (CIAM)</li>
+                        <li>SailPoint Certified IdentityNow Engineer</li>
+                        <li>Okta Certified Professional</li>
+                        <li>Microsoft Certified: Identity and Access Administrator Associate</li>
+                        <li>CyberArk Defender / Sentry (PAM-focused)</li>
+                        <li>CISSP (longer-term, broader security management goal)</li>
+                        <li>ISC2 CGRC (Certified in Governance, Risk and Compliance)</li>
+                        <li>(ISC)² SSCP (Systems Security Certified Practitioner)</li>
+                        <li>IDPro CIDPRO (Certified Identity Professional)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>IDPro community and Body of Knowledge contributors</li>
+                        <li>r/cybersecurity and r/activedirectory on Reddit</li>
+                        <li>Identity at the Center podcast community</li>
+                        <li>Okta and SailPoint user communities/forums</li>
+                        <li>Microsoft Tech Community (Entra ID forums)</li>
+                        <li>CyberArk Marketplace community</li>
+                        <li>ISC2 community forums</li>
+                        <li>LinkedIn IAM/Identity Management groups</li>
+                        <li>Twitter/X identity security community (#IAM, #ZeroTrust)</li>
+                        <li>Local ISSA/ISACA chapter meetups (IAM-focused talks)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Directory & Federation Tools</h3>
+                    <ul>
+                        <li>Active Directory / Windows Server (lab environment)</li>
+                        <li>Azure AD / Microsoft Entra ID</li>
+                        <li>Okta</li>
+                        <li>Auth0</li>
+                        <li>PingFederate / PingOne</li>
+                        <li>Google Workspace Identity</li>
+                        <li>FreeIPA (open-source LDAP/Kerberos alternative for labs)</li>
+                        <li>SAML-tracer / JWT.io (debugging auth flows)</li>
+                        <li>OpenLDAP</li>
+                        <li>Keycloak (open-source IAM/SSO platform)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>IGA & PAM Tools</h3>
+                    <ul>
+                        <li>SailPoint IdentityNow / IdentityIQ</li>
+                        <li>Saviynt</li>
+                        <li>Microsoft Entra ID Governance</li>
+                        <li>CyberArk</li>
+                        <li>BeyondTrust</li>
+                        <li>HashiCorp Boundary / Vault</li>
+                        <li>One Identity Manager</li>
+                        <li>Delinea (formerly Thycotic) Secret Server</li>
+                        <li>AWS IAM Access Analyzer</li>
+                        <li>Teleport (open-source access proxy/PAM-adjacent tool)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Reporting & Reference Tools</h3>
+                    <ul>
+                        <li>Microsoft Excel / Google Sheets (role matrices, trackers)</li>
+                        <li>Lucidchart / Visio (identity flow diagrams)</li>
+                        <li>Power BI / Tableau (IAM metrics dashboards)</li>
+                        <li>Confluence (policy & documentation management)</li>
+                        <li>Jira / ServiceNow (access request and review tracking)</li>
+                        <li>BloodHound (AD attack-path visualization, for defensive awareness)</li>
+                        <li>PowerShell (AD scripting and reporting)</li>
+                        <li>Python (automation scripting for IAM data analysis)</li>
+                        <li>Splunk / Microsoft Sentinel (sign-in log analysis)</li>
+                        <li>Draw.io (free diagramming for identity flow mapping)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Build a personal IAM terminology glossary</li>
+                        <li>Set up a small lab AD environment with a few users and OUs</li>
+                        <li>Configure MFA on a test account using an authenticator app</li>
+                        <li>Write a basic role-permission matrix for 3 roles</li>
+                        <li>Draw a simple JML workflow diagram</li>
+                        <li>Compare SAML, OAuth2, and OIDC in a one-page chart</li>
+                        <li>Document 5 common AD security misconfigurations</li>
+                        <li>Practice writing a leaver/deprovisioning checklist</li>
+                        <li>Review a sample sign-in log and flag one suspicious entry</li>
+                        <li>Build a simple GPO enforcing a password policy in your lab</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a full RBAC role catalog with SoD conflict detection</li>
+                        <li>Configure a working SSO connection with a free IdP trial</li>
+                        <li>Design a full access certification campaign for a fictional org</li>
+                        <li>Build a JML automation workflow diagram using SCIM concepts</li>
+                        <li>Design a privileged access request/approval/revocation workflow</li>
+                        <li>Run a mock quarterly access review with a findings report</li>
+                        <li>Write an incident response runbook for account compromise</li>
+                        <li>Build an IAM program metrics dashboard (mock data)</li>
+                        <li>Map a fictional company's full identity ecosystem (on-prem to SaaS)</li>
+                        <li>Build a service account inventory with ownership tracking</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Design a full IGA program with entitlement catalog and certification cadence</li>
+                        <li>Build a complete PAM policy with vaulting, session recording, and JIT elevation</li>
+                        <li>Architect a hybrid identity solution (on-prem AD to cloud directory sync)</li>
+                        <li>Build an orphaned/stale account detection script against sample data</li>
+                        <li>Design an identity threat detection playbook covering 5 attack patterns</li>
+                        <li>Build a multi-framework IAM control mapping (NIST/ISO/SOC 2)</li>
+                        <li>Design a zero standing privilege model for a fictional admin team</li>
+                        <li>Build a full BloodHound-informed AD hardening recommendation report</li>
+                        <li>Design a non-human identity governance program (API keys, service accounts)</li>
+                        <li>Mentor a junior learner through your own 90-day roadmap</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Contribute a template or finding to an open-source IAM tool/project</li>
+                        <li>Design a full IAM maturity model for a hypothetical organization</li>
+                        <li>Build an automated access review workflow concept using IGA APIs</li>
+                        <li>Research and publish original IAM program design guidance</li>
+                        <li>Speak at a local ISSA/ISACA chapter or identity-focused meetup</li>
+                        <li>Build a security champions program for IT/HR teams around identity hygiene</li>
+                        <li>Architect a full zero-trust identity fabric for a multinational company</li>
+                        <li>Design a board-level identity risk reporting package from scratch</li>
+                        <li>Build a non-human identity (machine/service account) lifecycle program</li>
+                        <li>Lead a mock identity breach tabletop exercise for a team</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your IAM career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize</h3>
+                    <ul>
+                        <li>Pick one lane: identity governance (IGA), privileged access (PAM), or identity security/ITDR</li>
+                        <li>Go deep on one IGA platform (SailPoint, Saviynt, or Entra ID Governance) as a specialization</li>
+                        <li>Consider PAM engineering (CyberArk/BeyondTrust) as a technical-adjacent niche</li>
+                        <li>Explore identity architecture as a longer-term path</li>
+                        <li>Look into non-human/machine identity governance as an emerging growth area</li>
+                        <li>Consider customer IAM (CIAM) as a different specialization track</li>
+                        <li>Specialize in one industry vertical (healthcare, finance, SaaS) for IAM compliance depth</li>
+                        <li>Pursue an advanced cert aligned to your chosen lane</li>
+                        <li>Join a specialized community for that niche</li>
+                        <li>Set a 6-month deep-specialization goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to entry-level IAM Analyst / Identity Analyst roles weekly</li>
+                        <li>Tailor your resume per job description using your portfolio artifacts</li>
+                        <li>Attend local ISSA/ISACA meetups and introduce yourself</li>
+                        <li>Reach out to IAM professionals on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your portfolio folder updated with new artifacts</li>
+                        <li>Practice mock interviews monthly to stay sharp</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider contract/temp IAM support gigs to build experience</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly identity security advisories and breach roundups</li>
+                        <li>Re-test old AD labs and access review templates with new knowledge quarterly</li>
+                        <li>Write a monthly post about something you learned in IAM</li>
+                        <li>Build a second, more advanced portfolio project every 90 days</li>
+                        <li>Track major IAM platform updates and new ITDR capabilities</li>
+                        <li>Mentor beginners — teaching reinforces your own mastery</li>
+                        <li>Read one new IAM/identity security book per month</li>
+                        <li>Attend at least one virtual conference or webinar per month</li>
+                        <li>Get hands-on with a new IGA/PAM platform trial periodically</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a beginner-friendly IAM series for your audience</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your templates (role matrix, JML diagram) for others to use</li>
+                        <li>Host a free workshop/webinar on one IAM topic</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another learner for accountability</li>
+                        <li>Contribute feedback or templates to a community resource hub</li>
+                        <li>Review and give feedback on a peer's role matrix or access review</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Built a working AD lab and configured SAML/OIDC federation | ✅ Designed an RBAC role matrix with SoD conflict resolution | ✅ Run a full access certification campaign and quarterly access review</p>
+                <p>✅ Designed a privileged access workflow with JIT elevation | ✅ Written an identity threat detection and incident response playbook | ✅ Produced a portfolio-ready IAM program report with executive metrics</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Active Directory, Azure AD/Entra ID, SAML/OAuth2/OIDC, Okta/Auth0, SailPoint/Saviynt, CyberArk/BeyondTrust, SCIM, RBAC/ABAC, PowerShell, BloodHound.</p>
+                <br>
+                <p><strong>Remember:</strong> IAM is the discipline of answering one question precisely, for every identity, at every moment: "should this access still exist?" Every role, review, and workflow you build exists to keep that answer current. Stay precise, document everything, and never let access outlive its reason for existing.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

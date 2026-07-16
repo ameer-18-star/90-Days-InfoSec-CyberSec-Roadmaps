@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Application Security Analyst" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Application Security Analyst" Mastery</h1>
+            <p>An intermediate-track plan for learners who already know basic networking, Linux, and one programming language — and are ready to specialize in finding, exploiting, and fixing vulnerabilities inside real applications.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: AppSec Fundamentals & Manual Testing</h2>
+                <span>Days 1-30: Secure SDLC, OWASP Top 10, manual exploitation, and your first vulnerable-app lab</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">OWASP Top 10</span>
+                    <span class="skill-tag">Burp Suite</span>
+                    <span class="skill-tag">HTTP/HTTPS Internals</span>
+                    <span class="skill-tag">Secure SDLC</span>
+                    <span class="skill-tag">Manual Exploitation</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Web & HTTP Internals Refresher</h3>
+                    <ul>
+                        <li>Map the full HTTP request/response lifecycle: methods, headers, status codes, cookies, sessions</li>
+                        <li>Study TLS handshake basics and why HTTPS misconfigurations matter for AppSec</li>
+                        <li>Install and configure Burp Suite Community: proxy, repeater, intruder, decoder</li>
+                        <li>Set up FoxyProxy + Burp CA cert to intercept your own browser traffic</li>
+                        <li>Walk through DVWA (Damn Vulnerable Web App) setup in Docker</li>
+                        <li>Review same-origin policy, CORS, and cookie attributes (HttpOnly, Secure, SameSite)</li>
+                        <li>Read the OWASP Top 10 (2021) list end-to-end once, just for orientation</li>
+                        <li>Document 10 HTTP headers and their security relevance in your own notes</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Burp Suite</span>
+                        <span class="tech-badge">DVWA</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">OWASP</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: HTTP Traffic Map</h4>
+                        <p>Intercept and document 15 different requests from a real site (with permission/on your own test app) in Burp, annotating each header and why it exists.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Injection Vulnerabilities</h3>
+                    <ul>
+                        <li>Deep dive SQL injection: in-band, blind (boolean & time-based), and out-of-band</li>
+                        <li>Practice manual SQLi on DVWA and PortSwigger Web Security Academy labs</li>
+                        <li>Learn parameterized queries / prepared statements as the core fix</li>
+                        <li>Study command injection and how OS-level shell calls get abused</li>
+                        <li>Explore NoSQL injection differences (MongoDB operator injection)</li>
+                        <li>Practice with sqlmap but focus on understanding what it automates, not just running it</li>
+                        <li>Learn how WAFs detect/block injection and common bypass techniques (for understanding, not evasion abuse)</li>
+                        <li>Write remediation notes: input validation vs. output encoding vs. parameterization</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SQLi</span>
+                        <span class="tech-badge">sqlmap</span>
+                        <span class="tech-badge">PortSwigger Academy</span>
+                        <span class="tech-badge">NoSQL</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Injection Lab Writeup</h4>
+                        <p>Complete 8 PortSwigger SQLi labs and write a one-page report per lab: vulnerability, exploitation steps, root cause, and fix.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: XSS, CSRF & Client-Side Attacks</h3>
+                    <ul>
+                        <li>Master reflected, stored, and DOM-based XSS with hands-on labs</li>
+                        <li>Learn Content Security Policy (CSP) as a primary XSS mitigation</li>
+                        <li>Study CSRF mechanics, anti-CSRF tokens, and SameSite cookie defenses</li>
+                        <li>Explore clickjacking and frame-busting / X-Frame-Options / CSP frame-ancestors</li>
+                        <li>Learn open redirect vulnerabilities and real-world phishing chains using them</li>
+                        <li>Practice bypassing weak input filters/sanitizers in controlled labs</li>
+                        <li>Study postMessage vulnerabilities and insecure cross-origin communication</li>
+                        <li>Build a personal cheat sheet of XSS payload patterns and corresponding fixes</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">XSS</span>
+                        <span class="tech-badge">CSRF</span>
+                        <span class="tech-badge">CSP</span>
+                        <span class="tech-badge">Clickjacking</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Client-Side Attack Chain</h4>
+                        <p>Build a small vulnerable Flask/Node app with stored XSS + CSRF, exploit it yourself, then patch both flaws and document the before/after code.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Auth, Session & Access Control Flaws</h3>
+                    <ul>
+                        <li>Study broken authentication patterns: weak password policy, credential stuffing exposure</li>
+                        <li>Practice session fixation and session hijacking scenarios in a lab</li>
+                        <li>Deep dive IDOR (Insecure Direct Object Reference) and horizontal/vertical privilege escalation</li>
+                        <li>Learn JWT structure, signature verification flaws, and "alg:none" style attacks</li>
+                        <li>Study OAuth2/OIDC flow basics and common misconfigurations</li>
+                        <li>Practice multi-step access-control testing methodology (map roles, test boundaries)</li>
+                        <li>Learn rate limiting and brute-force protection mechanisms</li>
+                        <li>Complete OWASP Top 10 categories A01 (Broken Access Control) and A07 (Auth Failures) labs</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">JWT</span>
+                        <span class="tech-badge">IDOR</span>
+                        <span class="tech-badge">OAuth2</span>
+                        <span class="tech-badge">Session Mgmt</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Access Control Audit</h4>
+                        <p>On a lab app with 3 user roles, manually map every endpoint's intended permissions, then test and document every boundary that can be bypassed.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can manually identify, exploit, and explain the root cause of 6 of the OWASP Top 10 categories on a live vulnerable application — and write a clear, client-ready vulnerability report for each.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate manual testing skills before moving into tooling and automation.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Vulnerable App Pentest Report</h4>
+                        <p>Fully test OWASP Juice Shop manually and produce a professional pentest report covering 10+ findings.</p>
+                        <small>Hint: Use a standard report template (executive summary, findings table, CVSS-style severity, remediation).</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>JWT Auth Bypass Lab</h4>
+                        <p>Build a small API with intentionally weak JWT validation, then break it 3 different ways.</p>
+                        <small>Hint: Try alg confusion, weak secret brute-forcing, and missing expiry checks.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Burp Macro & Session Handling</h4>
+                        <p>Configure Burp macros and session handling rules to automate authenticated scanning of a multi-step login app.</p>
+                        <small>Hint: Use Project Options > Sessions in Burp to handle CSRF tokens automatically.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>OWASP Top 10 Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: One vulnerability per piece, attacker view + defender fix, beginner-friendly language.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Secure Code Review, SAST/DAST & API Security</h2>
+                <span>Days 31-60: Move from manual hacking into tool-assisted analysis, secure coding, and API/cloud-aware AppSec</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">SAST/DAST</span>
+                    <span class="skill-tag">Secure Code Review</span>
+                    <span class="skill-tag">API Security</span>
+                    <span class="skill-tag">Threat Modeling</span>
+                    <span class="skill-tag">SSRF/Deserialization</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: SAST Tooling & Secure Code Review</h3>
+                    <ul>
+                        <li>Learn the difference between SAST, DAST, IAST, and SCA conceptually</li>
+                        <li>Set up Semgrep and write custom rules to catch insecure patterns in code</li>
+                        <li>Practice manual secure code review on intentionally vulnerable repos (e.g. OWASP NodeGoat, WebGoat)</li>
+                        <li>Study common insecure coding patterns: hardcoded secrets, insecure deserialization, eval() misuse</li>
+                        <li>Run SonarQube Community locally and triage findings (true positive vs false positive)</li>
+                        <li>Learn dependency scanning with OWASP Dependency-Check / npm audit / pip-audit</li>
+                        <li>Study CWE classification and how it maps to OWASP Top 10</li>
+                        <li>Practice writing a finding with CWE ID, CVSS score, and remediation snippet</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Semgrep</span>
+                        <span class="tech-badge">SonarQube</span>
+                        <span class="tech-badge">CWE/CVSS</span>
+                        <span class="tech-badge">SCA</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Code Review Report</h4>
+                        <p>Run Semgrep + SonarQube on OWASP NodeGoat, triage all results, and produce a findings report with CWE/CVSS tagging for the top 10 real issues.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: DAST & Automated Scanning</h3>
+                    <ul>
+                        <li>Set up OWASP ZAP and run full active + passive scans against a lab target</li>
+                        <li>Configure Burp Suite's scanner (or ZAP automation framework) for authenticated scans</li>
+                        <li>Learn how to reduce false positives through scan context and scope tuning</li>
+                        <li>Study SSRF (Server-Side Request Forgery): internal network pivoting, cloud metadata abuse</li>
+                        <li>Practice SSRF labs against cloud metadata endpoints (169.254.169.254) in a safe lab</li>
+                        <li>Learn insecure deserialization in at least one language (Java/PHP/Python pickle)</li>
+                        <li>Study XXE (XML External Entity) injection and file disclosure via XML parsers</li>
+                        <li>Integrate a DAST scan into a simple CI pipeline (GitHub Actions) for hands-on DevSecOps exposure</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">OWASP ZAP</span>
+                        <span class="tech-badge">SSRF</span>
+                        <span class="tech-badge">XXE</span>
+                        <span class="tech-badge">GitHub Actions</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: CI-Integrated DAST Pipeline</h4>
+                        <p>Wire an OWASP ZAP baseline scan into a GitHub Actions workflow that runs on every push to a sample vulnerable repo.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: API Security Deep Dive</h3>
+                    <ul>
+                        <li>Study OWASP API Security Top 10 and how it differs from the web Top 10</li>
+                        <li>Practice testing REST APIs for BOLA (Broken Object Level Authorization)</li>
+                        <li>Learn GraphQL-specific risks: introspection abuse, batching attacks, nested query DoS</li>
+                        <li>Set up Postman/Insomnia for structured API testing workflows</li>
+                        <li>Practice mass assignment vulnerabilities and excessive data exposure scenarios</li>
+                        <li>Study API rate limiting, throttling, and resource exhaustion testing</li>
+                        <li>Learn API gateway security concepts (auth at the edge, schema validation)</li>
+                        <li>Complete crAPI (Completely Ridiculous API) vulnerable lab end-to-end</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">OWASP API Top 10</span>
+                        <span class="tech-badge">crAPI</span>
+                        <span class="tech-badge">GraphQL</span>
+                        <span class="tech-badge">Postman</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: API Pentest on crAPI</h4>
+                        <p>Fully test crAPI for BOLA, mass assignment, and excessive data exposure; document each with a Postman collection reproducing the exploit.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Threat Modeling & Secure Design</h3>
+                    <ul>
+                        <li>Learn STRIDE threat modeling methodology with worked examples</li>
+                        <li>Practice building a data-flow diagram (DFD) for a sample application architecture</li>
+                        <li>Study secure SDLC integration points: design review, code review, security testing, release gates</li>
+                        <li>Learn how to write security requirements/abuse-case stories for a sprint</li>
+                        <li>Study common cryptographic misuse: weak hashing (MD5/SHA1 for passwords), ECB mode, hardcoded keys</li>
+                        <li>Practice reviewing a real architecture diagram and identifying trust boundaries</li>
+                        <li>Learn basics of secrets management (Vault, AWS Secrets Manager) vs hardcoded secrets</li>
+                        <li>Write a one-page threat model for a project of your choice (e.g. your own portfolio site or VaultKeeper)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">STRIDE</span>
+                        <span class="tech-badge">DFD</span>
+                        <span class="tech-badge">Secure SDLC</span>
+                        <span class="tech-badge">Crypto Misuse</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Threat Model Document</h4>
+                        <p>Produce a full STRIDE-based threat model with DFD for one of your own projects, listing top 5 threats and mitigations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can run and triage SAST/DAST tooling, test APIs against the OWASP API Top 10, and produce a professional threat model — the core toolkit of a working AppSec analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into cloud/container and reporting-focused AppSec work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>DevSecOps Pipeline</h4>
+                        <p>Build a CI/CD pipeline combining SAST (Semgrep), SCA (Dependency-Check), and DAST (ZAP) with pass/fail gates.</p>
+                        <small>Hint: Fail the build if critical-severity findings appear; document the gate logic.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>API Security Test Suite</h4>
+                        <p>Write an automated Postman/Newman test suite that checks for BOLA and mass assignment on a sample API.</p>
+                        <small>Hint: Parameterize user roles/tokens to test horizontal and vertical access in one run.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Secrets Leak Scanner</h4>
+                        <p>Build a script using gitleaks or trufflehog to scan repos for hardcoded secrets, with a custom report formatter.</p>
+                        <small>Hint: Test it against your own old commits first — it's surprisingly common.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Threat Modeling Workshop Content</h4>
+                        <p>Turn your STRIDE learning into a teaching workshop/carousel explaining threat modeling to junior devs.</p>
+                        <small>Hint: Use one relatable app example (e.g. a login system) throughout for consistency.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Cloud/Container AppSec, Reporting & Career Readiness</h2>
+                <span>Days 61-90: Cloud-native security, professional reporting, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Container Security</span>
+                    <span class="skill-tag">Cloud Misconfig</span>
+                    <span class="skill-tag">Pentest Reporting</span>
+                    <span class="skill-tag">CI/CD Security</span>
+                    <span class="skill-tag">Interview Prep</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Container & Docker Security</h3>
+                    <ul>
+                        <li>Study Docker architecture risks: privileged containers, exposed daemon socket, image layers</li>
+                        <li>Practice scanning images with Trivy and Grype for known CVEs</li>
+                        <li>Learn Dockerfile security best practices (non-root users, minimal base images, multi-stage builds)</li>
+                        <li>Study container escape concepts at a high level (for defensive awareness)</li>
+                        <li>Practice hardening a sample Dockerfile and re-scanning to confirm reduced findings</li>
+                        <li>Learn Kubernetes security basics: RBAC, network policies, pod security standards</li>
+                        <li>Study supply chain security: SBOM generation with Syft, image signing concepts</li>
+                        <li>Integrate Trivy into your earlier CI/CD pipeline as a container security gate</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Trivy</span>
+                        <span class="tech-badge">Docker Hardening</span>
+                        <span class="tech-badge">Kubernetes RBAC</span>
+                        <span class="tech-badge">SBOM</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Hardened Container Pipeline</h4>
+                        <p>Take a deliberately insecure Dockerfile, scan it, fix every finding, and add Trivy as a CI gate that blocks high/critical CVEs.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Cloud Security Fundamentals (AWS-Focused)</h3>
+                    <ul>
+                        <li>Study the AWS shared responsibility model and where AppSec fits in</li>
+                        <li>Learn common S3 misconfigurations: public buckets, missing encryption, weak bucket policies</li>
+                        <li>Practice using ScoutSuite or Prowler against a free-tier AWS lab account</li>
+                        <li>Study IAM misconfiguration patterns: overly broad policies, privilege escalation paths</li>
+                        <li>Learn cloud metadata service abuse (tying back to SSRF from Week 6)</li>
+                        <li>Study Infrastructure-as-Code security: scanning Terraform with Checkov or tfsec</li>
+                        <li>Practice fixing a deliberately vulnerable Terraform config and re-scanning</li>
+                        <li>Document a personal cloud security misconfiguration checklist</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">AWS IAM</span>
+                        <span class="tech-badge">Prowler</span>
+                        <span class="tech-badge">Checkov</span>
+                        <span class="tech-badge">Terraform</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Cloud Misconfig Audit</h4>
+                        <p>Run Prowler against a free-tier AWS account, triage the top 10 findings, and write fixes including corrected IAM policy JSON.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Professional Reporting & Communication</h3>
+                    <ul>
+                        <li>Study how real pentest/AppSec reports are structured: exec summary, scope, methodology, findings, appendix</li>
+                        <li>Practice writing findings with clear business impact, not just technical detail</li>
+                        <li>Learn CVSS v3.1 scoring in depth — calculate scores manually for past findings</li>
+                        <li>Practice presenting a finding to a "non-technical stakeholder" in plain language (record yourself if possible)</li>
+                        <li>Study how to track remediation: ticketing, re-test cycles, risk acceptance documentation</li>
+                        <li>Learn the basics of compliance frameworks relevant to AppSec (PCI-DSS, SOC 2 touchpoints)</li>
+                        <li>Compile your 90-day labs into a single portfolio-style master report</li>
+                        <li>Get feedback on your report from a peer or community (Discord/LinkedIn group)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">CVSS v3.1</span>
+                        <span class="tech-badge">Report Writing</span>
+                        <span class="tech-badge">PCI-DSS</span>
+                        <span class="tech-badge">Stakeholder Comms</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Master Portfolio Report</h4>
+                        <p>Compile your strongest 5 findings across all 90 days into one polished, CVSS-scored report suitable for sharing with recruiters.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (e.g. eWPT, CAP, or relevant CompTIA/Security+ AppSec objectives)</li>
+                        <li>Do a full mock pentest under time pressure (pick any retired HTB/PortSwigger lab) and report within 4 hours</li>
+                        <li>Prepare answers for common AppSec interview questions (explain XSS to a junior dev, walk through a code review, etc.)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable skills/achievements</li>
+                        <li>Polish your GitHub: pin your best 3 projects (pipeline, threat model, master report) with clean READMEs</li>
+                        <li>Practice a mock technical interview (explain a vulnerability chain end-to-end out loud)</li>
+                        <li>Research target companies/roles and tailor your resume + LinkedIn headline accordingly</li>
+                        <li>Plan your next 90 days: pick a specialization (cloud security, red teaming, or secure code review lead)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">GitHub Portfolio</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Portfolio Package</h4>
+                        <p>Finalize a GitHub portfolio, resume bullets, and one polished pentest report — your complete application package for AppSec Analyst roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a working AppSec toolkit (manual testing, SAST/DAST, API security, threat modeling, container/cloud security) plus a portfolio of real reports and a job-ready application package — the foundation of a genuinely employable Application Security Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end AppSec capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full DevSecOps Pipeline</h4>
+                        <p>Combine SAST, SCA, DAST, container scanning, and IaC scanning into one CI/CD pipeline with severity gates.</p>
+                        <small>Hint: Document the architecture diagram — this is a strong portfolio centerpiece.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>End-to-End Pentest Engagement</h4>
+                        <p>Pick a single vulnerable app and run a complete mock engagement: scoping doc, testing, report, re-test.</p>
+                        <small>Hint: Treat it like a real client engagement, including a kickoff and closing summary.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cloud Security Baseline Tool</h4>
+                        <p>Write a script that wraps Prowler/Checkov output into a single readable HTML risk dashboard.</p>
+                        <small>Hint: Group by severity and map each finding to a CWE/CIS benchmark control.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>AppSec Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">OWASP Top 10 (Web & API)</div>
+                    <div class="skill-item">Burp Suite & OWASP ZAP</div>
+                    <div class="skill-item">Manual Web Exploitation</div>
+                    <div class="skill-item">SAST/DAST/SCA Tooling</div>
+                    <div class="skill-item">Secure Code Review</div>
+                    <div class="skill-item">Threat Modeling (STRIDE)</div>
+                    <div class="skill-item">Container & Cloud Security</div>
+                    <div class="skill-item">Pentest Reporting & CVSS</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>The Web Application Hacker's Handbook — Stuttard & Pinto</li>
+                        <li>The Tangled Web — Michal Zalewski</li>
+                        <li>Real-World Bug Hunting — Peter Yaworski</li>
+                        <li>Threat Modeling: Designing for Security — Adam Shostack</li>
+                        <li>Alice and Bob Learn Application Security — Tanya Janca</li>
+                        <li>Securing DevOps — Julien Vehent</li>
+                        <li>Hacking APIs — Corey Ball</li>
+                        <li>The Art of Software Security Assessment — Dowd, McDonald, Schuh</li>
+                        <li>Container Security — Liz Rice</li>
+                        <li>AWS Security — Dylan Shields</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>PortSwigger Web Security Academy</li>
+                        <li>OWASP Juice Shop & WebGoat</li>
+                        <li>TryHackMe (AppSec & Web Hacking paths)</li>
+                        <li>HackTheBox Academy</li>
+                        <li>crAPI (OWASP API security lab)</li>
+                        <li>PentesterLab</li>
+                        <li>Secure Code Warrior</li>
+                        <li>AWS Skill Builder (Security path)</li>
+                        <li>KodeKloud (Kubernetes/Docker security)</li>
+                        <li>YouTube: LiveOverflow, John Hammond, Tib3rius</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>eWPT / eWPTX (INE) — Web Pentesting</li>
+                        <li>OSWA (Offensive Security Web Assessor)</li>
+                        <li>CAP (Certified Application Security Practitioner)</li>
+                        <li>GWEB (GIAC Web Application Defender)</li>
+                        <li>AWS Certified Security – Specialty</li>
+                        <li>Certified Kubernetes Security Specialist (CKS)</li>
+                        <li>CompTIA Security+ (foundational, if not already held)</li>
+                        <li>CSSLP (Certified Secure Software Lifecycle Professional)</li>
+                        <li>EC-Council CEH (broader pentesting context)</li>
+                        <li>HackTheBox CBBH (Bug Bounty Hunter)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>OWASP local chapter meetups (online/in-person)</li>
+                        <li>r/AppSec and r/netsec on Reddit</li>
+                        <li>PortSwigger Web Security Academy forum</li>
+                        <li>InfoSec Discord servers (TCM Security, TryHackMe)</li>
+                        <li>Bug bounty platforms: HackerOne & Bugcrowd Discord/forums</li>
+                        <li>LinkedIn AppSec community groups</li>
+                        <li>Twitter/X AppSec community (#AppSec, #bugbounty)</li>
+                        <li>DEF CON / BSides talk archives on YouTube</li>
+                        <li>Stack Exchange Information Security</li>
+                        <li>CTFtime.org for ongoing CTF practice</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Manual Testing Tools</h3>
+                    <ul>
+                        <li>Burp Suite Community/Pro</li>
+                        <li>OWASP ZAP</li>
+                        <li>Postman / Insomnia</li>
+                        <li>Browser DevTools (Network/Application tabs)</li>
+                        <li>FoxyProxy</li>
+                        <li>JWT.io / jwt_tool</li>
+                        <li>CyberChef (encoding/decoding)</li>
+                        <li>curl / HTTPie</li>
+                        <li>sqlmap</li>
+                        <li>Wfuzz / ffuf</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>SAST / DAST / SCA</h3>
+                    <ul>
+                        <li>Semgrep</li>
+                        <li>SonarQube Community</li>
+                        <li>OWASP Dependency-Check</li>
+                        <li>npm audit / pip-audit</li>
+                        <li>Snyk (free tier)</li>
+                        <li>Bandit (Python SAST)</li>
+                        <li>ESLint security plugins</li>
+                        <li>gitleaks / trufflehog</li>
+                        <li>OWASP ZAP Automation Framework</li>
+                        <li>Nikto</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Cloud & Container Tools</h3>
+                    <ul>
+                        <li>Trivy</li>
+                        <li>Grype</li>
+                        <li>Prowler</li>
+                        <li>ScoutSuite</li>
+                        <li>Checkov</li>
+                        <li>tfsec</li>
+                        <li>Syft (SBOM generation)</li>
+                        <li>kube-bench</li>
+                        <li>Docker Bench for Security</li>
+                        <li>AWS CLI + IAM Policy Simulator</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Build and break a simple login form (XSS + SQLi)</li>
+                        <li>Set up a personal Burp Suite lab environment</li>
+                        <li>Write CSP headers for a sample static site</li>
+                        <li>Document the OWASP Top 10 in your own words</li>
+                        <li>Complete 10 PortSwigger Academy labs</li>
+                        <li>Scan a personal repo with gitleaks</li>
+                        <li>Configure secure cookie attributes on a test app</li>
+                        <li>Write a basic input validation function and test it</li>
+                        <li>Map a simple app's attack surface manually</li>
+                        <li>Practice CVSS scoring on 5 known CVEs</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a vulnerable REST API and secure it step by step</li>
+                        <li>Integrate Semgrep + ZAP into a CI pipeline</li>
+                        <li>Perform a full IDOR/BOLA test on crAPI</li>
+                        <li>Write a STRIDE threat model for a real project</li>
+                        <li>Harden a Dockerfile and verify with Trivy</li>
+                        <li>Build a JWT validation bypass lab</li>
+                        <li>Audit a sample AWS account with Prowler</li>
+                        <li>Write a full pentest report for Juice Shop</li>
+                        <li>Automate API security tests with Newman/Postman</li>
+                        <li>Build a Terraform misconfig-and-fix lab with Checkov</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a full DevSecOps pipeline (SAST+DAST+SCA+container)</li>
+                        <li>Chain SSRF into cloud metadata credential theft (lab only)</li>
+                        <li>Write custom Semgrep rules for a specific framework</li>
+                        <li>Build a Kubernetes security baseline with RBAC + network policies</li>
+                        <li>Design and document a secure SDLC process for a mock team</li>
+                        <li>Build an internal vulnerability tracking/triage dashboard</li>
+                        <li>Run a full red-team-style engagement on a deliberately vulnerable stack</li>
+                        <li>Build a GraphQL security test harness</li>
+                        <li>Create an SBOM-based supply chain risk report</li>
+                        <li>Mentor a junior learner through your own 90-day roadmap</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Contribute a fix or finding to an open-source security tool</li>
+                        <li>Submit a valid finding to a public bug bounty program</li>
+                        <li>Build a custom SAST rule pack for an organization's tech stack</li>
+                        <li>Design a full AppSec maturity model for a hypothetical company</li>
+                        <li>Build an automated threat-modeling-as-code workflow</li>
+                        <li>Research and responsibly disclose a real-world vulnerability</li>
+                        <li>Speak at a local OWASP chapter or community meetup</li>
+                        <li>Build a security champions program framework for dev teams</li>
+                        <li>Architect a zero-trust API gateway security model</li>
+                        <li>Publish original AppSec research or a technical whitepaper</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your AppSec career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize</h3>
+                    <ul>
+                        <li>Pick one lane: cloud security, secure code review, or red teaming</li>
+                        <li>Go deep on one cloud provider (AWS/Azure/GCP) security certification</li>
+                        <li>Specialize in one tech stack (e.g. Java/Spring AppSec, or Node.js AppSec)</li>
+                        <li>Consider a mobile AppSec track (Android/iOS) as a growth area</li>
+                        <li>Explore DevSecOps engineering as a hybrid role</li>
+                        <li>Look into security architecture as a longer-term path</li>
+                        <li>Consider bug bounty hunting as a parallel income/skill track</li>
+                        <li>Pursue an advanced cert aligned to your chosen lane</li>
+                        <li>Join a specialized community for that niche</li>
+                        <li>Set a 6-month deep-specialization goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to entry-level AppSec Analyst / Junior Pentester roles weekly</li>
+                        <li>Tailor your resume per job description using your portfolio reports</li>
+                        <li>Attend local OWASP/BSides meetups and introduce yourself</li>
+                        <li>Reach out to AppSec professionals on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your GitHub portfolio updated with new projects</li>
+                        <li>Practice mock interviews monthly to stay sharp</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider freelance/contract AppSec gigs to build experience</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly CVE/security news roundups</li>
+                        <li>Do at least one CTF or lab per week to keep skills sharp</li>
+                        <li>Re-test old projects with new tools/techniques quarterly</li>
+                        <li>Write a monthly technical blog post about something you learned</li>
+                        <li>Build a second, more advanced portfolio project every 90 days</li>
+                        <li>Track and revisit OWASP Top 10 changes as they're updated</li>
+                        <li>Mentor beginners — teaching reinforces your own mastery</li>
+                        <li>Read one new security book per month</li>
+                        <li>Attend at least one virtual conference talk per month</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a beginner-friendly AppSec series for your audience</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your lab setups or scripts for others to use</li>
+                        <li>Host a free workshop/webinar on one AppSec topic</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another learner for accountability</li>
+                        <li>Contribute documentation fixes to a tool you use often</li>
+                        <li>Review and give feedback on a peer's pentest report</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Manually exploited 8+ OWASP Top 10 vulnerability classes | ✅ Built a working DevSecOps pipeline with SAST/DAST/SCA gates | ✅ Tested and reported on the OWASP API Security Top 10</p>
+                <p>✅ Written a STRIDE-based threat model | ✅ Hardened and scanned containers + audited a cloud environment | ✅ Produced a portfolio-ready professional pentest report</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Burp Suite, OWASP ZAP, Semgrep, SonarQube, Trivy, Prowler, Checkov, JWT, GraphQL, Docker, AWS IAM, GitHub Actions, CVSS, STRIDE.</p>
+                <br>
+                <p><strong>Remember:</strong> Application Security is a mindset, not a checklist — every tool and technique here exists to answer one question: "how would an attacker break this, and how do we stop them?" Stay curious, document everything, and keep testing.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "SOC Analyst – Tier 1" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "SOC Analyst – Tier 1"</h1>
+            <p>A structured 90-day plan to develop core skills and hands-on experience for an entry-level Security Operations Center (SOC) Analyst role.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: Foundational SOC Knowledge & Tools</h2>
+                <span>Days 1-30: Building a strong base in cybersecurity, networking, and SOC operations.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Cybersecurity Fundamentals</span>
+                    <span class="skill-tag">Networking & OS Basics</span>
+                    <span class="skill-tag">SIEM Navigation</span>
+                    <span class="skill-tag">Alert Triage & Escalation</span>
+                    <span class="skill-tag">Incident Response Basics</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: SOC Environment & Core Concepts</h3>
+                    <ul>
+                        <li>Understand the role of a SOC and its various tiers.</li>
+                        <li>Familiarize with the organization's **SIEM (Security Information and Event Management)** platform.</li>
+                        <li>Learn about common cybersecurity frameworks (e.g., NIST, MITRE ATT&CK - intro).</li>
+                        <li>Understand the **CIA Triad** (Confidentiality, Integrity, Availability).</li>
+                        <li>Get acquainted with the **ticketing system** and incident management workflow.</li>
+                        <li>Review and understand basic **SOC playbooks** for common alerts.</li>
+                        <li>Learn about security policies and procedures.</li>
+                        <li>Understand communication channels within the SOC and with other teams.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SIEM (Intro)</span>
+                        <span class="tech-badge">NIST/MITRE (Concepts)</span>
+                        <span class="tech-badge">Ticketing System</span>
+                        <span class="tech-badge">SOC Playbooks</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Map the SOC workflow.</h4>
+                        <p>Create a simple flow chart outlining how an alert is received, triaged, and escalated within the SOC.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Networking & Operating System Fundamentals for SOC</h3>
+                    <ul>
+                        <li>Deepen understanding of **TCP/IP model** and common network protocols (HTTP, DNS, SSH, RDP).</li>
+                        <li>Learn about **network devices** (routers, switches, firewalls) and their logs.</li>
+                        <li>Understand **Windows and Linux operating system fundamentals** relevant to security.</li>
+                        <li>Familiarize with **command-line tools** for network and system information (ipconfig, netstat, ps, top).</li>
+                        <li>Learn about common **log sources** (firewall logs, web server logs, authentication logs).</li>
+                        <li>Understand basic **packet analysis** concepts (e.g., Wireshark intro).</li>
+                        <li>Explore common ports and services.</li>
+                        <li>Differentiate between public and private IP addresses.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">TCP/IP</span>
+                        <span class="tech-badge">Windows/Linux CLI</span>
+                        <span class="tech-badge">Network Protocols</span>
+                        <span class="tech-badge">Wireshark (Intro)</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Analyze network logs for suspicious ports.</h4>
+                        <p>Given a sample log file, identify connections to unusual ports (e.g., beyond common web/email services).</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: SIEM Querying & Alert Triage</h3>
+                    <ul>
+                        <li>Master basic **SIEM query language** (e.g., Splunk SPL, KQL for Sentinel/Azure Log Analytics).</li>
+                        <li>Practice filtering, sorting, and aggregating log data.</li>
+                        <li>Understand how **SIEM alerts** are generated and their underlying correlation rules.</li>
+                        <li>Perform initial **alert triage**: identify false positives, benign activity, and true positives.</li>
+                        <li>Learn to enrich alerts with contextual information (e.g., user details, asset information).</li>
+                        <li>Document findings and update incident tickets accurately.</li>
+                        <li>Understand the importance of baseline behavior for anomaly detection.</li>
+                        <li>Practice escalating alerts to Tier 2 analysts with complete information.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SIEM Querying</span>
+                        <span class="skill-tag">Log Enrichment</span>
+                        <span class="tech-badge">Alert Triage</span>
+                        <span class="tech-badge">Contextual Analysis</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Investigate 10 simulated SIEM alerts.</h4>
+                        <p>For each alert, determine if it's a true positive, false positive, or benign, and document your reasoning.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Endpoint Security & Malware Basics</h3>
+                    <ul>
+                        <li>Understand **Endpoint Detection and Response (EDR)** solutions and their capabilities.</li>
+                        <li>Learn to navigate the EDR console to investigate endpoint alerts.</li>
+                        <li>Familiarize with common **malware types** (viruses, worms, ransomware, trojans) and their indicators.</li>
+                        <li>Understand basic **malware analysis** concepts (static vs. dynamic, sandbox environments).</li>
+                        <li>Learn how to check **antivirus definitions** and scan status on endpoints.</li>
+                        <li>Practice isolating infected systems from the network using EDR or network controls.</li>
+                        <li>Understand the importance of software patching and updates.</li>
+                        <li>Learn about common endpoint attack vectors.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">EDR Solutions</span>
+                        <span class="tech-badge">Malware Types</span>
+                        <span class="tech-badge">Endpoint Isolation</span>
+                        <span class="tech-badge">Antivirus</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Simulate a malware alert investigation.</h4>
+                        <p>Given a simulated EDR alert, use the EDR console to gather evidence and determine initial containment steps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can confidently navigate the SIEM, perform initial alert triage, understand basic security incidents, and utilize core SOC tools.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1: Apply Your Foundational Skills</h3>
+                <p>Choose one of the following projects to reinforce your learning:</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>SIEM Dashboard Creation (Basic)</h4>
+                        <p>Design a simple SIEM dashboard to visualize key security metrics (e.g., failed logins, top blocked IPs) from sample data.</p>
+                        <small>Hints: Focus on clear, actionable data visualization for quick insights.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Incident Triage Playbook Draft</h4>
+                        <p>Draft a mini-playbook for a common Tier 1 alert (e.g., "Multiple Failed Logins") outlining steps for investigation and initial response.</p>
+                        <small>Hints: Include data sources to check, questions to ask, and escalation criteria.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Network Traffic Analysis Scenario</h4>
+                        <p>Given a Wireshark capture file, identify and document suspicious network activity (e.g., unusual protocols, high volume to/from unknown IPs).</p>
+                        <small>Hints: Focus on common attack patterns and anomalies.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Intermediate Incident Handling & Analysis</h2>
+                <span>Days 31-60: Deepening incident investigation, threat intelligence, and vulnerability management.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Advanced SIEM Queries</span>
+                    <span class="skill-tag">Incident Containment & Eradication</span>
+                    <span class="skill-tag">Threat Intelligence Application</span>
+                    <span class="skill-tag">Vulnerability Scanning Basics</span>
+                    <span class="skill-tag">Digital Forensics (Basic)</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Advanced SIEM Querying & Rule Logic</h3>
+                    <ul>
+                        <li>Learn advanced **SIEM query techniques** (joins, subqueries, statistical functions).</li>
+                        <li>Understand **SIEM rule logic** and how to propose minor rule enhancements.</li>
+                        <li>Practice building custom reports and dashboards for specific security events.</li>
+                        <li>Familiarize with different **data models** within the SIEM.</li>
+                        <li>Understand the concept of **false positive tuning** and its importance.</li>
+                        <li>Learn to identify missing log sources crucial for investigations.</li>
+                        <li>Explore correlation rules and their effectiveness.</li>
+                        <li>Participate in SIEM content review meetings.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Advanced SIEM Queries</span>
+                        <span class="tech-badge">SIEM Rule Logic</span>
+                        <span class="tech-badge">False Positive Tuning</span>
+                        <span class="tech-badge">Custom Reports</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Optimize a SIEM alert rule.</h4>
+                        <p>Given a high-volume, low-fidelity alert, propose and implement a minor query adjustment to reduce false positives.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Incident Containment & Eradication</h3>
+                    <ul>
+                        <li>Deepen understanding of **incident response lifecycle**, focusing on containment and eradication.</li>
+                        <li>Practice executing **containment actions** (e.g., disabling user accounts, blocking IPs, isolating endpoints).</li>
+                        <li>Learn about **eradication strategies** (e.g., malware removal, patching vulnerabilities).</li>
+                        <li>Understand the importance of **evidence preservation** during an incident.</li>
+                        <li>Participate in **incident response calls** and document actions taken.</li>
+                        <li>Learn about different types of containment (network, host, application).</li>
+                        <li>Understand the concept of a "clean room" for analysis.</li>
+                        <li>Familiarize with rollback and recovery procedures.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Incident Containment</span>
+                        <span class="tech-badge">Evidence Preservation</span>
+                        <span class="tech-badge">Malware Eradication</span>
+                        <span class="tech-badge">Incident Documentation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Lead a simulated incident containment.</h4>
+                        <p>In a lab environment, contain a simulated infected host and document all steps taken for eradication.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Threat Intelligence & Threat Hunting (Basic)</h3>
+                    <ul>
+                        <li>Understand the role of **threat intelligence platforms (TIPs)** and how to consume threat feeds.</li>
+                        <li>Learn to identify and utilize **Indicators of Compromise (IOCs)** (IPs, domains, hashes, file names).</li>
+                        <li>Perform basic **threat hunting** exercises using SIEM data and IOCs.</li>
+                        <li>Familiarize with common **attack frameworks** like MITRE ATT&CK in more detail.</li>
+                        <li>Understand the concept of **adversary tactics, techniques, and procedures (TTPs)**.</li>
+                        <li>Learn to cross-reference internal logs with external threat intelligence.</li>
+                        <li>Explore open-source threat intelligence sources.</li>
+                        <li>Contribute to the internal threat intelligence repository.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Threat Intelligence</span>
+                        <span class="tech-badge">IOCs</span>
+                        <span class="tech-badge">MITRE ATT&CK</span>
+                        <span class="tech-badge">Basic Threat Hunting</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Hunt for a specific IOC in SIEM logs.</h4>
+                        <p>Given a known malicious IP address, search the SIEM logs to see if it has communicated with any internal assets.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Vulnerability Management & Security Assessments</h3>
+                    <ul>
+                        <li>Understand the basics of **vulnerability management** lifecycle (identification, assessment, remediation).</li>
+                        <li>Familiarize with **vulnerability scanning tools** (e.g., Nessus, OpenVAS - intro to reports).</li>
+                        <li>Learn to interpret **vulnerability scan reports** and prioritize findings.</li>
+                        <li>Understand the difference between vulnerabilities, exploits, and patches.</li>
+                        <li>Assist in tracking and verifying remediation efforts.</li>
+                        <li>Learn about common security misconfigurations.</li>
+                        <li>Understand the importance of asset inventory for vulnerability management.</li>
+                        <li>Participate in basic security assessment activities.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Vulnerability Management</span>
+                        <span class="tech-badge">Vulnerability Scanners (Reports)</span>
+                        <span class="tech-badge">Patching</span>
+                        <span class="tech-badge">Risk Prioritization</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Analyze a vulnerability scan report.</h4>
+                        <p>Given a sample vulnerability scan report, identify the top 3 critical vulnerabilities and suggest remediation steps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can perform in-depth alert analysis, contribute to incident containment, leverage threat intelligence, and understand basic vulnerability management processes.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2: Sharpen Your Investigative Skills</h3>
+                <p>Choose one of the following projects to apply your intermediate knowledge:</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Incident Report Draft</h4>
+                        <p>Draft a comprehensive incident report for a simulated security breach, including timeline, evidence, actions taken, and lessons learned.</p>
+                        <small>Hints: Follow a standard incident report template, focus on clarity and completeness.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Threat Hunting Playbook Development (Basic)</h4>
+                        <p>Develop a basic threat hunting playbook for a specific MITRE ATT&CK technique (e.g., "Credential Dumping"), outlining data sources and queries.</p>
+                        <small>Hints: Focus on common tools and log sources available in a typical enterprise.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Security Tool Comparison & Recommendation</h4>
+                        <p>Research and compare two different types of security tools (e.g., two EDRs, two vulnerability scanners) based on features, cost, and suitability for a small/medium business.</p>
+                        <small>Hints: Focus on practical aspects relevant to a SOC analyst.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Advanced SOC Operations & Automation</h2>
+                <span>Days 61-90: Focusing on automation, cloud security, compliance, and career growth.</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Scripting for Automation</span>
+                    <span class="skill-tag">Cloud Security Monitoring</span>
+                    <span class="skill-tag">Compliance & Auditing Basics</span>
+                    <span class="skill-tag">Security Metrics & Reporting</span>
+                    <span class="skill-tag">Proactive Security Measures</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Scripting for Automation & Efficiency</h3>
+                    <ul>
+                        <li>Learn **Python or PowerShell scripting** for automating repetitive SOC tasks.</li>
+                        <li>Write scripts to parse logs, extract IOCs, or automate data enrichment.</li>
+                        <li>Understand the concept of **Security Orchestration, Automation, and Response (SOAR)**.</li>
+                        <li>Explore how scripts can integrate with SIEM or EDR APIs (conceptual).</li>
+                        <li>Identify opportunities for automation within daily Tier 1 tasks.</li>
+                        <li>Practice basic error handling and debugging in scripts.</li>
+                        <li>Learn about version control (Git) for managing scripts.</li>
+                        <li>Understand the benefits of automation for SOC efficiency.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Python/PowerShell</span>
+                        <span class="tech-badge">SOAR (Concepts)</span>
+                        <span class="tech-badge">Log Parsing</span>
+                        <span class="tech-badge">Automation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Automate an IOC lookup process.</h4>
+                        <p>Write a script that takes an IP address or hash as input and checks it against a public threat intelligence source (e.g., VirusTotal API - conceptual).</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Cloud Security Monitoring & SaaS Security</h3>
+                    <ul>
+                        <li>Understand basic **cloud computing concepts** (IaaS, PaaS, SaaS) and the shared responsibility model.</li>
+                        <li>Learn about **cloud security monitoring** tools and logs (e.g., AWS CloudTrail, Azure Activity Logs).</li>
+                        <li>Familiarize with security aspects of popular **SaaS applications** (e.g., M365 security, Google Workspace security).</li>
+                        <li>Understand common cloud security threats and misconfigurations.</li>
+                        <li>Learn to analyze cloud-specific security alerts in the SIEM.</li>
+                        <li>Explore cloud identity and access management (IAM) concepts.</li>
+                        <li>Understand container security basics (Docker, Kubernetes - intro).</li>
+                        <li>Identify cloud-specific IOCs.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cloud Security (Intro)</span>
+                        <span class="tech-badge">SaaS Security</span>
+                        <span class="tech-badge">Cloud Logs</span>
+                        <span class="tech-badge">Shared Responsibility Model</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Investigate a simulated cloud security alert.</h4>
+                        <p>Given a simulated alert (e.g., "unusual login from new region" in a cloud environment), identify relevant logs and initial actions.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Compliance, Auditing & Reporting</h3>
+                    <ul>
+                        <li>Understand the basics of **security compliance frameworks** (e.g., GDPR, HIPAA, ISO 27001 - relevance to SOC).</li>
+                        <li>Learn about **security auditing** principles and how SOC data contributes.</li>
+                        <li>Familiarize with **security metrics and KPIs** used in a SOC.</li>
+                        <li>Contribute to daily/weekly SOC reports and dashboards.</li>
+                        <li>Understand the importance of **data retention policies** for logs and evidence.</li>
+                        <li>Learn about internal and external audit processes.</li>
+                        <li>Understand the role of SOC in regulatory compliance.</li>
+                        <li>Practice summarizing complex security incidents for non-technical audiences.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Compliance (Basics)</span>
+                        <span class="tech-badge">Security Metrics</span>
+                        <span class="tech-badge">Reporting</span>
+                        <span class="tech-badge">Data Retention</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Draft a weekly SOC activity report.</h4>
+                        <p>Create a concise report summarizing the week's key alerts, incidents, and any significant observations for a management audience.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Professional Development & Career Path</h3>
+                    <ul>
+                        <li>Refine **communication skills** for incident response and reporting.</li>
+                        <li>Develop **critical thinking and problem-solving abilities** for complex security challenges.</li>
+                        <li>Understand the career progression paths within a SOC (Tier 2, Threat Hunter, Incident Responder).</li>
+                        <li>Prepare for common **SOC Analyst interview questions**.</li>
+                        <li>Network with other cybersecurity professionals (online, local meetups).</li>
+                        <li>Develop a **personal learning plan** for continuous skill enhancement.</li>
+                        <li>Review and update your resume and LinkedIn profile.</li>
+                        <li>Seek out mentorship opportunities.</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Communication Skills</span>
+                        <span class="tech-badge">Critical Thinking</span>
+                        <span class="tech-badge">Career Planning</span>
+                        <span class="tech-badge">Continuous Learning</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task at the end of week: Conduct a mock SOC incident briefing.</h4>
+                        <p>Prepare and deliver a brief (5-10 minute) presentation on a simulated security incident to a "management team".</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You have successfully completed your 90-day roadmap, gaining the essential skills and practical experience to excel as a SOC Analyst – Tier 1. You are now proficient in alert triage, incident handling, basic threat intelligence, and contributing to the organization's security posture.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Capstone Projects to Showcase Your Skills</h3>
+                <p>These projects allow you to integrate all learned knowledge and demonstrate your capabilities:</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Build a Mini-SOC Lab</h4>
+                        <p>Set up a small home lab with a SIEM (e.g., ELK Stack, Splunk Free), a few log sources (e.g., Windows/Linux VMs), and generate/analyze alerts.</p>
+                        <small>Hints: Focus on log collection, basic rule creation, and dashboard visualization.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Automated IOC Checker Script</h4>
+                        <p>Develop a Python script that takes a list of IOCs (IPs, domains, hashes) and automatically checks them against multiple public threat intelligence sources (e.g., VirusTotal, AbuseIPDB).</p>
+                        <small>Hints: Use relevant APIs, handle API keys securely, and format output clearly.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Incident Response Playbook for a Specific Threat</h4>
+                        <p>Create a detailed Tier 1 playbook for a specific, realistic threat (e.g., "Ransomware Initial Access via Phishing"), including detection, initial analysis, containment, and escalation steps.</p>
+                        <small>Hints: Reference MITRE ATT&CK for TTPs, include communication guidelines.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Security Awareness Training Module for Employees</h4>
+                        <p>Develop a short, engaging security awareness training module (e.g., presentation, interactive quiz) on a topic relevant to common SOC alerts (e.g., "Identifying Suspicious Emails").</p>
+                        <small>Hints: Focus on clear, concise language and actionable advice for end-users.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Key Skills Acquired in 90 Days</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">SIEM Operations (Splunk/Sentinel)</div>
+                    <div class="skill-item">Alert Triage & Prioritization</div>
+                    <div class="skill-item">Incident Response Lifecycle (Tier 1)</div>
+                    <div class="skill-item">Log Analysis & Correlation</div>
+                    <div class="skill-item">Endpoint Detection & Response (EDR)</div>
+                    <div class="skill-item">Networking & OS Fundamentals</div>
+                    <div class="skill-item">Threat Intelligence Consumption</div>
+                    <div class="skill-item">Vulnerability Management (Basic)</div>
+                    <div class="skill-item">Scripting (Python/PowerShell)</div>
+                    <div class="skill-item">Cloud Security Monitoring (Basic)</div>
+                    <div class="skill-item">Communication & Reporting</div>
+                    <div class="skill-item">Critical Thinking & Problem Solving</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms and materials to deepen your expertise.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>**Blue Team Handbook: Incident Response Edition**: Practical guide for defenders.</li>
+                        <li>**The Practice of Network Security Monitoring**: Deep dive into network-based detection.</li>
+                        <li>**Applied Network Security Monitoring**: Focus on practical implementation.</li>
+                        <li>**CompTIA Security+ Study Guide**: Comprehensive cybersecurity fundamentals.</li>
+                        <li>**Splunk 7.x Quick Start Guide**: For hands-on SIEM experience.</li>
+                        <li>**Python Crash Course**: For learning Python scripting.</li>
+                        <li>**Cybersecurity: The Beginner's Guide**: Good overall introduction.</li>
+                        <li>**Hacking: The Art of Exploitation**: To understand attacker mindset.</li>
+                        <li>**Practical Malware Analysis**: For understanding malware behavior.</li>
+                        <li>**Threat Intelligence and the Cyber Kill Chain**: Understanding adversary methods.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>**TryHackMe**: Excellent for hands-on SOC and blue team labs.</li>
+                        <li>**Hack The Box (Academy/Starting Point)**: Practical hacking and defense labs.</li>
+                        <li>**Coursera**: "IBM Cybersecurity Analyst Professional Certificate," "Google Cybersecurity Certificate."</li>
+                        <li>**Udemy**: Various courses on Splunk, SIEM, Incident Response.</li>
+                        <li>**Cybrary**: Wide range of cybersecurity courses and labs.</li>
+                        <li>**Pluralsight**: In-depth courses on specific security technologies.</li>
+                        <li>**Microsoft Learn**: For Azure Security and Microsoft Sentinel.</li>
+                        <li>**SANS Cyber Aces Online**: Free foundational cybersecurity courses.</li>
+                        <li>**Open Security Training**: Free, in-depth security courses.</li>
+                        <li>**YouTube Channels**: "John Hammond," "The Cyber Mentor," "NetworkChuck" (for practical demos).</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>**CompTIA Security+**: Foundational, widely recognized.</li>
+                        <li>**(ISC)² Certified in Cybersecurity (CC)**: Entry-level, good starting point.</li>
+                        <li>**CompTIA CySA+**: Focus on cybersecurity analysis and threat detection.</li>
+                        <li>**Splunk Core User/Power User**: For SIEM proficiency.</li>
+                        <li>**Microsoft Certified: Security Operations Analyst Associate (SC-200)**: For Microsoft security tools.</li>
+                        <li>**EC-Council Certified SOC Analyst (CSA)**: Specific to SOC operations.</li>
+                        <li>**GIAC Security Essentials (GSEC)**: More advanced, highly regarded.</li>
+                        <li>**Certified CyberOps Associate (Cisco)**: Focus on network security monitoring.</li>
+                        <li>**Certified Incident Handler (EC-Council)**: For incident response.</li>
+                        <li>**Certified SOC Analyst (CSA)**: Specific to SOC operations.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>**Reddit**: r/blueteamsec, r/cybersecurity, r/soc, r/netsec.</li>
+                        <li>**Discord Servers**: Many active cybersecurity communities (e.g., Black Hills Information Security).</li>
+                        <li>**LinkedIn Groups**: "Cybersecurity Professionals," "Security Operations Center (SOC)."</li>
+                        <li>**Twitter**: Follow cybersecurity researchers, analysts, and news outlets.</li>
+                        <li>**Local Meetups/OWASP Chapters**: Great for networking and learning from peers.</li>
+                        <li>**Stack Exchange**: Information Security Stack Exchange.</li>
+                        <li>**SANS Community Forum**: Discussions and resources.</li>
+                        <li>**BleepingComputer Forums**: For malware and general security discussions.</li>
+                        <li>**Threat Intelligence Exchange Platforms**: (e.g., MISP communities).</li>
+                        <li>**Vendor-Specific Forums**: For your SIEM/EDR tools.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>SIEM & Log Management</h3>
+                    <ul>
+                        <li>**Splunk Enterprise/Splunk Free**: Industry-leading SIEM.</li>
+                        <li>**Microsoft Sentinel**: Cloud-native SIEM (Azure).</li>
+                        <li>**Elastic Stack (ELK)**: Elasticsearch, Logstash, Kibana (open-source SIEM alternative).</li>
+                        <li>**Graylog**: Open-source log management.</li>
+                        <li>**QRadar/ArcSight**: Enterprise SIEMs (familiarize with concepts).</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Endpoint & Network Security</h3>
+                    <ul>
+                        <li>**CrowdStrike Falcon/Microsoft Defender for Endpoint**: EDR solutions.</li>
+                        <li>**Wireshark**: Packet analysis.</li>
+                        <li>**Nmap**: Network scanning.</li>
+                        <li>**Snort/Suricata**: IDS/IPS (for understanding detection rules).</li>
+                        <li>**Sysinternals Suite**: Process Explorer, Autoruns, Procmon (Windows forensics).</li>
+                        <li>**Volatility Framework**: Memory forensics (for advanced analysis).</li>
+                        <li>**YARA**: Pattern matching for malware identification.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Analysis & Automation</h3>
+                    <ul>
+                        <li>**VirusTotal**: Online malware analysis service.</li>
+                        <li>**Hybrid Analysis**: Free online sandbox for malware.</li>
+                        <li>**Jupyter Notebooks**: For Python scripting and data analysis.</li>
+                        <li>**VS Code/Sublime Text**: Code editors for scripting.</li>
+                        <li>**Git/GitHub**: Version control for scripts and playbooks.</li>
+                        <li>**Maltego**: Link analysis and data mining (for investigations).</li>
+                        <li>**MISP (Malware Information Sharing Platform)**: Threat intelligence sharing.</li>
+                        <li>**TheHive/Cortex**: Incident response platform.</li>
+                        <li>**Phantom/Demisto (Palo Alto XSOAR)**: SOAR platforms (conceptual understanding).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Hands-on projects to reinforce your learning at different levels</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>**Log Collection & Analysis**: Set up a basic log collector (e.g., Syslog-ng, Nxlog) to forward logs from a VM to a local ELK Stack.</li>
+                        <li>**Basic Alert Investigation**: Given a simple SIEM alert (e.g., "failed login from outside country"), document the investigation steps and findings.</li>
+                        <li>**IOC Lookup Script**: Write a simple Python script to take an IP address and check it against a public blacklist (e.g., AbuseIPDB via API).</li>
+                        <li>**MITRE ATT&CK Mapping**: For a given attack scenario, map the attacker's actions to specific MITRE ATT&CK techniques.</li>
+                        <li>**Endpoint Process Analysis**: Use Process Explorer to analyze running processes on a Windows VM and identify any suspicious ones.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>**Custom SIEM Rule Creation**: Based on a new threat, create a custom detection rule in your lab SIEM and test its effectiveness.</li>
+                        <li>**Incident Response Tabletop Exercise**: Participate in or facilitate a small tabletop exercise for a specific security incident (e.g., ransomware attack).</li>
+                        <li>**Threat Hunting Scenario**: Develop a threat hunting hypothesis (e.g., "Are there any lateral movement attempts?"), identify relevant data sources, and execute queries in your SIEM.</li>
+                        <li>**Automated Remediation Script (Lab)**: Create a PowerShell script to automate a basic containment action (e.g., disable a compromised user account in a lab AD).</li>
+                        <li>**Cloud Log Analysis**: Analyze sample AWS CloudTrail or Azure Activity Logs to identify suspicious administrative activities.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>**Full Incident Simulation & Report**: Design and execute a multi-stage security incident simulation in your lab, then write a comprehensive incident report.</li>
+                        <li>**Malware Reverse Engineering (Basic)**: Perform basic static and dynamic analysis of a benign executable or script in a controlled sandbox environment.</li>
+                        <li>**SOAR Playbook Implementation**: Implement a simple SOAR playbook using an open-source SOAR tool (e.g., Shuffle, StackStorm) to automate alert enrichment or response.</li>
+                        <li>**Build a Custom Threat Intelligence Feed**: Aggregate IOCs from various open-source threat intelligence sources into a single, usable format.</li>
+                        <li>**Container Security Monitoring**: Implement basic logging and monitoring for a Docker containerized application in your lab environment.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert (Beyond 90 Days)</h3>
+                    <ul>
+                        <li>**Develop a Custom SIEM Parser**: Write a custom parser for a new log source to integrate it into your SIEM.</li>
+                        <li>**Contribute to Open-Source Security Tools**: Contribute code or documentation to projects like MISP, TheHive, or a security automation tool.</li>
+                        <li>**Advanced Threat Hunting**: Develop and execute complex threat hunting queries to uncover sophisticated threats not caught by existing alerts.</li>
+                        <li>**Security Architecture Review**: Participate in reviewing the security architecture of a new system or application from a SOC perspective.</li>
+                        <li>**Lead a Major Incident Response**: Take a lead role in responding to a significant security incident, coordinating efforts and communicating with stakeholders.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next: Beyond 90 Days</h2>
+                <span>Your journey as a SOC Analyst is one of continuous learning and specialization.</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialization & Advanced Roles</h3>
+                    <ul>
+                        <li>**SOC Analyst – Tier 2/3**: Progress to more complex incident investigations, threat hunting, and mentoring.</li>
+                        <li>**Incident Response (IR) Specialist**: Focus on deep dive forensics, containment, and recovery.</li>
+                        <li>**Threat Hunter**: Proactively search for threats using advanced techniques and intelligence.</li>
+                        <li>**Security Engineer**: Design and implement security solutions, including SIEM/EDR deployment.</li>
+                        <li>**Security Architect**: Design secure systems and define security standards.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Advanced Certifications</h3>
+                    <ul>
+                        <li>**GIAC GCIH (Certified Incident Handler)**: For incident response.</li>
+                        <li>**GIAC GCIA (Certified Intrusion Analyst)**: For network and host intrusion analysis.</li>
+                        <li>**Offensive Security Certified Professional (OSCP)**: To understand attacker methodology.</li>
+                        <li>**Certified Cloud Security Professional (CCSP)**: For cloud security expertise.</li>
+                        <li>**Certified Information Systems Security Professional (CISSP)**: For management and broader security knowledge.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Continuous Learning & Contribution</h3>
+                    <ul>
+                        <li>**Stay Current**: Regularly follow cybersecurity news, blogs, and vulnerability disclosures.</li>
+                        <li>**Participate in CTFs**: Engage in Capture The Flag competitions to sharpen practical skills.</li>
+                        <li>**Research**: Conduct personal research on new attack techniques and defense strategies.</li>
+                        <li>**Share Knowledge**: Write blog posts, present at local meetups, or contribute to open-source projects.</li>
+                        <li>**Mentorship**: Seek out and become a mentor for junior analysts.</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Networking & Community</h3>
+                    <ul>
+                        <li>**Industry Conferences**: Attend major cybersecurity conferences (e.g., Black Hat, RSA, DEF CON) for insights and networking.</li>
+                        <li>**Professional Organizations**: Join ISACA, ISC2, or other relevant security groups.</li>
+                        <li>**Online Communities**: Remain active in forums and social media discussions.</li>
+                        <li>**Build Your Brand**: Create a professional online presence showcasing your expertise.</li>
+                        <li>**Collaborate**: Work on security projects with peers and contribute to the community.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ **Mastered SIEM querying and alert triage** | ✅ **Successfully participated in incident containment and eradication** | ✅ **Applied threat intelligence to investigations**</p>
+                <p>✅ **Understood basic vulnerability management processes** | ✅ **Developed foundational scripting skills for automation** | ✅ **Gained practical experience through hands-on projects**</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> SIEM (Splunk, Sentinel, ELK), EDR (CrowdStrike, Defender), Ticketing Systems, Windows/Linux OS, Networking (TCP/IP, Protocols), Wireshark, Nmap, Threat Intelligence Platforms, Vulnerability Scanners (Nessus, OpenVAS), Python, PowerShell, Cloud Security (AWS, Azure), MITRE ATT&CK Framework.</p>
+                <br>
+                <p><strong>Remember:</strong> **Curiosity, attention to detail, and a continuous learning mindset** are your most valuable assets as a SOC Analyst. Every alert is a learning opportunity. Stay resilient, document thoroughly, and always assume breach to hone your detection and response skills.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

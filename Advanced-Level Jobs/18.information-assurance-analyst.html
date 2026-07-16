@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Information Assurance Analyst" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Information Assurance Analyst" Mastery</h1>
+            <p>An advanced-track plan for practitioners who operate at the intersection of security controls and mission assurance — classifying information systems, executing NIST RMF steps to achieve and maintain Authorization to Operate, assessing STIG compliance, producing security authorization packages that withstand authorizing official scrutiny, and running continuous monitoring programs that keep systems authorized between major assessments.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <!-- Phase 1 -->
+            <div class="phase-header">
+                <h2>Phase 1: IA Foundations, System Classification &amp; RMF Execution</h2>
+                <span>Days 1-30: Building the NIST RMF execution capability from system categorization through security control selection and implementation documentation</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">IA Analyst Role Clarity</span>
+                    <span class="skill-tag">System Categorization (FIPS 199)</span>
+                    <span class="skill-tag">NIST RMF Step Execution</span>
+                    <span class="skill-tag">Security Control Selection (SP 800-53)</span>
+                    <span class="skill-tag">System Security Plan Writing</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: The Information Assurance Analyst Role &amp; IA Ecosystem</h3>
+                    <ul>
+                        <li>Study what distinguishes an Information Assurance Analyst from a GRC Analyst (commercial framework compliance), a security engineer (building controls), and a cybersecurity analyst (monitoring threats) — the IA Analyst owns the formal authorization lifecycle of information systems, ensuring they meet defined security requirements before and during operation</li>
+                        <li>Learn the IA ecosystem: the relationship between NIST SP 800-37 (RMF), SP 800-53 (security controls), SP 800-53A (assessment procedures), FIPS 199 (categorization), FIPS 200 (minimum security requirements), and how they form a coherent system for managing information system risk</li>
+                        <li>Study how the RMF authorization chain works: System Owner, Information System Security Officer (ISSO), Information System Security Manager (ISSM), Authorizing Official (AO), and Security Control Assessor (SCA) — and what the IA Analyst is responsible for supporting at each role level</li>
+                        <li>Learn how DoD and federal civilian IA programs differ: DISA STIGs vs. NIST baselines, DoD RMF (governed by DoDI 8510.01) vs. federal civilian RMF, and the role of tools like eMASS and Xacta in tracking authorization packages</li>
+                        <li>Study the concept of Authorization to Operate (ATO): what it means, why systems require it, what happens when a system operates without one, and why continuous monitoring is required to maintain it between assessment cycles</li>
+                        <li>Review one real public System Security Plan (SSP) structure (from NIST's SP 800-18 template) and annotate every section with what evidence an IA Analyst would need to gather to populate it for a real system</li>
+                        <li>Learn how IA Analysts must think simultaneously about two distinct audiences: the technical team implementing controls (who need specific, actionable requirements) and the Authorizing Official (who needs evidence that risks are understood and managed)</li>
+                        <li>Document a personal IA Analyst role charter covering the authorization lifecycle stages you intend to own, the frameworks you'll focus on, and your operating principles for producing authorization packages that withstand rigorous assessment</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NIST RMF / SP 800-37</span>
+                        <span class="tech-badge">ATO Lifecycle</span>
+                        <span class="tech-badge">eMASS / Xacta</span>
+                        <span class="tech-badge">ISSO / ISSM / AO Roles</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: IA Ecosystem Map &amp; Role Charter</h4>
+                        <p>Annotate an SSP template with evidence requirements for every section, build an IA ecosystem map showing how NIST SP 800-37, 800-53, 800-53A, FIPS 199, and FIPS 200 interrelate, and write a personal IA Analyst role charter covering your authorization lifecycle scope and operating principles.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: System Categorization &amp; Information Type Analysis</h3>
+                    <ul>
+                        <li>Study FIPS 199 in depth: how information types are defined, how confidentiality/integrity/availability impact levels are assigned to each information type, and how the system's overall security categorization is derived from the high-water mark across all information types</li>
+                        <li>Learn NIST SP 800-60 (Guide for Mapping Types of Information and Information Systems to Security Categories): how to use Volume II's information type tables to assign provisional impact levels and when the IA Analyst must override the provisional with a justified higher or lower assignment</li>
+                        <li>Practice categorizing 3 fictional information systems: a healthcare patient records system, a financial transaction processing system, and an internal HR management system — producing a complete FIPS 199 categorization worksheet for each with information type listings and impact level justifications</li>
+                        <li>Study what triggers a recategorization: new information types being processed, changes in the sensitivity of existing information, changes in the system boundary, or a significant change that affects the system's threat profile</li>
+                        <li>Learn how system boundary definition affects categorization: what is inside the system boundary (and therefore subject to RMF), what is inherited from a common control provider, and how inheritance changes what the IA Analyst must document</li>
+                        <li>Practice defining the system boundary for a fictional cloud-hosted application including inherited controls from the cloud provider's FedRAMP authorization and identifying which controls remain the system owner's responsibility</li>
+                        <li>Study how the security categorization drives every subsequent RMF step: it determines the baseline control set, the assessment rigor, and the risk posture the AO must accept or reject</li>
+                        <li>Document a complete system categorization methodology covering FIPS 199 worksheets, SP 800-60 information type mapping, boundary definition, and inheritance identification for a fictional enterprise system</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">FIPS 199 Categorization</span>
+                        <span class="tech-badge">NIST SP 800-60</span>
+                        <span class="tech-badge">CIA Impact Levels</span>
+                        <span class="tech-badge">Control Inheritance</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: System Categorization Package</h4>
+                        <p>Produce complete FIPS 199 categorization worksheets for 3 fictional systems using SP 800-60 information type mapping, define system boundaries and inherited controls for a cloud-hosted system, and document a reusable categorization methodology with recategorization triggers.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Security Control Selection &amp; Tailoring</h3>
+                    <ul>
+                        <li>Study NIST SP 800-53 Rev 5 in depth: its control family structure, the distinction between base controls and control enhancements, and how the control catalog is organized around protection requirements rather than threat types</li>
+                        <li>Learn how to select a security control baseline for a given system categorization: LOW, MODERATE, or HIGH baseline from NIST SP 800-53B, and how organization-defined parameters (ODPs) within controls must be filled in with specific values rather than left as placeholders</li>
+                        <li>Practice selecting the MODERATE baseline for a fictional financial system and tailoring it: scoping (removing controls that don't apply due to the system's operational environment), compensating (adding alternative controls where baseline controls are infeasible), and supplementing (adding controls above the baseline for specific high-risk areas)</li>
+                        <li>Study how to assign controls to implementation layers: system-specific controls (implemented by the system owner), hybrid controls (partially system-specific, partially inherited), and common controls (fully inherited from an enterprise common control provider)</li>
+                        <li>Learn how to document common control inheritance in an SSP: identifying the common control provider, referencing their authorization package, and documenting exactly which controls and enhancements are being inherited</li>
+                        <li>Practice documenting the control allocation for a fictional system using a three-column spreadsheet: control, implementation type (system/hybrid/inherited), and responsible party for each control in the MODERATE baseline</li>
+                        <li>Study how tailoring decisions must be justified in the SSP and reviewed by the AO: removing a control is not a technical decision but a risk acceptance decision that requires explicit AO agreement</li>
+                        <li>Document a complete security control selection and tailoring package for a fictional MODERATE-categorization system including ODP values, tailoring justifications, and control allocation spreadsheet</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NIST SP 800-53 Rev 5</span>
+                        <span class="tech-badge">MODERATE Baseline</span>
+                        <span class="tech-badge">ODP Population</span>
+                        <span class="tech-badge">Control Tailoring</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Security Control Selection Package</h4>
+                        <p>Select and tailor the MODERATE baseline for a fictional financial system with justified scoping decisions and populated ODPs, produce a three-column control allocation spreadsheet distinguishing system-specific, hybrid, and inherited controls, and document tailoring justifications for every removed control.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: System Security Plan Writing &amp; Documentation Standards</h3>
+                    <ul>
+                        <li>Study what makes an SSP acceptable to an Authorizing Official: every control implementation description must be specific enough for an assessor to verify — "we use firewalls" fails, "boundary protection is implemented via a Palo Alto PA-5250 configured with the following rule set, reviewed quarterly, managed by [team]" passes</li>
+                        <li>Learn the SSP's required sections (per NIST SP 800-18): system description, system categorization, authorization boundary diagram, network architecture diagram, data flow diagram, control implementation descriptions, and responsible parties for each control</li>
+                        <li>Practice writing control implementation descriptions for 10 controls from the MODERATE baseline — writing each description at a level of specificity that an independent assessor could use to develop test procedures without additional clarification</li>
+                        <li>Study how to write a system description that gives the AO a clear understanding of the system's mission, its data flows, its interconnections, and its technical architecture — in language that is accurate enough for technical reviewers and clear enough for the AO who may not be deeply technical</li>
+                        <li>Learn how to produce the SSP's required diagrams: authorization boundary diagram showing what is inside and outside the ATO boundary, network diagram showing system components and network segments, and data flow diagram showing how information moves through the system and where it is protected</li>
+                        <li>Practice producing authorization boundary, network, and data flow diagrams for a fictional 3-tier web application hosted in AWS, including inherited FedRAMP controls from the cloud provider</li>
+                        <li>Study how to manage SSP version control and update cadence: when a significant change triggers a full SSP revision vs. an interim change record, and how to track the SSP through its review and approval cycle</li>
+                        <li>Document a complete SSP template ready for real use, with guidance notes on each section explaining what information is required and what level of specificity is acceptable to an AO</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SSP Writing (SP 800-18)</span>
+                        <span class="tech-badge">Control Implementation Descriptions</span>
+                        <span class="tech-badge">Authorization Boundary Diagrams</span>
+                        <span class="tech-badge">Data Flow Diagrams</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: System Security Plan &amp; Authorization Package Diagrams</h4>
+                        <p>Write 10 control implementation descriptions at AO-acceptable specificity for the MODERATE baseline, produce authorization boundary, network, and data flow diagrams for a fictional AWS-hosted system, and complete a full SSP template with populated system description and guidance notes on every section.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can map the NIST RMF ecosystem accurately, categorize information systems using FIPS 199 and SP 800-60, select and tailor a MODERATE baseline with justified ODPs and allocation decisions, write SSP control implementation descriptions at AO-acceptable specificity, and produce the complete set of authorization package diagrams — the foundational documentation toolkit of an Information Assurance Analyst.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate RMF documentation fundamentals before moving into assessment, STIG compliance, and continuous monitoring.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Complete Authorization Package (Pre-Assessment)</h4>
+                        <p>Build a complete pre-assessment authorization package for one fictional system: FIPS 199 categorization, control selection and tailoring, control allocation spreadsheet, full SSP with all diagrams, and an ODP population document.</p>
+                        <small>Hint: Make the fictional system realistic enough to have genuine tailoring decisions — a pure cloud-native system with no on-premises components has different tailoring decisions than a hybrid system with both.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>System Boundary Analysis Case Study</h4>
+                        <p>Work through 3 fictional systems with complex boundary questions (cloud-hosted with FedRAMP inheritance, a SaaS tool used by a federal agency, and a system with external API dependencies) and document the boundary definition and inheritance analysis for each.</p>
+                        <small>Hint: FedRAMP inheritance is where most IA Analysts make boundary errors — be explicit about what is inherited, what is the customer's responsibility, and what requires additional controls beyond what the FedRAMP package covers.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Control Implementation Description Library</h4>
+                        <p>Write AO-acceptable implementation descriptions for all 20 control families in the MODERATE baseline, organized as a reference library reusable across future SSPs for similar system types.</p>
+                        <small>Hint: The descriptions that will actually be reused are the ones specific enough to be accurate but written at a layer of abstraction that allows for minor system differences — calibrate the specificity accordingly.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>IA Fundamentals Teaching Series</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer for your audience framed around "how to take a system through RMF from scratch."</p>
+                        <small>Hint: Use a single fictional system throughout the entire series — so that each episode builds on the previous and learners can see the authorization package accumulate progressively.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2 -->
+            <div class="phase-header">
+                <h2>Phase 2: Security Assessment, STIG Compliance &amp; ATO Package Completion</h2>
+                <span>Days 31-60: Running security control assessments, managing STIG-based compliance, and producing the complete ATO package that an Authorizing Official can act on</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Security Control Assessment</span>
+                    <span class="skill-tag">STIG &amp; SRG Compliance</span>
+                    <span class="skill-tag">SAR &amp; POAM Writing</span>
+                    <span class="skill-tag">Risk Determination</span>
+                    <span class="skill-tag">ATO Package Assembly</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Security Control Assessment Using SP 800-53A</h3>
+                    <ul>
+                        <li>Study NIST SP 800-53A Rev 5 in depth: how assessment objectives are structured (the "determine" statements for each control), the three assessment methods (examine, interview, test), and how to select appropriate assessment procedures for each control based on the system's impact level</li>
+                        <li>Learn how to develop a Security Assessment Plan (SAP): scoping the assessment, defining the assessment methods for each control, specifying the assessment objects (documents to examine, personnel to interview, systems to test), and setting the testing schedule</li>
+                        <li>Practice writing a Security Assessment Plan for a fictional system's MODERATE baseline, selecting appropriate assessment methods for 10 controls and documenting the specific assessment objects for each</li>
+                        <li>Study how to conduct an assessment interview: the questions to ask system administrators, developers, and security personnel for each control family — what "examine" means when reviewing configuration documentation, and what "test" means when running a scan or trying a specific action</li>
+                        <li>Learn how to document assessment findings: the distinction between a "Satisfied" finding (control is implemented as described and is effective), "Other Than Satisfied" finding (control is not implemented, is partially implemented, or is implemented incorrectly), and "Not Applicable" (control does not apply to this system)</li>
+                        <li>Practice documenting assessment findings for 5 controls against a fictional system, writing each finding with enough specificity that a remediation engineer can identify exactly what needs to be fixed and an AO can understand the residual risk if it is not fixed</li>
+                        <li>Study how assessors distinguish between a control that is technically implemented but documented incorrectly (implementation issue only) and a control that is genuinely not functioning as intended (both an implementation and a risk issue)</li>
+                        <li>Document a complete assessment methodology covering SAP development, assessment method selection, finding documentation standards, and the distinction between documentation and implementation deficiencies</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NIST SP 800-53A</span>
+                        <span class="tech-badge">SAP Development</span>
+                        <span class="tech-badge">Examine / Interview / Test</span>
+                        <span class="tech-badge">Finding Documentation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Security Assessment Plan &amp; Finding Documentation</h4>
+                        <p>Write a Security Assessment Plan for a fictional MODERATE system selecting assessment methods for 10 controls, then document assessment findings for 5 controls with Satisfied/OTS determination and specific remediation guidance for each OTS finding.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: STIG &amp; SRG Compliance Assessment</h3>
+                    <ul>
+                        <li>Study how DISA STIGs (Security Technical Implementation Guides) and SRGs (Security Requirements Guides) work: STIGs are technology-specific implementation guidance, SRGs are technology-category requirements, and both map to NIST SP 800-53 controls — understanding the mapping allows IA Analysts to use STIG findings as evidence for RMF control assessments</li>
+                        <li>Learn how to read a STIG: the STIG Viewer interface, the finding severity categories (CAT I/II/III mapping to High/Medium/Low), the check content (how to assess whether the finding applies), and the fix text (how to remediate)</li>
+                        <li>Practice using DISA STIG Viewer (or OpenSCAP) to assess a fictional Windows Server system against the Windows Server 2022 STIG, documenting Open, Not a Finding, Not Applicable, and Not Reviewed findings for at least 20 STIG checks</li>
+                        <li>Study how to write a STIG finding explanation that justifies a "Not Applicable" determination: the rationale must be specific and defensible — "this STIG check does not apply because this server does not host a web server" is acceptable; "N/A" alone is not</li>
+                        <li>Learn how to map STIG findings to POA&amp;M entries: every Open finding becomes a POA&amp;M entry unless the risk is formally accepted, and every Open CAT I finding requires immediate escalation and documented AO awareness</li>
+                        <li>Practice mapping 5 fictional STIG Open findings to POA&amp;M format: finding description, risk level, planned remediation action, scheduled completion date, and responsible party for each</li>
+                        <li>Study how automated SCAP (Security Content Automation Protocol) scans generate STIG assessment results and how IA Analysts validate automated scan results against manual verification for ambiguous findings</li>
+                        <li>Document a complete STIG assessment methodology covering STIG Viewer use, finding categorization and justification standards, SCAP automation integration, and STIG-to-POA&amp;M mapping procedures</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">DISA STIG Viewer</span>
+                        <span class="tech-badge">CAT I / II / III Findings</span>
+                        <span class="tech-badge">OpenSCAP / SCAP</span>
+                        <span class="tech-badge">STIG-to-POA&amp;M Mapping</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: STIG Assessment &amp; POA&amp;M Mapping</h4>
+                        <p>Assess a fictional system against a DISA STIG for at least 20 checks with Satisfied/OTS/N/A/NR determination and written N/A justifications, then map 5 Open findings to POA&amp;M format with remediation plans and scheduled completion dates.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: SAR Writing, POA&amp;M Management &amp; Risk Determination</h3>
+                    <ul>
+                        <li>Study how to write a Security Assessment Report (SAR) that serves the AO's decision-making need: the SAR must present assessment findings clearly, assess the risk each finding poses to the system's mission, and give the AO a clear overall risk determination — not just a list of findings</li>
+                        <li>Learn how to determine residual risk from assessment findings: considering the threat source, vulnerability severity, likelihood of exploitation, and impact to CIA — and how to express the combined risk in terms the AO can act on (Acceptable, Acceptable with Conditions, or Unacceptable)</li>
+                        <li>Practice writing a Security Assessment Report for a fictional system with 12 assessment findings: summarizing findings by severity and control family, writing the risk determination narrative for the 3 highest-risk findings, and producing an overall risk posture statement</li>
+                        <li>Study Plan of Action and Milestones (POA&amp;M) management: what a well-managed POA&amp;M looks like vs. one that is used to bury unresolved risks — milestone dates that are missed repeatedly, findings with no assigned owner, and risks that have been "in remediation" for years all indicate a poorly managed POA&amp;M</li>
+                        <li>Learn how to write POA&amp;M entries that are actionable: the weakness description must be specific enough for the remediation engineer to know exactly what to fix, the planned remediation must be a specific technical action (not "implement security controls"), and the scheduled completion date must be realistic</li>
+                        <li>Practice writing 5 POA&amp;M entries for a fictional set of assessment findings, each with a specific weakness description, risk rating, planned action, milestone dates, and responsible party</li>
+                        <li>Study how to manage inherited control deficiencies: when a common control provider's assessment reveals a deficiency in an inherited control, how the system ISSO documents the impact on their system's risk posture and whether a local compensating control is required</li>
+                        <li>Document a complete SAR and POA&amp;M management guide covering finding-to-risk translation, SAR narrative structure, risk determination language, and POA&amp;M entry quality standards</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SAR Writing</span>
+                        <span class="tech-badge">POA&amp;M Management</span>
+                        <span class="tech-badge">Risk Determination Narrative</span>
+                        <span class="tech-badge">Residual Risk Assessment</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Security Assessment Report &amp; POA&amp;M Package</h4>
+                        <p>Write a complete Security Assessment Report for a fictional 12-finding assessment with overall risk determination, and produce 5 POA&amp;M entries with specific weakness descriptions, risk ratings, planned actions, and milestone dates — each at a quality level an AO would act on.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: ATO Package Assembly &amp; Authorization Decision Support</h3>
+                    <ul>
+                        <li>Study what a complete ATO package contains: the SSP, SAP, SAR, POA&amp;M, privacy impact assessment (if applicable), contingency plan, incident response plan, and the authorization decision memorandum — and how the IA Analyst assembles and manages this package through the authorization process</li>
+                        <li>Learn how to write an Executive Summary for the ATO package that gives the AO exactly what they need to make an authorization decision: the system description, the security categorization, the assessment scope, the key risks, and the recommended authorization decision with rationale — in under 3 pages</li>
+                        <li>Practice writing an Authorization Decision Executive Summary for a fictional system with 3 High findings, 8 Medium findings, and a clear recommended path: authorize with conditions (the 3 High findings must be remediated within 90 days)</li>
+                        <li>Study how to navigate the Authorization Decision: what "Authorize to Operate," "Authorize to Operate with Conditions," "Deny Authorization to Operate," and "Interim Authorization to Operate" mean — and how each affects the system's operation and the IA Analyst's subsequent responsibilities</li>
+                        <li>Learn how to manage the authorization decision timeline: the statutory requirements for ATO duration (3 years maximum under FISMA for federal systems), what triggers a re-authorization before the expiration date, and how to track expiration and initiate re-authorization proactively</li>
+                        <li>Practice writing a Significant Change Request for a fictional system adding a new cloud storage integration to an authorized system — documenting the change, its impact on the system categorization and control set, and whether it requires a full re-authorization or a change-level assessment</li>
+                        <li>Study how eMASS or equivalent authorization tracking tools are used to manage the authorization package, track POA&amp;M milestones, and generate required FISMA reporting</li>
+                        <li>Document a complete ATO package assembly guide covering package component checklist, executive summary writing, authorization decision types, expiration tracking, and significant change management</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">ATO Package Assembly</span>
+                        <span class="tech-badge">Authorization Executive Summary</span>
+                        <span class="tech-badge">Significant Change Management</span>
+                        <span class="tech-badge">FISMA Reporting</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Complete ATO Package &amp; Executive Summary</h4>
+                        <p>Assemble a complete ATO package checklist for a fictional system, write an authorization decision executive summary recommending ATO with conditions for a 3-High-finding system, and write a significant change request for a fictional cloud integration addition to an authorized system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can develop a Security Assessment Plan and conduct a NIST SP 800-53A assessment, assess STIG compliance with defensible N/A justifications and POA&amp;M mapping, write a Security Assessment Report with risk determination narrative, manage a POA&amp;M at AO-acceptable quality, and assemble a complete ATO package with an executive summary that gives an Authorizing Official everything they need to make an authorization decision.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into continuous monitoring, supply chain risk, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Complete ATO Package for a Fictional System</h4>
+                        <p>Build a complete, end-to-end ATO package for one fictional system: categorization, tailored control set, SSP with diagrams, SAP, SAR with risk determination, POA&amp;M with 8 entries, and authorization executive summary — all consistently referencing the same system.</p>
+                        <small>Hint: Coherence across the package is what an AO looks for — the system described in the SSP must match the system assessed in the SAP and SAR, and the risks in the SAR must match the POA&amp;M entries.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>STIG Assessment Deep Dive</h4>
+                        <p>Conduct a full STIG assessment of a fictional Linux server against the RHEL 8 STIG: 30+ checks with Satisfied/OTS/N/A/NR determination, written N/A justifications for every N/A finding, and a complete POA&amp;M for all Open findings.</p>
+                        <small>Hint: The N/A justifications are the hardest part to get right — write them as if a skeptical assessor is going to challenge every one.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Risk Determination Casebook</h4>
+                        <p>Write risk determination narratives for 10 different finding types across 5 control families, ranging from CAT I STIG findings to medium-severity SP 800-53 OTS findings — each with a threat/vulnerability/likelihood/impact analysis and a recommended AO action.</p>
+                        <small>Hint: The risk determination for a finding depends on system context, not just the finding's severity — the same vulnerability on a public-facing system and an air-gapped system have very different risk postures.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>IA Assessment Teaching Series</h4>
+                        <p>Turn your Phase 2 work into a teaching series on "conducting an RMF security assessment from SAP to SAR" for practitioners learning the IA Analyst role.</p>
+                        <small>Hint: Use a fictional system throughout and walk through the entire assessment lifecycle — what you planned to assess, what you found, how you documented it, and how the findings became the SAR risk determination.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3 -->
+            <div class="phase-header">
+                <h2>Phase 3: Continuous Monitoring, Supply Chain Risk &amp; Career Readiness</h2>
+                <span>Days 61-90: Running ongoing authorization maintenance, managing supply chain risk, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Continuous Monitoring Program</span>
+                    <span class="skill-tag">ConMon Reporting</span>
+                    <span class="skill-tag">Supply Chain Risk Management (SCRM)</span>
+                    <span class="skill-tag">Privacy Impact Assessment</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Continuous Monitoring Program Design &amp; Execution</h3>
+                    <ul>
+                        <li>Study how continuous monitoring (ConMon) is the mechanism that allows a system to maintain its ATO between formal assessment cycles: automated scanning, ongoing assessment of a subset of controls, incident tracking, change management, and periodic reporting to the AO provide ongoing assurance that the risk posture hasn't materially changed</li>
+                        <li>Learn how to design a Continuous Monitoring Strategy (per NIST SP 800-137) covering: what will be monitored (control subset selection, automated metrics), how it will be monitored (scanning frequency, manual review cadence), how monitoring results will be reported to the AO, and what findings trigger an out-of-cycle assessment or ATO suspension</li>
+                        <li>Practice designing a ConMon strategy for a fictional MODERATE-categorization system: selecting a quarterly manual control review subset, specifying weekly vulnerability scan frequency, defining the security metric dashboard content, and establishing the thresholds that trigger escalation to the AO</li>
+                        <li>Study how to produce a ConMon status report: summarizing the current state of the POA&amp;M (milestones met, milestones missed, new findings added), the results of automated scanning, any significant changes processed, and the overall AO attestation that the system's risk posture remains acceptable</li>
+                        <li>Learn how to manage findings discovered during ConMon: new findings added to the POA&amp;M, the process for determining whether a new finding changes the system's overall risk posture materially, and when a new finding requires immediate AO notification rather than routine POA&amp;M tracking</li>
+                        <li>Practice writing a quarterly ConMon status report for a fictional system: POA&amp;M status summary, scan results summary, 2 new findings discovered and added to the POA&amp;M, and AO attestation narrative</li>
+                        <li>Study how to manage ATO expiration proactively: the timeline for initiating re-authorization (12 months before expiration for complex systems), what triggers an interim authorization, and how to manage a system operating on an expired ATO</li>
+                        <li>Document a complete continuous monitoring program design covering strategy development, control subset selection, reporting cadence, escalation thresholds, and re-authorization timeline management</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NIST SP 800-137</span>
+                        <span class="tech-badge">ConMon Strategy</span>
+                        <span class="tech-badge">Quarterly Status Reports</span>
+                        <span class="tech-badge">ATO Expiration Management</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: ConMon Strategy &amp; Quarterly Status Report</h4>
+                        <p>Design a complete continuous monitoring strategy for a fictional MODERATE system with control subset selection, scanning frequency, escalation thresholds, and AO reporting cadence, then write a quarterly ConMon status report incorporating POA&amp;M status, scan results, and 2 new findings.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Supply Chain Risk Management &amp; Privacy Impact Assessment</h3>
+                    <ul>
+                        <li>Study how SCRM (Supply Chain Risk Management) has become a first-class IA concern: NIST SP 800-161 and the SR control family in SP 800-53 Rev 5 require IA Analysts to assess and document risks from hardware, software, and service providers — not just the system itself</li>
+                        <li>Learn how to conduct a supply chain risk assessment for a fictional system: identifying critical components and their suppliers, assessing the risk associated with each supplier (country of origin, financial stability, security practices, incident history), and documenting mitigations for high-risk supply chain relationships</li>
+                        <li>Practice producing a supply chain risk assessment for a fictional network appliance whose firmware is developed by a foreign subsidiary: documenting the risk, the applicable SR controls, and compensating measures (firmware integrity verification, network traffic monitoring, contractual security requirements)</li>
+                        <li>Study how to conduct a Privacy Impact Assessment (PIA): identifying personally identifiable information (PII) the system collects, processes, or stores, assessing the privacy risks, and documenting the privacy controls that mitigate each risk per NIST SP 800-122 and OMB Circular A-130</li>
+                        <li>Learn how the Privacy Act of 1974 and the E-Government Act of 2002 create specific documentation requirements (System of Records Notice for Privacy Act systems) that the IA Analyst must address in the authorization package</li>
+                        <li>Practice writing a Privacy Impact Assessment for a fictional HR management system that processes employee PII: identifying PII types, assessing the risks of unauthorized disclosure, and documenting the privacy controls and oversight mechanisms</li>
+                        <li>Study how SCRM and privacy requirements interact with FedRAMP: what the cloud provider's FedRAMP authorization covers regarding supply chain and privacy, and what remains the customer agency's responsibility to document</li>
+                        <li>Document a complete supply chain risk management guide and a PIA template covering IA-relevant requirements from SP 800-161, SP 800-122, and OMB A-130</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">NIST SP 800-161 SCRM</span>
+                        <span class="tech-badge">SR Control Family</span>
+                        <span class="tech-badge">Privacy Impact Assessment</span>
+                        <span class="tech-badge">OMB A-130 / Privacy Act</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Supply Chain Risk Assessment &amp; Privacy Impact Assessment</h4>
+                        <p>Produce a supply chain risk assessment for a fictional system with a high-risk foreign-subsidiary component, documenting SR controls and compensating measures, and write a complete Privacy Impact Assessment for a fictional HR system processing employee PII.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: FedRAMP, Cloud Authorization &amp; IA Program Metrics</h3>
+                    <ul>
+                        <li>Study how FedRAMP (Federal Risk and Authorization Management Program) works: the JAB authorization path vs. agency authorization path, what a FedRAMP authorization package contains, how an agency leverages an existing FedRAMP authorization vs. conducting a new assessment, and what customer responsibilities remain even with a FedRAMP-authorized CSP</li>
+                        <li>Learn how to review a FedRAMP package as an IA Analyst: reading the Customer Responsibility Matrix (CRM) to identify which controls the agency customer must implement and document, reviewing the CSP's POA&amp;M for open findings that may affect the agency's risk posture, and producing a leverage ATO package that inherits from the FedRAMP authorization</li>
+                        <li>Practice producing a customer responsibility implementation summary for a fictional agency leveraging a FedRAMP MODERATE authorized IaaS provider: identifying all customer-responsible controls and documenting the agency's planned implementation for each</li>
+                        <li>Study how to build IA program metrics that demonstrate program effectiveness: ATO coverage rate (percentage of systems with current ATOs), POA&amp;M aging (average days-open for HIGH and MEDIUM findings), STIG compliance trend, and ConMon finding discovery rate vs. remediation rate</li>
+                        <li>Learn how to write a FISMA annual report contribution: the metrics and status information the IA program must contribute to the agency's annual FISMA report to OMB and Congress</li>
+                        <li>Practice building a fictional IA program metrics dashboard showing ATO coverage, POA&amp;M health, and STIG compliance rates across a portfolio of 10 fictional systems</li>
+                        <li>Compile your 90-day work into a single portfolio-style IA Analyst master document</li>
+                        <li>Document a complete FedRAMP leverage guide for agency IA Analysts and an IA program metrics framework covering FISMA-reportable indicators</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">FedRAMP Authorization</span>
+                        <span class="tech-badge">Customer Responsibility Matrix</span>
+                        <span class="tech-badge">FISMA Reporting</span>
+                        <span class="tech-badge">IA Program Metrics</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: FedRAMP Leverage Package &amp; IA Program Dashboard</h4>
+                        <p>Produce a customer responsibility implementation summary for a fictional FedRAMP IaaS leveraging agency, build an IA program metrics dashboard across 10 fictional systems, and document a FedRAMP leverage guide for agency IA Analysts.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification &amp; Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to target certs (CAP — Certified Authorization Professional from ISC2, CASP+, Security+, or CISSP for broader eligibility) and identify remaining gaps</li>
+                        <li>Do a full mock "day as IA Analyst" exercise: categorize a fictional system, select and tailor the baseline, write 5 control implementation descriptions, write a risk determination for 3 OTS findings, and draft a ConMon status report — all within a set time window</li>
+                        <li>Prepare answers for IA Analyst interview questions (walk through the RMF steps for a new system, describe how you would handle a significant change to an authorized system, explain how you determine whether a STIG finding is applicable or not applicable)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable outcomes: systems categorized, controls documented, STIGs assessed, POA&amp;Ms managed, ATOs supported</li>
+                        <li>Polish your portfolio: pin your best 3 artifacts (complete ATO package, STIG assessment with POA&amp;M, ConMon strategy and status report) with explanatory notes on the IA decisions made in each</li>
+                        <li>Practice a mock behavioral interview using STAR format for your SSP writing, risk determination, and AO communication stories</li>
+                        <li>Research target organizations (federal agencies, DoD contractors, federal system integrators, FedRAMP CSPs) and tailor your resume to emphasize the specific frameworks and tools relevant to each employer's environment</li>
+                        <li>Plan your next 90 days: pick a direction (ISSO, ISSM, security control assessor, FedRAMP consultant, or IA program manager)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">CAP / CASP+ / CISSP</span>
+                        <span class="tech-badge">STAR Behavioral Prep</span>
+                        <span class="tech-badge">Portfolio Annotation</span>
+                        <span class="tech-badge">Federal Employer Research</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready IA Analyst Portfolio</h4>
+                        <p>Finalize a portfolio (ATO package, STIG assessment, ConMon strategy) with IA decision notes, write resume bullets with program-level metrics, and prepare STAR-format answers for SSP writing, risk determination, and AO escalation interview scenarios.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a complete Information Assurance Analyst toolkit — FIPS 199 categorization, SP 800-53 control selection and tailoring, SSP writing with diagrams, SP 800-53A assessment and SAR production, STIG compliance assessment with POA&amp;M mapping, ATO package assembly, continuous monitoring program design, supply chain risk assessment, privacy impact assessment, FedRAMP leverage documentation, and IA program metrics — plus a portfolio of real artifacts and a job-ready application package.</p>
+            </div>
+
+            <div class="projects-choice">
+                <h3>Projects After Phase 3</h3>
+                <p>Final capstone options to demonstrate end-to-end IA Analyst capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Complete End-to-End ATO Package</h4>
+                        <p>Build a complete, coherent ATO package from scratch for one fictional system: categorization through ConMon strategy — every component consistently referencing the same system with no gaps between documents.</p>
+                        <small>Hint: The internal consistency of the package — the same system described in every document, the same findings in the SAR and POA&amp;M, the same controls assessed that were selected in the SSP — is the quality indicator an experienced AO uses first.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>FedRAMP Leverage Authorization Package</h4>
+                        <p>Build a complete FedRAMP leverage authorization package for a fictional agency using a MODERATE IaaS CSP: leveraging the CSP's ATO, documenting all customer responsibilities, addressing POA&amp;M open items that affect the agency's risk posture, and producing the agency ATO executive summary.</p>
+                        <small>Hint: The customer responsibility section is where most FedRAMP leveraging packages are weakest — make yours genuinely specific about what the agency will implement and how.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>ConMon Program Design for a 5-System Portfolio</h4>
+                        <p>Design a continuous monitoring program for 5 fictional systems at different categorization levels, producing system-specific ConMon strategies, a portfolio-level dashboard, and a FISMA reporting contribution document.</p>
+                        <small>Hint: The challenge is differentiating the ConMon rigor between a HIGH and a LOW system while keeping the overall program manageable — that resource allocation decision is itself a core IA program management skill.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>IA Analyst Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT) framed around "taking a system through RMF from scratch to ATO."</p>
+                        <small>Hint: Build the series around a single fictional system that goes from uncategorized through authorized and into ConMon — the arc from "no documentation" to "maintained authorization" is the most instructive journey for IA practitioners.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">System Categorization (FIPS 199 / SP 800-60)</div>
+                    <div class="skill-item">Security Control Selection, Tailoring &amp; ODP Population (SP 800-53)</div>
+                    <div class="skill-item">System Security Plan Writing with Authorization Diagrams</div>
+                    <div class="skill-item">Security Control Assessment (SP 800-53A / SAP / SAR)</div>
+                    <div class="skill-item">STIG &amp; SRG Compliance Assessment with POA&amp;M Mapping</div>
+                    <div class="skill-item">ATO Package Assembly &amp; Authorization Executive Summary Writing</div>
+                    <div class="skill-item">Continuous Monitoring Program Design &amp; ConMon Reporting</div>
+                    <div class="skill-item">Supply Chain Risk Management, PIA &amp; FedRAMP Leverage Authorization</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books &amp; Publications</h3>
+                    <ul>
+                        <li>NIST SP 800-37 Rev 2 — Risk Management Framework (free, authoritative)</li>
+                        <li>NIST SP 800-53 Rev 5 — Security and Privacy Controls (free, authoritative)</li>
+                        <li>NIST SP 800-53A Rev 5 — Assessment Procedures (free, authoritative)</li>
+                        <li>NIST SP 800-18 Rev 1 — System Security Plan Guide (free)</li>
+                        <li>NIST SP 800-137 — Continuous Monitoring Guide (free)</li>
+                        <li>NIST SP 800-161 — Supply Chain Risk Management (free)</li>
+                        <li>FIPS 199 and FIPS 200 (free, NIST official)</li>
+                        <li>NIST SP 800-60 Vol I and II — Information Type Mapping (free)</li>
+                        <li>Mike Chapple's CAP Study Guide (ISC2 CAP exam preparation)</li>
+                        <li>DISA STIG Library — disa.mil/stigs (free, authoritative)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>NIST CSRC (csrc.nist.gov) — all SP 800-series publications free</li>
+                        <li>FedRAMP.gov — authorization packages, templates, and guidance</li>
+                        <li>DISA STIGs and SRGs — disa.mil/stigs (free with registration)</li>
+                        <li>CISA resources — cybersecurity performance goals and guidance</li>
+                        <li>ISC2 CAP official training resources and practice exams</li>
+                        <li>CompTIA CASP+ exam prep materials</li>
+                        <li>Cybrary and Udemy: RMF and FISMA compliance courses</li>
+                        <li>SANS MGT514 (Security Strategic Planning) for IA program context</li>
+                        <li>eMASS training materials (DAU.edu for DoD practitioners)</li>
+                        <li>MITRE ATT&amp;CK for mapping threat intelligence into risk determinations</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>CAP — Certified Authorization Professional (ISC2) — the primary IA cert</li>
+                        <li>CompTIA Security+ (DoD 8570 baseline requirement)</li>
+                        <li>CompTIA CASP+ (advanced IA practitioner level)</li>
+                        <li>CISSP (Certified Information Systems Security Professional)</li>
+                        <li>CISA (Certified Information Systems Auditor)</li>
+                        <li>CGRC — Certified in Governance, Risk and Compliance (ISC2, formerly CAP)</li>
+                        <li>DoD 8570 / 8140 IAM Level I, II, III baseline certifications</li>
+                        <li>CRISC (risk context for IA program management)</li>
+                        <li>FedRAMP Marketplace listed assessor training (for 3PAO track)</li>
+                        <li>ITIL Foundation (IT service management context for ConMon)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities &amp; Forums</h3>
+                    <ul>
+                        <li>NIST CSRC comment and discussion pages</li>
+                        <li>FedRAMP community — connect.gov and GSA resources</li>
+                        <li>ISACA local chapters (GRC and audit community overlap)</li>
+                        <li>LinkedIn IA and RMF practitioner groups</li>
+                        <li>r/cybersecurity and r/netsec (federal/DoD IA discussion threads)</li>
+                        <li>GovLoop — federal IT and security professional community</li>
+                        <li>DISA STIGs forum and feedback portal</li>
+                        <li>ACT-IAC (American Council for Technology and Industry Advisory Council)</li>
+                        <li>Twitter/X IA and federal security community (#NISTRMF, #FedRAMP)</li>
+                        <li>ISC2 chapter meetings and CAP study groups</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Authorization &amp; Documentation Tools</h3>
+                    <ul>
+                        <li>eMASS (Enterprise Mission Assurance Support Service) — DoD primary</li>
+                        <li>Xacta (TELOS) — federal agency RMF tracking</li>
+                        <li>Archer RSA (enterprise GRC platform with RMF modules)</li>
+                        <li>ServiceNow GRC (RMF workflow integration)</li>
+                        <li>Microsoft Word / Google Docs (SSP, SAP, SAR, POA&amp;M writing)</li>
+                        <li>Microsoft Excel / Google Sheets (control allocation, POA&amp;M tracking)</li>
+                        <li>Visio / draw.io / Lucidchart (authorization boundary and network diagrams)</li>
+                        <li>SharePoint (authorization package document management)</li>
+                        <li>NIST SP 800-18 SSP template (NIST CSRC, free download)</li>
+                        <li>FedRAMP authorization package templates (FedRAMP.gov, free)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>STIG &amp; Compliance Assessment Tools</h3>
+                    <ul>
+                        <li>DISA STIG Viewer 3 (free, DISA official)</li>
+                        <li>OpenSCAP / SCAP Workbench (open-source SCAP scanning)</li>
+                        <li>Nessus / Tenable.sc (vulnerability scanning with STIG audit files)</li>
+                        <li>DISA SCC (SCAP Compliance Checker, free with CAC/registration)</li>
+                        <li>CIS-CAT (Center for Internet Security Configuration Assessment Tool)</li>
+                        <li>Ansible / Chef InSpec (automated compliance verification)</li>
+                        <li>Qualys Policy Compliance (enterprise STIG and CIS benchmark scanning)</li>
+                        <li>Rapid7 InsightVM (vulnerability management with compliance reporting)</li>
+                        <li>AWS Inspector / Azure Security Center (cloud STIG equivalents)</li>
+                        <li>Prisma Cloud / Wiz (cloud-native compliance posture management)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>ConMon &amp; Reporting Tools</h3>
+                    <ul>
+                        <li>Splunk / Elastic (SIEM for ConMon event monitoring)</li>
+                        <li>Tenable.io (continuous vulnerability management)</li>
+                        <li>Microsoft Sentinel (cloud ConMon for Azure environments)</li>
+                        <li>Jira / ServiceNow (POA&amp;M milestone and finding tracking)</li>
+                        <li>Power BI / Tableau (IA program metrics dashboards)</li>
+                        <li>Telos Xacta (automated ConMon reporting integration)</li>
+                        <li>SAP Continuous Control Monitoring (enterprise scale)</li>
+                        <li>Devo / LogRhythm (continuous log monitoring for IA)</li>
+                        <li>Hyperproof (multi-framework compliance with ConMon features)</li>
+                        <li>Vanta / Drata (automated evidence collection for continuous compliance)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Complete a FIPS 199 categorization for one fictional 2-tier system</li>
+                        <li>Select the LOW baseline for a fictional system and identify the applicable controls</li>
+                        <li>Write 3 control implementation descriptions at AO-acceptable specificity</li>
+                        <li>Assess 10 STIG checks against a fictional system with Sat/OTS/N/A/NR determinations</li>
+                        <li>Write 2 POA&amp;M entries with specific weakness descriptions and planned actions</li>
+                        <li>Draw an authorization boundary diagram for a simple fictional system</li>
+                        <li>Write a brief risk determination narrative for one HIGH-severity finding</li>
+                        <li>Identify the inherited controls from a FedRAMP MODERATE IaaS authorization for a fictional system</li>
+                        <li>Write a basic ConMon status report for a 3-finding fictional system</li>
+                        <li>Identify 3 PII types in a fictional system and the applicable privacy controls</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Complete a full FIPS 199 categorization package using SP 800-60 for a MODERATE system</li>
+                        <li>Select and tailor the MODERATE baseline with justified scoping decisions and populated ODPs</li>
+                        <li>Write a full SSP with all required sections and authorization boundary, network, and data flow diagrams</li>
+                        <li>Develop a Security Assessment Plan for 10 controls with assessment method selection</li>
+                        <li>Conduct a 20-check STIG assessment with written N/A justifications for each N/A finding</li>
+                        <li>Write a Security Assessment Report for a 10-finding assessment with risk determination</li>
+                        <li>Write 5 POA&amp;M entries at AO-acceptable quality with milestone dates and responsible parties</li>
+                        <li>Design a continuous monitoring strategy for a MODERATE system</li>
+                        <li>Write a Privacy Impact Assessment for a system processing PII</li>
+                        <li>Write a significant change request for a new integration to an authorized system</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a complete ATO package for one fictional system: all components coherently referencing the same system</li>
+                        <li>Produce a FedRAMP leverage authorization package including customer responsibility implementation summary</li>
+                        <li>Conduct a 30+ check STIG assessment and map all Open findings to a complete POA&amp;M</li>
+                        <li>Write a complete SAR with overall risk determination and recommended authorization decision for a 12-finding assessment</li>
+                        <li>Design a ConMon program for a 5-system portfolio with portfolio-level dashboard and FISMA reporting contribution</li>
+                        <li>Produce a supply chain risk assessment for a system with a high-risk foreign component</li>
+                        <li>Write an IA program metrics dashboard and FISMA annual report contribution for a fictional agency</li>
+                        <li>Write an Authorization Decision Executive Summary for an AO with 3 High findings and recommended ATO with conditions</li>
+                        <li>Develop a complete system re-authorization package for a fictional system approaching ATO expiration</li>
+                        <li>Mentor a junior security practitioner through their first control assessment and SSP contribution</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Build a complete end-to-end RMF authorization package for a fictional complex multi-tier system</li>
+                        <li>Design and document an IA program for a fictional federal agency with 20-system portfolio</li>
+                        <li>Publish original guidance on a specific RMF challenge (FedRAMP inheritance, SCRM implementation, or ConMon automation)</li>
+                        <li>Contribute to a public RMF or FedRAMP community forum as a subject matter expert</li>
+                        <li>Design a complete IA analyst apprenticeship curriculum for practitioners new to the federal/DoD environment</li>
+                        <li>Build an automated ConMon evidence collection and reporting pipeline for a fictional system portfolio</li>
+                        <li>Develop a complete IA program maturity model for organizational self-assessment</li>
+                        <li>Mentor multiple practitioners through their first ATO packages</li>
+                        <li>Design a supply chain risk program spanning a fictional agency's entire system portfolio</li>
+                        <li>Present an IA program status and risk posture to a real or simulated AO-level audience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your IA Analyst career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize or Broaden</h3>
+                    <ul>
+                        <li>Decide: move toward ISSO / ISSM ownership, specialize as a security control assessor (3PAO/SCA), pursue FedRAMP consulting, or broaden toward IA program management</li>
+                        <li>Consider the ISSO track if you want to own the full authorization lifecycle for a specific system portfolio</li>
+                        <li>Consider the SCA / 3PAO assessor track if assessment and findings documentation energized you most</li>
+                        <li>Consider FedRAMP consulting if you want maximum exposure to diverse cloud authorization packages and client environments</li>
+                        <li>Pursue CAP (now CGRC) as your next certification — it is the most directly recognized credential for this role</li>
+                        <li>Pursue CISSP once you have the experience requirement — it significantly expands your access to senior IA and program leadership roles</li>
+                        <li>Join ISACA and ISC2 local chapters for professional development and networking</li>
+                        <li>Set a 6-12 month direction-setting goal</li>
+                        <li>Identify one area of RMF or FedRAMP where your knowledge still has gaps and plan to close it</li>
+                        <li>Consider which agency or contractor environment gives you the most complex authorization challenges for fastest skill development</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply &amp; Network</h3>
+                    <ul>
+                        <li>Apply to Information Assurance Analyst / ISSO / RMF Analyst / Cybersecurity Compliance Analyst roles weekly</li>
+                        <li>Tailor your resume per job description, emphasizing specific RMF steps executed and authorization packages supported</li>
+                        <li>Attend ISACA local chapter meetings and federal security community events</li>
+                        <li>Reach out to ISSOs, ISSMs, and IA program managers on LinkedIn for informational conversations</li>
+                        <li>Keep your portfolio updated with new authorization artifacts and assessment work</li>
+                        <li>Practice behavioral mock interviews monthly using STAR format for your SSP writing, risk determination, and AO escalation stories</li>
+                        <li>Ask for referrals once you have built real community connections</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Target federal agencies and DoD contractors with large system portfolios — the volume of authorization work accelerates your skill development fastest</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with NIST SP 800-53 updates, FedRAMP changes, and DISA STIG version releases</li>
+                        <li>Re-read one NIST SP 800-series publication per month and annotate it with practical application notes</li>
+                        <li>Write a monthly post about an RMF decision, a categorization challenge, or a STIG assessment finding</li>
+                        <li>Build a second, more advanced authorization package artifact every 90 days</li>
+                        <li>Track new regulatory requirements (OMB memoranda, CISA directives) and their impact on RMF documentation</li>
+                        <li>Mentor junior practitioners through their first system categorization or SSP section</li>
+                        <li>Read one governance or compliance management book per quarter for broader IA program context</li>
+                        <li>Attend at least one federal cybersecurity conference or ISACA webinar per quarter</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                        <li>Seek opportunities to review a peer's SSP or SAR and provide detailed feedback</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a "how RMF actually works in practice" series for practitioners new to the federal/DoD environment</li>
+                        <li>Answer RMF and IA questions in community forums, LinkedIn groups, and Discords regularly</li>
+                        <li>Open-source one of your templates (categorization worksheet, SSP template, ConMon strategy) for others to use</li>
+                        <li>Host a free workshop on writing control implementation descriptions that satisfy an AO</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another aspiring IA Analyst for authorization package peer review accountability</li>
+                        <li>Contribute feedback to a NIST public comment period on an SP 800-series publication update</li>
+                        <li>Review and give feedback on a peer's risk determination narrative or POA&amp;M entry</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Categorized 3 fictional systems using FIPS 199 and SP 800-60 with information type mapping | ✅ Selected and tailored a MODERATE baseline with justified ODPs, scoping decisions, and control allocation | ✅ Written a complete SSP with authorization boundary, network, and data flow diagrams at AO-acceptable specificity</p>
+                <p>✅ Developed a Security Assessment Plan, conducted a 20+ check STIG assessment, and written a SAR with risk determination | ✅ Built a complete ATO package with authorization executive summary and POA&amp;M | ✅ Designed a continuous monitoring strategy and written a quarterly ConMon status report</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> NIST SP 800-37/53/53A/60/137/161/18, FIPS 199/200, DISA STIG Viewer, OpenSCAP/SCAP, eMASS/Xacta, FedRAMP templates, Visio/draw.io (authorization diagrams), Nessus/Tenable (STIG scanning), POA&amp;M tracking tools, CAP/CGRC certification framework.</p>
+                <br>
+                <p><strong>Remember:</strong> The IA Analyst's job is not to produce documentation for its own sake — it is to give the Authorizing Official a clear, honest picture of what risks exist in a system so that risk acceptance is an informed decision rather than a hope. Every categorization you complete, every control you document, every finding you assess, and every POA&amp;M entry you write exists to answer one question: "does the person accepting the risk of operating this system understand what they are accepting?" Write with that reader in mind, always — and the authorization package will be worth the effort it takes to produce.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

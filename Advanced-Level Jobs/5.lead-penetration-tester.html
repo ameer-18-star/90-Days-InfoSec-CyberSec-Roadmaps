@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Lead Penetration Tester" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Lead Penetration Tester" Mastery</h1>
+            <p>An advanced-track plan for testers who've already run individual engagements and are ready to lead them — scoping the work, directing a team through complex attack chains, and owning the client relationship from kickoff to debrief.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: Engagement Leadership & Advanced Exploitation</h2>
+                <span>Days 1-30: Scoping, methodology ownership, and directing the technical depth of a real engagement</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Engagement Scoping</span>
+                    <span class="skill-tag">Rules of Engagement</span>
+                    <span class="skill-tag">Active Directory Exploitation</span>
+                    <span class="skill-tag">Methodology Frameworks</span>
+                    <span class="skill-tag">Team Direction</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: The Lead Tester Role & Engagement Scoping</h3>
+                    <ul>
+                        <li>Study what changes between "running an engagement" and "leading one": you now own scope, risk, and client expectations, not just exploitation</li>
+                        <li>Learn how to run a scoping call: clarifying objectives, in-scope/out-of-scope assets, testing windows, and acceptable techniques</li>
+                        <li>Study the difference between a vulnerability assessment, a penetration test, and a red team engagement — and how to recommend the right one</li>
+                        <li>Learn how to write a Statement of Work (SOW) that protects both the client and the testing team from scope ambiguity</li>
+                        <li>Study how to estimate engagement effort/duration realistically based on scope size and complexity</li>
+                        <li>Review one real public pentest report's scope/methodology section and evaluate how clearly it was defined</li>
+                        <li>Learn how to handle a scope-creep request mid-engagement without damaging the client relationship</li>
+                        <li>Document a reusable scoping questionnaire and SOW template for your own future engagements</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Scoping Calls</span>
+                        <span class="tech-badge">Statement of Work</span>
+                        <span class="tech-badge">VA vs PT vs Red Team</span>
+                        <span class="tech-badge">Effort Estimation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Scoping Questionnaire & SOW Template</h4>
+                        <p>Build a complete scoping questionnaire and a Statement of Work template, then use both to scope one fictional engagement end to end, including an effort estimate.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Rules of Engagement & Legal/Operational Safety</h3>
+                    <ul>
+                        <li>Study what belongs in a Rules of Engagement (RoE) document: authorized techniques, emergency contacts, blackout windows, escalation procedures</li>
+                        <li>Learn how to negotiate testing constraints with a client who's nervous about production system impact</li>
+                        <li>Study "get out of jail free" letters/authorization documentation and why a lead must personally verify they're signed before testing begins</li>
+                        <li>Learn how to plan for and communicate an emergency stop procedure if testing causes unexpected impact</li>
+                        <li>Study how to handle discovering an active, unrelated compromise mid-engagement (a real incident, not a finding)</li>
+                        <li>Practice writing a full RoE document for a fictional engagement involving production and non-production environments</li>
+                        <li>Study how data handling rules (what you can exfiltrate as proof, how you store findings) protect both parties</li>
+                        <li>Document a personal pre-engagement legal/safety checklist you'll run through before every test begins</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Rules of Engagement</span>
+                        <span class="tech-badge">Authorization Letters</span>
+                        <span class="tech-badge">Emergency Stop Procedures</span>
+                        <span class="tech-badge">Data Handling</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Rules of Engagement Document</h4>
+                        <p>Write a complete Rules of Engagement document for a fictional engagement, including authorized techniques, emergency stop procedure, and a pre-engagement legal/safety checklist.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Advanced Active Directory & Internal Network Exploitation</h3>
+                    <ul>
+                        <li>Study advanced AD attack paths: Kerberoasting, ASREPRoasting, delegation abuse (unconstrained/constrained/RBCD), DCSync</li>
+                        <li>Practice running a full AD attack chain in a lab (e.g. GOAD or a self-built vulnerable domain) from initial foothold to domain admin</li>
+                        <li>Learn how BloodHound is used to map attack paths and identify the highest-value escalation routes in a real environment</li>
+                        <li>Study lateral movement techniques: pass-the-hash, pass-the-ticket, WMI/PsExec/WinRM-based movement</li>
+                        <li>Learn how a lead decides which attack path to pursue when multiple viable paths exist, weighing stealth, time, and client risk</li>
+                        <li>Practice documenting a full attack chain narrative as you'd present it in a client debrief, not just a list of commands run</li>
+                        <li>Study how to recognize and work around common EDR/AV detection during an authorized internal engagement</li>
+                        <li>Write a full internal network engagement report section covering one complete attack chain from foothold to domain compromise</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">BloodHound</span>
+                        <span class="tech-badge">Kerberoasting/DCSync</span>
+                        <span class="tech-badge">Lateral Movement</span>
+                        <span class="tech-badge">GOAD Lab</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Full AD Attack Chain Report</h4>
+                        <p>Run a complete attack chain in a lab AD environment from initial foothold to domain admin, and write the report section as you'd present it in a real client debrief.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Methodology Ownership & Team Technical Direction</h3>
+                    <ul>
+                        <li>Study established methodology frameworks (PTES, OWASP Testing Guide, OSSTMM) and how a lead selects/adapts one per engagement</li>
+                        <li>Learn how a lead allocates team members across attack surfaces (external, internal, web app, wireless) for efficient coverage</li>
+                        <li>Practice writing a testing plan that sequences activities logically (recon before exploitation, low-noise before loud) for a multi-person team</li>
+                        <li>Study how to review a junior tester's findings for accuracy and exploitability before they go into a report</li>
+                        <li>Learn how to recognize when a team member is stuck on a path and redirect them without micromanaging</li>
+                        <li>Practice a mock daily standup: 2-3 testers report progress, you synthesize and reprioritize the remaining engagement time</li>
+                        <li>Study how to track engagement progress against the agreed scope and timeline, flagging risk of running over</li>
+                        <li>Document a reusable engagement testing plan template and a finding-review checklist for quality control</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">PTES/OWASP/OSSTMM</span>
+                        <span class="tech-badge">Team Allocation</span>
+                        <span class="tech-badge">Testing Plans</span>
+                        <span class="tech-badge">Finding QA Review</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Engagement Testing Plan & QA Checklist</h4>
+                        <p>Build a complete testing plan sequencing activities for a multi-person team across one fictional engagement, plus a finding-review checklist for quality control.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can scope an engagement properly, write a defensible Rules of Engagement, run a full advanced AD attack chain, and direct a team's technical work across a sequenced testing plan — the foundational toolkit of a Lead Penetration Tester.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate leadership fundamentals before moving into advanced exploitation and reporting depth.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Pre-Engagement Package</h4>
+                        <p>Build a complete pre-engagement package: scoping questionnaire, SOW, RoE, and authorization letter template, ready for reuse.</p>
+                        <small>Hint: This single package is one of the most practical, immediately reusable artifacts you can build — refine it well.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>GOAD Full Compromise Walkthrough</h4>
+                        <p>Fully compromise the Game of Active Directory (GOAD) lab from external foothold to full domain compromise, documenting every step.</p>
+                        <small>Hint: Write it as a client-facing report, not a personal notes file — that's the skill you're actually building.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Mock Multi-Tester Engagement Drill</h4>
+                        <p>Run a mock engagement with 2-3 peers playing testers, practicing task allocation and a daily standup synthesis live.</p>
+                        <small>Hint: Deliberately have one "tester" report they're stuck — practicing redirection is the actual point of the drill.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Engagement Leadership Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: Frame it as "what changes when you go from tester to engagement lead" — that's the angle people haven't seen before.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Advanced Exploitation Depth & Client Relationship Management</h2>
+                <span>Days 31-60: Pushing technical depth across web/cloud/AD, and owning the client relationship through findings and pushback</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Advanced Web Exploitation</span>
+                    <span class="skill-tag">Cloud Penetration Testing</span>
+                    <span class="skill-tag">Client Communication</span>
+                    <span class="skill-tag">Risk-Rating Disputes</span>
+                    <span class="skill-tag">Adversary Emulation</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Advanced Web Application & API Exploitation</h3>
+                    <ul>
+                        <li>Study advanced web exploitation beyond OWASP Top 10 basics: SSRF chaining into cloud metadata, deserialization RCE, request smuggling</li>
+                        <li>Practice chaining a moderate-severity finding (e.g. SSRF) into a critical-impact outcome (cloud credential theft) in a lab</li>
+                        <li>Learn advanced authentication bypass techniques: JWT algorithm confusion, OAuth flow manipulation, race conditions in auth logic</li>
+                        <li>Study GraphQL-specific advanced attacks: batching abuse, introspection-driven schema exploitation</li>
+                        <li>Practice a full API penetration test on a complex sample target (crAPI or similar) finding and chaining multiple findings together</li>
+                        <li>Learn how a lead decides when to stop chaining (sufficient business impact demonstrated) vs. continue for completeness</li>
+                        <li>Study how to write an impact statement that makes a technical chain land with a non-technical executive reader</li>
+                        <li>Write a full exploit chain narrative connecting 2-3 individually moderate findings into one critical business risk story</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SSRF Chaining</span>
+                        <span class="tech-badge">JWT/OAuth Attacks</span>
+                        <span class="tech-badge">GraphQL Exploitation</span>
+                        <span class="tech-badge">Impact Narratives</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Critical Exploit Chain Narrative</h4>
+                        <p>Build and document a full exploit chain connecting 2-3 individually moderate web/API findings into one demonstrated critical business impact, written for a client report.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Cloud Penetration Testing</h3>
+                    <ul>
+                        <li>Study how cloud penetration testing differs from traditional network/AD testing: API-driven attack surface, IAM as the new perimeter</li>
+                        <li>Practice using Pacu or similar tooling to enumerate and exploit AWS IAM misconfigurations in a sandbox account</li>
+                        <li>Learn how privilege escalation paths in cloud IAM (overly permissive roles, iam:PassRole abuse) get identified and chained</li>
+                        <li>Study container/Kubernetes-specific penetration testing: escaping a container, abusing exposed kubelet APIs, RBAC misconfigurations</li>
+                        <li>Practice a guided cloud pentest scenario (e.g. CloudGoat) achieving a defined objective like data exfiltration or privilege escalation</li>
+                        <li>Learn how cloud provider rules of engagement differ (AWS/Azure/GCP penetration testing policies) and what's authorized by default</li>
+                        <li>Study how to present cloud findings in business terms when the client's technical team may not fully understand cloud-native risk yet</li>
+                        <li>Write a full cloud penetration test report section documenting one complete IAM privilege escalation chain</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Pacu</span>
+                        <span class="tech-badge">CloudGoat</span>
+                        <span class="tech-badge">IAM Privilege Escalation</span>
+                        <span class="tech-badge">Container Escape</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Cloud IAM Escalation Report</h4>
+                        <p>Complete a guided cloud pentest scenario achieving privilege escalation or data exfiltration, and write the report section documenting the full chain in business-impact terms.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Client Communication & Managing Pushback</h3>
+                    <ul>
+                        <li>Study how to run an effective mid-engagement check-in call: surfacing critical findings early without waiting for the final report</li>
+                        <li>Learn how to deliver a critical finding verbally with appropriate urgency without causing panic or appearing alarmist</li>
+                        <li>Practice a mock call notifying a client of a critical finding discovered mid-engagement, requiring immediate attention</li>
+                        <li>Study how to handle a client who disputes a finding's severity or claims "that's not really exploitable in our environment"</li>
+                        <li>Learn how to defend a risk rating with evidence while remaining open to genuinely new context that should adjust it</li>
+                        <li>Practice a mock pushback conversation where a client's engineering lead disputes your CVSS scoring</li>
+                        <li>Study how to manage a client relationship across multiple repeat engagements (annual pentests, ongoing retainers)</li>
+                        <li>Document a client communication playbook covering check-ins, critical notifications, and dispute-handling scripts</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mid-Engagement Check-ins</span>
+                        <span class="tech-badge">Critical Notifications</span>
+                        <span class="tech-badge">Severity Disputes</span>
+                        <span class="tech-badge">Repeat Client Relationships</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Client Communication Playbook</h4>
+                        <p>Write a complete client communication playbook covering mid-engagement check-ins, a critical-finding notification script, and a severity-dispute handling approach.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Adversary Emulation & Red Team-Adjacent Engagements</h3>
+                    <ul>
+                        <li>Study how adversary emulation/red team engagements differ from standard penetration tests: objective-based, stealth-focused, broader scope</li>
+                        <li>Learn how to design a red-team-style engagement around a specific threat actor's known TTPs (mapped to MITRE ATT&CK)</li>
+                        <li>Practice using a C2 framework (Sliver, Mythic, or Cobalt Strike trial/community edition) in a fully isolated lab for command and control</li>
+                        <li>Study OPSEC considerations for red team work: minimizing detection footprint, covering tracks appropriately within RoE</li>
+                        <li>Learn how purple team collaboration works when a red team engagement is paired with the client's defenders for mutual learning</li>
+                        <li>Practice planning a red-team-style engagement scenario mapped to a specific threat actor profile relevant to a client's industry</li>
+                        <li>Study how engagement objectives differ (e.g. "reach the crown-jewel database" vs. "test detection capability") and how that changes tactics</li>
+                        <li>Document a full adversary emulation engagement plan including threat actor selection, objectives, and success criteria</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Adversary Emulation</span>
+                        <span class="tech-badge">C2 Frameworks</span>
+                        <span class="tech-badge">OPSEC</span>
+                        <span class="tech-badge">Purple Team Collaboration</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Adversary Emulation Engagement Plan</h4>
+                        <p>Build a complete adversary emulation engagement plan mapped to one real threat actor's TTPs, including objectives, success criteria, and OPSEC considerations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can chain findings into demonstrated business-critical impact across web and cloud surfaces, manage client communication through pushback and critical notifications, and plan an adversary emulation engagement — the technical-and-relational toolkit that defines a Lead Penetration Tester.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into program-building, reporting depth, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Multi-Surface Critical Chain</h4>
+                        <p>Build one engagement narrative chaining a web finding into cloud access into AD compromise — a true cross-surface attack story.</p>
+                        <small>Hint: This is the single most impressive technical artifact you can show — most testers never connect all three surfaces in one writeup.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Client Dispute Roleplay Series</h4>
+                        <p>Practice 3 different mock dispute conversations (severity dispute, scope dispute, timeline dispute) with a peer playing the client.</p>
+                        <small>Hint: Record these — reviewing your own tone and word choice under pushback is uncomfortable but very instructive.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Threat-Actor-Mapped Red Team Plan</h4>
+                        <p>Design 2 distinct adversary emulation plans for different threat actor profiles relevant to different industries.</p>
+                        <small>Hint: Show how the same general objective ("reach sensitive data") requires very different TTPs per actor profile.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Advanced Exploitation Teaching Content</h4>
+                        <p>Turn your exploit-chaining work into a teaching walkthrough for testers wanting to move beyond single-finding thinking.</p>
+                        <small>Hint: Use one running target environment throughout for consistency across the explainer.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Reporting Excellence, Practice Building & Career Readiness</h2>
+                <span>Days 61-90: Reports that get fixes prioritized, building a pentest practice, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Executive-Ready Reporting</span>
+                    <span class="skill-tag">Pentest Practice Building</span>
+                    <span class="skill-tag">Quality Assurance</span>
+                    <span class="skill-tag">Retesting & Verification</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Reporting Excellence & Executive Summaries</h3>
+                    <ul>
+                        <li>Study what separates a report that drives remediation from one that gets filed and forgotten</li>
+                        <li>Learn how to write an executive summary that a CISO can act on in 5 minutes without reading a single technical finding</li>
+                        <li>Practice writing an executive summary for a complex multi-finding engagement, leading with business risk, not CVE counts</li>
+                        <li>Study how to structure findings for maximum clarity: clear title, business impact, technical detail, proof, remediation, references</li>
+                        <li>Learn how visual aids (attack path diagrams, network maps) make a report dramatically more persuasive than text alone</li>
+                        <li>Practice building one attack path diagram for your Phase 2 critical chain finding</li>
+                        <li>Study how to write remediation guidance that's specific enough to action, not generic "apply patches" advice</li>
+                        <li>Compile a full polished report for one complete mock engagement, combining executive summary, findings, and visual aids</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Executive Summaries</span>
+                        <span class="tech-badge">Finding Structure</span>
+                        <span class="tech-badge">Attack Path Diagrams</span>
+                        <span class="tech-badge">Actionable Remediation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Polished Mock Engagement Report</h4>
+                        <p>Compile one complete, polished pentest report for a mock engagement, including an executive summary, well-structured findings, and at least one attack path diagram.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Quality Assurance & Reviewing Others' Work</h3>
+                    <ul>
+                        <li>Study how a lead's QA review of a junior tester's report differs from writing one yourself: catching gaps, not redoing the work</li>
+                        <li>Learn a structured report QA checklist: technical accuracy, evidence sufficiency, severity consistency, writing clarity</li>
+                        <li>Practice reviewing a sample (deliberately flawed) report and identifying every issue using your checklist</li>
+                        <li>Study how to give report feedback that improves a junior tester's skill, not just fixes the document in front of you</li>
+                        <li>Learn how to calibrate severity ratings consistently across a team so the same vulnerability class gets the same rating regardless of who found it</li>
+                        <li>Practice writing structured feedback comments on a flawed mock report, balancing thoroughness with not being discouraging</li>
+                        <li>Study how a second-reviewer process (peer review before client delivery) catches errors a single author misses</li>
+                        <li>Document a full report QA checklist and a feedback-delivery framework for your team's quality process</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Report QA</span>
+                        <span class="tech-badge">Severity Calibration</span>
+                        <span class="tech-badge">Constructive Feedback</span>
+                        <span class="tech-badge">Peer Review Process</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Report QA Checklist & Review</h4>
+                        <p>Build a complete report QA checklist, then use it to review a deliberately flawed sample report and write structured, constructive feedback comments.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Retesting, Verification & Pentest Practice Operations</h3>
+                    <ul>
+                        <li>Study how retesting/verification engagements work: confirming fixes without re-running a full engagement from scratch</li>
+                        <li>Learn how to scope a retest efficiently, focusing only on previously identified findings plus a sanity check for regressions</li>
+                        <li>Practice writing a retest report confirming remediation status for a set of mock prior findings (fixed/not fixed/partially fixed)</li>
+                        <li>Study how a pentest practice tracks engagement metrics: utilization, finding trends across clients, repeat business rate</li>
+                        <li>Learn how a lead contributes to practice-level decisions: tooling investment, certification requirements for the team, methodology updates</li>
+                        <li>Practice writing a practice improvement proposal (e.g. adopting a new methodology element or tool) with a business justification</li>
+                        <li>Study how to onboard a new tester into your team's specific methodology, tooling, and reporting standards quickly</li>
+                        <li>Compile your 90-day labs into a single portfolio-style master engagement leadership package</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Retesting</span>
+                        <span class="tech-badge">Practice Metrics</span>
+                        <span class="tech-badge">Tooling Decisions</span>
+                        <span class="tech-badge">Team Onboarding</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Retest Report & Practice Proposal</h4>
+                        <p>Write a complete retest report confirming remediation status for mock prior findings, plus a one-page practice improvement proposal with business justification.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions/labs aligned to a target cert (e.g. OSCP, CRTO, or GPEN)</li>
+                        <li>Do a full mock engagement under time pressure: scope, test a lab target, and produce a client-ready report within a set window</li>
+                        <li>Prepare answers for lead tester interview questions (walk through scoping a tricky engagement, describe handling a severity dispute, explain a critical chain you found)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable technical and leadership achievements</li>
+                        <li>Polish your portfolio: pin your best 3 artifacts (pre-engagement package, critical chain report, client communication playbook) with clean documentation</li>
+                        <li>Practice a mock behavioral interview using STAR format for your client pushback and team-direction stories</li>
+                        <li>Research target consultancies/MSSPs and tailor your resume + LinkedIn headline to emphasize engagement leadership specifically</li>
+                        <li>Plan your next 90 days: pick a direction (red team lead, pentest practice manager, or independent consulting)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">STAR Behavioral Prep</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Lead Tester Portfolio</h4>
+                        <p>Finalize a portfolio (pre-engagement package, critical chain report, client playbook), resume bullets, and 2 polished STAR-format leadership interview stories for Lead Penetration Tester roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a complete engagement leadership toolkit (scoping, RoE, advanced exploitation across AD/web/cloud, client management, reporting excellence, team QA, practice operations) plus a portfolio of real artifacts and a job-ready application package — the foundation of a genuinely capable Lead Penetration Tester.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end engagement leadership capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Engagement Lifecycle Package</h4>
+                        <p>Combine your scoping questionnaire, SOW, RoE, testing plan, and report templates into one cohesive engagement lifecycle package.</p>
+                        <small>Hint: This single package is your strongest portfolio artifact — make it genuinely ready to hand to a real client.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>End-to-End Mock Client Engagement</h4>
+                        <p>Run a complete simulated engagement from scoping call through testing through final debrief presentation, with a peer playing the client.</p>
+                        <small>Hint: Have your "client" push back at least once — practicing under realistic friction is the whole point.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cross-Surface Critical Chain Series</h4>
+                        <p>Build 2 distinct multi-surface attack chains (web-to-cloud, AD-to-cloud) demonstrating critical business impact in each.</p>
+                        <small>Hint: Vary the entry point and target each time — this shows range, not just one trick repeated.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Lead Penetration Tester Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching senior testers how to lead engagements.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Engagement Scoping & Rules of Engagement</div>
+                    <div class="skill-item">Advanced Active Directory Exploitation</div>
+                    <div class="skill-item">Team Technical Direction & QA Review</div>
+                    <div class="skill-item">Advanced Web & API Exploit Chaining</div>
+                    <div class="skill-item">Cloud Penetration Testing (IAM/Containers)</div>
+                    <div class="skill-item">Client Communication & Dispute Handling</div>
+                    <div class="skill-item">Adversary Emulation Planning</div>
+                    <div class="skill-item">Executive-Ready Reporting & Retesting</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>The Hacker Playbook 3 — Peter Kim</li>
+                        <li>Penetration Testing: A Hands-On Introduction to Hacking — Georgia Weidman</li>
+                        <li>Red Team Field Manual (RTFM) — Ben Clark</li>
+                        <li>Active Directory Security — Sean Metcalf (resources/blog compiled into reading)</li>
+                        <li>The Web Application Hacker's Handbook — Stuttard & Pinto</li>
+                        <li>Hacking APIs — Corey Ball</li>
+                        <li>Practical Cloud Security — Chris Dotson (offensive-context reading)</li>
+                        <li>Tribe of Hackers Red Team — Marcus Carey & Jennifer Jin</li>
+                        <li>Professional Red Teaming — Jacob G. Oakley</li>
+                        <li>Never Split the Difference — Chris Voss (client negotiation context)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>HackTheBox (Pro Labs for full-chain enterprise-style engagements)</li>
+                        <li>TryHackMe (Red Teaming and AD pathways)</li>
+                        <li>PentesterLab</li>
+                        <li>PortSwigger Web Security Academy</li>
+                        <li>Game of Active Directory (GOAD) — free vulnerable AD lab</li>
+                        <li>CloudGoat / flAWS (free vulnerable cloud labs)</li>
+                        <li>Offensive Security's official course materials (PEN-200, CRTO course content)</li>
+                        <li>crAPI (vulnerable API lab)</li>
+                        <li>SANS SEC560/SEC565 course materials and webcasts</li>
+                        <li>YouTube: IppSec, John Hammond, The Cyber Mentor (red team content)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>OSCP (Offensive Security Certified Professional)</li>
+                        <li>OSEP (Offensive Security Experienced Penetration Tester)</li>
+                        <li>CRTO (Certified Red Team Operator)</li>
+                        <li>GIAC Penetration Tester (GPEN)</li>
+                        <li>GIAC Cloud Penetration Tester (GCPN)</li>
+                        <li>CRTP (Certified Red Team Professional, AD-focused)</li>
+                        <li>OSWE (Offensive Security Web Expert)</li>
+                        <li>CompTIA PenTest+</li>
+                        <li>CISSP (broader leadership/management context)</li>
+                        <li>Project Management Professional (PMP) — useful for engagement/practice management</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>r/AskNetsec and r/redteamsec on Reddit</li>
+                        <li>NetSecFocus Trust Discord community</li>
+                        <li>TrustedSec / Black Hills Information Security communities</li>
+                        <li>HackTheBox and TryHackMe official Discord servers</li>
+                        <li>Local BSides/DEF CON red team village meetups</li>
+                        <li>OWASP local chapter meetups</li>
+                        <li>LinkedIn penetration testing and red team leadership groups</li>
+                        <li>Twitter/X offensive security community (#RedTeam, #PenTest)</li>
+                        <li>SANS Pen Test Hackfest community</li>
+                        <li>CREST (Council for Registered Ethical Security Testers) community, where applicable regionally</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Recon & Exploitation Tools</h3>
+                    <ul>
+                        <li>Nmap / Masscan</li>
+                        <li>Burp Suite Professional</li>
+                        <li>Metasploit Framework</li>
+                        <li>BloodHound / SharpHound</li>
+                        <li>Impacket toolkit</li>
+                        <li>Mimikatz</li>
+                        <li>Rubeus</li>
+                        <li>CrackMapExec / NetExec</li>
+                        <li>Responder</li>
+                        <li>ffuf / Wfuzz</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Cloud & Red Team Tools</h3>
+                    <ul>
+                        <li>Pacu (AWS exploitation framework)</li>
+                        <li>ScoutSuite (cloud security auditing, offensive recon use)</li>
+                        <li>CloudGoat / flAWS (vulnerable cloud labs)</li>
+                        <li>Sliver (open-source C2 framework)</li>
+                        <li>Mythic (open-source C2 framework)</li>
+                        <li>Cobalt Strike (commercial, where licensed)</li>
+                        <li>Caldera (MITRE's automated adversary emulation)</li>
+                        <li>kube-hunter (Kubernetes penetration testing)</li>
+                        <li>Peirates (Kubernetes attack tool)</li>
+                        <li>Evilginx (phishing/MFA-bypass research, lab use only)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Engagement & Reporting Tools</h3>
+                    <ul>
+                        <li>PlexTrac / Dradis (pentest reporting and collaboration platforms)</li>
+                        <li>Pwndoc (open-source pentest reporting tool)</li>
+                        <li>Obsidian / Notion (engagement note-taking)</li>
+                        <li>CherryTree / Sysreptor (structured note management)</li>
+                        <li>Lucidchart / Draw.io (attack path diagrams)</li>
+                        <li>Google Docs/Slides (SOW, RoE, executive debrief decks)</li>
+                        <li>DocuSign (authorization letters and SOW sign-off)</li>
+                        <li>Jira/Asana (engagement and QA workflow tracking)</li>
+                        <li>Zoom/Teams (scoping calls and client debriefs)</li>
+                        <li>VirusTotal/AbuseIPDB (infrastructure/OPSEC checks before live engagements)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Write a basic scoping questionnaire for a web app engagement</li>
+                        <li>Draft a simple Rules of Engagement document</li>
+                        <li>Run one AD attack technique (e.g. Kerberoasting) in a lab</li>
+                        <li>Build a BloodHound attack path map for a small lab domain</li>
+                        <li>Write one finding with full business impact framing</li>
+                        <li>Draft a mock critical-finding client notification script</li>
+                        <li>Build a basic report QA checklist</li>
+                        <li>Write a one-page executive summary for a mock simple engagement</li>
+                        <li>Document one cloud IAM misconfiguration and its exploitation path</li>
+                        <li>Draft a retest scope template for confirming fixed findings</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a complete pre-engagement package (scoping, SOW, RoE)</li>
+                        <li>Run a full AD attack chain from foothold to domain admin</li>
+                        <li>Write a chained exploit narrative combining 2+ findings into critical impact</li>
+                        <li>Complete a guided cloud pentest scenario with full documentation</li>
+                        <li>Build a client communication playbook with dispute-handling scripts</li>
+                        <li>Design an adversary emulation plan mapped to a specific threat actor</li>
+                        <li>Write a polished pentest report with executive summary and attack diagrams</li>
+                        <li>Review and provide structured feedback on a flawed sample report</li>
+                        <li>Write a complete retest report for a set of mock prior findings</li>
+                        <li>Run a mock multi-tester engagement standup and document the outcome</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a full engagement lifecycle package ready for real client use</li>
+                        <li>Run a complete simulated client engagement with a peer playing the client, including pushback</li>
+                        <li>Build a cross-surface critical chain (web-to-cloud or AD-to-cloud)</li>
+                        <li>Design a full adversary emulation engagement with purple team collaboration elements</li>
+                        <li>Build a severity-rating calibration guide for consistent team scoring</li>
+                        <li>Architect a practice-level tooling/methodology improvement proposal</li>
+                        <li>Design a new-tester onboarding program for methodology and reporting standards</li>
+                        <li>Build a comprehensive pentest practice metrics dashboard (utilization, findings trends)</li>
+                        <li>Write a full red-team-style engagement plan spanning multiple weeks of activity</li>
+                        <li>Mentor a senior tester through their first lead-role mock engagement</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Lead a real or high-fidelity simulated engagement from scoping to debrief end-to-end</li>
+                        <li>Publish original research or a writeup on an advanced exploitation technique</li>
+                        <li>Design a complete pentest practice operating model for a consultancy or internal team</li>
+                        <li>Speak at a local BSides/DEF CON red team village or industry conference</li>
+                        <li>Build a custom adversary emulation framework tailored to a specific industry's threat landscape</li>
+                        <li>Architect a full purple-team-integrated engagement program with a client's defenders</li>
+                        <li>Contribute a tool, module, or technique writeup to an open-source offensive security project</li>
+                        <li>Design a comprehensive client relationship management program for repeat engagements</li>
+                        <li>Build a structured certification/skills progression path for a growing pentest team</li>
+                        <li>Mentor multiple testers toward lead-role readiness as a structured program</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your offensive security career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize or Broaden</h3>
+                    <ul>
+                        <li>Decide: deepen toward red team/adversary emulation, or broaden toward pentest practice management</li>
+                        <li>Consider a Red Team Lead track if adversary emulation and stealth tradecraft energized you most</li>
+                        <li>Consider a Pentest Practice Manager track if client relationships and team QA stood out</li>
+                        <li>Explore independent consulting as a path once your reputation and network are strong enough</li>
+                        <li>Look into specializing in cloud-native or IoT/OT penetration testing as growth areas</li>
+                        <li>Consider a high-stakes industry vertical specialization (finance, critical infrastructure, healthcare)</li>
+                        <li>Pursue OSEP/CRTO if the red team depth track is the clear direction</li>
+                        <li>Pursue CISSP/PMP if the practice management track is the clear direction</li>
+                        <li>Join a specialized community for your chosen direction</li>
+                        <li>Set a 6-12 month direction-setting goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to Lead Penetration Tester / Senior Pentest Consultant / Red Team Lead roles weekly</li>
+                        <li>Tailor your resume per job description, emphasizing engagement leadership and client-facing experience</li>
+                        <li>Attend local BSides/DEF CON red team village meetups</li>
+                        <li>Reach out to current lead testers and red team leads on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your portfolio updated with new exploit chains and engagement artifacts</li>
+                        <li>Practice behavioral (STAR-format) mock interviews monthly</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider boutique pentest consultancies for varied, high-leadership-exposure engagements</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly exploit research and new attack technique disclosures</li>
+                        <li>Do at least one new HackTheBox Pro Lab or advanced CTF per month to stay sharp</li>
+                        <li>Re-run old AD/cloud labs with new techniques as tooling and TTPs evolve</li>
+                        <li>Write a monthly technical blog post about something you learned</li>
+                        <li>Build a second, more advanced portfolio artifact every 90 days</li>
+                        <li>Track new red team tooling and C2 framework developments</li>
+                        <li>Mentor junior testers moving toward lead readiness — teaching reinforces your own mastery</li>
+                        <li>Read one new offensive security book per month</li>
+                        <li>Attend at least one virtual conference talk per month</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a "becoming a lead tester" series for senior testers aspiring to lead</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your templates (RoE, testing plan, report template) for others to use</li>
+                        <li>Host a free workshop/webinar on engagement leadership or exploit chaining</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another aspiring lead for accountability</li>
+                        <li>Contribute documentation fixes to a tool you use often</li>
+                        <li>Review and give feedback on a peer's report or engagement plan</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Scoped an engagement and written a defensible Rules of Engagement | ✅ Run a full AD attack chain from foothold to domain admin | ✅ Chained findings across web/API and cloud surfaces into demonstrated critical impact</p>
+                <p>✅ Managed client communication through a critical notification and a severity dispute | ✅ Designed an adversary emulation engagement plan | ✅ Produced an executive-ready report, QA'd a peer's work, and completed a retest</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> BloodHound, Impacket, Mimikatz, Burp Suite Pro, Pacu, CloudGoat, Sliver/Mythic, Caldera, PlexTrac/Sysreptor, GOAD lab environment.</p>
+                <br>
+                <p><strong>Remember:</strong> Leading an engagement isn't about finding the most vulnerabilities — it's about scoping the work honestly, directing a team toward the findings that actually matter, and telling the client a true, persuasive story about their risk. Every chain, report, and client call you lead exists to answer one question: "did this engagement make the client measurably safer, and will they trust us enough to call again next year?" Stay sharp, document everything, and always chain toward business impact.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

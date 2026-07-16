@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "Senior Security Analyst" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "Senior Security Analyst" Mastery</h1>
+            <p>An advanced-track plan for analysts who've already specialized in one security domain and are ready to operate across the whole program — vulnerability management, security architecture, risk-based decision-making, and the cross-functional leadership that defines a senior generalist.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: Vulnerability Management & Security Operations Leadership</h2>
+                <span>Days 1-30: Program-level vulnerability management, security metrics, and operating as a senior voice in daily security operations</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Vulnerability Management</span>
+                    <span class="skill-tag">Risk-Based Prioritization</span>
+                    <span class="skill-tag">Security Metrics</span>
+                    <span class="skill-tag">Cross-Team Coordination</span>
+                    <span class="skill-tag">Patch Governance</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: Senior Role Calibration & Program-Level Thinking</h3>
+                    <ul>
+                        <li>Study what changes between mid-level and senior analyst work: scope shifts from "do the task" to "own the outcome"</li>
+                        <li>Learn how a senior analyst is expected to identify problems nobody assigned them, not just solve assigned tickets</li>
+                        <li>Study the full security program landscape: how vuln management, IAM, AppSec, GRC, and SOC operations interrelate</li>
+                        <li>Learn how to read and influence a security roadmap, not just execute against one already set</li>
+                        <li>Study how senior analysts are expected to communicate upward (to management) and outward (to other teams) differently than juniors</li>
+                        <li>Review one real security program postmortem or "lessons learned" public writeup and identify the senior-level decisions involved</li>
+                        <li>Learn how to scope your own 90-day plan as a senior would: identify gaps, prioritize by risk, propose rather than wait to be told</li>
+                        <li>Document a one-page "security program map" showing how your organization's (or a fictional one's) functions connect</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Program-Level Thinking</span>
+                        <span class="tech-badge">Security Roadmaps</span>
+                        <span class="tech-badge">Upward Communication</span>
+                        <span class="tech-badge">Cross-Domain Awareness</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Security Program Map</h4>
+                        <p>Build a one-page diagram mapping how vuln management, IAM, AppSec, GRC, and SOC functions interconnect in a typical mid-size org, with your own annotations on where gaps usually appear.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Vulnerability Management Program Mechanics</h3>
+                    <ul>
+                        <li>Study the full vulnerability management lifecycle: discovery, prioritization, remediation, verification, reporting</li>
+                        <li>Learn how vulnerability scanners (Nessus, Qualys, or OpenVAS) actually work and what they miss</li>
+                        <li>Practice running a scan in a lab environment and triaging real findings by exploitability and exposure, not just CVSS score alone</li>
+                        <li>Study EPSS (Exploit Prediction Scoring System) as a complement to CVSS for real-world prioritization</li>
+                        <li>Learn how asset criticality and exposure context (internet-facing vs. internal) should reweight raw vulnerability severity</li>
+                        <li>Study patch management governance: SLAs by severity, exception processes, and how delays get tracked and escalated</li>
+                        <li>Practice writing a risk-based remediation priority list from a raw scan output of 30+ findings</li>
+                        <li>Document your own vulnerability triage framework combining CVSS, EPSS, and asset context</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Nessus/Qualys/OpenVAS</span>
+                        <span class="tech-badge">CVSS/EPSS</span>
+                        <span class="tech-badge">Patch SLAs</span>
+                        <span class="tech-badge">Risk-Based Prioritization</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Risk-Based Remediation Priority List</h4>
+                        <p>Take a 30-finding sample vulnerability scan output and re-prioritize it using CVSS, EPSS, and asset criticality, then write the rationale for your top 10 vs. the raw CVSS ranking.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: Security Metrics & Executive-Facing Reporting</h3>
+                    <ul>
+                        <li>Study which security metrics actually matter to leadership: mean time to remediate, % critical vulns past SLA, security debt trend</li>
+                        <li>Learn how vanity metrics (raw alert counts, total vulns found) differ from metrics that drive decisions</li>
+                        <li>Practice building a simple security operations dashboard combining vuln management and detection metrics</li>
+                        <li>Study how to translate a messy technical backlog into a one-page "here's our risk posture" executive summary</li>
+                        <li>Learn how to present a tradeoff decision to leadership (e.g. "fix this now and delay X" vs. "accept this risk")</li>
+                        <li>Practice writing a monthly security operations report covering trends, top risks, and remediation progress</li>
+                        <li>Study how security metrics tie into budget/headcount justification conversations</li>
+                        <li>Record yourself presenting one metrics-driven finding in under 3 minutes, executive-style</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Security Metrics</span>
+                        <span class="tech-badge">Executive Reporting</span>
+                        <span class="tech-badge">Risk Tradeoffs</span>
+                        <span class="tech-badge">Dashboards</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Monthly Security Operations Report</h4>
+                        <p>Write a complete monthly security operations report (trends, top risks, remediation progress, one tradeoff recommendation) in executive-ready language from your Week 2 data.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Cross-Team Coordination & Influence Without Authority</h3>
+                    <ul>
+                        <li>Study why senior analysts spend significant time getting other teams (engineering, IT, ops) to act, not just doing the work themselves</li>
+                        <li>Learn negotiation basics for security context: how to get a remediation prioritized on someone else's already-full roadmap</li>
+                        <li>Practice writing a remediation request to an engineering team that includes business justification, not just "CVE-2024-XXXX is critical"</li>
+                        <li>Study how to build a "security champion" relationship with a non-security team to speed up future asks</li>
+                        <li>Learn how escalation should work when a critical finding isn't being addressed — and how to escalate without burning the relationship</li>
+                        <li>Practice a mock conversation: convincing a skeptical engineering lead to prioritize a security fix over their planned feature work</li>
+                        <li>Study how to document and track cross-team commitments so nothing falls through the cracks silently</li>
+                        <li>Build a personal "stakeholder map" template for tracking who owns what across a security program</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Cross-Team Influence</span>
+                        <span class="tech-badge">Escalation Paths</span>
+                        <span class="tech-badge">Security Champions</span>
+                        <span class="tech-badge">Stakeholder Mapping</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Stakeholder Map & Remediation Request</h4>
+                        <p>Build a stakeholder map for a fictional org's security-relevant teams, and write one complete remediation request to an engineering team with full business justification.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can run a risk-based vulnerability management program, translate technical findings into executive-ready metrics, and coordinate remediation across teams that don't report to you — the foundational toolkit of a Senior Security Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate program-level fundamentals before moving into architecture and risk-based decision-making.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Vulnerability Management Playbook</h4>
+                        <p>Write a complete VM program playbook: scan cadence, triage framework, SLAs by severity, and exception process.</p>
+                        <small>Hint: Make the exception process realistic — every real program needs a documented way to say "not yet, and here's why."</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Security Operations Dashboard Mock-up</h4>
+                        <p>Design a one-page dashboard combining vuln management and detection metrics that a CISO could glance at weekly.</p>
+                        <small>Hint: Limit it to 5-6 metrics maximum — a senior analyst knows restraint is part of good reporting.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Cross-Team Remediation Case Study</h4>
+                        <p>Document a real or fictional scenario where you had to convince another team to prioritize a security fix, including the business case used.</p>
+                        <small>Hint: This becomes one of your strongest behavioral interview stories — write it in STAR format.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Senior Analyst Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: Frame it as "what changes when you go from mid-level to senior" — that angle resonates strongly.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: Security Architecture Review & Risk-Based Decision Making</h2>
+                <span>Days 31-60: Evaluating designs before they ship, deep risk analysis, and acting as the security voice in cross-functional projects</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Security Architecture Review</span>
+                    <span class="skill-tag">Threat Modeling</span>
+                    <span class="skill-tag">Risk Quantification</span>
+                    <span class="skill-tag">Vendor/Third-Party Risk</span>
+                    <span class="skill-tag">Incident Post-Mortems</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: Security Architecture Review</h3>
+                    <ul>
+                        <li>Study what a security architecture review actually evaluates: trust boundaries, data flow, authentication points, failure modes</li>
+                        <li>Learn how to read an architecture diagram critically — what questions a senior analyst asks that a junior wouldn't</li>
+                        <li>Practice reviewing a sample system design doc and identifying 5 security considerations the original author missed</li>
+                        <li>Study how to run a lightweight STRIDE threat model session within a design review meeting (not a separate heavyweight process)</li>
+                        <li>Learn how to write architecture review feedback that's actionable, not just "this is insecure"</li>
+                        <li>Practice giving feedback on a peer's (or fictional) system design with specific, prioritized recommendations</li>
+                        <li>Study how security requirements get written into a design doc upfront vs. bolted on after review</li>
+                        <li>Document a reusable "security architecture review checklist" you can apply to any new design doc</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Architecture Review</span>
+                        <span class="tech-badge">Trust Boundaries</span>
+                        <span class="tech-badge">Lightweight STRIDE</span>
+                        <span class="tech-badge">Design Feedback</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Architecture Review Writeup</h4>
+                        <p>Review one sample system design document, identify 5 security gaps using your checklist, and write prioritized, actionable feedback as you would in a real design review.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Risk Quantification & Business Impact Analysis</h3>
+                    <ul>
+                        <li>Study qualitative vs. quantitative risk analysis and when a senior analyst should push for the latter</li>
+                        <li>Learn FAIR (Factor Analysis of Information Risk) basics for translating risk into estimated financial terms</li>
+                        <li>Practice quantifying one realistic risk scenario (e.g. a data breach of a specific dataset) using FAIR-style loss magnitude estimation</li>
+                        <li>Study how risk appetite statements from leadership should shape which risks get escalated vs. accepted at your level</li>
+                        <li>Learn how to write a risk acceptance memo that protects both the business and your own due diligence record</li>
+                        <li>Practice presenting a quantified risk to a skeptical stakeholder who thinks "it probably won't happen"</li>
+                        <li>Study how cyber insurance considerations sometimes factor into risk acceptance decisions</li>
+                        <li>Document a quantified risk scenario writeup ready to support a real budget or remediation-priority conversation</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">FAIR Model</span>
+                        <span class="tech-badge">Risk Quantification</span>
+                        <span class="tech-badge">Risk Acceptance Memos</span>
+                        <span class="tech-badge">Business Impact</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Quantified Risk Scenario</h4>
+                        <p>Write a full FAIR-style quantified risk analysis for one realistic breach scenario, including a risk acceptance memo recommendation for leadership sign-off.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Third-Party & Vendor Risk at the Senior Level</h3>
+                    <ul>
+                        <li>Study how senior analysts get pulled into vendor risk decisions beyond standard questionnaire review — contract negotiation input, exception approval</li>
+                        <li>Learn how to evaluate a vendor's security posture quickly using available evidence (SOC 2 report, pen test summary, public history)</li>
+                        <li>Practice reviewing a sample vendor SOC 2 report and writing a go/no-go recommendation with conditions</li>
+                        <li>Study fourth-party risk (your vendor's vendors) and why it matters for critical supply chain dependencies</li>
+                        <li>Learn how to negotiate security contract clauses (breach notification timelines, right-to-audit) at a working level</li>
+                        <li>Practice writing risk-based conditions for onboarding a vendor with moderate security gaps</li>
+                        <li>Study how ongoing vendor monitoring differs from one-time approval, and who should own that monitoring</li>
+                        <li>Document a vendor risk decision memo for one fictional moderate-risk vendor scenario</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Vendor Risk Decisions</span>
+                        <span class="tech-badge">SOC 2 Review</span>
+                        <span class="tech-badge">Fourth-Party Risk</span>
+                        <span class="tech-badge">Contract Clauses</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Vendor Risk Decision Memo</h4>
+                        <p>Review a sample vendor SOC 2 report, write a go/no-go recommendation with specific onboarding conditions, and draft 2 security contract clauses you'd require.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Incident Post-Mortems & Continuous Improvement</h3>
+                    <ul>
+                        <li>Study how blameless post-mortems work and why senior analysts are often the ones facilitating them</li>
+                        <li>Learn the structure of a strong post-mortem: timeline, contributing factors, what went well, action items with owners</li>
+                        <li>Practice facilitating a mock post-mortem for a past (real or fictional) security incident</li>
+                        <li>Study how to separate "root cause" from "contributing factors" without oversimplifying into a single scapegoat cause</li>
+                        <li>Learn how post-mortem action items should feed back into the vulnerability management and architecture review processes from earlier weeks</li>
+                        <li>Practice writing a post-mortem action item that's specific, owned, and time-bound — not vague "improve monitoring"</li>
+                        <li>Study how to track post-mortem action item completion over time and report on it</li>
+                        <li>Write a full post-mortem document for one mock incident, closing the loop back to Phase 1's metrics/reporting work</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Blameless Post-Mortems</span>
+                        <span class="tech-badge">Root Cause Analysis</span>
+                        <span class="tech-badge">Action Item Tracking</span>
+                        <span class="tech-badge">Continuous Improvement</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Mock Incident Post-Mortem</h4>
+                        <p>Facilitate and document a full blameless post-mortem for a mock security incident, including timeline, contributing factors, and 5 specific, owned action items.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can critically review architecture before it ships, quantify risk in business terms, make defensible vendor risk decisions, and facilitate post-mortems that actually drive improvement — the judgment-heavy toolkit that distinguishes a senior analyst from a technician.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into mentoring, program design, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>End-to-End Architecture Review Program</h4>
+                        <p>Design a lightweight, repeatable architecture review process a team could actually adopt: checklist, meeting format, sign-off criteria.</p>
+                        <small>Hint: Make it fast — a process nobody uses because it's too heavy isn't a process, it's a bottleneck.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Quantified Risk Register</h4>
+                        <p>Build a risk register where the top 10 risks are quantified using FAIR rather than just qualitative high/medium/low.</p>
+                        <small>Hint: Show your assumptions explicitly — quantification is only useful if the reasoning is transparent.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Vendor Risk Decision Framework</h4>
+                        <p>Build a reusable decision framework (flowchart or scorecard) for fast-tracking low-risk vendors and escalating high-risk ones.</p>
+                        <small>Hint: Most vendor risk programs fail by treating every vendor the same — design explicitly against that.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Post-Mortem Facilitation Guide</h4>
+                        <p>Write a complete facilitator's guide for running blameless post-mortems, including sample prompts and anti-patterns to avoid.</p>
+                        <small>Hint: Include what NOT to say — "who did this" vs. "what allowed this" is the whole skill in one contrast.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Mentorship, Program Design & Career Readiness</h2>
+                <span>Days 61-90: Building others up, designing security programs, and the certification/interview push for senior roles</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Mentorship</span>
+                    <span class="skill-tag">Program Design</span>
+                    <span class="skill-tag">Security Awareness</span>
+                    <span class="skill-tag">Budget & Roadmap Input</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Mentorship & Team Capability Building</h3>
+                    <ul>
+                        <li>Study what mentorship looks like for a senior analyst without formal management authority</li>
+                        <li>Learn how to give technical feedback that builds skill rather than just fixing the immediate problem</li>
+                        <li>Practice reviewing a junior analyst's (real or mock) investigation or report and writing constructive, specific feedback</li>
+                        <li>Study how to design a mini "ramp-up" learning path for a new team member in your specialization</li>
+                        <li>Learn how pairing/shadowing sessions should be structured to actually transfer skill, not just demonstrate it</li>
+                        <li>Practice running a mock 1:1 coaching conversation around a skill gap (real or roleplayed with a peer)</li>
+                        <li>Study how senior analysts identify and develop "force multiplier" documentation — runbooks, templates, checklists others reuse</li>
+                        <li>Build one piece of reusable team documentation (runbook or checklist) you'd hand to a new hire on day one</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Technical Mentorship</span>
+                        <span class="tech-badge">Feedback Skills</span>
+                        <span class="tech-badge">Ramp-Up Design</span>
+                        <span class="tech-badge">Force-Multiplier Docs</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: New-Hire Runbook</h4>
+                        <p>Write one polished runbook or onboarding checklist for your specialization that a brand-new analyst could follow with minimal hand-holding.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Security Awareness & Culture Building</h3>
+                    <ul>
+                        <li>Study why security awareness programs fail when they're purely compliance-driven (annual training nobody remembers)</li>
+                        <li>Learn how to design an awareness initiative around real, recent incidents rather than generic content</li>
+                        <li>Practice writing a short, engaging security awareness message about one real or realistic threat relevant to your org</li>
+                        <li>Study how phishing simulation programs work and how results should drive targeted follow-up, not just a scorecard</li>
+                        <li>Learn how to build relationships with influential non-security employees who can champion good practices informally</li>
+                        <li>Practice designing a lightweight "security office hours" or open-door initiative concept</li>
+                        <li>Study how to measure whether an awareness initiative actually changed behavior, not just completion rates</li>
+                        <li>Document a full security awareness mini-campaign plan for one specific risk theme</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Security Awareness</span>
+                        <span class="tech-badge">Phishing Simulation</span>
+                        <span class="tech-badge">Behavior Change</span>
+                        <span class="tech-badge">Security Culture</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Security Awareness Mini-Campaign</h4>
+                        <p>Design a complete one-month awareness campaign for one specific risk theme, including messaging, a phishing simulation angle, and a way to measure actual behavior change.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Security Program Design & Budget/Roadmap Input</h3>
+                    <ul>
+                        <li>Study how senior analysts contribute to annual security roadmap planning, even without final budget authority</li>
+                        <li>Learn how to build a business case for a new tool/headcount/initiative that leadership will actually fund</li>
+                        <li>Practice writing a one-page proposal for a security initiative, including cost, risk reduction, and success metrics</li>
+                        <li>Study how to prioritize a backlog of "things we should fix" into a defensible quarterly roadmap</li>
+                        <li>Learn how maturity models (e.g. simplified NIST CSF tiers) help frame "where we are vs. where we should be" conversations</li>
+                        <li>Practice mapping your organization's (or a fictional one's) current state against a simplified maturity model</li>
+                        <li>Study how to balance "quick wins" against "foundational investments" when proposing a roadmap</li>
+                        <li>Compile your 90-day work into a single portfolio-style "senior analyst impact" writeup</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Roadmap Planning</span>
+                        <span class="tech-badge">Business Case Writing</span>
+                        <span class="tech-badge">Maturity Models</span>
+                        <span class="tech-badge">Backlog Prioritization</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Security Initiative Proposal & Roadmap</h4>
+                        <p>Write a one-page business case for a new security initiative, plus a simplified maturity-model-based quarterly roadmap balancing quick wins and foundational work.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (e.g. CISSP, CySA+, or GSEC)</li>
+                        <li>Do a full mock "day in the life" exercise: triage a vuln scan, review an architecture doc, and draft a stakeholder email, all within a time limit</li>
+                        <li>Prepare answers for common senior analyst interview questions (walk through influencing a reluctant team, describe a risk tradeoff you made)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable skills/achievements and leadership signals</li>
+                        <li>Compile your strongest artifacts (VM playbook, architecture review, risk register, post-mortem, roadmap proposal) into one portfolio</li>
+                        <li>Practice a mock behavioral interview using the STAR format for your cross-team coordination story from Week 4</li>
+                        <li>Research target companies/teams and tailor your resume + LinkedIn headline to emphasize breadth and leadership, not just one technical skill</li>
+                        <li>Plan your next 90 days: pick a path (deepen toward security architect/manager, or stay a strong senior IC specialist)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">Behavioral Prep (STAR)</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready Senior Analyst Portfolio</h4>
+                        <p>Finalize a portfolio folder (VM playbook, architecture review, risk register, post-mortem, roadmap proposal), resume bullets, and 2 polished STAR-format interview stories.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a working senior toolkit (vulnerability management, architecture review, risk quantification, vendor risk, post-mortems, mentorship, program design) plus a portfolio of real artifacts and a job-ready application package — the foundation of a genuinely senior, cross-functional Security Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end senior-level capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Security Program Health Assessment</h4>
+                        <p>Assess a fictional org against a simplified maturity model across 5 domains, then write a prioritized improvement roadmap.</p>
+                        <small>Hint: Show your prioritization logic explicitly — this is the artifact that demonstrates senior-level judgment most clearly.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>End-to-End Incident-to-Improvement Loop</h4>
+                        <p>Run a mock incident, facilitate the post-mortem, and show how the action items feed into your vuln management and architecture review processes.</p>
+                        <small>Hint: This demonstrates the "closes the loop" thinking that separates senior work from task completion.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Mentorship & Enablement Package</h4>
+                        <p>Build a complete onboarding/ramp-up package (runbook, learning path, mock 1:1 feedback session notes) for a hypothetical new hire.</p>
+                        <small>Hint: Frame this explicitly as leadership-without-authority evidence for your portfolio.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Senior Analyst Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching mid-level analysts how to grow into senior roles.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">Risk-Based Vulnerability Management</div>
+                    <div class="skill-item">Security Metrics & Executive Reporting</div>
+                    <div class="skill-item">Cross-Team Influence & Coordination</div>
+                    <div class="skill-item">Security Architecture Review</div>
+                    <div class="skill-item">Risk Quantification (FAIR)</div>
+                    <div class="skill-item">Vendor & Third-Party Risk Decisions</div>
+                    <div class="skill-item">Blameless Post-Mortem Facilitation</div>
+                    <div class="skill-item">Mentorship & Security Program Design</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>How to Measure Anything in Cybersecurity Risk — Hubbard & Seiersen</li>
+                        <li>Measuring and Managing Information Risk (FAIR) — Freund & Jones</li>
+                        <li>The Phoenix Project — Kim, Behr, Spafford</li>
+                        <li>Crafting the InfoSec Playbook — Bollinger, Enright, Valites</li>
+                        <li>Tribe of Hackers Security Leaders — Marcus Carey & Jennifer Jin</li>
+                        <li>Site Reliability Engineering — Google SRE Team (for post-mortem culture)</li>
+                        <li>The Manager's Path — Camille Fournier (leadership-without-title context)</li>
+                        <li>Threat Modeling: Designing for Security — Adam Shostack</li>
+                        <li>CISO Desk Reference Guide — Bill Bonney, Gary Hayslip, Matt Stamper</li>
+                        <li>Security Metrics: Replacing Fear, Uncertainty, and Doubt — Andrew Jaquith</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>SANS MGT/leadership-track course materials and webcasts</li>
+                        <li>FAIR Institute resources and risk quantification training</li>
+                        <li>NIST Cybersecurity Framework official resources</li>
+                        <li>OWASP SAMM (Software Assurance Maturity Model) for program assessment practice</li>
+                        <li>Pluralsight / LinkedIn Learning security leadership tracks</li>
+                        <li>CIS Controls implementation guides</li>
+                        <li>Tenable/Qualys/Rapid7 vendor training resources (vuln management depth)</li>
+                        <li>Cloud Security Podcast & Security Table podcast back catalogs</li>
+                        <li>BSides/DEF CON leadership and management track talk archives</li>
+                        <li>YouTube: Risk Management Insight, Black Hills InfoSec webcasts</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>CISSP (Certified Information Systems Security Professional)</li>
+                        <li>CompTIA CySA+ (Cybersecurity Analyst)</li>
+                        <li>GIAC Security Essentials (GSEC)</li>
+                        <li>CRISC (Certified in Risk and Information Systems Control)</li>
+                        <li>CISM (Certified Information Security Manager) — for those leaning toward management</li>
+                        <li>GIAC Strategic Planning, Policy, and Leadership (GSTRT)</li>
+                        <li>Open FAIR Certification (risk quantification specific)</li>
+                        <li>ITIL Foundation (useful for cross-team process literacy)</li>
+                        <li>CompTIA Security+ (if not already held from earlier career stage)</li>
+                        <li>SABSA Foundation (security architecture framework)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>FAIR Institute community</li>
+                        <li>r/cybersecurity and r/ITManagers on Reddit</li>
+                        <li>Security leadership Slack communities (Security Table, Cloud Security Forum)</li>
+                        <li>ISSA local chapter meetups</li>
+                        <li>ISACA local chapter meetups</li>
+                        <li>OWASP local chapter meetups (program/maturity-focused talks)</li>
+                        <li>LinkedIn security leadership and "Senior Analyst to Manager" community groups</li>
+                        <li>Twitter/X security leadership community</li>
+                        <li>CISO/security leadership newsletters (tl;dr sec, Risky Business)</li>
+                        <li>Local BSides leadership/management track meetups</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Vulnerability & Risk Tools</h3>
+                    <ul>
+                        <li>Tenable Nessus / Qualys / OpenVAS</li>
+                        <li>Rapid7 InsightVM</li>
+                        <li>EPSS API/scoring data</li>
+                        <li>FAIR-U / RiskLens (risk quantification)</li>
+                        <li>ServiceNow Vulnerability Response</li>
+                        <li>Jira (remediation/finding tracking)</li>
+                        <li>Excel/Google Sheets (risk registers, prioritization models)</li>
+                        <li>Power BI / Tableau (security dashboards)</li>
+                        <li>Recorded Future / vendor threat intel feeds (asset/exposure context)</li>
+                        <li>Shodan / Censys (external exposure visibility)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Architecture & Documentation Tools</h3>
+                    <ul>
+                        <li>Lucidchart / Draw.io / Miro (architecture and data flow diagrams)</li>
+                        <li>Confluence / Notion (runbooks, documentation, design docs)</li>
+                        <li>OWASP Threat Dragon (free threat modeling tool)</li>
+                        <li>Microsoft Threat Modeling Tool</li>
+                        <li>SABSA framework templates</li>
+                        <li>Google Docs/Slides (proposal and roadmap presentations)</li>
+                        <li>OneTrust / Vanta / Drata (vendor and compliance evidence context)</li>
+                        <li>GitHub/GitLab (versioned documentation and templates)</li>
+                        <li>Loom or similar (recording mock presentations for self-review)</li>
+                        <li>Asana / Monday.com (cross-team commitment tracking)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Mentorship & Program Tools</h3>
+                    <ul>
+                        <li>Slack/Teams (security champions and office hours coordination)</li>
+                        <li>KnowBe4 / Proofpoint (phishing simulation platforms)</li>
+                        <li>OWASP SAMM toolkit (maturity self-assessment)</li>
+                        <li>NIST CSF self-assessment templates</li>
+                        <li>Retrospective/post-mortem templates (Atlassian's free library)</li>
+                        <li>Google Forms/Surveys (awareness campaign measurement)</li>
+                        <li>LinkedIn Learning (assigning structured ramp-up content to mentees)</li>
+                        <li>Calendly (structuring recurring 1:1 or office hours time)</li>
+                        <li>Figma/Canva (awareness campaign visual content)</li>
+                        <li>Notion/Confluence templates library (reusable runbooks)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Build a one-page security program map for a fictional org</li>
+                        <li>Triage 10 sample vulnerability findings using CVSS + EPSS</li>
+                        <li>Write one monthly security metrics summary from mock data</li>
+                        <li>Draft one remediation request email with business justification</li>
+                        <li>Review one architecture diagram and list 3 security questions you'd ask</li>
+                        <li>Write a simple risk acceptance memo for a low-severity finding</li>
+                        <li>Summarize one vendor SOC 2 report in plain language</li>
+                        <li>Draft a blameless post-mortem outline for a mock incident</li>
+                        <li>Write one piece of onboarding documentation for your specialization</li>
+                        <li>Design a single security awareness message for one risk theme</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Build a full risk-based vulnerability remediation priority list from raw scan data</li>
+                        <li>Write a complete monthly security operations report with a tradeoff recommendation</li>
+                        <li>Run a lightweight architecture review on a real or sample design doc</li>
+                        <li>Quantify one risk scenario using FAIR-style estimation</li>
+                        <li>Write a full vendor risk decision memo with onboarding conditions</li>
+                        <li>Facilitate a full mock post-mortem with documented action items</li>
+                        <li>Build a stakeholder map and one cross-team remediation case study</li>
+                        <li>Design a one-month security awareness mini-campaign</li>
+                        <li>Write a business case proposal for one new security initiative</li>
+                        <li>Build a simplified maturity model assessment for a fictional org</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Design a full vulnerability management program playbook end to end</li>
+                        <li>Build a quantified risk register with 10+ FAIR-scored risks</li>
+                        <li>Design a repeatable, lightweight architecture review process for a team</li>
+                        <li>Build a complete vendor risk decision framework/scorecard</li>
+                        <li>Write a full quarterly security roadmap balancing quick wins and foundational work</li>
+                        <li>Design a mentorship/ramp-up program for a new hire in your specialization</li>
+                        <li>Build a security awareness program measuring actual behavior change, not completion rates</li>
+                        <li>Architect a full incident-to-improvement feedback loop across multiple security functions</li>
+                        <li>Design a security champions network proposal for non-security teams</li>
+                        <li>Mentor a mid-level analyst through a real or simulated escalation scenario</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Design a full security program maturity model spanning all major domains</li>
+                        <li>Build a complete security budget and headcount justification proposal</li>
+                        <li>Publish original research or a writeup on risk quantification in practice</li>
+                        <li>Speak at a local ISSA/ISACA/BSides leadership or management track meetup</li>
+                        <li>Architect a full security champions program and measure its adoption over time</li>
+                        <li>Design a board-level annual security program review presentation</li>
+                        <li>Build a cross-functional incident command structure and RACI for your org</li>
+                        <li>Mentor multiple analysts through a structured mid-to-senior progression path</li>
+                        <li>Lead a full tabletop exercise spanning technical, legal, and executive stakeholders</li>
+                        <li>Design a long-term (3-year) security program strategy as a planning exercise</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your security career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize or Broaden</h3>
+                    <ul>
+                        <li>Decide: deepen toward security architecture, or broaden toward security management</li>
+                        <li>Consider a Security Architect track if design review work energized you most</li>
+                        <li>Consider a Security Manager/Team Lead track if mentorship and program design stood out</li>
+                        <li>Explore GRC leadership as a path if risk quantification and vendor decisions were your strength</li>
+                        <li>Look into vCISO/fractional security leadership as a long-term independent path</li>
+                        <li>Consider specializing in a high-stakes industry vertical (finance, healthcare, critical infrastructure)</li>
+                        <li>Pursue CISM or a management-adjacent cert if leadership is the clear direction</li>
+                        <li>Pursue SABSA or architecture-focused credentials if design is the clear direction</li>
+                        <li>Join a specialized community for your chosen direction</li>
+                        <li>Set a 6-12 month direction-setting goal rather than rushing the decision</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to Senior Security Analyst / Security Engineer II / Lead Analyst roles weekly</li>
+                        <li>Tailor your resume per job description, emphasizing breadth and judgment over single-tool depth</li>
+                        <li>Attend local ISSA/ISACA/BSides leadership-track meetups</li>
+                        <li>Reach out to senior security professionals and hiring managers on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your portfolio updated with new program-level artifacts</li>
+                        <li>Practice behavioral (STAR-format) mock interviews monthly</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider fractional/advisory security work to build broader exposure</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly security leadership and risk management content</li>
+                        <li>Re-run your maturity model assessment quarterly as a personal practice habit</li>
+                        <li>Write a monthly post about a judgment call or tradeoff you navigated</li>
+                        <li>Build a second, more advanced portfolio project every 90 days</li>
+                        <li>Track evolving frameworks (NIST CSF updates, new maturity models)</li>
+                        <li>Mentor at least one person consistently — it's the single best senior-skill multiplier</li>
+                        <li>Read one new security leadership/risk book per month</li>
+                        <li>Attend at least one virtual conference or leadership-track talk per month</li>
+                        <li>Seek feedback from peers and managers on your influence/communication skills specifically</li>
+                        <li>Reassess your career direction every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a "growing into senior" series specifically for mid-level analysts</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your templates (VM playbook, post-mortem guide) for others to use</li>
+                        <li>Host a free workshop/webinar on one senior-level topic (risk quantification, architecture review)</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another senior-track analyst for accountability</li>
+                        <li>Contribute feedback or templates to a community resource hub</li>
+                        <li>Formally mentor at least one mid-level analyst through their own growth</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Run a risk-based vulnerability management program with real prioritization logic | ✅ Built executive-ready security metrics reporting and dashboards | ✅ Reviewed system architecture and quantified risk in business terms</p>
+                <p>✅ Made and documented a defensible vendor risk decision | ✅ Facilitated a blameless post-mortem with tracked action items | ✅ Built mentorship documentation and proposed a security program roadmap</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> Nessus/Qualys/OpenVAS, CVSS/EPSS, FAIR risk quantification, OWASP SAMM, NIST CSF, Power BI/Tableau, OWASP Threat Dragon, KnowBe4/Proofpoint, ServiceNow Vulnerability Response.</p>
+                <br>
+                <p><strong>Remember:</strong> Seniority isn't about knowing more commands — it's about owning outcomes nobody assigned you, making defensible judgment calls under uncertainty, and making everyone around you better at security too. Every metric, review, and mentoring conversation you have exists to answer one question: "did this organization get measurably safer because I was here?" Stay curious, communicate clearly, and keep closing the loop.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> 

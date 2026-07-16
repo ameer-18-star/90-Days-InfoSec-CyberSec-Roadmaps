@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90-Day Roadmap For "DevSecOps Analyst" Mastery.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>90-Day Roadmap For "DevSecOps Analyst" Mastery</h1>
+            <p>An intermediate-track plan for learners who already know basic Linux, Git, and one programming language — and are ready to specialize in embedding security directly into CI/CD pipelines, infrastructure, and the software delivery lifecycle.</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Phase 1: Foundation (Days 1-30) -->
+            <div class="phase-header">
+                <h2>Phase 1: CI/CD Foundations & Shift-Left Security</h2>
+                <span>Days 1-30: Pipeline mechanics, version control security, and your first automated security gate</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 1 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">CI/CD Pipelines</span>
+                    <span class="skill-tag">Git Security</span>
+                    <span class="skill-tag">Shift-Left Security</span>
+                    <span class="skill-tag">SAST Integration</span>
+                    <span class="skill-tag">Secrets Scanning</span>
+                </div>
+            </div>
+
+            <div class="grid phase-1">
+                <div class="week-block">
+                    <h3>Week 1: CI/CD Pipeline Mechanics</h3>
+                    <ul>
+                        <li>Study how CI/CD pipelines actually work: triggers, stages, runners, artifacts, deployment targets</li>
+                        <li>Set up GitHub Actions on a sample repo and build a basic build-test-deploy pipeline from scratch</li>
+                        <li>Learn the difference between continuous integration, continuous delivery, and continuous deployment</li>
+                        <li>Study pipeline-as-code concepts and why version-controlled pipelines matter for security and auditability</li>
+                        <li>Learn how secrets/environment variables are handled in CI runners and where leaks commonly happen</li>
+                        <li>Study runner security: self-hosted vs. GitHub-hosted, and the trust implications of each</li>
+                        <li>Read one real-world CI/CD supply chain breach case study (e.g. SolarWinds/CodeCov) and map root cause</li>
+                        <li>Document 15 DevSecOps terms in your own glossary (SAST, DAST, SCA, SBOM, shift-left, etc.)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">GitHub Actions</span>
+                        <span class="tech-badge">Pipeline-as-Code</span>
+                        <span class="tech-badge">CI Runners</span>
+                        <span class="tech-badge">Supply Chain</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: First Pipeline + Breach Case Study</h4>
+                        <p>Build a working build-test-deploy GitHub Actions pipeline for a sample app, and write a one-page breakdown of a real CI/CD supply chain breach and its root cause.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 2: Git & Source Control Security</h3>
+                    <ul>
+                        <li>Study branch protection rules: required reviews, status checks, signed commits</li>
+                        <li>Learn how to enforce signed commits with GPG/SSH signing and why provenance matters</li>
+                        <li>Practice setting up gitleaks/trufflehog as a pre-commit hook to stop secrets before they're pushed</li>
+                        <li>Study .gitignore discipline and how to safely purge a secret that's already in commit history</li>
+                        <li>Learn repository access control: least-privilege team permissions, CODEOWNERS files</li>
+                        <li>Study dependency pinning and lockfiles as a defense against supply chain tampering</li>
+                        <li>Practice configuring Dependabot/Renovate for automated dependency update PRs</li>
+                        <li>Build a personal "secure repo setup checklist" you can apply to any new project</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Branch Protection</span>
+                        <span class="tech-badge">gitleaks</span>
+                        <span class="tech-badge">CODEOWNERS</span>
+                        <span class="tech-badge">Dependabot</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Secure Repo Setup</h4>
+                        <p>Configure a sample repo with branch protection, a gitleaks pre-commit hook, CODEOWNERS, and Dependabot enabled; document each setting's purpose.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 3: SAST & Secrets Scanning in the Pipeline</h3>
+                    <ul>
+                        <li>Learn the shift-left principle: why catching issues at commit time beats catching them in production</li>
+                        <li>Set up Semgrep as a CI step running on every pull request</li>
+                        <li>Practice tuning Semgrep rules to reduce noise without missing real findings</li>
+                        <li>Learn how to fail a build on critical-severity SAST findings while allowing warnings through</li>
+                        <li>Study CodeQL as GitHub's native semantic code analysis option and how it differs from pattern-based SAST</li>
+                        <li>Practice integrating gitleaks as a CI gate (not just a local pre-commit hook) for defense in depth</li>
+                        <li>Learn how to triage SAST findings: true positive vs. false positive vs. accepted risk</li>
+                        <li>Write a one-page "SAST findings triage" decision framework for your own future use</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Semgrep</span>
+                        <span class="tech-badge">CodeQL</span>
+                        <span class="tech-badge">Shift-Left</span>
+                        <span class="tech-badge">Build Gates</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: SAST-Gated Pipeline</h4>
+                        <p>Add Semgrep and gitleaks as required CI checks on a sample repo that block merges on critical findings; document your triage framework.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 4: Software Composition Analysis (SCA) & SBOM</h3>
+                    <ul>
+                        <li>Study why third-party dependencies are the largest attack surface in modern apps</li>
+                        <li>Set up OWASP Dependency-Check or Snyk to scan a sample project's dependency tree</li>
+                        <li>Learn what an SBOM (Software Bill of Materials) is and why it's increasingly required by regulation/customers</li>
+                        <li>Practice generating an SBOM with Syft in CycloneDX and SPDX formats</li>
+                        <li>Study transitive dependency risk and how a vulnerability 4 layers deep still affects you</li>
+                        <li>Learn how license compliance scanning fits into SCA tooling (not just security, but legal risk)</li>
+                        <li>Practice setting up a CI step that fails on critical CVEs in direct dependencies only (tuning severity vs. depth)</li>
+                        <li>Document your own SCA tool comparison (Dependency-Check vs Snyk vs OWASP tools) based on hands-on use</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">SCA</span>
+                        <span class="tech-badge">SBOM</span>
+                        <span class="tech-badge">Syft</span>
+                        <span class="tech-badge">CycloneDX</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: SCA + SBOM Pipeline Step</h4>
+                        <p>Add an SCA scan to your pipeline that generates a CycloneDX SBOM artifact on every build and fails on critical CVEs in direct dependencies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🎯 Milestone 1 Achievement</h3>
+                <p>You can build a CI/CD pipeline from scratch, secure source control with branch protection and secrets scanning, and gate builds on SAST and SCA findings — the foundational toolkit of a DevSecOps Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Pick one to consolidate pipeline security fundamentals before moving into deeper automation and infrastructure.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Secure-by-Default Pipeline Template</h4>
+                        <p>Build a reusable GitHub Actions template repo with SAST, secrets scanning, and SCA pre-configured for any new project.</p>
+                        <small>Hint: Use GitHub's "reusable workflows" feature so others can adopt it with minimal setup.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Git History Secret Purge Lab</h4>
+                        <p>Deliberately commit a fake secret, push it, then practice fully purging it from git history using git-filter-repo or BFG.</p>
+                        <small>Hint: Document every step — this is a real skill people panic about when it happens for real.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>SBOM Comparison Report</h4>
+                        <p>Generate SBOMs for 3 different open-source projects and compare dependency risk profiles across them.</p>
+                        <small>Hint: Look for projects with very different dependency tree sizes for a more interesting comparison.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Shift-Left Security Teaching Carousel</h4>
+                        <p>Turn your Phase 1 notes into a 10-part educational explainer series for your audience.</p>
+                        <small>Hint: One concept per piece (SAST, SCA, SBOM, secrets scanning, etc.), beginner-friendly language.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 2: Intermediate Concepts (Days 31-60) -->
+            <div class="phase-header">
+                <h2>Phase 2: DAST, IaC Security & Container Pipelines</h2>
+                <span>Days 31-60: Extend automated security into runtime testing, infrastructure-as-code, and containerized deployments</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 2 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">DAST Automation</span>
+                    <span class="skill-tag">IaC Security</span>
+                    <span class="skill-tag">Container Pipelines</span>
+                    <span class="skill-tag">Policy-as-Code</span>
+                    <span class="skill-tag">Secrets Management</span>
+                </div>
+            </div>
+
+            <div class="grid phase-2">
+                <div class="week-block">
+                    <h3>Week 5: DAST Automation in CI/CD</h3>
+                    <ul>
+                        <li>Study how DAST differs from SAST in a pipeline context: it needs a running application to test against</li>
+                        <li>Set up OWASP ZAP in baseline scan mode against a sample app spun up inside the pipeline itself</li>
+                        <li>Practice using Docker Compose in CI to stand up a full app stack for DAST testing before teardown</li>
+                        <li>Learn how to handle authenticated DAST scans (session handling) in an automated, non-interactive way</li>
+                        <li>Study how to tune DAST scan scope and duration to fit within CI time/cost budgets</li>
+                        <li>Practice configuring ZAP automation framework YAML configs instead of manual GUI scans</li>
+                        <li>Learn how to publish DAST results as a pipeline artifact and fail builds on high-severity findings</li>
+                        <li>Document the tradeoffs between full DAST scans on every PR vs. scheduled nightly scans</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">OWASP ZAP</span>
+                        <span class="tech-badge">Docker Compose</span>
+                        <span class="tech-badge">ZAP Automation Framework</span>
+                        <span class="tech-badge">Authenticated Scans</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Ephemeral DAST Pipeline</h4>
+                        <p>Build a CI job that spins up a sample app via Docker Compose, runs an authenticated ZAP scan against it, publishes results, and tears the stack down.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 6: Infrastructure-as-Code (IaC) Security in Pipelines</h3>
+                    <ul>
+                        <li>Study why IaC scanning matters: catching misconfigurations before they're ever deployed, not after</li>
+                        <li>Set up Checkov and tfsec as required pipeline steps scanning Terraform on every pull request</li>
+                        <li>Practice fixing common Terraform findings: open security groups, unencrypted resources, public S3</li>
+                        <li>Learn how to write custom Checkov rules for organization-specific policy requirements</li>
+                        <li>Study policy-as-code with Open Policy Agent (OPA)/Conftest and how it generalizes beyond Terraform</li>
+                        <li>Practice writing a Rego policy that enforces one specific organizational rule (e.g. mandatory tags)</li>
+                        <li>Learn how Terraform plan output can be scanned pre-apply for a true "shift-left" IaC gate</li>
+                        <li>Build a personal "IaC pipeline gate" reference architecture you can reuse across projects</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Checkov</span>
+                        <span class="tech-badge">tfsec</span>
+                        <span class="tech-badge">OPA/Conftest</span>
+                        <span class="tech-badge">Rego</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Policy-as-Code IaC Gate</h4>
+                        <p>Add Checkov and one custom OPA/Rego policy as required pipeline checks on a Terraform repo, blocking merge on violations.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 7: Container Build & Deployment Pipelines</h3>
+                    <ul>
+                        <li>Study multi-stage Docker builds and how they reduce final image attack surface</li>
+                        <li>Practice integrating Trivy as a CI step that scans images before they're pushed to a registry</li>
+                        <li>Learn image signing concepts with Cosign/Sigstore and why provenance matters for deployed containers</li>
+                        <li>Study admission controllers in Kubernetes that can block unsigned or unscanned images at deploy time</li>
+                        <li>Practice setting up a registry-level scan gate (e.g. blocking push of images with critical CVEs)</li>
+                        <li>Learn distroless/minimal base image strategies and how to migrate a Dockerfile to one</li>
+                        <li>Study how to automate Dockerfile linting (hadolint) as an early pipeline check</li>
+                        <li>Build a fully gated container pipeline: lint → build → scan → sign → deploy</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Trivy</span>
+                        <span class="tech-badge">Cosign/Sigstore</span>
+                        <span class="tech-badge">hadolint</span>
+                        <span class="tech-badge">Admission Controllers</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Gated Container Pipeline</h4>
+                        <p>Build a full lint-build-scan-sign pipeline for a containerized app, where Trivy findings and missing signatures both block deployment.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 8: Secrets Management & Pipeline Identity</h3>
+                    <ul>
+                        <li>Learn why hardcoded pipeline secrets (API keys, cloud credentials) are a top breach vector</li>
+                        <li>Study OIDC-based federated identity for pipelines (e.g. GitHub Actions to AWS, no long-lived keys)</li>
+                        <li>Practice configuring a GitHub Actions workflow that assumes an AWS role via OIDC instead of static keys</li>
+                        <li>Learn HashiCorp Vault or AWS Secrets Manager integration patterns for pipeline secret retrieval</li>
+                        <li>Study secret scanning at the organization level (GitHub Advanced Security, GitGuardian) vs. per-repo tools</li>
+                        <li>Practice rotating a pipeline secret and confirming zero downtime during the rotation</li>
+                        <li>Learn how to scope pipeline permissions tightly (GITHUB_TOKEN permissions block) to limit blast radius</li>
+                        <li>Document a "pipeline identity and secrets" reference guide for future projects</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">OIDC Federation</span>
+                        <span class="tech-badge">Vault/Secrets Manager</span>
+                        <span class="tech-badge">GITHUB_TOKEN Scoping</span>
+                        <span class="tech-badge">Secret Rotation</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Keyless Cloud Deployment</h4>
+                        <p>Reconfigure a pipeline that deploys to AWS to use OIDC federation instead of static access keys, eliminating long-lived credentials entirely.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🚀 Milestone 2 Achievement</h3>
+                <p>You can automate DAST testing inside ephemeral environments, gate deployments on IaC and container security findings, and eliminate static secrets using federated identity — the practical toolkit that fills a DevSecOps Analyst's day-to-day work.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 2</h3>
+                <p>Pick one to bridge into observability, compliance automation, and career-readiness work.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Full Security-Gated CI/CD Pipeline</h4>
+                        <p>Combine SAST, SCA, secrets scanning, IaC scanning, container scanning, and DAST into one pipeline with staged gates.</p>
+                        <small>Hint: Document the architecture as a diagram — this is your strongest portfolio centerpiece.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Policy-as-Code Library</h4>
+                        <p>Write 5 reusable OPA/Rego policies covering common organizational requirements (tagging, encryption, naming).</p>
+                        <small>Hint: Package them with Conftest test cases so others can verify the policies work correctly.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Zero-Static-Secrets Migration</h4>
+                        <p>Take a pipeline with hardcoded credentials and fully migrate it to OIDC federation plus a secrets manager.</p>
+                        <small>Hint: Document the before/after — this story resonates strongly in interviews.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>DevSecOps Pipeline Teaching Content</h4>
+                        <p>Turn your gated pipeline build into a teaching walkthrough explaining each security gate and why it exists.</p>
+                        <small>Hint: Use one running sample app throughout for consistency across the explainer.</small>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Phase 3: Production & Deployment (Days 61-90) -->
+            <div class="phase-header">
+                <h2>Phase 3: Observability, Compliance Automation & Career Readiness</h2>
+                <span>Days 61-90: Security monitoring as code, compliance automation, and the certification/interview push</span>
+            </div>
+
+            <div class="skills-highlight">
+                <h3>🎯 Phase 3 Goals</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Security Observability</span>
+                    <span class="skill-tag">Compliance-as-Code</span>
+                    <span class="skill-tag">Incident Response Automation</span>
+                    <span class="skill-tag">Metrics & Reporting</span>
+                    <span class="skill-tag">Interview Readiness</span>
+                </div>
+            </div>
+
+            <div class="grid phase-3">
+                <div class="week-block">
+                    <h3>Week 9: Security Observability & Monitoring as Code</h3>
+                    <ul>
+                        <li>Study how runtime security monitoring complements pipeline-time scanning (you can't catch everything pre-deploy)</li>
+                        <li>Learn Falco basics for runtime container/Kubernetes anomaly detection</li>
+                        <li>Practice writing a Falco rule that detects an unexpected shell spawned inside a container</li>
+                        <li>Study how centralized logging (CloudTrail, application logs, audit logs) feeds security dashboards</li>
+                        <li>Learn how to define and track DevSecOps-relevant metrics: mean time to remediate, scan coverage %, escaped defects</li>
+                        <li>Practice building a simple security metrics dashboard from your own pipeline's historical scan data</li>
+                        <li>Study how alert fatigue happens and how to tune detection rules to stay actionable</li>
+                        <li>Document a "monitoring as code" config (Falco rules + alert routing) version-controlled alongside your app</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Falco</span>
+                        <span class="tech-badge">Monitoring as Code</span>
+                        <span class="tech-badge">Security Metrics</span>
+                        <span class="tech-badge">Alert Tuning</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Runtime Detection Rule Set</h4>
+                        <p>Write 3 custom Falco rules detecting suspicious container behavior, version-controlled in your repo, with a short doc explaining each rule's intent.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 10: Compliance-as-Code & Automated Evidence</h3>
+                    <ul>
+                        <li>Study how compliance frameworks (SOC 2, ISO 27001, PCI-DSS) increasingly expect automated, continuous evidence</li>
+                        <li>Learn how CSPM/pipeline scan results can be mapped automatically to compliance control IDs</li>
+                        <li>Practice tagging your existing pipeline security gates with the compliance controls they satisfy</li>
+                        <li>Study how GRC platforms (Vanta, Drata) pull automated evidence from CI/CD and cloud APIs</li>
+                        <li>Learn the concept of "continuous compliance" vs. point-in-time audits, and why DevSecOps enables it</li>
+                        <li>Practice writing a script that exports your pipeline's scan history as audit-ready evidence artifacts</li>
+                        <li>Study how policy-as-code (from Week 6) doubles as both a security gate and compliance evidence</li>
+                        <li>Document a control-to-pipeline-step mapping for 10 common compliance requirements</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Compliance-as-Code</span>
+                        <span class="tech-badge">Continuous Compliance</span>
+                        <span class="tech-badge">Evidence Automation</span>
+                        <span class="tech-badge">Control Mapping</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Automated Evidence Export</h4>
+                        <p>Build a script that exports your pipeline's last 10 security scan results as timestamped, audit-ready evidence files mapped to specific compliance controls.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 11: Incident Response Automation & Resilience</h3>
+                    <ul>
+                        <li>Study how DevSecOps teams build automated rollback as a security control, not just a reliability one</li>
+                        <li>Practice configuring a pipeline that automatically rolls back a deployment on a failed post-deploy health/security check</li>
+                        <li>Learn how feature flags and canary deployments reduce blast radius when a security issue surfaces post-release</li>
+                        <li>Study chatops patterns: routing pipeline security alerts directly into Slack/Teams with actionable context</li>
+                        <li>Practice building a simple chatops integration that posts a formatted alert when a critical scan finding appears</li>
+                        <li>Learn how blameless postmortems work and why they matter for sustainable security culture</li>
+                        <li>Study how to write a postmortem for a pipeline security incident (e.g. a leaked secret that reached production)</li>
+                        <li>Compile your 90-day labs into a single portfolio-style "DevSecOps maturity" writeup</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Automated Rollback</span>
+                        <span class="tech-badge">Canary Deployments</span>
+                        <span class="tech-badge">ChatOps</span>
+                        <span class="tech-badge">Postmortems</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Self-Healing Pipeline + Postmortem</h4>
+                        <p>Add an automated rollback trigger to your pipeline on failed post-deploy checks, and write a blameless postmortem for a simulated leaked-secret incident.</p>
+                    </div>
+                </div>
+
+                <div class="week-block">
+                    <h3>Week 12: Certification & Interview Readiness</h3>
+                    <ul>
+                        <li>Review and attempt practice questions aligned to a target cert (e.g. Certified DevSecOps Professional, AWS Security Specialty, or CKS)</li>
+                        <li>Do a full mock pipeline security build under time pressure: take an insecure sample repo and fully gate it within 4 hours</li>
+                        <li>Prepare answers for common DevSecOps interview questions (explain shift-left, walk through a pipeline architecture, etc.)</li>
+                        <li>Build a one-page resume bullet list translating your 90 days into measurable skills/achievements</li>
+                        <li>Polish your GitHub: pin your best 3 projects (gated pipeline, policy-as-code library, evidence automation) with clean READMEs</li>
+                        <li>Practice a mock technical interview (explain a full pipeline security architecture end-to-end out loud)</li>
+                        <li>Research target companies/teams and tailor your resume + LinkedIn headline accordingly</li>
+                        <li>Plan your next 90 days: pick a specialization (platform engineering, cloud security, or security automation lead)</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <span class="tech-badge">Mock Interviews</span>
+                        <span class="tech-badge">Resume Building</span>
+                        <span class="tech-badge">GitHub Portfolio</span>
+                        <span class="tech-badge">Cert Prep</span>
+                    </div>
+                    <div class="project-box">
+                        <h4>Task heading at the end of week: Job-Ready DevSecOps Portfolio</h4>
+                        <p>Finalize a GitHub portfolio, resume bullets, and one polished "DevSecOps maturity" writeup — your complete application package for DevSecOps Analyst roles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <h3>🏆 Final Achievement</h3>
+                <p>Congratulations! You now have a working DevSecOps toolkit (CI/CD security gates, IaC and container pipelines, secrets federation, runtime observability, compliance automation) plus a portfolio of real pipelines and a job-ready application package — the foundation of a genuinely employable DevSecOps Analyst.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects-choice">
+                <h3>Projects After Phase 1</h3>
+                <p>Final capstone options to demonstrate end-to-end DevSecOps capability.</p>
+                <div class="project-options">
+                    <div class="project-option">
+                        <h4>Fully Gated Reference Pipeline</h4>
+                        <p>Build one master pipeline covering every gate from all 90 days: SAST, SCA, secrets, IaC, container, DAST, and signed deploys.</p>
+                        <small>Hint: Make it a template repo with a clear README — this is the single strongest artifact you can show a hiring manager.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Continuous Compliance Dashboard</h4>
+                        <p>Build a dashboard that pulls your pipeline's scan history and maps it live to a chosen compliance framework's controls.</p>
+                        <small>Hint: Even a simple static HTML page generated from JSON scan output counts — focus on the mapping logic.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>Self-Healing Deployment System</h4>
+                        <p>Build a deployment pipeline with automated rollback, canary release, and chatops alerting fully wired together.</p>
+                        <small>Hint: Simulate a failure scenario and record the full automated response for your portfolio.</small>
+                    </div>
+                    <div class="project-option">
+                        <h4>DevSecOps Teaching Series</h4>
+                        <p>Package your entire 90-day journey into a structured course/series for your audience (Virtual Mentors SOIT).</p>
+                        <small>Hint: Mirror this exact 3-phase structure — it's already built for teaching.</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skills you have learned -->
+            <div class="skills-learned">
+                <h4>🚀 Skills You have learned</h4>
+                <div class="skills-stack">
+                    <div class="skill-item">CI/CD Pipeline Engineering</div>
+                    <div class="skill-item">SAST/SCA/Secrets Scanning Integration</div>
+                    <div class="skill-item">Automated DAST in Ephemeral Environments</div>
+                    <div class="skill-item">IaC & Policy-as-Code (Checkov/OPA)</div>
+                    <div class="skill-item">Container Pipeline Hardening & Signing</div>
+                    <div class="skill-item">OIDC Federation & Secrets Management</div>
+                    <div class="skill-item">Runtime Security Observability</div>
+                    <div class="skill-item">Compliance-as-Code & Evidence Automation</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Resources -->
+            <div class="phase-header">
+                <h2>Recommended Resources</h2>
+                <span>Essential learning platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Top Books</h3>
+                    <ul>
+                        <li>Securing DevOps — Julien Vehent</li>
+                        <li>The DevOps Handbook — Kim, Humble, Debois, Willis</li>
+                        <li>Accelerate — Forsgren, Humble, Kim</li>
+                        <li>Container Security — Liz Rice</li>
+                        <li>Alice and Bob Learn Application Security — Tanya Janca</li>
+                        <li>Practical Cloud Security — Chris Dotson</li>
+                        <li>The Phoenix Project — Kim, Behr, Spafford</li>
+                        <li>Site Reliability Engineering — Google SRE Team</li>
+                        <li>Infrastructure as Code — Kief Morris</li>
+                        <li>Building Secure and Reliable Systems — Google SRE/Security Teams</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Best Learning Platforms</h3>
+                    <ul>
+                        <li>GitHub Actions documentation & learning lab</li>
+                        <li>KodeKloud (DevOps & DevSecOps courses)</li>
+                        <li>TryHackMe (DevSecOps and CI/CD security rooms)</li>
+                        <li>HackTheBox Academy (CI/CD pentesting modules)</li>
+                        <li>Open Policy Agent official tutorials</li>
+                        <li>Sigstore/Cosign documentation and labs</li>
+                        <li>AWS Skill Builder (DevOps & Security paths)</li>
+                        <li>A Cloud Guru / Pluralsight DevSecOps tracks</li>
+                        <li>OWASP DevSecOps Guideline (free, community-maintained)</li>
+                        <li>YouTube: TechWorld with Nana, Cloud Security Podcast, DevSecOps Days talks</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Professional Certifications</h3>
+                    <ul>
+                        <li>Certified DevSecOps Professional (Practical DevSecOps)</li>
+                        <li>AWS Certified DevOps Engineer – Professional</li>
+                        <li>Certified Kubernetes Security Specialist (CKS)</li>
+                        <li>AWS Certified Security – Specialty</li>
+                        <li>HashiCorp Certified: Terraform Associate</li>
+                        <li>HashiCorp Certified: Vault Associate</li>
+                        <li>Certificate of Cloud Security Knowledge (CCSK)</li>
+                        <li>CompTIA Security+ (foundational, if not already held)</li>
+                        <li>Certified Kubernetes Administrator (CKA)</li>
+                        <li>GitHub Advanced Security certification</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Communities & Forums</h3>
+                    <ul>
+                        <li>DevSecOps Days local chapter meetups</li>
+                        <li>r/devops and r/cybersecurity on Reddit</li>
+                        <li>Cloud Security Podcast community (Slack/Discord)</li>
+                        <li>OWASP local chapter meetups (DevSecOps-focused talks)</li>
+                        <li>CNCF Slack (#security and #devsecops channels)</li>
+                        <li>HashiCorp community forums</li>
+                        <li>LinkedIn DevSecOps community groups</li>
+                        <li>Twitter/X DevSecOps community (#DevSecOps, #shiftleft)</li>
+                        <li>DevOps Institute community resources</li>
+                        <li>Stack Overflow / DevOps Stack Exchange</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Tools -->
+            <div class="phase-header">
+                <h2>Recommended Tools</h2>
+                <span>Essential tools and platforms for your journey</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Pipeline & Source Security Tools</h3>
+                    <ul>
+                        <li>GitHub Actions</li>
+                        <li>Semgrep</li>
+                        <li>CodeQL</li>
+                        <li>gitleaks / trufflehog</li>
+                        <li>Dependabot / Renovate</li>
+                        <li>OWASP Dependency-Check</li>
+                        <li>Snyk</li>
+                        <li>SonarQube</li>
+                        <li>GitHub Advanced Security</li>
+                        <li>GitGuardian</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>IaC, Container & Policy Tools</h3>
+                    <ul>
+                        <li>Checkov</li>
+                        <li>tfsec</li>
+                        <li>Open Policy Agent (OPA) / Conftest</li>
+                        <li>Trivy</li>
+                        <li>Grype</li>
+                        <li>hadolint</li>
+                        <li>Cosign / Sigstore</li>
+                        <li>Syft (SBOM generation)</li>
+                        <li>Docker Bench for Security</li>
+                        <li>Kyverno (Kubernetes policy engine)</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Runtime, Identity & Compliance Tools</h3>
+                    <ul>
+                        <li>OWASP ZAP</li>
+                        <li>Falco</li>
+                        <li>HashiCorp Vault</li>
+                        <li>AWS Secrets Manager</li>
+                        <li>GitHub OIDC / AWS IAM Roles for GitHub Actions</li>
+                        <li>Vanta / Drata (compliance automation)</li>
+                        <li>Slack/Teams webhooks for ChatOps</li>
+                        <li>Grafana / Prometheus (metrics dashboards)</li>
+                        <li>PagerDuty / Opsgenie (alert routing)</li>
+                        <li>Argo CD / Flux (GitOps deployment)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Projects -->
+            <div class="phase-header">
+                <h2>Project Ideas</h2>
+                <span>Practice projects organized by difficulty to keep building after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Build a basic build-test-deploy GitHub Actions pipeline</li>
+                        <li>Add branch protection rules to a sample repo</li>
+                        <li>Set up a gitleaks pre-commit hook locally</li>
+                        <li>Run Semgrep manually on a sample codebase and review findings</li>
+                        <li>Generate an SBOM for one open-source project with Syft</li>
+                        <li>Write a Dockerfile and lint it with hadolint</li>
+                        <li>Scan one container image with Trivy and fix the top finding</li>
+                        <li>Configure Dependabot on a personal repo</li>
+                        <li>Write a CODEOWNERS file for a sample project</li>
+                        <li>Document the difference between SAST, DAST, and SCA in your own words</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Intermediate</h3>
+                    <ul>
+                        <li>Add SAST and secrets scanning as required pipeline checks</li>
+                        <li>Build an ephemeral DAST scan step using Docker Compose in CI</li>
+                        <li>Write and test one custom OPA/Rego policy</li>
+                        <li>Set up OIDC federation between GitHub Actions and a cloud provider</li>
+                        <li>Add image signing with Cosign to a container build pipeline</li>
+                        <li>Build a simple chatops Slack alert for failed security scans</li>
+                        <li>Write 2 custom Falco rules for container runtime detection</li>
+                        <li>Map 5 pipeline security gates to specific compliance controls</li>
+                        <li>Configure automated rollback on a failed health check</li>
+                        <li>Write a blameless postmortem for a simulated pipeline incident</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Advanced</h3>
+                    <ul>
+                        <li>Build a full security-gated pipeline covering every scan category</li>
+                        <li>Design a reusable pipeline template repo for organization-wide adoption</li>
+                        <li>Build a continuous compliance evidence export pipeline</li>
+                        <li>Set up a complete GitOps deployment flow with Argo CD/Flux</li>
+                        <li>Build a custom Kubernetes admission controller policy with Kyverno</li>
+                        <li>Design a multi-environment promotion pipeline (dev → staging → prod) with gates at each stage</li>
+                        <li>Build a security metrics dashboard tracking MTTR and scan coverage over time</li>
+                        <li>Architect a zero-static-secrets deployment system across multiple cloud accounts</li>
+                        <li>Design a canary deployment system with automated security-based rollback triggers</li>
+                        <li>Mentor a junior learner through your own 90-day roadmap</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>Expert</h3>
+                    <ul>
+                        <li>Contribute a fix or finding to an open-source DevSecOps tool</li>
+                        <li>Build a custom policy-as-code engine tailored to an organization's stack</li>
+                        <li>Design a full DevSecOps maturity model for a hypothetical organization</li>
+                        <li>Research and publish original DevSecOps tooling comparisons or benchmarks</li>
+                        <li>Speak at a local DevSecOps Days or CNCF community meetup</li>
+                        <li>Build a security champions program framework for platform/dev teams</li>
+                        <li>Architect a fully automated compliance-as-code pipeline mapped to multiple frameworks</li>
+                        <li>Publish original DevSecOps research or a technical whitepaper</li>
+                        <li>Build an internal developer platform (IDP) with security gates built in by default</li>
+                        <li>Lead a full pipeline security incident tabletop exercise for a team</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- What Next -->
+            <div class="phase-header">
+                <h2>What Next</h2>
+                <span>Where to take your DevSecOps career after Day 90</span>
+            </div>
+
+            <div class="grid">
+                <div class="week-block">
+                    <h3>1. Specialize</h3>
+                    <ul>
+                        <li>Pick one lane: platform engineering, cloud security, or security automation/tooling</li>
+                        <li>Go deep on Kubernetes-native security (CKS, Kyverno, OPA Gatekeeper)</li>
+                        <li>Consider compliance automation as a specialized GRC-adjacent track</li>
+                        <li>Explore site reliability engineering (SRE) as a related discipline worth understanding</li>
+                        <li>Look into internal developer platform (IDP) engineering as a senior path</li>
+                        <li>Consider a specific cloud provider's DevSecOps tooling as a deep specialization</li>
+                        <li>Specialize in supply chain security (SLSA framework, Sigstore ecosystem)</li>
+                        <li>Pursue an advanced cert aligned to your chosen lane</li>
+                        <li>Join a specialized community for that niche</li>
+                        <li>Set a 6-month deep-specialization goal</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>2. Apply & Network</h3>
+                    <ul>
+                        <li>Apply to entry-level DevSecOps Analyst / DevSecOps Engineer roles weekly</li>
+                        <li>Tailor your resume per job description using your pipeline portfolio</li>
+                        <li>Attend local DevSecOps Days/CNCF meetups and introduce yourself</li>
+                        <li>Reach out to DevSecOps professionals on LinkedIn for informational chats</li>
+                        <li>Ask for referrals once you've built real community connections</li>
+                        <li>Keep your GitHub portfolio updated with new pipeline projects</li>
+                        <li>Practice mock interviews monthly to stay sharp</li>
+                        <li>Track applications and follow up professionally</li>
+                        <li>Consider freelance/contract pipeline security audits to build experience</li>
+                        <li>Set a weekly application/networking quota and stick to it</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>3. Keep Building</h3>
+                    <ul>
+                        <li>Stay current with weekly supply chain security advisories and CVE roundups</li>
+                        <li>Do at least one new tool/lab per week to keep your pipeline skills sharp</li>
+                        <li>Re-test old pipelines with new tools/techniques quarterly</li>
+                        <li>Write a monthly technical blog post about something you learned</li>
+                        <li>Build a second, more advanced portfolio project every 90 days</li>
+                        <li>Track new releases in the CI/CD security tooling ecosystem</li>
+                        <li>Mentor beginners — teaching reinforces your own mastery</li>
+                        <li>Read one new DevSecOps/DevOps book per month</li>
+                        <li>Attend at least one virtual conference talk per month</li>
+                        <li>Reassess your roadmap every quarter and adjust goals</li>
+                    </ul>
+                </div>
+
+                <div class="week-block">
+                    <h3>4. Give Back</h3>
+                    <ul>
+                        <li>Turn your 90-day notes into content for Virtual Mentors SOIT</li>
+                        <li>Create a beginner-friendly DevSecOps series for your audience</li>
+                        <li>Answer questions in community forums/Discords regularly</li>
+                        <li>Open-source one of your pipeline templates or policy libraries for others to use</li>
+                        <li>Host a free workshop/webinar on one DevSecOps topic</li>
+                        <li>Write a "lessons learned" retrospective on your 90 days publicly</li>
+                        <li>Pair up with another learner for accountability</li>
+                        <li>Contribute documentation fixes to a tool you use often</li>
+                        <li>Review and give feedback on a peer's pipeline security setup</li>
+                        <li>Pay it forward — share this exact roadmap with someone starting out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <h3>🎯 Success Metrics</h3>
+                <p>By Day 90, you'll have:</p>
+                <p>✅ Built a CI/CD pipeline gated by SAST, SCA, and secrets scanning | ✅ Automated DAST testing inside ephemeral, disposable environments | ✅ Enforced IaC and policy-as-code checks before any infrastructure deploys</p>
+                <p>✅ Built a fully scanned, signed container deployment pipeline | ✅ Eliminated static secrets using OIDC federation | ✅ Automated compliance evidence and runtime security monitoring</p>
+                <br>
+                <p><strong>Technologies Covered:</strong> GitHub Actions, Semgrep, CodeQL, gitleaks, Checkov, tfsec, OPA/Rego, Trivy, Cosign/Sigstore, Falco, OWASP ZAP, HashiCorp Vault, OIDC Federation.</p>
+                <br>
+                <p><strong>Remember:</strong> DevSecOps isn't a tool stack, it's a discipline of making the secure path the easy path — every gate, scan, and automated check you build exists to answer one question: "can a mistake reach production before anyone notices?" Stay curious, automate relentlessly, and keep shifting security left.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
