@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity and Information Security Job Titles</title>
     <style>
-        /* Modern Premium Dark Theme CSS Stylesheet */
+        /* Universal styles */
         * {
             margin: 0;
             padding: 0;
@@ -16,46 +16,50 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background: linear-gradient(135deg, #07080a 0%, #0f0b18 100%);
-            background-image: 
-                linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+            /* Deep black gradient with a faint white grid overlay */
+            background: linear-gradient(135deg, #000000 0%, #0d0d0d 100%);
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
             background-size: 48px 48px;
-            color: #e4e2dd;
+            color: #F5F5F3;
             min-height: 100vh;
-            padding: 40px 20px;
+            padding: 20px;
         }
 
         a {
-            color: #9499a3;
+            color: #9a9a97;
+            /* Muted gray for dark mode compatibility */
             text-decoration: none;
-            transition: all 0.2s ease;
-            display: inline-block;
-            width: 100%;
+            transition: color 0.2s ease;
         }
 
         a:hover {
-            color: #4090e2;
-            transform: translateX(3px);
+            color: #FFD700;
+            /* Vivid yellow accent on hover */
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background: #13151a;
+            background: #161616;
+            /* Elevated container background */
             backdrop-filter: blur(10px);
-            border: 1px solid #23262d;
+            border: 1px solid #2c2c2c;
+            /* Subtle dark border */
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            /* Heavy dark shadow */
             overflow: hidden;
         }
 
         .header {
-            background: linear-gradient(135deg, #10141d, #1a2333);
-            border-bottom: 1px solid #23262d;
-            color: #e4e2dd;
+            /* Deep black-to-charcoal gradient */
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            border-bottom: 1px solid #2c2c2c;
+            color: #F5F5F3;
             text-align: center;
-            padding: 50px 20px;
+            padding: 40px 20px;
             position: relative;
             overflow: hidden;
         }
@@ -70,8 +74,8 @@
             background: repeating-linear-gradient(45deg,
                     transparent,
                     transparent 10px,
-                    rgba(255, 255, 255, 0.015) 10px,
-                    rgba(255, 255, 255, 0.015) 20px);
+                    rgba(255, 215, 0, 0.02) 10px,
+                    rgba(255, 215, 0, 0.02) 20px);
             animation: slide 20s linear infinite;
         }
 
@@ -79,6 +83,7 @@
             0% {
                 transform: translateX(-50px) translateY(-50px);
             }
+
             100% {
                 transform: translateX(0px) translateY(0px);
             }
@@ -86,22 +91,21 @@
 
         .header h1 {
             font-size: 2.5rem;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             position: relative;
             z-index: 1;
-            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-            font-weight: 700;
-            letter-spacing: -0.02em;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            /* Soft glow instead of a flat shadow */
+            font-weight: 600;
         }
 
         .header p {
-            font-size: 1.15rem;
-            color: #9499a3;
-            max-width: 700px;
-            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #9a9a97;
+            /* High-contrast secondary text color */
+            opacity: 1;
             position: relative;
             z-index: 1;
-            font-weight: 400;
         }
 
         .content {
@@ -110,17 +114,21 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
         }
 
         .category {
-            background: #101216;
+            background: #101010;
+            /* Clean card background */
             border-radius: 15px;
             padding: 25px;
             box-shadow: none;
-            border: 1px solid #23262d;
+            border: 1px solid #2c2c2c;
+            /* Subtle borders */
             transition: all 0.3s ease;
+            border-left: 4px solid #FFD700;
+            /* Default border matching header yellow */
             position: relative;
             overflow: hidden;
         }
@@ -132,15 +140,16 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, #4090e2, #a767e8, #e2483d, #3ddc6a);
+            background: linear-gradient(90deg, #FFD700, #FF5252, #F5F5F3, #FFD700);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
 
         .category:hover {
             transform: translateY(-5px);
-            border-color: #2f5f8a;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+            border-color: #b39b00;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+            /* Elegant elevation shadow */
         }
 
         .category:hover::before {
@@ -148,11 +157,12 @@
         }
 
         .category h2 {
-            color: #e4e2dd;
+            color: #F5F5F3;
             font-size: 1.4rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             padding-bottom: 10px;
-            border-bottom: 1px solid #1a1c22;
+            border-bottom: 1px solid #1a1a1a;
+            /* Darker border for separating headings */
             position: relative;
             font-weight: 600;
         }
@@ -164,6 +174,7 @@
             left: 0;
             width: 50px;
             height: 2px;
+            background: #FFD700;
         }
 
         .category ul {
@@ -171,67 +182,132 @@
         }
 
         .category li {
-            padding: 10px 0;
+            padding: 8px 0;
+            color: #9a9a97;
             position: relative;
             padding-left: 20px;
-            border-bottom: 1px dashed rgba(255, 255, 255, 0.03);
-        }
-
-        .category li:last-child {
-            border-bottom: none;
+            transition: all 0.2s ease;
         }
 
         .category li::before {
             content: '▶';
             position: absolute;
             left: 0;
+            color: #FFD700;
             font-size: 0.8rem;
             transition: all 0.2s ease;
         }
 
-        /* Unique Color Coding Schemes per Tier */
-        .category:nth-child(1) { border-left: 4px solid #4090e2; } /* Entry Level - Blue Accent */
-        .category:nth-child(1) h2::after { background: #4090e2; }
-        .category:nth-child(1) li::before { color: #4090e2; }
-
-        .category:nth-child(2) { border-left: 4px solid #a767e8; } /* Mid Level - Purple Accent */
-        .category:nth-child(2) h2::after { background: #a767e8; }
-        .category:nth-child(2) li::before { color: #a767e8; }
-
-        .category:nth-child(3) { border-left: 4px solid #3ddc6a; } /* Advanced Level - Green Accent */
-        .category:nth-child(3) h2::after { background: #3ddc6a; }
-        .category:nth-child(3) li::before { color: #3ddc6a; }
+        .category li:hover {
+            color: #F5F5F3;
+            padding-left: 25px;
+        }
 
         .category li:hover::before {
-            color: #e2483d !important;
+            color: #FF5252;
             transform: scale(1.2);
         }
 
+        /* Accent border colors — cycled strictly through black / yellow / white / red */
+        .category:nth-child(1) {
+            border-left-color: #FFD700;
+        }
+
+        /* Yellow */
+        .category:nth-child(2) {
+            border-left-color: #FF5252;
+        }
+
+        /* Red */
+        .category:nth-child(3) {
+            border-left-color: #F5F5F3;
+        }
+
+        /* White */
+        .category:nth-child(4) {
+            border-left-color: #FFD700;
+        }
+
+        /* Yellow */
+        .category:nth-child(5) {
+            border-left-color: #FF5252;
+        }
+
+        /* Red */
+        .category:nth-child(6) {
+            border-left-color: #F5F5F3;
+        }
+
+        /* White */
+        .category:nth-child(7) {
+            border-left-color: #FFD700;
+        }
+
+        /* Yellow */
+        .category:nth-child(8) {
+            border-left-color: #FF5252;
+        }
+
+        /* Red */
+        .category:nth-child(9) {
+            border-left-color: #F5F5F3;
+        }
+
+        /* White */
+
         .footer {
-            background: #101216;
-            border-top: 1px solid #23262d;
-            color: #9499a3;
+            background: #101010;
+            border-top: 1px solid #2c2c2c;
+            color: #6b6b68;
             text-align: center;
-            padding: 30px;
-            font-size: 0.95rem;
-            line-height: 1.7;
+            padding: 25px;
+            font-size: 0.9rem;
+            opacity: 1;
         }
 
-        .footer p {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Subtle Fade-in Animations for Staggered Load */
+        /* Subtle animations for better UX */
         .category {
             animation: fadeInUp 0.6s ease forwards;
             opacity: 0;
             transform: translateY(20px);
         }
 
-        .category:nth-child(1) { animation-delay: 0.1s; }
-        .category:nth-child(2) { animation-delay: 0.2s; }
-        .category:nth-child(3) { animation-delay: 0.3s; }
+        /* Delays for staggered loading animation */
+        .category:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .category:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .category:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .category:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .category:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .category:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+
+        .category:nth-child(7) {
+            animation-delay: 0.7s;
+        }
+
+        .category:nth-child(8) {
+            animation-delay: 0.8s;
+        }
+
+        .category:nth-child(9) {
+            animation-delay: 0.9s;
+        }
 
         @keyframes fadeInUp {
             to {
@@ -240,12 +316,8 @@
             }
         }
 
-        /* Responsive Breakpoints */
+        /* Responsive adjustments */
         @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
             .header h1 {
                 font-size: 2rem;
             }
@@ -271,7 +343,8 @@
         <!-- Header Section -->
         <div class="header">
             <h1>Information Security & Cybersecurity Job Titles</h1>
-            <p>Your definitive navigation map through professional cybersecurity positions. Click any role to dive into technical responsibilities, key functions, and career path progressions.</p>
+            <p>Your definitive navigation map through professional cybersecurity positions. Click any role to dive into
+                technical responsibilities, key functions, and career path progressions.</p>
         </div>
 
         <!-- Career Categories Grid -->
@@ -282,17 +355,28 @@
                 <div class="category">
                     <h2>Entry-Level Roles</h2>
                     <ul>
-                        <li><a href="Entry-Level%20Jobs/1.it-support-technician-(security-focused).html" target="_blank">IT Support Technician (Security-Focused)</a></li>
-                        <li><a href="Entry-Level%20Jobs/2.technical-support-specialist-(security).html" target="_blank">Technical Support Specialist (Security)</a></li>
-                        <li><a href="Entry-Level%20Jobs/3.help-desk-analyst-(security-operations-support).html" target="_blank">Help Desk Analyst (Security Support)</a></li>
-                        <li><a href="Entry-Level%20Jobs/4.soc-analyst-tier-1.html" target="_blank">SOC Analyst – Tier 1</a></li>
-                        <li><a href="Entry-Level%20Jobs/5.cybersecurity-technician.html" target="_blank">Cybersecurity Technician</a></li>
-                        <li><a href="Entry-Level%20Jobs/6.cybersecurity-intern-information-security-intern.html" target="_blank">Cybersecurity Intern</a></li>
-                        <li><a href="Entry-Level%20Jobs/7.it-security-assistant.html" target="_blank">IT Security Assistant</a></li>
-                        <li><a href="Entry-Level%20Jobs/8.junior-information-security-analyst.html" target="_blank">Junior InfoSec Analyst</a></li>
-                        <li><a href="Entry-Level%20Jobs/9.scurity-administrator-(entry-level).html" target="_blank">Security Administrator</a></li>
-                        <li><a href="Entry-Level%20Jobs/10.network-security-assistant.html" target="_blank">Network Security Assistant</a></li>
-                        <li><a href="Entry-Level%20Jobs/11.security-compliance-assistant.html" target="_blank">Security Compliance Assistant</a></li>
+                        <li><a href="Entry-Level%20Jobs/1.it-support-technician-(security-focused).html"
+                                target="_blank">IT Support Technician (Security-Focused)</a></li>
+                        <li><a href="Entry-Level%20Jobs/2.technical-support-specialist-(security).html"
+                                target="_blank">Technical Support Specialist (Security)</a></li>
+                        <li><a href="Entry-Level%20Jobs/3.help-desk-analyst-(security-operations-support).html"
+                                target="_blank">Help Desk Analyst (Security Support)</a></li>
+                        <li><a href="Entry-Level%20Jobs/4.soc-analyst-tier-1.html" target="_blank">SOC Analyst – Tier
+                                1</a></li>
+                        <li><a href="Entry-Level%20Jobs/5.cybersecurity-technician.html" target="_blank">Cybersecurity
+                                Technician</a></li>
+                        <li><a href="Entry-Level%20Jobs/6.cybersecurity-intern-information-security-intern.html"
+                                target="_blank">Cybersecurity Intern</a></li>
+                        <li><a href="Entry-Level%20Jobs/7.it-security-assistant.html" target="_blank">IT Security
+                                Assistant</a></li>
+                        <li><a href="Entry-Level%20Jobs/8.junior-information-security-analyst.html"
+                                target="_blank">Junior InfoSec Analyst</a></li>
+                        <li><a href="Entry-Level%20Jobs/9.scurity-administrator-(entry-level).html"
+                                target="_blank">Security Administrator</a></li>
+                        <li><a href="Entry-Level%20Jobs/10.network-security-assistant.html" target="_blank">Network
+                                Security Assistant</a></li>
+                        <li><a href="Entry-Level%20Jobs/11.security-compliance-assistant.html" target="_blank">Security
+                                Compliance Assistant</a></li>
                     </ul>
                 </div>
 
@@ -300,26 +384,42 @@
                 <div class="category">
                     <h2>Mid-Level Roles</h2>
                     <ul>
-                        <li><a href="Mid-Level%20Jobs/1.soc-analyst-tier-2.html" target="_blank">SOC Analyst – Tier 2</a></li>
-                        <li><a href="Mid-Level%20Jobs/2.security-analyst-information-security-analyst.html" target="_blank">Security Analyst / InfoSec Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/3.cybersecurity-analyst.html" target="_blank">Cybersecurity Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/4.security-engineer-information-security-engineer.html" target="_blank">Security Engineer</a></li>
-                        <li><a href="Mid-Level%20Jobs/5.network-security-engineer.html" target="_blank">Network Security Engineer</a></li>
-                        <li><a href="Mid-Level%20Jobs/6.threat-intelligence-analyst.html" target="_blank">Threat Intelligence Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/7.incident-response-analyst.html" target="_blank">Incident Response Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/8.digital-forensics-analyst.html" target="_blank">Digital Forensics Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/9.vulnerability-analyst.html" target="_blank">Vulnerability Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/10.security-auditor.html" target="_blank">Security Auditor</a></li>
+                        <li><a href="Mid-Level%20Jobs/1.soc-analyst-tier-2.html" target="_blank">SOC Analyst – Tier
+                                2</a></li>
+                        <li><a href="Mid-Level%20Jobs/2.security-analyst-information-security-analyst.html"
+                                target="_blank">Security Analyst / InfoSec Analyst</a></li>
+                        <li><a href="Mid-Level%20Jobs/3.cybersecurity-analyst.html" target="_blank">Cybersecurity
+                                Analyst</a></li>
+                        <li><a href="Mid-Level%20Jobs/4.security-engineer-information-security-engineer.html"
+                                target="_blank">Security Engineer</a></li>
+                        <li><a href="Mid-Level%20Jobs/5.network-security-engineer.html" target="_blank">Network Security
+                                Engineer</a></li>
+                        <li><a href="Mid-Level%20Jobs/6.threat-intelligence-analyst.html" target="_blank">Threat
+                                Intelligence Analyst</a></li>
+                        <li><a href="Mid-Level%20Jobs/7.incident-response-analyst.html" target="_blank">Incident
+                                Response Analyst</a></li>
+                        <li><a href="Mid-Level%20Jobs/8.digital-forensics-analyst.html" target="_blank">Digital
+                                Forensics Analyst</a></li>
+                        <li><a href="Mid-Level%20Jobs/9.vulnerability-analyst.html" target="_blank">Vulnerability
+                                Analyst</a></li>
+                        <li><a href="Mid-Level%20Jobs/10.security-auditor.html" target="_blank">Security Auditor</a>
+                        </li>
                         <li><a href="Mid-Level%20Jobs/11.it-risk-analyst.html" target="_blank">IT Risk Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/12.security-compliance-analyst.html" target="_blank">Security Compliance Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/13.cybercrime-investigator.html" target="_blank">Cybercrime Investigator</a></li>
+                        <li><a href="Mid-Level%20Jobs/12.security-compliance-analyst.html" target="_blank">Security
+                                Compliance Analyst</a></li>
+                        <li><a href="Mid-Level%20Jobs/13.cybercrime-investigator.html" target="_blank">Cybercrime
+                                Investigator</a></li>
                         <li><a href="Mid-Level%20Jobs/14.malware-analyst.html" target="_blank">Malware Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/15.penetration-tester.html" target="_blank">Penetration Tester</a></li>
+                        <li><a href="Mid-Level%20Jobs/15.penetration-tester.html" target="_blank">Penetration Tester</a>
+                        </li>
                         <li><a href="Mid-Level%20Jobs/16.ethical-hacker.html" target="_blank">Ethical Hacker</a></li>
-                        <li><a href="Mid-Level%20Jobs/17.application-security-analyst.html" target="_blank">Application Security Analyst</a></li>
+                        <li><a href="Mid-Level%20Jobs/17.application-security-analyst.html" target="_blank">Application
+                                Security Analyst</a></li>
                         <li><a href="Mid-Level%20Jobs/18.grc-analyst.html" target="_blank">GRC Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/19.cloud-security-analyst.html" target="_blank">Cloud Security Analyst</a></li>
-                        <li><a href="Mid-Level%20Jobs/20.devsecops-analyst.html" target="_blank">DevSecOps Analyst</a></li>
+                        <li><a href="Mid-Level%20Jobs/19.cloud-security-analyst.html" target="_blank">Cloud Security
+                                Analyst</a></li>
+                        <li><a href="Mid-Level%20Jobs/20.devsecops-analyst.html" target="_blank">DevSecOps Analyst</a>
+                        </li>
                         <li><a href="Mid-Level%20Jobs/21.iam-analyst.html" target="_blank">IAM Analyst</a></li>
                     </ul>
                 </div>
@@ -328,25 +428,43 @@
                 <div class="category">
                     <h2>Advanced-Level Roles</h2>
                     <ul>
-                        <li><a href="Advanced-Level%20Jobs/1.soc-analyst-tier-3.html" target="_blank">SOC Analyst – Tier 3</a></li>
-                        <li><a href="Advanced-Level%20Jobs/2.senior-security-analyst.html" target="_blank">Senior Security Analyst</a></li>
-                        <li><a href="Advanced-Level%20Jobs/3.senior-cybersecurity-engineer.html" target="_blank">Senior Cybersecurity Engineer</a></li>
-                        <li><a href="Advanced-Level%20Jobs/4.lead-incident-responder.html" target="_blank">Lead Incident Responder</a></li>
-                        <li><a href="Advanced-Level%20Jobs/5.lead-penetration-tester.html" target="_blank">Lead Penetration Tester</a></li>
-                        <li><a href="Advanced-Level%20Jobs/6.senior-threat-intelligence-analyst.html" target="_blank">Senior Threat Intel Analyst</a></li>
-                        <li><a href="Advanced-Level%20Jobs/7.senior-digital-forensics-examiner.html" target="_blank">Senior Digital Forensics Examiner</a></li>
-                        <li><a href="Advanced-Level%20Jobs/8.senior-security-consultant.html" target="_blank">Senior Security Consultant</a></li>
+                        <li><a href="Advanced-Level%20Jobs/1.soc-analyst-tier-3.html" target="_blank">SOC Analyst – Tier
+                                3</a></li>
+                        <li><a href="Advanced-Level%20Jobs/2.senior-security-analyst.html" target="_blank">Senior
+                                Security Analyst</a></li>
+                        <li><a href="Advanced-Level%20Jobs/3.senior-cybersecurity-engineer.html" target="_blank">Senior
+                                Cybersecurity Engineer</a></li>
+                        <li><a href="Advanced-Level%20Jobs/4.lead-incident-responder.html" target="_blank">Lead Incident
+                                Responder</a></li>
+                        <li><a href="Advanced-Level%20Jobs/5.lead-penetration-tester.html" target="_blank">Lead
+                                Penetration Tester</a></li>
+                        <li><a href="Advanced-Level%20Jobs/6.senior-threat-intelligence-analyst.html"
+                                target="_blank">Senior Threat Intel Analyst</a></li>
+                        <li><a href="Advanced-Level%20Jobs/7.senior-digital-forensics-examiner.html"
+                                target="_blank">Senior Digital Forensics Examiner</a></li>
+                        <li><a href="Advanced-Level%20Jobs/8.senior-security-consultant.html" target="_blank">Senior
+                                Security Consultant</a></li>
                         <li><a href="Advanced-Level%20Jobs/9.red-team-lead.html" target="_blank">Red Team Lead</a></li>
-                        <li><a href="Advanced-Level%20Jobs/10.blue-team-lead.html" target="_blank">Blue Team Lead</a></li>
-                        <li><a href="Advanced-Level%20Jobs/11.purple-team-lead.html" target="_blank">Purple Team Lead</a></li>
-                        <li><a href="Advanced-Level%20Jobs/12.senior-grc-specialist.html" target="_blank">Senior GRC Specialist</a></li>
-                        <li><a href="Advanced-Level%20Jobs/13.cybersecurity-project-manager.html" target="_blank">Cybersecurity Project Manager</a></li>
-                        <li><a href="Advanced-Level%20Jobs/14.security-solutions-architect.html" target="_blank">Security Solutions Architect</a></li>
-                        <li><a href="Advanced-Level%20Jobs/15.cloud-security-engineer.html" target="_blank">Cloud Security Engineer</a></li>
-                        <li><a href="Advanced-Level%20Jobs/16.application-security-engineer.html" target="_blank">Application Security Engineer</a></li>
-                        <li><a href="Advanced-Level%20Jobs/17.devsecops-engineer.html" target="_blank">DevSecOps Engineer</a></li>
-                        <li><a href="Advanced-Level%20Jobs/18.information-assurance-analyst.html" target="_blank">Information Assurance Analyst</a></li>
-                        <li><a href="Advanced-Level%20Jobs/19.risk-manager-cybersecurity.html" target="_blank">Risk Manager – Cybersecurity</a></li>
+                        <li><a href="Advanced-Level%20Jobs/10.blue-team-lead.html" target="_blank">Blue Team Lead</a>
+                        </li>
+                        <li><a href="Advanced-Level%20Jobs/11.purple-team-lead.html" target="_blank">Purple Team
+                                Lead</a></li>
+                        <li><a href="Advanced-Level%20Jobs/12.senior-grc-specialist.html" target="_blank">Senior GRC
+                                Specialist</a></li>
+                        <li><a href="Advanced-Level%20Jobs/13.cybersecurity-project-manager.html"
+                                target="_blank">Cybersecurity Project Manager</a></li>
+                        <li><a href="Advanced-Level%20Jobs/14.security-solutions-architect.html"
+                                target="_blank">Security Solutions Architect</a></li>
+                        <li><a href="Advanced-Level%20Jobs/15.cloud-security-engineer.html" target="_blank">Cloud
+                                Security Engineer</a></li>
+                        <li><a href="Advanced-Level%20Jobs/16.application-security-engineer.html"
+                                target="_blank">Application Security Engineer</a></li>
+                        <li><a href="Advanced-Level%20Jobs/17.devsecops-engineer.html" target="_blank">DevSecOps
+                                Engineer</a></li>
+                        <li><a href="Advanced-Level%20Jobs/18.information-assurance-analyst.html"
+                                target="_blank">Information Assurance Analyst</a></li>
+                        <li><a href="Advanced-Level%20Jobs/19.risk-manager-cybersecurity.html" target="_blank">Risk
+                                Manager – Cybersecurity</a></li>
                     </ul>
                 </div>
 
@@ -355,7 +473,9 @@
 
         <!-- Footer -->
         <div class="footer">
-            <p>Each cybersecurity domain requires specialized technical skill sets, industry credentials (e.g., CompTIA, GIAC, ISC²), and domain-specific experience. To request in-depth content or roadmap breakdowns for specific roles, leave a comment on our channel or message us via the support form.</p>
+            <p>Each cybersecurity domain requires specialized technical skill sets, industry credentials (e.g., CompTIA,
+                GIAC, ISC²), and domain-specific experience. To request in-depth content or roadmap breakdowns for
+                specific roles, leave a comment on our channel or message us via the support form.</p>
         </div>
     </div>
 </body>
