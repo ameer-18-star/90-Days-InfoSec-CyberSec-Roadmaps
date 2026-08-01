@@ -17,11 +17,12 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             /* Deep black gradient with a faint white grid overlay */
-            background: linear-gradient(135deg, #000000 0%, #0d0d0d 100%);
+            background-color: #000000;
             background-image:
+                linear-gradient(135deg, #000000 0%, #0d0d0d 100%),
                 linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-            background-size: 48px 48px;
+            background-size: cover, 48px 48px, 48px 48px;
             color: #F5F5F3;
             min-height: 100vh;
             padding: 20px;
@@ -259,10 +260,68 @@
             background: #101010;
             border-top: 1px solid #2c2c2c;
             color: #6b6b68;
-            text-align: center;
-            padding: 25px;
+            padding: 0;
             font-size: 0.9rem;
             opacity: 1;
+        }
+
+        .footer-links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 40px 40px 32px;
+        }
+
+        .footer-links-grid h5 {
+            font-size: 0.78rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #FFD700;
+            margin: 0 0 14px;
+            font-weight: 600;
+        }
+
+        .footer-links-grid ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        .footer-links-grid a {
+            color: #9a9a97;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .footer-links-grid a:hover {
+            color: #F5F5F3;
+        }
+
+        .footer-note {
+            border-top: 1px solid #2c2c2c;
+            padding: 22px 40px 28px;
+            text-align: center;
+        }
+
+        .footer-note p {
+            font-size: 0.85rem;
+            color: #6b6b68;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+            .footer-links-grid {
+                grid-template-columns: 1fr;
+                padding: 32px 20px 24px;
+            }
+
+            .footer-note {
+                padding: 20px 20px 24px;
+            }
         }
 
         /* Subtle animations for better UX */
@@ -473,9 +532,62 @@
 
         <!-- Footer -->
         <div class="footer">
-            <p>Each cybersecurity domain requires specialized technical skill sets, industry credentials (e.g., CompTIA,
-                GIAC, ISC²), and domain-specific experience. To request in-depth content or roadmap breakdowns for
-                specific roles, leave a comment on our channel or message us via the support form.</p>
+            <div class="footer-links-grid">
+                <div>
+                    <h5>VMSOIT Blog</h5>
+                    <ul>
+                        <li><a href="https://vmsoit.blogspot.com/" target="_blank" rel="noopener noreferrer">All
+                                Posts/Blogs</a></li>
+                        <li><a href="https://vmsoit.blogspot.com/2026/07/is-cybersecurity-cooked-due-to-ai.html"
+                                target="_blank" rel="noopener noreferrer">Is Cybersecurity Cooked Due to AI?</a></li>
+                        <li><a href="https://vmsoit.blogspot.com/2026/01/185-free-cybersecurity-and-infosec-courses-with-certificates.html"
+                                target="_blank" rel="noopener noreferrer">185+ Free Cybersecurity & InfoSec Courses</a>
+                        </li>
+                        <li><a href="https://vmsoit.blogspot.com/2026/04/i-analyzed-100-ai-cybersecurity-job-postings.html?m=1"
+                                target="_blank" rel="noopener noreferrer">I Analyzed 100 AI Cybersecurity Job
+                                Postings</a></li>
+                        <li><a href="https://vmsoit.blogspot.com/2026/07/learning-how-to-learn-complete-guide.html"
+                                target="_blank" rel="noopener noreferrer">Learning How to Learn: Complete Guide</a></li>
+                        <li><a href="https://vmsoit.blogspot.com/2026/07/cybersecurity-top-10-domains-roadmap.html"
+                                target="_blank" rel="noopener noreferrer">Cybersecurity: Top 10 Domains Roadmap</a></li>
+                        <li><a href="https://vmsoit.blogspot.com/2026/07/the-honest-roadmap-nobody-gives.html"
+                                target="_blank" rel="noopener noreferrer">The Honest Roadmap Nobody Gives You</a></li>
+                        <li><a href="https://vmsoit.blogspot.com/2026/04/make-1m-in-ai-cybersecurity-10-step-plan.html"
+                                target="_blank" rel="noopener noreferrer">Make $1M in AI Cybersecurity: 10-Step Plan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>GitHub &amp; Roadmaps</h5>
+                    <ul>
+                        <li><a href="https://github.com/ameer-18-star/Ethical_Hacking_90_Days_Roadmap" target="_blank"
+                                rel="noopener noreferrer">Roadmap: Ethical Hacking 90 Days</a></li>
+                        <li><a href="https://ameer-18-star.github.io/CyberSecurity_Roadmap/" target="_blank"
+                                rel="noopener noreferrer">Roadmaps: CyberSecurity_Roadmap (site)</a></li>
+                        <li><a href="https://github.com/ameer-18-star/90-Days-InfoSec-CyberSec-Roadmaps" target="_blank"
+                                rel="noopener noreferrer">Roadmaps: 90-Days InfoSec/CyberSec Roadmaps</a></li>
+                        <li><a href="https://github.com/ameer-18-star/Cisco-Ethical-Hacking-CEH" target="_blank"
+                                rel="noopener noreferrer">Course: Cisco Ethical Hacking (CEH)</a></li>
+                        <li><a href="https://github.com/ameer-18-star/EC-Council-Ethical-Hacking-Essentials-EHE"
+                                target="_blank" rel="noopener noreferrer">Course: EC-Council Ethical Hacking Essentials
+                                (EHE)</a></li>
+                        <li><a href="https://github.com/ameer-18-star/EC-Council-Network-Defense-Essentials-NDE"
+                                target="_blank" rel="noopener noreferrer">Course: EC-Council Network Defense Essentials
+                                (NDE)</a></li>
+                        <li><a href="https://github.com/ameer-18-star/Google-Cybersecurity-Professional-Certificate"
+                                target="_blank" rel="noopener noreferrer">Course: Google Cybersecurity Professional
+                                Certificate</a></li>
+                        <li><a href="https://github.com/ameer-18-star/Free_CyberSecurity_Resources" target="_blank"
+                                rel="noopener noreferrer">Resources: Free CyberSecurity Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-note">
+                <p>Each cybersecurity domain requires specialized technical skill sets, industry credentials (e.g.,
+                    CompTIA,
+                    GIAC, ISC²), and domain-specific experience. To request in-depth content or roadmap breakdowns for
+                    specific roles, leave a comment on our channel or message us via the support form.</p>
+            </div>
         </div>
     </div>
 </body>
